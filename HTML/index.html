@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Il Sogno</title>
+
+    <link rel="stylesheet" href="/CSS/style.css">
+    <script src="/JS/app.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Island+Moments&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!--navbar-i-->
+    <nav class="navbar">
+        <div class="navbar_container">
+
+
+
+            <a href="index.html" class="logo_link"><img src="/photos/main_logo.png" alt="Logo" class="logo">
+            </a>
+            <ul class="nav_menu">
+                <li class="nav_item"><a href="menu.html" class="nav_link">Menu</a></li>
+                <li class="nav_item"><a href="music.html" class="nav_link">Music</a></li>
+                <li class="nav_item"><a href="reservations.html" class="nav_link">Reservations</a></li>
+                <li class="nav_item"><a href="about.html" class="nav_link">About Us</a></li>
+            </ul>
+
+
+
+            <div class="navbar_toggle hidden" id="mobile_menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+        </div>
+    </nav>
+
+    <!--hero-->
+
+    <div class="hero">
+        <div class="hero_container"><video autoplay muted loop playsinline class="hero_video">
+                <source src="/photos/backVid1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero_text_container">
+                <div class="hero_text">
+                    <h1 class="hero_title" id="hero_title1">Elevating the Essence of Italian Dining</h1>
+                    <h2 class="hero_title" id="hero_title2">From the heart of Italy to your table - every moment at Il
+                        Sogno reflects timeless tradition, heartfelt hospitality, and the art of living beautifully.
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--about-->
+
+    <div class="about_section">
+        <div class="about_container">
+            <div class="about_image_container">
+                <img src="/photos/background_main.jpg" alt="About Us" class="about_image">
+                <h1 class="about_image_text">Immerse yourself in the dream</h1>
+
+            </div>
+        </div>
+    </div>
+    <div class="about_text_container">
+        <h2 class="about_title">About Us</h2>
+        <p class="about_text">At Il Sogno, we believe that dining is more than just a meal, it&#8217;s an experience
+            that nourishes the soul. Inspired by the timeless elegance of Italian tradition, our restaurant was founded
+            to bring a genuine slice of Italy to Amalfi.
+            Every detail at Il Sogno reflects our commitment to authenticity and refinement: from the warm, inviting
+            atmosphere to the thoughtfully crafted dishes that honor recipes passed down through generations. We source
+            only the freshest, finest ingredients to create flavors that are both familiar and unforgettable.
+            Here, you are not just a guest, you are part of our extended family. Whether sharing laughter over a
+            candlelit dinner or savoring a quiet moment with a glass of carefully selected wine, Il Sogno invites you to
+            slow down, savor the present, and live the dream of true Italian hospitality.</p>
+        <button class="learn_more_button" onclick="location.href='about.html'">Learn More</button>
+    </div>
+
+
+
+
+    </div>
+
+    <!--menu-->
+
+    <div class="menu_section">
+        <div class="menu_container">
+            <div class="menu_image_container">
+                <img src="/photos/interior.jpg" alt="Menu" class="menu_image">
+                <div class="menu_img_txt">
+                    <h1 class="menu_image_text">Delicious Temptations</h1>
+                    <h2 class="menu_image_subtext">Perfection in every bite</h2>
+
+                </div>
+
+                <div class="menu_card_container">
+                    <div class="menu_cards">
+                        <div class="menu_card"><img src="/photos/pasta.jpg" alt="menu_item" class="food_img">
+                            <p class="f_hover" id="f_hover1">Pizza</p>
+                        </div>
+                        <div class="menu_card"><img src="/photos/pizza.jpg" alt="menu_item" class="food_img">
+                            <p class="f_hover" id="f_hover2">Pasta</p>
+                        </div>
+                        <div class="menu_card"><img src="/photos/pizza.jpg" alt="menu_item" class="food_img">
+                            <p class="f_hover" id="f_hover3">Seafood</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="view_menu_button" onclick="location.href='menu.html'">View Menu</button>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <!--music-->
+
+
+    <div class="music_section">
+        <div class="music_container">
+            <div class="music_image_container" id="music_image_container1">
+                <img src="music1.jpg" alt="Music" class="music_image">
+
+            </div>
+            <div class="music_image_container" id="music_image_container2">
+                <div class="music_text_container">
+                    <h2 class="music_title">Music Nights</h2>
+                    <p class="music_text">Live Music, Candlelight, and Atmosphere
+                        Every Saturday evening, we dim the lights and let the music set the tone. Whether it's a soft
+                        jazz duo or an acoustic set under the stars, our Music Nights create the perfect backdrop for
+                        connection.</p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+
+    <div class="footer">
+        <div class="footer_container">
+            <div class="footer_section">
+                <div class="footer_logo_container">
+                    <img src="main_logo.png" alt="Logo" class="footer_logo">
+                </div>
+                <div class="footer_logo_container">
+                    <h3 class="footer_title">Contact Us</h3>
+                    <p class="footer_text">+000000000</p>
+                    <p class="footer_text">From Tuesday to Sunday </p>
+                    <p class="footer_text">From 6pm to 11pm</p>
+                    <p class="footer_text">Via Salvatore Quasimodo, 384011 Amalfi</p>
+                    <p class="footer_text">Privacy Policy </p>
+                    <p class="footer_text">Cookie Policy</p>
+                </div>
+                <div class="footer_logo_container">
+                    <p class="footer_text">&#64;2025 Il Sogno Restaurant. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
