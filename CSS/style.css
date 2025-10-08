@@ -354,6 +354,7 @@ html, body {
     transform:translateY(-10px);
     transition: ease 0.2s;
     background-color: #cda154f5;
+    cursor: pointer;
 }
 
 
