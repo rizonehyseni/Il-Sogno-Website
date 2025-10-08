@@ -414,3 +414,120 @@ html, body {
     transition: ease 0.3s;
 }
 
+/*music section style*/
+
+.music_section{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-top:20rem;
+}
+
+.music_video_container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.music_video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.music_text_container{
+    position:absolute;
+    top:50%;
+    left:25%;
+    transform:translate(-50%,-50%);
+    width: 80%;
+    height:95%;
+    z-index: 2;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: linear-gradient(90deg,
+  #000000c2 0%,
+  #00000061 50%, 
+  #00000000 100%);
+  
+  
+}
+.music_text{
+    width: 100%;
+    height: 50%;
+    margin:0;
+    
+}
+#music_title{
+    position: absolute;
+    top:20%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-family: "Instrument Serif", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 3rem;
+    color: #F7F1E1;
+    
+}
+#music_desc{
+     position: absolute;
+    top:55%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:1.5rem;
+    color: #F7F1E1;
+}
+
+.music_button_container{
+    position: absolute;
+    top:80%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width: 50%;
+    height:30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.music_button{
+    width: 50%;
+    font-size: 1.2rem;
+    font-family: "Instrument Serif", serif;
+    font-weight: 500;
+    font-style: normal;
+    border-radius: 15px;
+    border: none;
+    padding:0.5rem 1rem;
+    background-color: #5a3805;
+    color:#F7F1E1;
+}
+.music_button:hover{
+    background-color: #b47311;
+    transition: ease 0.3s;
+    cursor: pointer;
+}
+
+

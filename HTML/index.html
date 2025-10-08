@@ -161,21 +161,32 @@
 
     <div class="music_section">
         <div class="music_container">
-            <div class="music_image_container" id="music_image_container1">
-                <img src="music1.jpg" alt="Music" class="music_image">
+            <div class="music_video_container" >
+                <video autoplay muted loop playsinline class="music_video">
+                  <source src="/photos/vinyl.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
 
-            </div>
-            <div class="music_image_container" id="music_image_container2">
-                <div class="music_text_container">
-                    <h2 class="music_title">Music Nights</h2>
-                    <p class="music_text">Live Music, Candlelight, and Atmosphere
+            <div class="music_text_container">
+                <div class="music_text">
+                    <h2  id="music_title">Music Nights</h2>
+                </div>    
+                <div class="music_text">
+                    <p  id="music_desc">Live Music, Candlelight, and Atmosphere
                         Every Saturday evening, we dim the lights and let the music set the tone. Whether it's a soft
                         jazz duo or an acoustic set under the stars, our Music Nights create the perfect backdrop for
                         connection.</p>
+                </div>        
+                <div class="music_button_container">
+                    <button class="music_button" onclick="location.href='music.html'">See our upcoming event</button>
                 </div>
+            </div>
 
+                
 
             </div>
+                
+
         </div>
     </div>
 
