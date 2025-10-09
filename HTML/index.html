@@ -32,6 +32,10 @@
 
 <body>
 
+
+    <div class="intro_contaier show">
+        <img src="/photos/main_logo.png">
+    </div>
     <!--navbar-i-->
     <nav class="navbar">
         <div class="navbar_container">
@@ -81,7 +85,7 @@
     <div class="about_section">
         <div class="about_container">
             <div class="about_image_container">
-                <img src="/photos/background_main.jpg" alt="About Us" class="about_image">
+                <img src="/photos/back1.jpg" alt="About Us" class="about_image">
                 <h1 class="about_image_text">Immerse yourself in the dream</h1>
 
             </div>
@@ -110,28 +114,40 @@
 
     <div class="menu_section">
         <div class="menu_container">
-            <div class="menu_image_container">
-                <img src="/photos/interior.jpg" alt="Menu" class="menu_image">
+            <div class="menu_background_container">
+                <img src="/photos/brownBackground.jpg" alt="Menu Background" class="menu_image">
                 <div class="menu_img_txt">
                     <h1 class="menu_image_text">Delicious Temptations</h1>
-                    <h2 class="menu_image_subtext">Perfection in every bite</h2>
 
                 </div>
 
                 <div class="menu_card_container">
                     <div class="menu_cards">
-                        <div class="menu_card"><img src="/photos/pasta.jpg" alt="menu_item" class="food_img">
+                        <div class="menu_card" onclick="location.href='menu.html'">
+                            <div class="menu_card_img">
+                                <img src="/photos/pastaImg.jpg" alt="menu_item" class="food_img">
+                            </div>
                             <p class="f_hover" id="f_hover1">Pizza</p>
                         </div>
-                        <div class="menu_card"><img src="/photos/pizza.jpg" alt="menu_item" class="food_img">
+                        <div class="menu_card" onclick="location.href='menu.html'">
+                            <div class="menu_card_img">
+                                <img src="/photos/pizzaImg.jpg" alt="menu_item" class="food_img">
+                            </div>    
                             <p class="f_hover" id="f_hover2">Pasta</p>
                         </div>
-                        <div class="menu_card"><img src="/photos/pizza.jpg" alt="menu_item" class="food_img">
+                        <div class="menu_card" onclick="location.href='menu.html'">
+                            <div class="menu_card_img">
+                                <img src="/photos/seafoodImg.jpg" alt="menu_item" class="food_img">
+                            </div>
                             <p class="f_hover" id="f_hover3">Seafood</p>
                         </div>
                     </div>
                 </div>
-                <button class="view_menu_button" onclick="location.href='menu.html'">View Menu</button>
+                <div class="button_container">
+                  <button class="view_menu_button" onclick="location.href='menu.html'">View Menu</button>
+
+                </div>
+               
             </div>
 
 
@@ -145,21 +161,32 @@
 
     <div class="music_section">
         <div class="music_container">
-            <div class="music_image_container" id="music_image_container1">
-                <img src="music1.jpg" alt="Music" class="music_image">
+            <div class="music_video_container" >
+                <video autoplay muted loop playsinline class="music_video">
+                  <source src="/photos/vinyl.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
 
-            </div>
-            <div class="music_image_container" id="music_image_container2">
-                <div class="music_text_container">
-                    <h2 class="music_title">Music Nights</h2>
-                    <p class="music_text">Live Music, Candlelight, and Atmosphere
+            <div class="music_text_container">
+                <div class="music_text">
+                    <h2  id="music_title">Music Nights</h2>
+                </div>    
+                <div class="music_text">
+                    <p  id="music_desc">Live Music, Candlelight, and Atmosphere
                         Every Saturday evening, we dim the lights and let the music set the tone. Whether it's a soft
                         jazz duo or an acoustic set under the stars, our Music Nights create the perfect backdrop for
                         connection.</p>
+                </div>        
+                <div class="music_button_container">
+                    <button class="music_button" onclick="location.href='music.html'">See our upcoming event</button>
                 </div>
+            </div>
 
+                
 
             </div>
+                
+
         </div>
     </div>
 
