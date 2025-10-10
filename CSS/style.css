@@ -201,7 +201,6 @@ html, body {
      transform: translate(-50%, -50%);
     color: white;
     font-size: 4rem;
-    font-family: "Instrument Serif", serif;
     z-index: 2;
     font-family: "Island Moments", cursive;
     font-weight: 400;
@@ -211,7 +210,7 @@ html, body {
 
 
 .about_text_container {
-    margin-top: -6rem; 
+    margin-top: -2rem; 
     width: 80%;
     padding: 2rem;
     margin-left: auto;
@@ -220,10 +219,11 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
+
 }
 
-.about_title{
+
+.about_text{
     font-size: 2.5rem;
     font-family: "Instrument Serif", serif;
     font-weight: 400;
@@ -231,15 +231,13 @@ html, body {
     margin-bottom: 1rem;
     color:#F7F1E1;
 }
-
-.about_text{
-    font-size: 1.2rem;
-    font-family: "Playfair Display", serif;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.6;
-    text-align: center;
-    color:#F7F1E1;
+.about_sub_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
 }
 
 .learn_more_button{
@@ -260,6 +258,61 @@ html, body {
     color: #070505;
     cursor: pointer;
     transition: ease 0.3s;
+}
+
+.about_card_container{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about_card{
+    width: 25%;
+    height: 450px;
+    background-color: #070505;
+    margin: auto;
+    border: 1px solid #F7F1E1;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about_card:hover {
+  background-color: #F7F1E1;
+  transform: translateY(-5px);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.about_desc_title{
+     font-size: 2rem;
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 1rem;
+
+}
+
+.about_desc_text{
+     font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    margin: 2rem;
+
+}
+.about_desc_title,
+.about_desc_text {
+  color: #F7F1E1;
+  transition: color 0.4s ease;
+  text-align: center;
+}
+
+.about_card:hover .about_desc_title,
+.about_card:hover .about_desc_text {   /*qiky dmth pi selekton desc title edhe text kur nohet cardi hover*/
+  color: #070505;
 }
 
 /*main section style*/
@@ -333,7 +386,7 @@ html, body {
     border-radius: 15px;
     color:#F7F1E1;
     border: 1px solid #F7F1E1;
-    background-color: #070505;
+    background-color: #1e0202;
     
 }
 
