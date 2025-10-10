@@ -573,9 +573,9 @@ html, body {
     font-weight: 500;
     font-style: normal;
     border-radius: 15px;
-    border: none;
+    border: 1px solid #F7F1E1;
     padding:0.5rem 1rem;
-    background-color: #380505;
+    background-color: #38050500;
     color:#F7F1E1;
 }
 .music_button:hover{
