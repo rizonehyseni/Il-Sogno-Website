@@ -311,9 +311,11 @@ html, body {
 }
 
 .about_card:hover .about_desc_title,
-.about_card:hover .about_desc_text {   /*qiky dmth pi selekton desc title edhe text kur nohet cardi hover*/
+.about_card:hover .about_desc_text {   /*qiky dmth pi selekton desc title edhe text kur bohet cardi hover*/
   color: #070505;
 }
+
+
 
 /*main section style*/
 .menu_section{
@@ -397,59 +399,6 @@ html, body {
     transition: ease 0.3s;
 }
 
-/*visual divider*/
-
-.visual_divider_container{
-    width: 100%;
-    height: 60vh;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows:  1fr; 
-
-}
-
-.divider_branch{
-    height: 20%;
-}
-#divider_branch1{
-    grid-row: 1;
-    grid-column: 1;
-    transform: rotate(180deg);
-}
-#divider_branch2{
-    grid-row: 1;
-    grid-column: 3;
-    margin-left: 55%;
-    margin-top: 53%;
-  
-}
-
-.divider_quote{
-    margin-top: 40%;
-    width: 100%;
-    height: 30vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-}
-.divider_text{
-    color: #F7F1E1;
-    font-size: 2rem;
-    text-align: center;
- font-family: "Instrument Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-.divider_author{
-    color: #F7F1E1;
-    font-size: 1.5rem;
-    text-align: left;
-      font-family: "Playfair Display", serif;
-    font-weight: 400;
-    font-style: normal;
-}
 
 
 /*music section style*/
