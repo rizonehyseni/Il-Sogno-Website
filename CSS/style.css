@@ -265,15 +265,15 @@ html, body {
     height: 80vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 .about_card{
     width: 25%;
     height: 450px;
     background-color: #070505;
-    margin: auto;
+    margin: 1rem;
     border: 1px solid #F7F1E1;
-    border-radius: 15px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -440,13 +440,15 @@ html, body {
     top:50%;
     left:25%;
     transform:translate(-50%,-50%);
-    width: 80%;
-    height:95%;
+    width: 70%;
+    height:100%;
     z-index: 2;
     display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
   background: linear-gradient(90deg,
   #000000c2 0%,
   #00000061 50%, 
@@ -455,44 +457,37 @@ html, body {
   
 }
 .music_text{
-    width: 100%;
-    height: 50%;
-    margin:0;
-    
+    width: 50%;
+    height: 20%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 #music_title{
-    position: absolute;
-    top:20%;
-    left:50%;
-    transform: translate(-50%,-50%);
     text-align: center;
     font-family: "Instrument Serif", serif;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
     font-size: 3rem;
     color: #F7F1E1;
     
 }
 #music_desc{
-     position: absolute;
-    top:55%;
-    left:50%;
-    transform: translate(-50%,-50%);
     text-align: center;
     font-family: "Playfair Display", serif;
     font-weight: 400;
     font-style: normal;
-    font-size:1.5rem;
+    font-size:1.2rem;
     color: #F7F1E1;
 }
 
 .music_button_container{
-    position: absolute;
-    top:80%;
-    left:50%;
-    transform:translate(-50%,-50%);
+    
+ 
     width: 50%;
-    height:30%;
+    height:20%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -508,11 +503,12 @@ html, body {
     border-radius: 15px;
     border: none;
     padding:0.5rem 1rem;
-    background-color: #5a3805;
+    background-color: #380505;
     color:#F7F1E1;
 }
 .music_button:hover{
-    background-color: #b47311;
+    background-color: #F7F1E1;
+    color:#380505;
     transition: ease 0.3s;
     cursor: pointer;
 }
