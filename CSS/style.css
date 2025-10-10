@@ -283,7 +283,6 @@ html, body {
   background-color: #F7F1E1;
   transform: translateY(-5px);
   transition: 0.5s ease-in-out;
-  cursor: pointer;
 }
 
 .about_desc_title{
@@ -441,6 +440,8 @@ html, body {
 .divider_text{
     position: absolute;
     color: #F7F1E1;
+    border-right: 1px solid #F7F1E1;/* qaj kursori qe blinks*/
+    animation: cursorBlink 0.7s step-end infinite;
   
 }
 #divider_quote{
@@ -460,6 +461,11 @@ html, body {
     font-family: "Playfair Display", serif;
     font-weight: 400;
     font-style: normal;
+}
+
+@keyframes cursorBlink { /*e bon kursorin me blink*/
+  from, to { border-color: transparent; }
+  50% { border-color: #F7F1E1; }
 }
 
 /*music section style*/
