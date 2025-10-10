@@ -1,3 +1,27 @@
+//navbari me kan scroll responsive
+
+let scrollFundit = window.scrollY;//scrolly dmth sa e ke scroll windowsin vertikalisht
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > scrollFundit && window.scrollY > 100) {//kur scroll ma shume se 100px, me mshef navin
+    
+    navbar.classList.add("hidden");
+  } else {//kur kthehesh me show navin
+    
+    navbar.classList.remove("hidden");
+  }
+  scrollFundit = window.scrollY;
+});
+
+
+
+
+
+
+//type animacion
+
+
 const text = `"Music is the cup which holds the wine of silence."`;
 const text2='- Robert Fripp';
 const typingText = document.getElementById("divider_quote");
