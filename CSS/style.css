@@ -27,7 +27,12 @@ html, body {
  z-index: 1000;
  width: 100%;
  height: 10vh;
+  transition: transform 0.4s ease;
 }
+.navbar.hidden {
+  transform: translateY(-100%); /* me mshef kur e animojna per scroll */
+}
+
 
 .navbar_container{
     display: flex;
@@ -265,15 +270,15 @@ html, body {
     height: 80vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 .about_card{
     width: 25%;
     height: 450px;
     background-color: #070505;
-    margin: auto;
+    margin: 1rem;
     border: 1px solid #F7F1E1;
-    border-radius: 15px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -283,7 +288,6 @@ html, body {
   background-color: #F7F1E1;
   transform: translateY(-5px);
   transition: 0.5s ease-in-out;
-  cursor: pointer;
 }
 
 .about_desc_title{
@@ -399,7 +403,75 @@ html, body {
     transition: ease 0.3s;
 }
 
+/*divider*/
 
+.divider{
+    width: 100%;
+    height:70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;   
+}
+
+.divider_container{
+     width: 100%;
+    height:70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;   
+    position: relative;
+}
+
+.divider_1{
+    position: relative;
+      width: 100%;
+  height: 100%;
+  background: #4f0909;
+  margin: 0;
+  padding: 0;
+  clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
+  overflow: hidden;
+}
+
+.clip_image{
+   width: 100%;
+    object-fit: cover;
+    transform: translateY(-40%);
+}
+.divider_text{
+    position: absolute;
+    color: #F7F1E1;
+    border-right: 1px solid #F7F1E1;/* qaj kursori qe blinks*/
+    animation: cursorBlink 0.7s step-end infinite;
+  
+}
+#divider_quote{
+      top: 70%;
+    left: 50%;
+    font-size: 2.5rem;
+     font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+    
+
+#divider_author{
+    font-size: 2rem;
+  top: 80%;
+    left: 70%;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@keyframes cursorBlink { /*e bon kursorin me blink*/
+  from, to { border-color: transparent; }
+  50% { border-color: #F7F1E1; }
+}
 
 /*music section style*/
 
@@ -440,13 +512,15 @@ html, body {
     top:50%;
     left:25%;
     transform:translate(-50%,-50%);
-    width: 80%;
-    height:95%;
+    width: 70%;
+    height:100%;
     z-index: 2;
     display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
   background: linear-gradient(90deg,
   #000000c2 0%,
   #00000061 50%, 
@@ -455,44 +529,37 @@ html, body {
   
 }
 .music_text{
-    width: 100%;
-    height: 50%;
-    margin:0;
-    
+    width: 50%;
+    height: 20%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 #music_title{
-    position: absolute;
-    top:20%;
-    left:50%;
-    transform: translate(-50%,-50%);
     text-align: center;
     font-family: "Instrument Serif", serif;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
     font-size: 3rem;
     color: #F7F1E1;
     
 }
 #music_desc{
-     position: absolute;
-    top:55%;
-    left:50%;
-    transform: translate(-50%,-50%);
     text-align: center;
     font-family: "Playfair Display", serif;
     font-weight: 400;
     font-style: normal;
-    font-size:1.5rem;
+    font-size:1.2rem;
     color: #F7F1E1;
 }
 
 .music_button_container{
-    position: absolute;
-    top:80%;
-    left:50%;
-    transform:translate(-50%,-50%);
+    
+ 
     width: 50%;
-    height:30%;
+    height:20%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -508,11 +575,12 @@ html, body {
     border-radius: 15px;
     border: none;
     padding:0.5rem 1rem;
-    background-color: #5a3805;
+    background-color: #380505;
     color:#F7F1E1;
 }
 .music_button:hover{
-    background-color: #b47311;
+    background-color: #F7F1E1;
+    color:#380505;
     transition: ease 0.3s;
     cursor: pointer;
 }
