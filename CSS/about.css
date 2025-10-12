@@ -199,14 +199,12 @@ body {
   display: flex;
   justify-content: center;
   gap: 3rem;
-  padding-top: 4rem;
 
 
 }
 
 .first_section_container p {
   margin-bottom: 15rem;
-
   padding-bottom: 5rem;
 }
 
