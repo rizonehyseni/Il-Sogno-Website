@@ -1,3 +1,17 @@
+document.body.classList.add('loading');//e shtojna qe me ja caktu klasen bodyt loading qe mos me mujt me bo scroll(e kena definu ncss)
+
+  window.addEventListener('load', () => { //load o e vetja(js)
+    const intro = document.querySelector('.intro_container');
+    setTimeout(() => {
+      intro.style.display = 'none';
+      document.body.classList.remove('loading');
+    }, 3500); //mas kohes 3500 ms hiqe klasen loading prej bodyt edhe intron hiqe
+  });
+
+
+
+
+
 //navbari me kan scroll responsive
 
 let scrollFundit = window.scrollY;//scrolly dmth sa e ke scroll windowsin vertikalisht
