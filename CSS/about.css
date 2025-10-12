@@ -1,0 +1,600 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #070505;
+  font-family: "Instrument Serif", serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/*intro style*/
+.intro_container {
+  opacity: 0;
+  display: none;
+}
+
+
+/*navbar style*/
+
+.navbar {
+  margin: 0;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 10vh;
+  transition: transform 0.4s ease;
+}
+
+.navbar.hidden {
+  transform: translateY(-100%);
+  /* me mshef kur e animojna per scroll */
+}
+
+
+.navbar_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 9vh;
+  background: linear-gradient(90deg,
+      rgba(0, 0, 0, 0.877) 10%,
+      rgba(0, 0, 0, 0.877) 50%,
+
+      rgba(0, 0, 0, 0.877) 100%);
+  margin: 0;
+  padding: 0 2rem;
+}
+
+.navbar_toggle.hidden {
+  display: none;
+}
+
+.logo {
+  height: 100px;
+  margin-top: 0.6rem;
+  width: auto;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.nav_menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+
+}
+
+.nav_item {
+  margin: 0 3rem;
+  padding: 1rem;
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+.nav_link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.nav_link:hover {
+  border-bottom: #F7F1E1 2px solid;
+  padding-bottom: 0.2rem;
+  transition: ease 0.3s;
+  cursor: pointer;
+}
+
+/*hero style*/
+
+.hero_container {
+  position: relative;
+  /*qe me dal videoja ner navbar*/
+  width: 100%;
+  height: 99vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.hero_text_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 90vh;
+  position: absolute;
+  top: 9vh;
+  left: 0;
+  background: linear-gradient(90deg,
+      rgba(0, 0, 0, 0.115) 10%,
+      rgba(0, 0, 0, 0.108) 50%,
+
+      rgba(29, 11, 4, 0) 100%);
+  z-index: 10;
+  border-radius: 5px;
+}
+
+.hero_text {
+  text-align: left;
+  padding: 4rem;
+}
+
+.hero_title {
+  color: #F7F1E1;
+
+
+}
+
+#hero_title1 {
+  font-size: 3rem;
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#hero_title2 {
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 0.5rem;
+}
+
+
+
+/* About Section */
+
+.first_section {
+  background: #2d0608;
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(10, 23, 8) 51%, rgb(38, 38, 38) 100%);
+  padding-top: 50px;
+  /* space from navbar */
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.first_section_container {
+  text-align: center;
+  width: 100%;
+  /* keeps content nicely centered on large screens */
+}
+
+.aboutus_img {
+  width: 100%;
+  max-height: 400px;
+  /* controls the height */
+  object-fit: cover;
+  /* makes image look nice without stretching */
+  display: block;
+  margin: 0 auto 3rem auto;
+  padding: 0 20px;
+  /* centers image and adds space below */
+
+}
+
+.main_logo {
+  width: 180px;
+  /* adjust for your logo */
+}
+
+.branches_logo {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+
+
+}
+
+.first_section_container p {
+  margin-bottom: 15rem;
+  padding-bottom: 5rem;
+}
+
+.branch1 {
+  width: 100px;
+  height: 10rem;
+  transform: rotate(-90deg);
+}
+
+.branch2 {
+  width: 100px;
+  height: 10rem;
+  transform: rotate(90deg);
+}
+
+.first_section_container p {
+  color: white;
+  font-size: 1.2rem;
+  margin: 0 auto;
+}
+
+.ourstory_container1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* ⬅️ This aligns the top edges */
+  background-color: #101210;
+  color: #f7f1e1;
+  box-sizing: border-box;
+}
+
+
+/* ✅ Image takes 60% of the width */
+.picture {
+  flex: 0 0 60%;
+  max-width: 60%;
+  overflow: hidden;
+}
+
+.picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* keeps the image ratio & crops if needed */
+  display: block;
+}
+
+/* ✅ Text takes 40% of the width */
+.text_container {
+  flex: 0 0 40%;
+  max-width: 40%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.text_container h1 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #F7F1E1;
+}
+
+.text_container p {
+  text-align: left;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* ✅ Title section fix */
+.achievement_title {
+  display: flex;
+  /* Put children in a row */
+  justify-content: center;
+  /* Center the row horizontally */
+  align-items: center;
+  /* Align them vertically */
+  gap: 1rem;
+  /* Space between the two images */
+  margin-bottom: 1rem;
+}
+
+.achievement_title img {
+  width: 100px;
+  display: inline-block;
+  /* Inline works too, but flex does the job */
+  margin: 0;
+  /* Remove auto margin to avoid stacking */
+}
+
+.achievement_title h1 {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  color: #F7F1E1;
+}
+
+.picture {
+  width: 100%;
+}
+
+.picture img {
+  width: 100%;
+  height: auto;
+}
+
+.text_container {
+  width: 70%;
+}
+
+.text_container h1 {
+  text-align: left;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  color: #ae8f39;
+}
+
+.text_container p {
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.menu_button {
+  margin: 1rem auto;
+  /* top-bottom: 1rem, left-right: auto */
+  display: block;
+  /* makes the button a block element */
+  padding: 0.5rem 3rem;
+  font-size: 1.2rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 15px;
+  color: #F7F1E1;
+  border: 1px solid #F7F1E1;
+  background-color: #1e0202;
+}
+
+
+.menu_button:hover {
+  background-color: #F7F1E1;
+  color: #070505;
+  cursor: pointer;
+  transition: ease 0.3s;
+
+}
+
+.interior_picture img {
+  width: 100%;
+  height: 24rem;
+  object-fit: cover;
+  /*  crop the image instead of stretching */
+  object-position: center;
+
+}
+
+
+
+.interior_picture {
+  position: relative;
+  width: 100%;
+  height: 28rem;
+  overflow: hidden;
+  margin-bottom: 15rem;
+  /* hides anything outside */
+}
+
+.interior_picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  padding-top: 5rem;
+}
+
+/* The overlay effect */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(rgba(0, 0, 0, 0.3) 0%,
+      /* center */
+      rgba(0, 0, 0, 0.5) 50%,
+      /* mid shadow */
+      rgba(0, 0, 0, 0.9) 100%
+      /* edges darker */
+    );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  /* initially invisible */
+  transition: opacity 0.4s ease;
+  /* smooth fade in */
+}
+
+/* When hovering over the image container */
+.interior_picture:hover .overlay {
+  opacity: 1;
+}
+
+/* Style the button */
+.book_button {
+  padding: 0.7rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  border-radius: 15px;
+  color: #F7F1E1;
+  border: 1px solid #F7F1E1;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.book_button:hover {
+  background-color: #F7F1E1;
+  color: #070505;
+}
+
+
+
+/* Features Section */
+.features_section {
+  display: flex;
+  background-color: #010201;
+  width: 100%;
+}
+
+/* LEFT SIDE - Photo */
+.picture_features {
+  width: 50%;
+  /* left column */
+  height: auto;
+  /* let height be determined by features */
+  overflow: hidden;
+}
+
+.picture_features img {
+  width: 100%;
+  height: 100%;
+  /* fills parent height */
+  object-fit: cover;
+  /* zoom/crop without stretching */
+  display: block;
+}
+
+
+.features_container {
+  display: flex;
+  flex-wrap: wrap;
+  /* allows wrapping */
+  gap: 20px;
+  /* space between boxes */
+  padding: 2rem;
+  justify-content: center;
+}
+
+.feature {
+  width: 350px;
+  /* fixed width */
+  height: 350px;
+  /* fixed height (square) */
+  background: transparent;
+
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feature h2 {
+  font-size: 1.5rem;
+  color: #F7F1E1;
+  margin-bottom: 0.5rem;
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #F7F1E1;
+  line-height: 1.4;
+}
+
+.feature h1 {
+  font-size: 3rem;
+  color: #9c7814;
+  margin-bottom: 0.5rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+/*blog section*/
+
+
+.blog_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #1a1a1a;
+  color: #f7f1e1;
+}
+
+.blog_button {
+  padding: 0.7rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  border-radius: 15px;
+  color: #F7F1E1;
+  border: 1px solid #F7F1E1;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+}
+
+.blog_button:hover {
+  background-color: #F7F1E1;
+  color: #070505;
+}
+
+
+
+/* Footer Section */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #00000000;
+  color: #F7F1E1;
+  padding: 2rem;
+  flex-wrap: wrap;
+  border-top: 1px solid #807d75;
+  /* responsive */
+}
+
+.footer-left,
+.footer-right {
+  flex: 1 1 300px;
+  /* grow/shrink, min width 300px */
+  margin-bottom: 1rem;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 1rem;
+}
+
+.footer-left p {
+  margin: 0.3rem 0;
+}
+
+.footer-left .socials a {
+  margin-right: 10px;
+  color: #F7F1E1;
+  text-decoration: none;
+}
+
+.footer-left .socials a:hover {
+  text-decoration: underline;
+}
+
+.footer-right h3 {
+  margin-bottom: 1rem;
+}
+
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-right ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-right ul li a {
+  color: #F7F1E1;
+  text-decoration: none;
+}
+
+.footer-right ul li a:hover {
+  text-decoration: underline;
+}
