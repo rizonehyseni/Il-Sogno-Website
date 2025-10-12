@@ -391,6 +391,13 @@ body.loading {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transform: scale(0.8);
+    opacity: 0;
+}
+.about_card.show{
+    transform: scale(1.0);
+    transition: 0.5s ease-in;
+    opacity: 1;
 }
 .about_card:hover {
   background-color: #F7F1E1;

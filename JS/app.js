@@ -70,6 +70,8 @@ function typeWriter() {
 
 const aboutText = document.querySelector(".about_image_text");
 
+const aboutCard = document.querySelectorAll(".about_card")
+
 
 
 const observer = new IntersectionObserver(entries => { //a pe sheh useri
@@ -77,27 +79,37 @@ const observer = new IntersectionObserver(entries => { //a pe sheh useri
 
     const element=entry.target;
     
-
+   
 
    //per about image textin
    
     if(element.classList.contains("about_image_text")){
          if (entry.isIntersecting) {
       aboutText.classList.add("show");
-      observer.unobserve(entry.target);// qikjo e len qe me u show veq 1 here
+      observer.unobserve(element);// qikjo e len qe me u show veq 1 here
      }
   
     }
 
+    //per about cards
 
-    //per quotein te divideri ma poshte
-     
-    if(element.id === "divider_quote"){
-
-      if (entry.isIntersecting && !hasTyped) { //nese elementi po doket edhe nuk katype hala, boja tpe
-      hasTyped = true;
-      typeWriter();
+    if (element.classList.contains("about_card")) {
+      if (entry.isIntersecting) {
+        aboutCard.forEach((card, index) => {//indexi dmth indexi i card-it
+          setTimeout(() => {
+            card.classList.add("show");
+          }, index * 200);//delay ne ms
+        });
+        observer.unobserve(element);
+      }
     }
+    //per quotein te divideri ma poshte
+
+    if (element.id === "divider_quote") {
+      if (entry.isIntersecting && !hasTyped) { //nese elementi po doket edhe nuk katype hala, boja tpe
+        hasTyped = true;
+        typeWriter();
+      }
     }
     
   });
@@ -108,3 +120,7 @@ const observer = new IntersectionObserver(entries => { //a pe sheh useri
 observer.observe(aboutText);
 
 observer.observe(typingText);
+
+
+
+aboutCard.forEach(aboutCard => observer.observe(aboutCard));
