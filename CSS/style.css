@@ -279,6 +279,45 @@ body.loading {
     font-family: "Island Moments", cursive;
     font-weight: 400;
     font-style: normal;
+    
+
+}
+
+.about_image_text.show{
+        animation: textShow 2s ease forwards;
+}
+
+@keyframes textShow {
+  0% {
+    clip-path: inset(0 100% 0 0); /*clip pathi o me clip dmth nforme drejtkendeshi clip-path:inset(top right botton left)*/
+    opacity: 1;
+ 
+  }
+  10% {
+    clip-path: inset(0 90% 0 0);
+  }
+  25% {
+    clip-path: inset(0 70% 0 0);
+  }
+  40% {
+    clip-path: inset(0 55% 0 0);
+  }
+  60% {
+    clip-path: inset(0 40% 0 0);
+  }
+  80% {
+    clip-path: inset(0 20% 0 0);
+   
+  }
+  90% {
+    clip-path: inset(0 5% 0 0);
+  
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+ 
+  }
 }
 
 

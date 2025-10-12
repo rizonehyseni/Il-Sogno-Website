@@ -17,6 +17,7 @@ document.body.classList.add('loading');//e shtojna qe me ja caktu klasen bodyt l
 let scrollFundit = window.scrollY;//scrolly dmth sa e ke scroll windowsin vertikalisht
 const navbar = document.querySelector(".navbar");
 
+
 window.addEventListener("scroll", () => {
   if (window.scrollY > scrollFundit && window.scrollY > 100) {//kur scroll ma shume se 100px, me mshef navin
     
@@ -66,6 +67,9 @@ function typeWriter() {
 
 const observer = new IntersectionObserver(entries => { //a pe sheh useri
   entries.forEach(entry => {
+
+    
+    
     if (entry.isIntersecting && !hasTyped) { //nese elementi po doket edhe nuk katype hala, boja tpe
       hasTyped = true;
       typeWriter();
@@ -76,3 +80,18 @@ const observer = new IntersectionObserver(entries => { //a pe sheh useri
 observer.observe(typingText);
 //dej qitu animacioni
 
+
+const aboutText = document.querySelector(".about_image_text");
+
+const aboutTextShow = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      aboutText.classList.add("show");
+      observer.unobserve(entry.target);// qikjo e len qe me u show veq 1 here
+    }
+  
+ 
+  });
+}, { threshold: 0.6 }); 
+
+aboutTextShow.observe(aboutText);
