@@ -65,33 +65,46 @@ function typeWriter() {
 
 
 
-const observer = new IntersectionObserver(entries => { //a pe sheh useri
-  entries.forEach(entry => {
 
-    
-    
-    if (entry.isIntersecting && !hasTyped) { //nese elementi po doket edhe nuk katype hala, boja tpe
-      hasTyped = true;
-      typeWriter();
-    }
-  });
-}, { threshold: 0.6 }); // kur eshte 60% i dukshem teksti ja nis mu type
-
-observer.observe(typingText);
-//dej qitu animacioni
-
+//pi bojna me ni observer krejt animacionet qe shkojne kur i shohum gjate scrollit ne website
 
 const aboutText = document.querySelector(".about_image_text");
 
-const aboutTextShow = new IntersectionObserver((entries, observer) => {
+
+
+const observer = new IntersectionObserver(entries => { //a pe sheh useri
   entries.forEach(entry => {
-    if (entry.isIntersecting) {
+
+    const element=entry.target;
+    
+
+
+   //per about image textin
+   
+    if(element.classList.contains("about_image_text")){
+         if (entry.isIntersecting) {
       aboutText.classList.add("show");
       observer.unobserve(entry.target);// qikjo e len qe me u show veq 1 here
-    }
+     }
   
- 
-  });
-}, { threshold: 0.6 }); 
+    }
 
-aboutTextShow.observe(aboutText);
+
+    //per quotein te divideri ma poshte
+     
+    if(element.id === "divider_quote"){
+
+      if (entry.isIntersecting && !hasTyped) { //nese elementi po doket edhe nuk katype hala, boja tpe
+      hasTyped = true;
+      typeWriter();
+    }
+    }
+    
+  });
+}, { threshold: 0.6 }); // kur eshte 60% i dukshem teksti ja nis mu type
+
+
+
+observer.observe(aboutText);
+
+observer.observe(typingText);
