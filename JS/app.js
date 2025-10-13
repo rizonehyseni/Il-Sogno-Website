@@ -39,11 +39,14 @@ window.addEventListener("scroll", () => {
 
 const text = `"Music is the cup which holds the wine of silence."`;
 const text2='- Robert Fripp';
+const text3=' Discover the inspirations behind our seasonal dishes, chef’s stories, and wine pairings.';
 const typingText = document.getElementById("divider_quote");
 const typingText2 = document.getElementById("divider_author");
+const typingText3 = document.getElementById("blog_info");
 
 let i = 0; //rritet qaq shkronja sa i ka
 let j=0;
+let k=0;
 let hasTyped = false;//kjo qe mos mu run funksioni pa e bo scroll te section
 
 
@@ -60,6 +63,14 @@ function typeWriter() {
      setTimeout(typeWriter,40);
   }
 
+  
+    else if(k<text3.length){//mas tparit qe me bo i dyti e bon me else
+     typingText3.textContent+=text3.charAt(k);
+     k++;
+     setTimeout(typeWriter,40);
+  }
+
+  
 }
 
 
@@ -81,6 +92,8 @@ const menuDesc=document.querySelector(".menu_desc");
 const menuBtn=document.querySelector(".menu_button");
 
 const dividerImage=document.querySelector(".divider_1");
+
+const blogImage=document.querySelector(".blog_image");
 
 
 
@@ -166,6 +179,24 @@ const observer = new IntersectionObserver(entries => { //a pe sheh useri
         typeWriter();
       }
     }
+
+
+    //blogu typing
+    if(element.id==="blog_info"){
+      if(entry.isIntersecting && !hasTyped){
+        hasTyped=true;
+        typeWriter();
+      }
+    }
+
+    //blog image 
+
+    if(element.classList.contains("blog_image")){
+      if(entry.isIntersecting){
+        element.classList.add("show");
+        observer.unobserve(element);
+      }
+    }
     
   });
 }, { threshold: 0.1 }); // kur eshte 60% i dukshem teksti ja nis mu type
@@ -184,3 +215,7 @@ observer.observe(menuBtn);
 
 observer.observe(typingText);
 observer.observe(dividerImage);
+
+observer.observe(typingText3);
+
+observer.observe(blogImage);
