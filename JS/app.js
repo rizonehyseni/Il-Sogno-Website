@@ -72,6 +72,17 @@ const aboutText = document.querySelector(".about_image_text");
 
 const aboutCard = document.querySelectorAll(".about_card")
 
+const menuImage= document.querySelector(".menu_img");
+
+const menuTitle=document.querySelector(".menu_title");
+
+const menuDesc=document.querySelector(".menu_desc");
+
+const menuBtn=document.querySelector(".menu_button");
+
+const dividerImage=document.querySelector(".divider_1");
+
+
 
 
 const observer = new IntersectionObserver(entries => { //a pe sheh useri
@@ -103,6 +114,50 @@ const observer = new IntersectionObserver(entries => { //a pe sheh useri
         observer.unobserve(element);
       }
     }
+
+
+    //menu seksioni animacionet per krejt
+
+    if(element.classList.contains("menu_img")){
+      if(entry.isIntersecting){
+        menuImage.classList.add("show");
+        observer.unobserve(element);
+      }
+    }
+
+        if(element.classList.contains("menu_title")){
+      if(entry.isIntersecting){
+        menuTitle.classList.add("show");
+        observer.unobserve(element);
+      }
+    }
+
+        if(element.classList.contains("menu_desc")){
+      if(entry.isIntersecting){
+        menuDesc.classList.add("show");
+        observer.unobserve(element);
+      }
+    }
+
+        if(element.classList.contains("menu_button")){
+      if(entry.isIntersecting){
+        menuBtn.classList.add("show");
+        observer.unobserve(element);
+      }
+    }
+
+
+    //divideri
+
+    if(element.classList.contains("divider_1")){
+      if(entry.isIntersecting){
+        dividerImage.classList.add("show");
+        observer.unobserve(element);
+
+      }
+    }
+
+
     //per quotein te divideri ma poshte
 
     if (element.id === "divider_quote") {
@@ -113,14 +168,19 @@ const observer = new IntersectionObserver(entries => { //a pe sheh useri
     }
     
   });
-}, { threshold: 0.6 }); // kur eshte 60% i dukshem teksti ja nis mu type
+}, { threshold: 0.1 }); // kur eshte 60% i dukshem teksti ja nis mu type
 
 
 
 observer.observe(aboutText);
 
-observer.observe(typingText);
-
-
-
 aboutCard.forEach(aboutCard => observer.observe(aboutCard));
+
+observer.observe(menuImage);
+observer.observe(menuTitle);
+observer.observe(menuDesc);
+observer.observe(menuBtn);
+
+
+observer.observe(typingText);
+observer.observe(dividerImage);

@@ -461,7 +461,24 @@ body.loading {
 .menu_img{
     object-fit: cover;
     width: 100%;
+    opacity: 0;
+
+    
 }
+.menu_img.show{ 
+  animation: fadeInMenu 1s ease forwards;
+}
+
+@keyframes fadeInMenu{
+  from{opacity: 0;
+   transform: translateY(30px);}
+  to{opacity: 1;
+   transform: translateY(0);}
+}
+
+
+
+
 
 .menu_container{
   flex-direction: column;
@@ -487,6 +504,11 @@ body.loading {
      font-family: "Instrument Serif", serif;
     font-weight: 400;
     font-style: normal;
+    opacity: 0;
+}
+
+.menu_title.show{
+  animation: fadeInMenu 0.5s ease forwards;
 }
 .menu_desc{
      color: #F7F1E1;
@@ -496,7 +518,12 @@ body.loading {
     font-style: normal;
     line-height: 1.6;
     text-align: center;
+    opacity: 0;
 }
+.menu_desc.show{
+  animation: fadeInMenu 0.5s ease forwards;
+}
+
 .menu_button{
      margin-top: 1rem;
     padding: 0.5rem 3rem;
@@ -508,7 +535,10 @@ body.loading {
     color:#F7F1E1;
     border: 1px solid #F7F1E1;
     background-color: #1e0202;
-    
+    opacity: 0;
+}
+.menu_button.show{
+  animation: fadeInMenu 0.5s ease forwards;
 }
 
 .menu_button:hover{
@@ -550,7 +580,27 @@ body.loading {
   padding: 0;
   clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
   overflow: hidden;
+  opacity: 0;
+ 
 }
+
+.divider_1.show {
+  animation: slideInDivider 2s ease-out forwards;
+  opacity: 1;
+}
+
+@keyframes slideInDivider {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
 
 .clip_image{
    width: 100%;
