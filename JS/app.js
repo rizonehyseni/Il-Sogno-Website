@@ -95,6 +95,7 @@ const dividerImage=document.querySelector(".divider_1");
 
 const blogImage=document.querySelector(".blog_image");
 
+const blogNews=document.querySelector(".blog_news");
 
 
 
@@ -197,6 +198,13 @@ const observer = new IntersectionObserver(entries => { //a pe sheh useri
         observer.unobserve(element);
       }
     }
+
+     if(element.classList.contains("blog_news")){
+      if(entry.isIntersecting){
+        element.classList.add("show");
+        observer.unobserve(element);
+      }
+    }
     
   });
 }, { threshold: 0.1 }); // kur eshte 60% i dukshem teksti ja nis mu type
@@ -219,3 +227,5 @@ observer.observe(dividerImage);
 observer.observe(typingText3);
 
 observer.observe(blogImage);
+
+observer.observe(blogNews);

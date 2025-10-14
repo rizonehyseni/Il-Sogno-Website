@@ -842,7 +842,12 @@ body.loading {
     border: 1px  solid #F7F1E1;
     padding:2rem;
     margin-top: 2rem;
+    opacity: 0;
 
+}
+
+.blog_news.show{
+   animation: fadeInMenu 1s ease forwards;
 }
 
 .blog_new{
