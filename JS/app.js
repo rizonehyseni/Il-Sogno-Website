@@ -20,7 +20,7 @@ const navCo=document.querySelector(".navbar_container");
 const heroTextCo=document.querySelector(".hero_text_container");
 
 window.addEventListener('scroll', ()=>{
-  if(window.scrollY<10){
+  if(window.scrollY<30){
     navMenuD.classList.add('hide');
     logoAni.classList.add('ani');
     heroText.classList.add('show');
