@@ -11,6 +11,35 @@ document.body.classList.add('loading');//e shtojna qe me ja caktu klasen bodyt l
 
 
 
+  //navin po dojna me mshef te qikjo pjese edhe tani el full si te bojna pak scroll
+
+const navMenuD=document.querySelector(".nav_menu");
+const logoAni=document.querySelector(".logo");
+const heroText=document.querySelector(".hero_text");
+const navCo=document.querySelector(".navbar_container");
+const heroTextCo=document.querySelector(".hero_text_container");
+
+window.addEventListener('scroll', ()=>{
+  if(window.scrollY<30){
+    navMenuD.classList.add('hide');
+    logoAni.classList.add('ani');
+    heroText.classList.add('show');
+    navCo.classList.add('expand');
+    heroTextCo.classList.add('expand');
+
+  }
+  else{
+     navMenuD.classList.remove('hide');
+    logoAni.classList.remove('ani');
+    heroText.classList.remove('show');
+    navCo.classList.remove('expand');
+    heroTextCo.classList.remove('expand');
+
+  }
+});
+
+
+
 
 //navbari me kan scroll responsive
 
