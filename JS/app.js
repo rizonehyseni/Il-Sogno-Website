@@ -15,19 +15,25 @@ document.body.classList.add('loading');//e shtojna qe me ja caktu klasen bodyt l
 
 const navMenuD=document.querySelector(".nav_menu");
 const logoAni=document.querySelector(".logo");
-const heroTitle=document.querySelector(".hero_title");
+const heroText=document.querySelector(".hero_text");
+const navCo=document.querySelector(".navbar_container");
+const heroTextCo=document.querySelector(".hero_text_container");
 
 window.addEventListener('scroll', ()=>{
-  if(window.scrollY===0){
+  if(window.scrollY<10){
     navMenuD.classList.add('hide');
     logoAni.classList.add('ani');
-    heroTitle.classList.add('show');
+    heroText.classList.add('show');
+    navCo.classList.add('expand');
+    heroTextCo.classList.add('expand');
 
   }
   else{
      navMenuD.classList.remove('hide');
     logoAni.classList.remove('ani');
-    heroTitle.classList.remove('show');
+    heroText.classList.remove('show');
+    navCo.classList.remove('expand');
+    heroTextCo.classList.remove('expand');
 
   }
 });
