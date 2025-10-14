@@ -128,9 +128,15 @@ body.loading {
     height: 100px;
     margin-top: 0.6rem;
     width: auto;
+    transition: 0.2s ease;
 }
 .logo:hover{
     cursor: pointer;
+}
+
+.logo.ani{
+  height: 200px;
+  margin: 2rem auto;
 }
 
 .nav_menu{
@@ -139,6 +145,11 @@ body.loading {
     justify-content: space-between;
     list-style: none;
     
+}
+
+.nav_menu.hide{
+  display: none;
+  opacity: 0;
 }
 
 .nav_item{
@@ -205,8 +216,12 @@ body.loading {
 
 .hero_title{
     color:#F7F1E1;
-    
+    transition: 0.2s ease;
+}
 
+.hero_title.show{
+  text-align: center;
+  margin:2rem auto;
 }
 
 #hero_title1{
