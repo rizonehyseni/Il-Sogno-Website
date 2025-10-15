@@ -120,7 +120,6 @@ const menuDesc=document.querySelector(".menu_desc");
 
 const menuBtn=document.querySelector(".menu_button");
 
-const dividerImage=document.querySelector(".divider_1");
 
 const blogImage=document.querySelector(".blog_image");
 
@@ -190,15 +189,7 @@ const observer = new IntersectionObserver(entries => { //a pe sheh useri
     }
 
 
-    //divideri
-
-    if(element.classList.contains("divider_1")){
-      if(entry.isIntersecting){
-        dividerImage.classList.add("show");
-        observer.unobserve(element);
-
-      }
-    }
+    
 
 
     //per quotein te divideri ma poshte
@@ -251,7 +242,7 @@ observer.observe(menuBtn);
 
 
 observer.observe(typingText);
-observer.observe(dividerImage);
+
 
 observer.observe(typingText3);
 

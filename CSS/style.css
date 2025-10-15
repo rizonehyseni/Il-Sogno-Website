@@ -641,25 +641,9 @@ body.loading {
   padding: 0;
   clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
   overflow: hidden;
-  opacity: 0;
  
 }
 
-.divider_1.show {
-  animation: slideInDivider 2s ease-out forwards;
-  opacity: 1;
-}
-
-@keyframes slideInDivider {
-  from {
-    transform: translateX(-50%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
 
 
 
