@@ -151,9 +151,15 @@ const observer = new IntersectionObserver(entries => { //a pe sheh useri
         aboutCard.forEach((card, index) => {//indexi dmth indexi i card-it
           setTimeout(() => {
             card.classList.add("show");
-          }, index * 200);//delay ne ms
+          }, index * 100);//delay ne ms
         });
-        observer.unobserve(element);
+       
+      }
+      else{
+        aboutCard.forEach(card =>{
+           card.classList.remove("show");
+        });
+        
       }
     }
 
