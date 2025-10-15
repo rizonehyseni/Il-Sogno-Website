@@ -68,7 +68,7 @@ window.addEventListener("scroll", () => {
 
 const text = `"Music is the cup which holds the wine of silence."`;
 const text2='- Robert Fripp';
-const text3=' Discover the inspirations behind our seasonal dishes, chef’s stories, and wine pairings.';
+const text3='  Chef Luca reveals the secrets of truffle season — from selecting the finest local varieties to crafting dishes that capture their earthy aroma.';
 const typingText = document.getElementById("divider_quote");
 const typingText2 = document.getElementById("divider_author");
 const typingText3 = document.getElementById("blog_info");
@@ -96,7 +96,7 @@ function typeWriter() {
     else if(k<text3.length){//mas tparit qe me bo i dyti e bon me else
      typingText3.textContent+=text3.charAt(k);
      k++;
-     setTimeout(typeWriter,40);
+     setTimeout(typeWriter,30);
   }
 
   
