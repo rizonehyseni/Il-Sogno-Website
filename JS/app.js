@@ -125,6 +125,8 @@ const blogImage=document.querySelector(".blog_image");
 
 const blogNews=document.querySelector(".blog_news");
 
+const blogInfo =document.querySelector(".blog_info");
+
 
 
 const observer = new IntersectionObserver(entries => { //a pe sheh useri
@@ -218,6 +220,14 @@ const observer = new IntersectionObserver(entries => { //a pe sheh useri
 
     //blog image 
 
+
+      if(element.classList.contains("blog_info")){
+      if(entry.isIntersecting){
+        element.classList.add("show");
+        observer.unobserve(element);
+      }
+    }
+
     if(element.classList.contains("blog_image")){
       if(entry.isIntersecting){
         element.classList.add("show");
@@ -233,7 +243,7 @@ const observer = new IntersectionObserver(entries => { //a pe sheh useri
     }
     
   });
-}, { threshold: 0.1 }); // kur eshte 60% i dukshem teksti ja nis mu type
+}, { threshold: 0.1 }); // kur eshte 10% i dukshem elementi ja nis animacioni
 
 
 
@@ -251,6 +261,8 @@ observer.observe(typingText);
 
 
 observer.observe(typingText3);
+
+observer.observe(blogInfo);
 
 observer.observe(blogImage);
 
