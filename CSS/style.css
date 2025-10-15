@@ -464,6 +464,7 @@ body.loading {
   background-color: #F7F1E1;
   transform: translateY(-5px);
   transition: 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 .about_desc_title{
