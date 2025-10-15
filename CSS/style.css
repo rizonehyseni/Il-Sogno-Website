@@ -118,6 +118,7 @@ body.loading {
   );
      margin:0;
      padding:0 2rem;
+     
 }
 
 .navbar_container.expand{
@@ -140,7 +141,7 @@ body.loading {
     height: 100px;
     margin-top: 0.6rem;
     width: auto;
-    transition: 0.3s ease;
+   
 }
 .logo:hover{
     cursor: pointer;
@@ -155,6 +156,7 @@ body.loading {
   left:50%;
   transform: translate(-50%,-50%);
   pointer-events: none;
+   transition: 0.2s ease;
 }
 
 .nav_menu{
@@ -226,6 +228,7 @@ body.loading {
   );
     z-index: 10;
     border-radius: 5px;
+
     
 }
 
@@ -238,6 +241,7 @@ body.loading {
   position: absolute;
   top:0;
   left:0;
+  
 
 }
 
@@ -257,6 +261,7 @@ body.loading {
   padding: 0;
   margin-bottom:4rem;
   padding: 2rem 4rem;
+  transition: 0.8s ease;
   
 }
 
@@ -464,6 +469,7 @@ body.loading {
   background-color: #F7F1E1;
   transform: translateY(-5px);
   transition: 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 .about_desc_title{
@@ -641,25 +647,9 @@ body.loading {
   padding: 0;
   clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
   overflow: hidden;
-  opacity: 0;
  
 }
 
-.divider_1.show {
-  animation: slideInDivider 2s ease-out forwards;
-  opacity: 1;
-}
-
-@keyframes slideInDivider {
-  from {
-    transform: translateX(-50%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
 
 
 
@@ -777,7 +767,7 @@ body.loading {
     font-family: "Playfair Display", serif;
     font-weight: 400;
     font-style: normal;
-    font-size:1.3rem;
+    font-size:1.5rem;
     color: #F7F1E1;
 }
 
@@ -849,13 +839,11 @@ body.loading {
 .blog_info{
    width: 100%;
     height: 40%;
-    color: #F7F1E1;
-    font-size: 1.4rem;
-    text-align: left;
-     font-family: "Playfair Display", serif;
-    font-weight: 400;
-    font-style: normal;
    
+}
+.blog_info.show{
+  animation: fadeInMenu 1s ease forwards;
+
 }
 
 #blog_info{
@@ -865,8 +853,13 @@ body.loading {
     padding-right: 0;
 }
 .blog_desc{
-    width: 100%;
-    height: 40%;
+     color: #F7F1E1;
+    font-size: 1.4rem;
+    text-align: left;
+     font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: normal;
+   
     
 }
 

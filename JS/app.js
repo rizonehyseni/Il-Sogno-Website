@@ -68,7 +68,7 @@ window.addEventListener("scroll", () => {
 
 const text = `"Music is the cup which holds the wine of silence."`;
 const text2='- Robert Fripp';
-const text3=' Discover the inspirations behind our seasonal dishes, chef’s stories, and wine pairings.';
+const text3='  Chef Luca reveals the secrets of truffle season — from selecting the finest local varieties to crafting dishes that capture their earthy aroma.';
 const typingText = document.getElementById("divider_quote");
 const typingText2 = document.getElementById("divider_author");
 const typingText3 = document.getElementById("blog_info");
@@ -96,7 +96,7 @@ function typeWriter() {
     else if(k<text3.length){//mas tparit qe me bo i dyti e bon me else
      typingText3.textContent+=text3.charAt(k);
      k++;
-     setTimeout(typeWriter,40);
+     setTimeout(typeWriter,30);
   }
 
   
@@ -120,11 +120,12 @@ const menuDesc=document.querySelector(".menu_desc");
 
 const menuBtn=document.querySelector(".menu_button");
 
-const dividerImage=document.querySelector(".divider_1");
 
 const blogImage=document.querySelector(".blog_image");
 
 const blogNews=document.querySelector(".blog_news");
+
+const blogInfo =document.querySelector(".blog_info");
 
 
 
@@ -152,9 +153,15 @@ const observer = new IntersectionObserver(entries => { //a pe sheh useri
         aboutCard.forEach((card, index) => {//indexi dmth indexi i card-it
           setTimeout(() => {
             card.classList.add("show");
-          }, index * 200);//delay ne ms
+          }, index * 100);//delay ne ms
         });
-        observer.unobserve(element);
+       
+      }
+      else{
+        aboutCard.forEach(card =>{
+           card.classList.remove("show");
+        });
+        
       }
     }
 
@@ -190,15 +197,7 @@ const observer = new IntersectionObserver(entries => { //a pe sheh useri
     }
 
 
-    //divideri
-
-    if(element.classList.contains("divider_1")){
-      if(entry.isIntersecting){
-        dividerImage.classList.add("show");
-        observer.unobserve(element);
-
-      }
-    }
+    
 
 
     //per quotein te divideri ma poshte
@@ -221,6 +220,14 @@ const observer = new IntersectionObserver(entries => { //a pe sheh useri
 
     //blog image 
 
+
+      if(element.classList.contains("blog_info")){
+      if(entry.isIntersecting){
+        element.classList.add("show");
+        observer.unobserve(element);
+      }
+    }
+
     if(element.classList.contains("blog_image")){
       if(entry.isIntersecting){
         element.classList.add("show");
@@ -236,7 +243,7 @@ const observer = new IntersectionObserver(entries => { //a pe sheh useri
     }
     
   });
-}, { threshold: 0.1 }); // kur eshte 60% i dukshem teksti ja nis mu type
+}, { threshold: 0.1 }); // kur eshte 10% i dukshem elementi ja nis animacioni
 
 
 
@@ -251,9 +258,11 @@ observer.observe(menuBtn);
 
 
 observer.observe(typingText);
-observer.observe(dividerImage);
+
 
 observer.observe(typingText3);
+
+observer.observe(blogInfo);
 
 observer.observe(blogImage);
 
