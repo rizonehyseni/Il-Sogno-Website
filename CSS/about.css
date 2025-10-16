@@ -14,12 +14,6 @@ body {
   padding: 0;
 }
 
-/*intro style*/
-.intro_container {
-  opacity: 0;
-  display: none;
-}
-
 
 /*navbar style*/
 
@@ -99,11 +93,11 @@ body {
   cursor: pointer;
 }
 
+
 /*hero style*/
 
 .hero_container {
   position: relative;
-  /*qe me dal videoja ner navbar*/
   width: 100%;
   height: 99vh;
   overflow: hidden;
@@ -159,47 +153,38 @@ body {
 
 
 
+
 /* About Section */
 
 .first_section {
-  background: #2d0608;
-  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(10, 23, 8) 51%, rgb(38, 38, 38) 100%);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(30, 2, 2) 51%, rgb(0, 0, 0) 100%);
   padding-top: 50px;
-  /* space from navbar */
   padding-bottom: 40px;
-  display: flex;
-  justify-content: center;
+
 }
 
 .first_section_container {
   text-align: center;
   width: 100%;
-  /* keeps content nicely centered on large screens */
 }
 
 .aboutus_img {
   width: 100%;
   max-height: 400px;
-  /* controls the height */
   object-fit: cover;
-  /* makes image look nice without stretching */
+  /* qe mos mu bo strech foto */
   display: block;
-  margin: 0 auto 3rem auto;
-  padding: 0 20px;
-  /* centers image and adds space below */
-
 }
 
 .main_logo {
   width: 180px;
-  /* adjust for your logo */
 }
 
 .branches_logo {
   display: flex;
   justify-content: center;
-  gap: 3rem;
-
+  gap: 3.5rem;
+  margin-top: 2rem;
 
 }
 
@@ -237,7 +222,7 @@ body {
 }
 
 
-/* ✅ Image takes 60% of the width */
+/* fotoje me nxan 60% */
 .picture {
   flex: 0 0 60%;
   max-width: 60%;
@@ -248,11 +233,10 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* keeps the image ratio & crops if needed */
   display: block;
 }
 
-/* ✅ Text takes 40% of the width */
+
 .text_container {
   flex: 0 0 40%;
   max-width: 40%;
@@ -276,25 +260,20 @@ body {
   line-height: 1.6;
 }
 
-/* ✅ Title section fix */
+
 .achievement_title {
   display: flex;
-  /* Put children in a row */
   justify-content: center;
-  /* Center the row horizontally */
   align-items: center;
-  /* Align them vertically */
   gap: 1rem;
-  /* Space between the two images */
   margin-bottom: 1rem;
 }
 
 .achievement_title img {
   width: 100px;
   display: inline-block;
-  /* Inline works too, but flex does the job */
   margin: 0;
-  /* Remove auto margin to avoid stacking */
+  /* margin per me avoid mu stack */
 }
 
 .achievement_title h1 {
@@ -334,9 +313,7 @@ body {
 
 .menu_button {
   margin: 1rem auto;
-  /* top-bottom: 1rem, left-right: auto */
   display: block;
-  /* makes the button a block element */
   padding: 0.5rem 3rem;
   font-size: 1.2rem;
   font-family: "Playfair Display", serif;
@@ -361,7 +338,6 @@ body {
   width: 100%;
   height: 24rem;
   object-fit: cover;
-  /*  crop the image instead of stretching */
   object-position: center;
 
 }
@@ -374,7 +350,6 @@ body {
   height: 28rem;
   overflow: hidden;
   margin-bottom: 15rem;
-  /* hides anything outside */
 }
 
 .interior_picture img {
@@ -386,7 +361,7 @@ body {
   padding-top: 5rem;
 }
 
-/* The overlay effect */
+/* overlay effect */
 .overlay {
   position: absolute;
   top: 0;
@@ -394,27 +369,20 @@ body {
   width: 100%;
   height: 100%;
   background: radial-gradient(rgba(0, 0, 0, 0.3) 0%,
-      /* center */
       rgba(0, 0, 0, 0.5) 50%,
-      /* mid shadow */
-      rgba(0, 0, 0, 0.9) 100%
-      /* edges darker */
-    );
+      rgba(0, 0, 0, 0.9) 100%);
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0;
-  /* initially invisible */
   transition: opacity 0.4s ease;
-  /* smooth fade in */
+  /* smooth*/
 }
 
-/* When hovering over the image container */
 .interior_picture:hover .overlay {
   opacity: 1;
 }
 
-/* Style the button */
 .book_button {
   padding: 0.7rem 2.5rem;
   font-size: 1.2rem;
@@ -441,21 +409,17 @@ body {
   width: 100%;
 }
 
-/* LEFT SIDE - Photo */
+
 .picture_features {
   width: 50%;
-  /* left column */
   height: auto;
-  /* let height be determined by features */
   overflow: hidden;
 }
 
 .picture_features img {
   width: 100%;
   height: 100%;
-  /* fills parent height */
   object-fit: cover;
-  /* zoom/crop without stretching */
   display: block;
 }
 
@@ -463,18 +427,14 @@ body {
 .features_container {
   display: flex;
   flex-wrap: wrap;
-  /* allows wrapping */
   gap: 20px;
-  /* space between boxes */
   padding: 2rem;
   justify-content: center;
 }
 
 .feature {
   width: 350px;
-  /* fixed width */
   height: 350px;
-  /* fixed height (square) */
   background: transparent;
 
   padding: 1rem;
@@ -548,13 +508,11 @@ body {
   padding: 2rem;
   flex-wrap: wrap;
   border-top: 1px solid #807d75;
-  /* responsive */
 }
 
 .footer-left,
 .footer-right {
   flex: 1 1 300px;
-  /* grow/shrink, min width 300px */
   margin-bottom: 1rem;
 }
 
