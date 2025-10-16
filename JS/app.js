@@ -101,6 +101,7 @@ if (window.innerWidth > 768) {
         aboutCard.forEach(card => card.classList.remove("show"));
       }
 
+
       if (element.classList.contains("menu_img") && entry.isIntersecting) {
         menuImage.classList.add("show");
       
@@ -119,6 +120,7 @@ if (window.innerWidth > 768) {
         menuDesc.classList.remove("show");
       }
 
+      
       if (element.classList.contains("menu_button") && entry.isIntersecting) {
         menuBtn.classList.add("show");
         observer.unobserve(element);
