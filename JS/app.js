@@ -103,16 +103,22 @@ if (window.innerWidth > 768) {
 
       if (element.classList.contains("menu_img") && entry.isIntersecting) {
         menuImage.classList.add("show");
-        observer.unobserve(element);
+      
+      }
+      else if (element.classList.contains("menu_img") && !entry.isIntersecting) {
+        menuImage.classList.remove("show");
       }
       if (element.classList.contains("menu_title") && entry.isIntersecting) {
         menuTitle.classList.add("show");
-        observer.unobserve(element);
+      }else if (element.classList.contains("menu_title") && !entry.isIntersecting) {
+        menuTitle.classList.remove("show");
       }
       if (element.classList.contains("menu_desc") && entry.isIntersecting) {
         menuDesc.classList.add("show");
-        observer.unobserve(element);
+      }else if (element.classList.contains("menu_desc") && !entry.isIntersecting) {
+        menuDesc.classList.remove("show");
       }
+
       if (element.classList.contains("menu_button") && entry.isIntersecting) {
         menuBtn.classList.add("show");
         observer.unobserve(element);
