@@ -1289,6 +1289,145 @@ body.loading {
   
 }
 
+/*divider*/
+
+#divider_quote{
+      top: 70%;
+    left: 50%;
+    font-size: 3rem;
+     font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+    
+
+#divider_author{
+    font-size: 2.5rem;
+  top: 80%;
+    left: 70%;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/*music*/
+
+#music_title{
+    text-align: center;
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+    color: #F7F1E1;
+    
+}
+#music_desc{
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:2.5rem;
+    color: #F7F1E1;
+}
+
+.music_button{
+    width: 60%;
+    font-size: 2rem;
+ font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 25px;
+    border: 1px solid #F7F1E1;
+    padding:0.5rem 1rem;
+  
+}
+
+
+/*blog*/
+
+
+.blog_desc{
+     color: #F7F1E1;
+    font-size: 2rem;
+    text-align: left;
+     font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: normal;
+   
+    
+}
+
+
+.blog_title{
+    color: #F7F1E1;
+    font-size: 3rem;
+    text-align: left;
+     font-family: "Instrument Serif", serif;
+    font-weight: 500;
+    font-style: normal;
+    
+}
+
+.blog_news_title{
+      color: #F7F1E1;
+    font-size: 3rem;
+    text-align: left;
+     font-family: "Instrument Serif", serif;
+    font-weight: 500;
+    font-style: normal;
+    
+}
+
+.blog_news_info{
+     color: #F7F1E1;
+    font-size: 2rem;
+    text-align: left;
+     font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.blog_button_container{
+    width: 100%;
+    height: 20%;
+}
+
+.blog_button{
+    font-size: 2rem;
+    background-color: #070505;
+    border: 1px solid #F7F1E1;
+    border-radius: 15px;
+    padding: 0.4rem 2rem;
+    color: #F7F1E1;
+     font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+/*footer*/
+
+
+
+.footer_logo{
+  
+    height: 15em;
+}
+
+.footer_text{
+    font-size: 1.2rem;
+    color: #F7F1E1;
+     font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+
+
 }
 
 @media (min-width: 1600px) {
