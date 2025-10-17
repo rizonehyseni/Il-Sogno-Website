@@ -1,0 +1,12 @@
+div{
+    color: white;
+}
+.btn{
+    background-color: #330404;
+    border-color: white;
+}
+.btn:hover{
+    background-color: white;
+    border-color: #1e0202;
+    color: black;
+}
