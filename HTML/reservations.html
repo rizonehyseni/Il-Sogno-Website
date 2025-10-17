@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Il Sogno</title>
+
+  <link rel="stylesheet" href="/CSS/reservations.css">
+  <script src="/JS/reservations.js" defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Island+Moments&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+
+  <!--navbar-i-->
+  <nav class="navbar">
+    <div class="navbar_container">
+      <a href="index.html" class="logo_link">
+        <img src="/photos/IlSogno.png" alt="Logo" class="logo">
+      </a>
+      <ul class="nav_menu">
+        <li class="nav_item"><a href="menu.html" class="nav_link">Menu</a></li>
+        <li class="nav_item"><a href="music.html" class="nav_link">Music</a></li>
+        <li class="nav_item"><a href="reservations.html" class="nav_link">Reservations</a></li>
+        <li class="nav_item"><a href="about.html" class="nav_link">About Us</a></li>
+      </ul>
+      <div class="navbar_toggle hidden" id="mobile_menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <section class="banner">
+    <h2>BOOK YOUR TABLE</h2>
+    <div class="card-container">
+      <div class="card-img">
+        <img src="" alt="">
+      </div>
+
+      <div class="card-content">
+        <h1>Reservations</h1>
+        <form action="">
+          <div class="form-row">
+            <input type="date" name="reservation-date" min="2025-10-17" max="2025-12-31">
+
+
+            <select name="hours" id="">
+              <option value="hour-select">Select Hour</option>
+              <option value="">Select Time</option>
+              <option value="17:00">5:00 PM</option>
+              <option value="17:30">5:30 PM</option>
+              <option value="18:00">6:00 PM</option>
+              <option value="18:30">6:30 PM</option>
+              <option value="19:00">7:00 PM</option>
+              <option value="19:30">7:30 PM</option>
+              <option value="20:00">8:00 PM</option>
+              <option value="20:30">8:30 PM</option>
+              <option value="21:00">9:00 PM</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <input type="text" placeholder="Full Name">
+            <input type="text" placeholder="Phone Number">
+          </div>
+
+          <div class="form-row">
+            <input type="number" placeholder="How many people?"" min=" 1">
+            <input type="submit" value="BOOK TABLE">
+
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+
+  </section>
+
+
+</body>
+
+</html>
