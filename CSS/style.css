@@ -1123,7 +1123,7 @@ body.loading {
 
 
 
-@media (max-width: 1920px) {
+@media (min-width: 1920px) {
 
   /*navi*/
 
@@ -1256,31 +1256,64 @@ body.loading {
 
 }
 
+
+/*menu*/
+
+
+.menu_title{
+    color: #F7F1E1;
+    font-size: 3rem;
+     font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 0;
 }
 
-@media (max-width: 1600px) {
+.menu_desc{
+     color: #F7F1E1;
+    font-size: 1.8rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: normal;
+ 
 }
 
-@media (max-width: 1400px) {
+
+.menu_button{
+     margin-top: 1rem;
+    padding: 0.5rem 3rem;
+    font-size: 1.8rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: normal;
+  
 }
 
-@media (max-width: 1200px) {
 }
 
-@media (max-width: 992px) {
+@media (min-width: 1600px) {
 }
 
-@media (max-width: 768px) {
+@media (min-width: 1400px) {
 }
 
-@media (max-width: 600px) {
+@media (min-width: 1200px) {
 }
 
-@media (max-width: 480px) {
+@media (min-width: 992px) {
 }
 
-@media (max-width: 360px) {
+@media (min-width: 768px) {
 }
 
-@media (max-width: 280px) {
+@media (min-width: 600px) {
+}
+
+@media (min-width: 480px) {
+}
+
+@media (min-width: 360px) {
+}
+
+@media (min-width: 280px) {
 }
