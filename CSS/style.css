@@ -147,6 +147,11 @@ body.loading {
     display: none;
 }
 
+.navbar_toggle.hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+
 .logo{
     height: 100px;
     margin-top: 0.6rem;
@@ -4167,10 +4172,10 @@ body.loading {
 
            .navbar_container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width:100%;
-    height:70px;
+    height:80px;
       background: linear-gradient(
     90deg,
     rgba(0, 0, 0, 0.877) 10%,
@@ -4221,6 +4226,49 @@ body.loading {
    transition: 0.2s ease;
 }
 
+
+  .navbar_toggle {
+    display: flex;  
+    cursor: pointer;
+    width: 40px;
+    height: 25px;
+    background-color: transparent;
+    position: relative;
+    z-index: 1100;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20px;
+   
+  }
+
+.bar {
+    background-color: #F7F1E1;
+    width: 100%;
+    height: 4px; 
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+  .nav_menu {
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 80px; 
+    left: 0;
+    width: 100%;
+    background-color: #070505;
+    padding: 2rem 0;
+  }
+
+  .nav_menu.show {
+    display: flex; 
+  }
+
+  .nav_item {
+    margin: 1rem 0; 
+    text-align: center;
+    font-size: 1.5rem;
+  }
 
 
 /*hero*/
