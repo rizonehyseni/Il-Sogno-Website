@@ -1017,19 +1017,18 @@ body.loading {
 
 /*footer*/
 
-
-
-/* Footer  */
-
+footer {
+  background-color: #1e0202;
+  width: 100%;
+}
 
 .footer_container {
-  display: grid;
-  gap: 4rem;
-  grid-template-columns: repeat(3, 1fr);
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
-  background-color: #1e0202;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
 }
 
 .footer_col {
