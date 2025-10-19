@@ -97,12 +97,9 @@
 
       if (element.classList.contains("about_card") && entry.isIntersecting) {
         aboutCard.forEach((card, index) => {
-          setTimeout(() => {
             card.classList.add("show");
-          }, index * 100);
         });
-      } else if (element.classList.contains("about_card") && !entry.isIntersecting) {
-        aboutCard.forEach(card => card.classList.remove("show"));
+          observer.unobserve(element);
       }
 
 
