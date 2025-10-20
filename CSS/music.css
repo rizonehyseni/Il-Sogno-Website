@@ -1,0 +1,13 @@
+.section-divider{
+    display: flex;
+    align-items: center;
+}
+
+.section-divider::before, .section-divider::after{
+    content: '';
+    flex: 1;
+    padding: 3px;
+    margin:  5px;
+    background-color: black;
+
+}
