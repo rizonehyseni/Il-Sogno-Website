@@ -6,8 +6,24 @@
 .section-divider::before, .section-divider::after{
     content: '';
     flex: 1;
-    padding: 3px;
+    padding: 0.5px;
     margin:  5px;
     background-color: black;
-
 }
+
+.events{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.event-card{
+    border: 2px solid;
+    border-radius: 10px;
+    width: 65%;
+    text-align: center;
+    padding-bottom: 20px;
+    margin: 20px 20px 20px 20px;
+}
+
