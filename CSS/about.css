@@ -172,11 +172,15 @@ body {
 
 .main_about_pic {
   width: 100%;
-  max-height: 430px;
+  max-height: 440px;
   object-fit: cover;
   /* qe mos mu bo strech foto */
   display: block;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  object-position: 50% 70%;
+  /*horizontalisht rrin nmes kur tbohet zoom
+  e per vertikalisht osht 70% dmth e zoom pjesen pak ma poshte*/
+
 }
 
 
