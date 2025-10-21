@@ -172,13 +172,33 @@ body {
 
 .main_about_pic {
   width: 100%;
-  max-height: 400px;
+  max-height: 430px;
   object-fit: cover;
   /* qe mos mu bo strech foto */
   display: block;
   padding-bottom: 20px;
 }
 
+
+.first_section {
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(30, 2, 2) 51%, rgb(0, 0, 0) 100%);
+  padding-top: 50px;
+  padding-bottom: 40px;
+
+}
+
+.first_section_container {
+  text-align: center;
+  width: 100%;
+}
+
+.aboutus_img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  /* qe mos mu bo strech foto */
+  display: block;
+}
 
 .main_logo {
   width: 180px;
@@ -188,7 +208,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 3.5rem;
-  margin-top: 2rem;
+  margin-top: 10px;
 
 }
 
@@ -201,7 +221,6 @@ body {
   width: 100px;
   height: 10rem;
   transform: rotate(-90deg);
-  /*Me e kthy per 90deg branch decorin*/
 }
 
 .branch2 {
@@ -216,22 +235,21 @@ body {
   margin: 0 auto;
 }
 
-
-
-/*Section i tekstit*/
-
 .ourstory_container1 {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+  /* ⬅️ This aligns the top edges */
   background-color: #101210;
   color: #f7f1e1;
-
+  box-sizing: border-box;
 }
 
 
 /* fotoje me nxan 60% */
 .picture {
   flex: 0 0 60%;
+  max-width: 60%;
   overflow: hidden;
 }
 
@@ -242,31 +260,28 @@ body {
   display: block;
 }
 
+
 .text_container {
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex: 0 0 40%;
+  max-width: 40%;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
-.content_box {
-  padding: 1rem;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+.text_container h1 {
   text-align: center;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #F7F1E1;
 }
 
-.content_box h1 {
-  text-align: center;
-}
-
-.content_box p {
-  text-align: center;
+.text_container p {
+  text-align: left;
   font-size: 1.2rem;
-  line-height: 1.5;
-  border: #075b27ae;
+  line-height: 1.6;
 }
 
 
@@ -274,8 +289,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .achievement_title img {
@@ -319,14 +334,6 @@ body {
   text-align: left;
   font-size: 1.5rem;
 }
-
-
-.content_box {
-  width: 100%;
-
-}
-
-
 
 .menu_button {
   margin: 1rem auto;
@@ -512,7 +519,6 @@ body {
   background-color: #F7F1E1;
   color: #070505;
 }
-
 
 
 /* Footer  */
