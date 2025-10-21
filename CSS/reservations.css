@@ -8,6 +8,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: "Instrument Serif", serif;
 }
 
 html,
@@ -52,6 +53,7 @@ body {
 .banner h2 {
   padding-bottom: 40px;
   margin-bottom: 20px;
+  font-family: "Instrument Serif", serif;
 }
 
 .card-content {
@@ -65,6 +67,7 @@ body {
   padding: 25px 0 10px 0;
   font-size: 26px;
   font-weight: 500;
+  font-family: "Instrument Serif", serif;
 }
 
 .form-row {

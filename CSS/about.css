@@ -176,6 +176,7 @@ body {
   object-fit: cover;
   /* qe mos mu bo strech foto */
   display: block;
+  padding-bottom: 20px;
 }
 
 
