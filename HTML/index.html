@@ -7,8 +7,8 @@
 
     <title>Il Sogno</title>
 
-    <link rel="stylesheet" href="/CSS/style.css">
-    <script src="/JS/app.js" defer></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JS/app.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,10 +48,10 @@
                 <li class="nav_item"><a href="reservations.html" target="_blank" class="nav_link">Reservations</a></li>
                 <li class="nav_item"><a href="about.html" class="nav_link">About Us</a></li>
             </ul>
-            <div class="navbar_toggle hidden" id="mobile_menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="navbar_toggle" id="mobile_menu">
+                <span class="bar">-</span>
+                <span class="bar">-</span>
+                <span class="bar">-</span>
             </div>
         </div>
     </nav>
@@ -209,50 +209,29 @@
         </div>
     </section>
 
-
-    <!-- FOOTER -->
-
-
-    <footer>
+    <!--footer-->
+    <footer class="footer">
         <div class="footer_container">
-            <div class="footer_col">
-
-                <div class="footer_logo logo">
-                    <img src="/photos/IlSogno.png" alt="">
+            <div class="footer_section">
+                <div class="footer_logo_container">
+                    <img src="/photos/IlSogno.png" alt="Logo" class="footer_logo">
                 </div>
-                <p class="footer_text">
-                    Enjoy our delicious cuisine and warm ambiance.
-                </p>
-                <ul class="footer_socials">
-                    <li><a href="#"><img src="/photos/icons8-facebook-logo-50.png" alt=""></a></li>
-                    <li><a href="#"><img src="/photos/icons8-instagram-50.png" alt=""></a></li>
-
-                </ul>
+                <div class="footer_text_container">
+                    <h3 class="footer_text">Contact Us</h3>
+                    <p class="footer_text">000000000</p>
+                    <p class="footer_text">From Tuesday to Sunday </p>
+                    <p class="footer_text">From 18:00 to 00:00</p>
+                    <p class="footer_text">Via Salvatore Quasimodo, 384011 Amalfi</p>
+                    <a href="/" class="footer_text link">Privacy Policy </a>
+                    <br>
+                    <a href="/" class="footer_text link">Cookie Policy</a>
+                </div>
+                <div class="footer_text_container">
+                    <p class="footer_text">©2025 Il Sogno Restaurant. All rights reserved.</p>
+                </div>
             </div>
-
-            <div class="footer_col">
-                <h4>About</h4>
-                <ul class="footer_links">
-                    <li><a href="about.html">about us</a></li>
-                    <li><a href="menu.html">menu</a></li>
-                    <li><a href="reservations.html">reservations</a></li>
-                    <li><a href="music.html">music</a></li>
-                </ul>
-            </div>
-
-            <div class="footer_col">
-                <h4>Other</h4>
-                <ul class="footer_links">
-                    <li><a href="/PRIVACY_POLICY.md">Privacy Policy</a></li>
-                    <li><a href="/TERMS_AND_CONDITIONS.md">Terms and Conditions</a></li>
-                </ul>
-            </div>
-
-
         </div>
-        <div class="footer_bar">
-            copyright @ 2025 Il Sogno Restaurant. All rights reserved.
-        </div>
+    </footer>
 
 </body>
 
