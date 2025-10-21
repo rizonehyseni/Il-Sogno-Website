@@ -152,11 +152,38 @@ body {
   margin-top: 0.5rem;
 }
 
+.branches_logo {
+  display: flex;
+  justify-content: center;
+  gap: 3.5rem;
+  margin-top: 10px;
+}
 
+.main_logo {
+  width: 180px;
+}
 
+.branch1 {
+  width: 100px;
+  height: 10rem;
+  transform: rotate(-90deg);
+}
 
-/* About Section */
+.branch2 {
+  width: 100px;
+  height: 10rem;
+  transform: rotate(90deg);
+}
 
+.first_section_container p {
+  color: white;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  margin-bottom: 15rem;
+  padding-bottom: 5rem;
+}
+
+/* Seksioni 1 */
 .first_section {
   background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(30, 2, 2) 51%, rgb(0, 0, 0) 100%);
   padding-top: 50px;
