@@ -148,16 +148,19 @@ html, body {
     background-size: cover;
     width: 100%;
     height: 400px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#intro h2, #intro p{
+    margin: 0 auto;
+    width: 300px;
+    padding-top: 70px;
+    padding-bottom: 20px;
 }
 
 #music_night_h{
     margin-bottom: 20px;;
-}
-
-.music_section{
-    /*padding: 15px 50px 15px 50px;*/
-    margin: 0 auto;
-    width: 300px;
 }
 
 .section-divider{
