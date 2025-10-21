@@ -1,5 +1,6 @@
+ 
 .divider{
-    /* width: 100%; */
+    /* width: 100%;*/ 
     height:70vh;
     display: flex;
     align-items: center;
@@ -7,8 +8,6 @@
     margin: 0;
     padding: 0;   
 }
-
-
 
 body {
     box-sizing: border-box;
@@ -44,11 +43,10 @@ html, body {
     align-items: center;
     width:100%;
     height:9vh;
-      background: linear-gradient(
+    background: linear-gradient(
     90deg,
     rgba(0, 0, 0, 0.877) 10%,
-     rgba(0, 0, 0, 0.877) 50%,   
- 
+    rgba(0, 0, 0, 0.877) 50%,   
     rgba(0, 0, 0, 0.877) 100%  
   );
      margin:0;
@@ -84,9 +82,6 @@ html, body {
   font-style: normal;
 }
 
-
-
-
 .nav_link{
     text-decoration: none;
     color: white;
@@ -99,9 +94,6 @@ html, body {
     transition:ease 0.3s;
     cursor:pointer;
 }
-
-/*footer*/
-
 
 .footer_container{
     width: 100%;
@@ -144,10 +136,19 @@ html, body {
     font-style: normal;
 }
 
-#intro{
-    text-align: center;
+#main{
+    color: white;
+    padding-top: 7vh; /*qe mos me u perzi navbar me main*/
 }
 
+#intro{
+    text-align: center;
+    color: white;
+}
+
+.music_section{
+    padding: 5px 0 5px 0;
+}
 .section-divider{
     display: flex;
     align-items: center;
@@ -158,7 +159,7 @@ html, body {
     flex: 1;
     padding: 0.5px;
     margin:  5px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 
 .events{
