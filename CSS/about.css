@@ -661,3 +661,16 @@ footer {
   border-top: #4e4b4b solid 1px;
 
 }
+
+
+/* fade up effect */
+.fade-up {
+  opacity: 0;
+  transform: translateY(15px);
+  transition: all 1.2s ease;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
