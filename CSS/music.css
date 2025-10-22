@@ -164,7 +164,7 @@ html, body {
 .section-divider{
     display: flex;
     align-items: center;
-    margin-bottom: 155px;
+    margin-bottom: 50px;
 }
 
 .section-divider::before, .section-divider::after{
@@ -174,24 +174,15 @@ html, body {
     background-color: rgb(255, 255, 255);
 }
 
-.events{
+.events{ /*krejt cards bashke*/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 60px;
 }
 
-.event-card{
-    border: 2px solid;
-    border-radius: 10px;
-    width: 35%;
-    text-align: center;
-    padding: 45px 10px 40px 10px;;
-    margin: 20px 20px 20px 20px;
-}
-
 .first-event-card{
-    border: 2px solid;
+    border: 1px solid;
     border-radius: 10px;
     width: 65%;
     text-align: center;
@@ -200,13 +191,22 @@ html, body {
     align-items: center;
 }
 
+
+.event-card{
+    border: 1px solid;
+    border-radius: 10px;
+    width: 35%;
+    text-align: center;
+    padding: 45px 10px 40px 10px;
+    margin: 20px 20px 20px 20px;
+}
+
 #upcoming_performance{
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), 
                     url('/photos/music-background.jpg'); /*rgba1-ne fillim op, rgba2-ne fund op */
     background-size: cover;
     background-position: center;
     width: 100%;
-    padding-bottom: 100px; /* per me e bo section ma te gjate */
 }
 
 #future_events{
@@ -215,7 +215,7 @@ html, body {
     width: 100%;
     background-size: cover;
     background-position: center;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 .inside_card{
