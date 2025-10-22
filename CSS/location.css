@@ -160,6 +160,47 @@ html, body {
 
 }
 
+.section1{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 6px;
+    height: 90vh;
+    overflow: hidden;
+    justify-content: center;
+}
+
+#divider-name{
+    font-size: 3rem; 
+    font-family: "Instrument Serif", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+.l-divider{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+    z-index: 1;
+}
+
+
+.l-divider::before,
+.l-divider::after{
+    background-color: aliceblue;
+    flex: 1;
+    content: "";
+    height: 1px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 
 
 
