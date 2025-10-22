@@ -14,6 +14,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: #070505;
+    font-family: "Instrument Serif", serif;
+    font-size: larger;
 }
 
 html, body {
@@ -144,20 +146,24 @@ html, body {
 #intro{
     text-align: center;
     color: white;
-    background-image: url('/photos/band.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), 
+                    url('/photos/band.jpg'); /*rgba1-ne fillim op, rgba2-ne fund op */
     background-size: cover;
     width: 100%;
     height: 400px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#intro h2, #intro p{
+    margin: 0 auto;
+    width: 300px;
+    padding-top: 70px;
+    padding-bottom: 20px;
 }
 
 #music_night_h{
     margin-bottom: 20px;;
-}
-
-.music_section{
-    /*padding: 15px 50px 15px 50px;*/
-    margin: 0 auto;
-    width: 300px;
 }
 
 .section-divider{
@@ -189,23 +195,41 @@ html, body {
     margin: 20px 20px 20px 20px;
 }
 
+#upcoming_performance{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), 
+                    url('/photos/music-background.jpg'); /*rgba1-ne fillim op, rgba2-ne fund op */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
 .inline{
     display: flex;
     gap: 20px;
     justify-content: space-between;
-    padding: 0 20px 0 20px;
+    padding: 0 10% 0 10%;
 }
 
 .tickets{
     margin: 10px 0 15px;
-    padding: 10px 20px;
+    padding: 4px 60px;
     border-radius: 40px;
-    border: 2px solid;
-    transition: color 0,5s background-color 0,5s;
+    border: 1px solid rgba(116, 81, 1, 0.553);
+    background-color: #170000;
+    color: #e0e0e0;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .tickets:hover{
-    color: wheat;
-    background-color: black;
+    color: #170000;
+    background-color: rgb(253, 249, 249);
+    border: #170000;
+}
+
+.tickets:active{
+    color: #170000;
+    background-color: rgb(35, 1, 1);
+    border: #170000;
 }
 
