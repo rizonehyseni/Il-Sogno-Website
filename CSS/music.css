@@ -186,10 +186,19 @@ html, body {
     padding: 20px;
 }
 
-.event-card{
+.first-event-card{
     border: 2px solid;
     border-radius: 10px;
     width: 65%;
+    text-align: center;
+    padding: 15px 10px 30px 10px;;
+    margin: 20px 20px 20px 20px;
+}
+
+.event-card{
+    border: 2px solid;
+    border-radius: 10px;
+    width: 35%;
     text-align: center;
     padding: 15px 10px 30px 10px;;
     margin: 20px 20px 20px 20px;
