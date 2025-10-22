@@ -188,9 +188,7 @@ html, body {
     text-align: center;
     padding: 45px 10px 30px 10px;;
     margin: 20px 20px 20px 20px;
-    align-items: center;
 }
-
 
 .event-card{
     border: 1px solid;
@@ -199,6 +197,11 @@ html, body {
     text-align: center;
     padding: 45px 10px 40px 10px;
     margin: 20px 20px 20px 20px;
+}
+
+.first-event-card:hover, .event-card:hover{
+    backdrop-filter: blur(1.5px); /*per me bo blur brenda card*/
+    background: rgba(255, 255, 255, 0.032);
 }
 
 #upcoming_performance{
