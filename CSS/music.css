@@ -150,9 +150,8 @@ html, body {
                     url('/photos/band.jpg'); /*rgba1-ne fillim op, rgba2-ne fund op */
     background-size: cover;
     width: 100%;
-    height: 400px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 75px;
+    padding-bottom: 200px;
 }
 
 #intro h2, #intro p{
@@ -162,20 +161,16 @@ html, body {
     padding-bottom: 20px;
 }
 
-#music_night_h{
-    margin-bottom: 20px;;
-}
-
 .section-divider{
     display: flex;
     align-items: center;
+    margin-bottom: 155px;
 }
 
 .section-divider::before, .section-divider::after{
     content: '';
     flex: 1;
     padding: 0.5px;
-    margin:  5px;
     background-color: rgb(255, 255, 255);
 }
 
@@ -183,16 +178,7 @@ html, body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
-}
-
-.first-event-card{
-    border: 2px solid;
-    border-radius: 10px;
-    width: 65%;
-    text-align: center;
-    padding: 15px 10px 30px 10px;;
-    margin: 20px 20px 20px 20px;
+    padding-bottom: 60px;
 }
 
 .event-card{
@@ -200,8 +186,18 @@ html, body {
     border-radius: 10px;
     width: 35%;
     text-align: center;
-    padding: 15px 10px 30px 10px;;
+    padding: 45px 10px 40px 10px;;
     margin: 20px 20px 20px 20px;
+}
+
+.first-event-card{
+    border: 2px solid;
+    border-radius: 10px;
+    width: 65%;
+    text-align: center;
+    padding: 45px 10px 30px 10px;;
+    margin: 20px 20px 20px 20px;
+    align-items: center;
 }
 
 #upcoming_performance{
@@ -210,6 +206,7 @@ html, body {
     background-size: cover;
     background-position: center;
     width: 100%;
+    padding-bottom: 100px; /* per me e bo section ma te gjate */
 }
 
 #future_events{
@@ -218,6 +215,7 @@ html, body {
     width: 100%;
     background-size: cover;
     background-position: center;
+    padding-bottom: 50px;
 }
 
 .inside_card{
