@@ -32,6 +32,8 @@ if (window.innerWidth > 768) {
     }
   });
 
+  //js per navbar
+
   let scrollFundit = window.scrollY;
   const navbar = document.querySelector(".navbar");
 
@@ -43,6 +45,8 @@ if (window.innerWidth > 768) {
     }
     scrollFundit = window.scrollY;
   });
+
+  //js per navbar(nalt)
 
   const text = `"Music is the cup which holds the wine of silence."`;
   const text2 = '- Robert Fripp';
