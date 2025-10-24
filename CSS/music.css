@@ -211,7 +211,7 @@
 
  .first-event-card:hover,
  .event-card:hover {
-     backdrop-filter: blur(1.5px);
+     backdrop-filter: blur(2px);
      /*per me bo blur brenda card*/
      background: rgba(255, 255, 255, 0.032);
  }
@@ -234,6 +234,7 @@
      padding-bottom: 20px;
  }
 
+/* per date & time */
  .inside_card {
      display: flex;
      gap: 20px;
