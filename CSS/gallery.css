@@ -130,9 +130,21 @@ html, body {
 
 .main_sec_images {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(3, 1fr));
+  gap: 20px;
   padding: 1rem;
+  width: 90%;
+  height: auto;
+  grid-auto-rows: 250px; 
+  margin: 0 auto;   
+}
+
+
+.images_container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; 
 }
 
 
@@ -143,8 +155,12 @@ html, body {
 #img5 { grid-area: 3 / 2 / 4 / 3; }
 
 .images {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
-  object-fit: cover;
+  height: 100%;
+  object-fit: cover; 
   display: block;
 }
+
