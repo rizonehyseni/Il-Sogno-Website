@@ -208,6 +208,14 @@ html, body {
     
 }
 
+@keyframes shfaq{
+
+    from{
+        opacity: 0;}
+    to{
+        opacity: 1;}
+}
+
 
 
 
