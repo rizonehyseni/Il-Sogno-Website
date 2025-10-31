@@ -223,10 +223,10 @@ font-weight: 400;
  #img3 { grid-area: 1 / 1 / 4 / 2; }
 #img4 { grid-area: 1 / 2 / 3 / 3; }
 #img5 { grid-area: 3 / 2 / 4 / 3; }
-#img6{grid-area: 8/2/10/3;}
-#img7{grid-area: 8/3/10/4;}
-#img8{grid-area: 6/1/10/2;}
-#img9{grid-area:6/2/8/4}
+#img6{grid-area: 8 / 2 / 10 / 3;}
+#img7{grid-area: 8 / 3 / 10 / 4;}
+#img8{grid-area: 6 / 1 / 10 / 2;}
+#img9{grid-area:6 / 2 / 8 / 4}
 
 .images {
   position: absolute;
