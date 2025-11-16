@@ -173,7 +173,7 @@ html, body {
     font-family: "Instrument Serif", serif;
     font-weight: 100;
     font-style: normal;
-    animation: fadeAnimation 2s ease-in forwards;
+    animation: fadeAnimation 2.5s ease-in forwards;
 }
 
 .l-divider{
@@ -192,7 +192,7 @@ html, body {
 }
 
 .line{
-    transition: width 4s ease;
+    transition: width 4.5s ease;
     width: 0;
     background-color: aliceblue;
     height: 1px;
@@ -206,7 +206,7 @@ html, body {
     object-fit: cover;
     top: 0;
     left: 0;
-    
+    animation: fadeAnimation 2.5s ease-in forwards;
 }
 
 @keyframes fadeAnimation{
