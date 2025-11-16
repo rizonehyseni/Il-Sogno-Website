@@ -6,8 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Il Sogno</title>
   <link rel="stylesheet" href="/CSS/about.css">
-  <script src="../Components/footer.js"></script>
+  <script src="../Components/Navbar/navbar.js"></script>
+  <link rel="stylesheet" href="../Components/Navbar/navbar.css">
+  <script src="/Components/Footer/footer.js"></script>
   <script src="/JS/about.js" defer></script>
+
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,30 +35,8 @@
 <body>
 
   <!--navbar-i-->
-  <nav class="navbar">
-    <div class="navbar_container">
 
-
-
-      <a href="index.html" class="logo_link"><img src="/photos/IlSogno.png" alt="Logo" class="logo">
-      </a>
-      <ul class="nav_menu">
-        <li class="nav_item"><a href="menu.html" class="nav_link">Menu</a></li>
-        <li class="nav_item"><a href="music.html" class="nav_link">Music</a></li>
-        <li class="nav_item"><a href="reservations.html" class="nav_link">Reservations</a></li>
-        <li class="nav_item"><a href="about.html" class="nav_link">About Us</a></li>
-      </ul>
-
-
-
-      <div class="navbar_toggle hidden" id="mobile_menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-
-    </div>
-  </nav>
+  <my-navbar> </my-navbar>
 
 
 
@@ -159,10 +140,7 @@
     </div>
   </div>
 
-  <div class="blog_container fade-up">
-    <p>Check our blog for the latest news and updates.</p>
-    <button class="blog_button">Visit Blog</button>
-  </div>
+
 
 
 
