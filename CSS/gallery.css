@@ -374,3 +374,30 @@ footer {
 
 
 
+@media (max-width: 1200px) {
+
+  /*NAVI*/
+
+.navbar_toggle{
+    display: none;
+}
+
+.logo{
+    height: 80px;
+   
+}
+
+.nav_item{
+    margin:0 50px;
+    padding:20px;
+}
+
+.nav_link{
+    font-size: 1.4rem;
+}
+
+#nav_menu_secondary {
+    top: 9vh;
+    width: 400px;
+}
+}
