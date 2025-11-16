@@ -173,7 +173,7 @@ html, body {
     font-family: "Instrument Serif", serif;
     font-weight: 100;
     font-style: normal;
-    animation: shfaq 2s ease-in;
+    animation: fadeAnimation 2s ease-in forwards;
 }
 
 .l-divider{
@@ -209,12 +209,13 @@ html, body {
     
 }
 
-@keyframes shfaq{
-
+@keyframes fadeAnimation{
     from{
-        opacity: 0;}
+        opacity: 0;
+    }
     to{
-        opacity: 1;}
+        opacity: 1;
+    }
 }
 
 
