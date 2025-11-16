@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Il Sogno</title>
+    <script type="module" src="../Components/Navbar/navbar.js"></script>
+    <script type="module" src="../Components/Footer/footer.js"></script>
 
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Components/Navbar/navbar.css">
+    <link rel="stylesheet" href="../Components/Footer/footer.css">
     <link rel="stylesheet" href="/CSS/menu.css">
+
     <script src="/JS/menu.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,338 +32,248 @@
 
 <body>
 
-    <!--navbar-i-->
-    <nav class="navbar">
-        <div class="navbar_container">
-            <a href="index.html" class="logo_link">
-                <img src="/photos/IlSogno.png" alt="Logo" class="logo">
-            </a>
-            <ul class="nav_menu">
-                <li class="nav_item"><a href="menu.html" class="nav_link">Menu</a></li>
-                <li class="nav_item"><a href="music.html" class="nav_link">Music</a></li>
-                <li class="nav_item"><a href="reservations.html" class="nav_link">Reservations</a></li>
-                <li class="nav_item"><a href="about.html" class="nav_link">About Us</a></li>
-            </ul>
-            <div class="navbar_toggle hidden" id="mobile_menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+ <my-navbar></my-navbar>
+<section class="menu-buttons">
+  <div class="button-wrapper">
+    <button class="menu-btn">Starters</button>
+    <button class="menu-btn">Main Dishes</button>
+    <button class="menu-btn">Grill</button>
+    <button class="menu-btn">Fast Food</button>
+    <button class="menu-btn">Appetizers</button>
+    <button class="menu-btn">Desserts</button>
+    <button class="menu-btn">Drinks</button>
+  </div>
+</section>
 
 
 
-   
-   
-
-  
-
-  <section class="divider">
+<section class="section-cards">
     <div class="container">
-        <div class="d-flex flex-nowrap justify-content-center gap-2 flex-wrap-sm">
-            <button  class="btn btn-dark px-4 py-3 ">Starters</button>
-            <button  class="btn btn-dark px-4 py-3">Main Dishes</button>
-            <button  class="btn btn-dark px-4 py-3">Grill</button>
-            <button  class="btn btn-dark px-4 py-3">Fast Food</button>
-            <button  class="btn btn-dark px-4 py-3">Appetizers</button>
-            <button  class="btn btn-dark px-4 py-3">Desserts</button>
-            <button  class="btn btn-dark px-4 py-3">Drinks</button>
+        <div class="card-grid">
+
+            <div class="card-box">
+                <img src="../photos/Menu/ChickenWings.png" alt="ChickenWings" class="card-img">
+                <div class="card-body">
+                    <h5 class="card-title">Chicken Wings</h5>
+                    <p class="card-text">Juicy chicken wings tossed in a savory sauce. Perfectly crispy and full of flavor.</p>
+                </div>
+            </div>
+
+            <div class="card-box">
+                <img src="../photos/Menu/CapreseSalad.png" alt="Caprese Salad" class="card-img">
+                <div class="card-body">
+                    <h5 class="card-title">Caprese Salad</h5>
+                    <p class="card-text">Fresh mozzarella, ripe tomatoes, and basil. Drizzled with olive oil for a light, classic flavor.</p>
+                </div>
+            </div>
+
+            <div class="card-box">
+                <img src="../photos/Menu/mozzarella-sticks.png" alt="mozzarella-sticks" class="card-img">
+                <div class="card-body">
+                    <h5 class="card-title">Mozzarella Sticks</h5>
+                    <p class="card-text">Crispy golden mozzarella sticks. Gooey cheese inside, served with marinara sauce.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card-grid">
+
+            <div class="card-box">
+                <img src="../photos/Menu/Mushroom-soup.png" alt="Mushroom-soup" class="card-img">
+                <div class="card-body">
+                    <h5 class="card-title">Mushroom Soup</h5>
+                    <p class="card-text">Creamy mushroom soup. Rich, earthy flavors in every spoonful.</p>
+                </div>
+            </div>
+
+            <div class="card-box">
+                <img src="../photos/Menu/GreekSalad.png" alt="Caprese Salad" class="card-img">
+                <div class="card-body">
+                    <h5 class="card-title">Greek Salad</h5>
+                    <p class="card-text">Crisp vegetables, feta cheese, and olives. Tossed with a zesty olive oil dressing.</p>
+                </div>
+            </div>
+
+            <div class="card-box">
+                <img src="../photos/Menu/RedPepperSoup.png" alt="mozzarella-sticks" class="card-img">
+                <div class="card-body">
+                    <h5 class="card-title">Red Pepper Soup</h5>
+                    <p class="card-text">Roasted red pepper soup. Smooth, sweet, and slightly smoky.</p>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
-<section class="py-5">
-  <div class="container">
-    <div class="row g-4 justify-content-center">
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card  ">
-          <img src="../photos/Menu/ChickenWings.png" class="card-img-top" alt="ChickenWings">
-          <div class="card-body">
-            <h5 class="card-title">Chicken Wings</h5>
-            <p class="card-text">Juicy chicken wings tossed in a savory sauce. Perfectly crispy and full of flavor.</p>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card  ">
-          <img src="../photos/Menu/CapreseSalad.png" class="card-img-top" alt="Caprese Salad">
-          <div class="card-body">
-            <h5 class="card-title">Caprese Salad</h5>
-            <p class="card-text">Fresh mozzarella, ripe tomatoes, and basil. Drizzled with olive oil for a light, classic flavor.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card  ">
-          <img src="../photos/Menu/mozzarella-sticks.png" class="card-img-top" alt="mozzarella-sticks">
-          <div class="card-body">
-            <h5 class="card-title">Mozzarella Sticks</h5>
-            <p class="card-text">Crispy golden mozzarella sticks. Gooey cheese inside, served with marinara sauce.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  <div class="container mt-5">
-    <div class="row g-4 justify-content-center">
-
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card  ">
-          <img src="../photos/Menu/Mushroom-soup.png" class="card-img-top" alt="Mushroom-soup">
-          <div class="card-body">
-            <h5 class="card-title">Mushroom Soup</h5>
-            <p class="card-text">Creamy mushroom soup. Rich, earthy flavors in every spoonful.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card  ">
-          <img src="../photos/Menu/GreekSalad.png" class="card-img-top" alt="Caprese Salad">
-          <div class="card-body">
-            <h5 class="card-title">Greek Salad</h5>
-            <p class="card-text">Crisp vegetables, feta cheese, and olives. Tossed with a zesty olive oil dressing.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card  ">
-          <img src="../photos/Menu/RedPepperSoup.png" class="card-img-top" alt="mozzarella-sticks">
-          <div class="card-body">
-            <h5 class="card-title">Red Pepper Soup</h5>
-            <p class="card-text">Roasted red pepper soup. Smooth, sweet, and slightly smoky.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- duhet me u fshi -->
 <p style="color: white;">-------------------------------------------------------------------------------------------------------------------</p>
 
+<section class="section-cards">
+    <div class="container">
+        <div class="card-grid">
 
-<section class="py-5">
-  <div class="container">
-    <div class="row g-4 justify-content-center">
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card  ">
-          <img src="../photos/Menu/lasagna.png" class="card-img-top" alt="lasagna">
-          <div class="card-body">
-            <h5 class="card-title">Lasagna</h5>
-            <p class="card-text">Layers of pasta, savory meat sauce, and melted cheese baked to perfection. A comforting Italian classic loved by everyone.</p>
-          </div>
+            <div class="card-box">
+                <img src="../photos/Menu/lasagna.png" alt="lasagna" class="card-img">
+                <div class="card-body">
+                    <h5 class="card-title">Lasagna</h5>
+                    <p class="card-text">Layers of pasta, savory meat sauce, and melted cheese baked to perfection. A comforting Italian classic loved by everyone.</p>
+                </div>
+            </div>
+
+            <div class="card-box">
+                <img src="../photos/Menu/salmon.png" alt="Caprese Salad" class="card-img">
+                <div class="card-body">
+                    <h5 class="card-title">Soy Salmon Steak with Sambal Salad</h5>
+                    <p class="card-text">Tender salmon glazed in soy sauce, grilled to perfection. Served with a spicy sambal salad for a fresh, tangy kick.</p>
+                </div>
+            </div>
+
+            <div class="card-box">
+                <img src="../photos/Menu/chickencurry.png" alt="mozzarella-sticks" class="card-img">
+                <div class="card-body">
+                    <h5 class="card-title">Chicken Curry</h5>
+                    <p class="card-text">Tender chicken simmered in a rich, spiced curry sauce. Served with fragrant rice for a flavorful and comforting meal.</p>
+                </div>
+            </div>
+
         </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card  ">
-          <img src="../photos/Menu/salmon.png" class="card-img-top" alt="Caprese Salad">
-          <div class="card-body">
-            <h5 class="card-title">Soy Salmon Steak with Sambal Salad</h5>
-            <p class="card-text">Tender salmon glazed in soy sauce, grilled to perfection. Served with a spicy sambal salad for a fresh, tangy kick.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card  ">
-          <img src="../photos/Menu/chickencurry.png" class="card-img-top" alt="mozzarella-sticks">
-          <div class="card-body">
-            <h5 class="card-title">Chicken Curry</h5>
-            <p class="card-text">Tender chicken simmered in a rich, spiced curry sauce. Served with fragrant rice for a flavorful and comforting meal.</p>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
-  <div class="container mt-5">
-    <div class="row g-4 justify-content-center">
 
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card  ">
-          <img src="../photos/Menu/penne_arrabbiata.png" class="card-img-top" alt="Mushroom-soup">
-          <div class="card-body">
-            <h5 class="card-title">Penne Arrabbiata</h5>
-            <p class="card-text">Al dente penne pasta drenched in a rich, spicy tomato sauce. Bursting with garlic and chili for a fiery Italian treat.</p>
-          </div>
-        </div>
-      </div>
+    <div class="container">
+        <div class="card-grid">
 
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card  ">
-          <img src="../photos/Menu/Fettuccine_Alfredo.png" class="card-img-top" alt="Caprese Salad">
-          <div class="card-body">
-            <h5 class="card-title">Fettuccine Alfredo</h5>
-            <p class="card-text">Creamy fettuccine pasta coated in a rich Parmesan sauce. A smooth and indulgent Italian classic.</p>
-            
-          </div>
-        </div>
-      </div>
+            <div class="card-box">
+                <img src="../photos/Menu/penne_arrabbiata.png" alt="Mushroom-soup" class="card-img">
+                <div class="card-body">
+                    <h5 class="card-title">Penne Arrabbiata</h5>
+                    <p class="card-text">Al dente penne pasta drenched in a rich, spicy tomato sauce. Bursting with garlic and chili for a fiery Italian treat.</p>
+                </div>
+            </div>
 
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card  ">
-          <img src="../photos/Menu/QuinoaRoasted_Veggie_Bowl.png" class="card-img-top" alt="mozzarella-sticks">
-          <div class="card-body">
-            <h5 class="card-title">Quinoa & Roasted Veggie Bowl</h5>
-            <p class="card-text">Nutty quinoa served with a colorful mix of roasted vegetables. A wholesome and flavorful vegetarian main dish.</p>
-          </div>
+            <div class="card-box">
+                <img src="../photos/Menu/Fettuccine_Alfredo.png" alt="Caprese Salad" class="card-img">
+                <div class="card-body">
+                    <h5 class="card-title">Fettuccine Alfredo</h5>
+                    <p class="card-text">Creamy fettuccine pasta coated in a rich Parmesan sauce. A smooth and indulgent Italian classic.</p>
+                </div>
+            </div>
+
+            <div class="card-box">
+                <img src="../photos/Menu/QuinoaRoasted_Veggie_Bowl.png" alt="mozzarella-sticks" class="card-img">
+                <div class="card-body">
+                    <h5 class="card-title">Quinoa & Roasted Veggie Bowl</h5>
+                    <p class="card-text">Nutty quinoa served with a colorful mix of roasted vegetables. A wholesome and flavorful vegetarian main dish.</p>
+                </div>
+            </div>
+
         </div>
-      </div>
     </div>
-  </div>
 
+    <div class="container">
+        <div class="card-grid">
 
+            <div class="card-box">
+                <img src="../photos/Menu/Fresh_Tomato_Pesto_Ravioli.png" alt="Mushroom-soup" class="card-img">
+                <div class="card-body">
+                    <h5 class="card-title">Fresh Tomato Pesto Ravioli</h5>
+                    <p class="card-text">Tender ravioli tossed in a vibrant tomato and basil pesto sauce. Bursting with fresh, aromatic flavors in every bite.</p>
+                </div>
+            </div>
 
+            <div class="card-box">
+                <img src="../photos/Menu/pastacarbonara.png" alt="Caprese Salad" class="card-img">
+                <div class="card-body">
+                    <h5 class="card-title">Pasta Carbonara</h5>
+                    <p class="card-text">Classic Italian pasta tossed with crispy pancetta, egg, and Parmesan. Creamy, savory, and perfectly satisfying.</p>
+                </div>
+            </div>
 
-  <div class="container mt-5">
-    <div class="row g-4 justify-content-center">
+            <div class="card-box">
+                <img src="../photos/Menu/Mussels_Marinara.png" alt="mozzarella-sticks" class="card-img">
+                <div class="card-body">
+                    <h5 class="card-title">Mussels Marinara </h5>
+                    <p class="card-text">Tender mussels cooked in a savory tomato and white wine sauce. A classic Italian seafood dish bursting with rich, coastal flavor.</p>
+                </div>
+            </div>
 
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card  ">
-          <img src="../photos/Menu/Fresh_Tomato_Pesto_Ravioli.png" class="card-img-top" alt="Mushroom-soup">
-          <div class="card-body">
-            <h5 class="card-title">Fresh Tomato Pesto Ravioli</h5>
-            <p class="card-text">Tender ravioli tossed in a vibrant tomato and basil pesto sauce. Bursting with fresh, aromatic flavors in every bite.</p>
-          </div>
         </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card  ">
-          <img src="../photos/Menu/pastacarbonara.png" class="card-img-top" alt="Caprese Salad">
-          <div class="card-body">
-            <h5 class="card-title">Pasta Carbonara</h5>
-            <p class="card-text">Classic Italian pasta tossed with crispy pancetta, egg, and Parmesan. Creamy, savory, and perfectly satisfying.</p>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card  ">
-          <img src="../photos/Menu/Mussels_Marinara.png" class="card-img-top" alt="mozzarella-sticks">
-          <div class="card-body">
-            <h5 class="card-title">Mussels Marinara </h5>
-            <p class="card-text">Tender mussels cooked in a savory tomato and white wine sauce. A classic Italian seafood dish bursting with rich, coastal flavor.</p>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 </section>
 
-<!-- duhet me u fshi -->
 <p style="color: white;">-------------------------------------------------------------------------------------------------------------------</p>
-<section class="py-5">
-  <div class="container">
-    <div class="row g-4 justify-content-center">
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card  ">
-          <img src="../photos/Menu/grilled-swordfish.png" class="card-img-top" alt="lasagna">
-          <div class="card-body">
-            <h5 class="card-title">Italian Grilled Swordfish with Creamy Lemon Caper Sauce</h5>
-            <p class="card-text">Juicy swordfish steak grilled to perfection and topped with a smooth lemon caper sauce. A flavorful Mediterranean classic with a bright, creamy finish.</p>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card  ">
-          <img src="../photos/Menu/Chicken skewers with teriyaki sauce.png" class="card-img-top" alt="Caprese Salad">
-          <div class="card-body">
-            <h5 class="card-title">Chicken skewers with teriyaki sauce</h5>
-            <p class="card-text">Tender grilled chicken skewers glazed with a sweet and savory teriyaki sauce. A perfectly balanced dish bursting with rich, smoky flavor.</p>
-          </div>
-        </div>
-      </div>
+<section class="section-cards">
+    <div class="container">
+        <div class="card-grid">
 
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card  ">
-          <img src="../photos/Menu/grilled_octopus.png" class="card-img-top" alt="mozzarella-sticks">
-          <div class="card-body">
-            <h5 class="card-title">Grilled Octopus</h5>
-            <p class="card-text">Tender grilled octopus, charred to perfection, served with a drizzle of extra virgin olive oil, fresh lemon, and a sprinkle of aromatic herbs. Presented on a rustic plate with a side of grilled vegetables</p>
-          </div>
-        </div>
-      </div>
+            <div class="card-box">
+                <img src="../photos/Menu/grilled-swordfish.png" alt="lasagna" class="card-img">
+                <div class="card-body">
+                    <h5 class="card-title">Italian Grilled Swordfish with Creamy Lemon Caper Sauce</h5>
+                    <p class="card-text">Juicy swordfish steak grilled to perfection and topped with a smooth lemon caper sauce. A flavorful Mediterranean classic with a bright, creamy finish.</p>
+                </div>
+            </div>
 
+            <div class="card-box">
+                <img src="../photos/Menu/Chicken skewers with teriyaki sauce.png" alt="Caprese Salad" class="card-img">
+                <div class="card-body">
+                    <h5 class="card-title">Chicken skewers with teriyaki sauce</h5>
+                    <p class="card-text">Tender grilled chicken skewers glazed with a sweet and savory teriyaki sauce. A perfectly balanced dish bursting with rich, smoky flavor.</p>
+                </div>
+            </div>
+
+            <div class="card-box">
+                <img src="../photos/Menu/grilled_octopus.png" alt="mozzarella-sticks" class="card-img">
+                <div class="card-body">
+                    <h5 class="card-title">Grilled Octopus</h5>
+                    <p class="card-text">Tender grilled octopus, charred to perfection, served with a drizzle of extra virgin olive oil, fresh lemon, and a sprinkle of aromatic herbs. </p>
+                </div>
+            </div>
+
+        </div>
     </div>
-  </div>
-  <div class="container mt-5">
-    <div class="row g-4 justify-content-center">
 
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card  ">
-          <img src="../photos/Menu/Beef Steak.png" class="card-img-top" alt="Mushroom-soup">
-          <div class="card-body">
-            <h5 class="card-title">Beef Steak</h5>
-            <p class="card-text">Juicy Italian-style grilled beef steak, perfectly seared, seasoned with rosemary and garlic, served with a side of roasted vegetables and a drizzle of olive oil.</p>
-          </div>
-        </div>
-      </div>
+    <div class="container">
+        <div class="card-grid">
 
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card  ">
-          <img src="../photos/Menu/BalsamicPearVealChop.png" class="card-img-top" alt="Caprese Salad">
-          <div class="card-body">
-            <h5 class="card-title">Balsamic Pear Veal Chop</h5>
-            <p class="card-text">Tender veal chops glazed with a rich balsamic reduction, topped with caramelized pears, and served with a side of roasted vegetables. Elegantly plated with fresh herbs for a gourmet touch.</p>
-            
-          </div>
-        </div>
-      </div>
+            <div class="card-box">
+                <img src="../photos/Menu/Beef Steak.png" alt="Mushroom-soup" class="card-img">
+                <div class="card-body">
+                    <h5 class="card-title">Beef Steak</h5>
+                    <p class="card-text">Juicy Italian-style grilled beef steak, perfectly seared, seasoned with rosemary and garlic.</p>
+                </div>
+            </div>
 
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card  ">
-          <img src="../photos/Menu/Verdure_Grigliate.png" class="card-img-top" alt="mozzarella-sticks">
-          <div class="card-body">
-            <h5 class="card-title">Verdure Grigliate</h5>
-            <p class="card-text">A colorful medley of seasonal vegetables—zucchini, eggplant, bell peppers, and cherry tomatoes—grilled to perfection, drizzled with extra virgin olive oil, and garnished with fresh herbs.</p>
-          </div>
+            <div class="card-box">
+                <img src="../photos/Menu/BalsamicPearVealChop.png" alt="Caprese Salad" class="card-img">
+                <div class="card-body">
+                    <h5 class="card-title">Balsamic Pear Veal Chop</h5>
+                    <p class="card-text">Tender veal chops glazed with a rich balsamic reduction, topped with caramelized pears.</p>
+                </div>
+            </div>
+
+            <div class="card-box">
+                <img src="../photos/Menu/Verdure_Grigliate.png" alt="mozzarella-sticks" class="card-img">
+                <div class="card-body">
+                    <h5 class="card-title">Verdure Grigliate</h5>
+                    <p class="card-text">A colorful medley of seasonal vegetables—zucchini, eggplant, bell peppers, and cherry tomatoes—grilled to perfection, drizzled with extra virgin olive oil.</p>
+                </div>
+            </div>
+
         </div>
-      </div>
     </div>
-  </div>
 </section>
-           
 
-
+<my-footer></my-footer>
 
     
 
 
 
       
-
-    <!--footer-->
-    <footer class="footer">
-        <div class="footer_container">
-            <div class="footer_section">
-                <div class="footer_logo_container">
-                    <img src="/photos/IlSogno.png" alt="Logo" class="footer_logo">
-                </div>
-                <div class="footer_text_container">
-                    <h3 class="footer_text">Contact Us</h3>
-                    <p class="footer_text">000000000</p>
-                    <p class="footer_text">From Tuesday to Sunday </p>
-                    <p class="footer_text">From 18:00 to 00:00</p>
-                    <p class="footer_text">Via Salvatore Quasimodo, 384011 Amalfi</p>
-                    <a href="/" class="footer_text link">Privacy Policy </a>
-                    <br>
-                    <a href="/" class="footer_text link">Cookie Policy</a>
-                </div>
-                <div class="footer_text_container">
-                    <p class="footer_text">©2025 Il Sogno Restaurant. All rights reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
 
 </body>
 
