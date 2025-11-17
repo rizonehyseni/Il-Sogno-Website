@@ -76,7 +76,6 @@
      align-items: center;
      justify-content: space-between;
      list-style: none;
-
  }
 
  .nav_item {
@@ -190,24 +189,22 @@
      padding-bottom: 60px;
  }
 
- .first-event-card {
-     border: 1px solid;
+ .first-event-card,.event-card{
+    border: 1px solid;
      border-radius: 10px;
-     width: 65%;
      text-align: center;
-     padding: 45px 10px 30px 10px;
-     margin: 20px 20px 20px 20px;
+     margin: 20px;
+     padding: 45px 10px 40px 10px;
      transition: all 0.3s;
  }
 
+ .first-event-card {
+     width: 65%;
+     padding-bottom: 30px;
+ }
+
  .event-card {
-     border: 1px solid;
-     border-radius: 10px;
      width: 35%;
-     text-align: center;
-     padding: 45px 10px 40px 10px;
-     margin: 20px 20px 20px 20px;
-     transition: all 0.3s;
  }
 
  .first-event-card:hover,
@@ -238,9 +235,9 @@
 /* per date & time */
  .inside_card {
      display: flex;
-     gap: 20px;
+     gap: 10%;
      justify-content: space-between;
-     padding: 0 10% 0 10%;
+     padding: 0 10%;
  }
 
  .tickets {
