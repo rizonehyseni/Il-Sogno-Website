@@ -91,6 +91,9 @@ navbarToggle.addEventListener('click', () => {//kur e click i ndrron tani barsat
     }
   }
 
+
+
+  
   const aboutText = document.querySelector(".about_image_text");
   const aboutCard = document.querySelectorAll(".about_card");
   const menuImage = document.querySelector(".menu_img");
