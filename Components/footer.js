@@ -1,7 +1,7 @@
 class FooterComponent extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-  <link rel="stylesheet" href="/Components/Footer/footer.css">
+  <link rel="stylesheet" href="/Components/footer.css">
    <footer class="footer">
     <div class="links-container">
       <div class="logo-section">
@@ -26,7 +26,6 @@ class FooterComponent extends HTMLElement {
         <ul>
           <li><a href="/PRIVACY_POLICY.md">Privacy Policy</a></li>
           <li><a href="/TERMS_AND_CONDITIONS.md">Terms and Conditions</a></li>
-
 
         </ul>
       </div>
@@ -55,3 +54,4 @@ class FooterComponent extends HTMLElement {
 }
 
 customElements.define("my-footer", FooterComponent);
+

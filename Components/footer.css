@@ -16,7 +16,6 @@ body {
   box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.2);
 }
 
-
 @media (max-width: 480px) {
 
   .h1_paragraph_footer {
@@ -36,7 +35,6 @@ body {
     align-items: center;
   }
 }
-
 
 .h1_paragraph_footer {
   width: 40%;
@@ -97,7 +95,6 @@ ul li {
   list-style: none;
   margin-bottom: 0.7em;
 }
-
 
 ul li a {
   text-decoration: none;
