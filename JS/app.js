@@ -28,6 +28,11 @@ navbarToggle.addEventListener('click', () => {//kur e click i ndrron tani barsat
 });
 
 
+
+
+
+
+
   const navMenuD = document.querySelector(".nav_menu");
   const logoAni = document.querySelector(".logo");
   const heroText = document.querySelector(".hero_text");
@@ -49,6 +54,14 @@ navbarToggle.addEventListener('click', () => {//kur e click i ndrron tani barsat
     }
     scrollFundit = window.scrollY;
   });
+
+
+
+
+
+
+
+
 
   const text = `"Music is the cup which holds the wine of silence."`;
   const text2 = '- Robert Fripp';
