@@ -1,7 +1,8 @@
-
 body {
-  margin: 0;
-   background-color: #070505;
+    margin: 0;
+  background-color: #000000;
+  background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+  background-repeat: repeat;
 }
 
 .menu-buttons {
@@ -64,6 +65,8 @@ body {
   background-color: white;
   color: black;
   border-color: #180101;
+  border: 3px solid white;
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
 }
 
 .card-img {
