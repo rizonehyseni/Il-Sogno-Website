@@ -523,3 +523,10 @@ body {
   font-style: normal;
   text-align: center;
 }
+
+
+@media (max-width: 480px) {}
+
+@media (max-width: 768px) {}
+
+@media(max-width: 992px) {}
