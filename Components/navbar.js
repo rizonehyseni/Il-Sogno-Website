@@ -1,7 +1,8 @@
-class Navbar extends HTMLElement {
+class NavbarComponent extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-      <nav class="navbar">
+  <link rel="stylesheet" href="/CSS/style.css">
+       <nav class="navbar">
         <div class="navbar_container">
           <a href="index.html" class="logo_link">
             <img src="/photos/IlSogno.png" alt="Logo" class="logo">
@@ -31,8 +32,10 @@ class Navbar extends HTMLElement {
           </div>
         </div>
       </nav>
+
     `;
   }
 }
 
-customElements.define('my-navbar', Navbar);
+customElements.define("my-navbar", NavbarComponent);
+
