@@ -1,7 +1,7 @@
 class NavbarComponent extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-  <link rel="stylesheet" href="/CSS/style.css">
+   <link rel="stylesheet" href="/Components/navbar.css">
        <nav class="navbar">
         <div class="navbar_container">
           <a href="index.html" class="logo_link">
