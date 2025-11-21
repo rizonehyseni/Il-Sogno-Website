@@ -25,12 +25,15 @@ navbarToggle.addEventListener('click', () => {//kur e click i ndrron tani barsat
     bars[0].classList.toggle('rotate1');
     bars[1].classList.toggle('fade');
     bars[2].classList.toggle('rotate2');
+
+
+   
 });
 
 
 
 
-
+//remove nav ani kur tja bojsh scroll
 
 
   const navMenuD = document.querySelector(".nav_menu");
@@ -57,6 +60,24 @@ navbarToggle.addEventListener('click', () => {//kur e click i ndrron tani barsat
 
 
 
+
+  
+
+
+
+
+
+  //nav ani per secondary menyne
+
+  const secondMenu = document.getElementById('nav_menu_secondary');
+  const more = document.getElementById('more');
+
+  more.addEventListener('click', () =>{
+     if (window.innerWidth > 768) {
+        secondMenu.classList.toggle('grow');
+    }
+  }
+  )
 
 
 

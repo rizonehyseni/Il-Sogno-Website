@@ -113,10 +113,44 @@
 
 }
 
-.more_nav:hover #nav_menu_secondary{
+#nav_menu_secondary.grow{
   display: block;
  transition: all 0.5s ease;
 }
+
+
+
+
+
+
+.bar {
+  display: block;
+  width: 28px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: white;
+  transition: transform 0.3s ease, opacity 0.25s ease;
+  transform-origin: center;
+}
+
+/* kto jon me js dmth qito klasa ju aplikohen barsav kur e klikojna hamburger menyne */
+.rotate1 {
+  transform: translateY(16px) rotate(45deg);
+}
+
+/*fade o qe qaj tranzicioni prej hamburger ne x me kan smooth*/
+.fade {
+  opacity: 0;
+  transform: scaleX(0.8);
+}
+
+.rotate2 {
+  transform: translateY(-4px) rotate(-45deg);
+}
+
+
+
+
 
 
 
@@ -140,19 +174,116 @@
 }
 
 .nav_item{
-    margin:0 50px;
+    margin:0 30px;
     padding:20px;
 }
 
-.nav_link{
-    font-size: 1.4rem;
-}
 
 #nav_menu_secondary {
     top: 9vh;
     width: 400px;
 }
 
+.nav_link{
+    font-size: 1.2rem;
+}
+
 
 }
 
+
+@media (max-width:992px){
+          /*NAVI*/
+
+.navbar_toggle{
+    display: none;
+}
+
+.logo{
+    height: 80px;
+   
+}
+
+.nav_item{
+    margin:0 10px;
+    padding:20px;
+}
+
+
+#nav_menu_secondary {
+    top: 9vh;
+    width: 400px;
+}
+
+.nav_link{
+    font-size: 1.1rem;
+}
+
+
+
+}
+
+
+@media (max-width: 768px) {
+
+  .nav_menu {
+    position: absolute;
+    top: 9vh;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    background-color: #070505;
+    padding: 2rem 0;
+
+ 
+    opacity: 0;
+    pointer-events: none;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all 0.3s ease;
+  }
+
+
+
+  .nav_menu.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scaleY(1);/*qe me shfaq se kjo o "surpressed"*/
+  }
+
+  .navbar_toggle {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+
+
+  .nav_link{
+    font-size: 1.2rem;
+  }
+
+
+
+  #nav_menu_secondary {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: static;   
+    background: none;
+    margin-top: -1.2rem;
+    background-color: #070505;
+  }
+
+
+  #more{
+    display: none;
+    pointer-events: none;
+  }
+
+}
