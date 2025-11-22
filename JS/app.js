@@ -79,7 +79,17 @@ navbarToggle.addEventListener('click', () => {//kur e click i ndrron tani barsat
   }
   )
 
+  //kur tklikojsh jashte navit me hjek
 
+  document.addEventListener('click', (e) => {
+    if (
+        secondMenu.classList.contains('grow') &&
+        !secondMenu.contains(e.target) &&
+        !more.contains(e.target)
+    ) {
+        secondMenu.classList.remove('grow');
+    }
+});
 
 
 

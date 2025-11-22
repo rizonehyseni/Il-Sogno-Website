@@ -99,7 +99,7 @@
 
 #nav_menu_secondary {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 9.8vh;
     right: 0;
   background-color:rgba(0, 0, 0, 0.877) ;  
