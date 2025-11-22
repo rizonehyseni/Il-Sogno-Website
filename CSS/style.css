@@ -959,6 +959,11 @@ body.loading {
     
 }
 
+.about_image_text {
+    font-size: 3.5rem;
+}
+
+
 
 
 
@@ -1018,4 +1023,230 @@ body.loading {
 
 
   
+}
+
+@media (max-width:992px){
+
+
+  
+/*about section style*/
+
+
+
+
+
+.about_image_text {
+  font-size: 2.8rem;
+}
+
+
+
+
+
+
+.about_card{
+  width: 30%;
+}
+
+
+/*Menu*/
+
+
+
+.menu_text_container{
+  width: 80%;
+}
+
+.menu_title{
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+}
+
+
+.menu_desc{
+  margin-bottom: 20px;
+}
+
+
+
+/*divider*/
+
+
+
+.divider_1{
+  clip-path: polygon(0% 0%, 0% 80%, 100% 0%);
+
+}
+
+
+
+
+.clip_image{
+    transform: translateY(-20%);
+}
+
+.divider_text{
+    position: absolute;
+    color: #F7F1E1;
+    border-right: 1px solid #F7F1E1;/* qaj kursori qe blinks*/
+    animation: cursorBlink 0.7s step-end infinite;
+  
+}
+#divider_quote{
+      top: 55%;
+    left: 40%;
+    font-size: 1.8rem;
+     font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+    
+
+#divider_author{
+    font-size: 1.5rem;
+  top: 65%;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*music section style*/
+
+.music_section{
+ 
+    margin-top: -150px;
+}
+
+
+
+
+.music_text_container{
+
+    left:30%;
+
+}
+.music_text{
+    width: 70%;
+    height: 20%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#music_title{
+    text-align: center;
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.2rem;
+    color: #F7F1E1;
+    
+}
+#music_desc{
+
+    font-size:1.3rem;
+
+}
+
+.music_button_container{
+    
+ 
+    width: 100%;
+ 
+
+}
+
+.music_button{
+    width: 50%;
+    font-size: 1.2rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*blog section*/
+
+.blog{
+    
+    margin: 150px 0;
+}
+
+
+
+
+.blog_image{
+    padding-bottom: 100px;
+
+}
+
+
+
+
+
+
+.blog_news{
+    width: 80%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px  solid #F7F1E1;
+    padding:2rem;
+    margin-top: 2rem;
+    opacity: 0;
+
+}
+
+.blog_news.show{
+   animation: fadeInMenu 1s ease forwards;
+}
+
+.blog_new{
+    width: 100%;
+    height: 35%;
+}
+.blog_new_desc{
+    width: 100%;
+    height: 60%;
+}
+
+.blog_news_title{
+    font-size: 1.8rem;
+}
+
+.blog_news_info{
+
+  margin-top: 10px;
+    font-size: 1.3rem;
+
+}
+
+
+
+
+
 }
