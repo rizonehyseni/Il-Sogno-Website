@@ -14,15 +14,17 @@ class NavbarComponent extends HTMLElement {
             <li class="nav_item"><a href="music.html" class="nav_link">Music</a></li>
             <li class="nav_item"><a href="reservations.html" target="_blank" class="nav_link">Reservations</a></li>
             <li class="nav_item more_nav">
-              <a href="#" class="nav_link" id="more">More ▾</a>
-              <ul class="nav_menu_secondary" id="nav_menu_secondary">
+              <button type="button" class="nav_link" id="more">More ▾</button>
+
+             
+            </li>
+             <ul class="nav_menu_secondary" id="nav_menu_secondary">
                 <li class="nav_item"><a href="location.html" class="nav_link">Location</a></li>
                 <li class="nav_item"><a href="tickets.html" class="nav_link">Tickets</a></li>
                 <li class="nav_item"><a href="gallery.html" class="nav_link">Gallery</a></li>
                 <li class="nav_item"><a href="blog.html" class="nav_link">Blog</a></li>
                 <li class="nav_item"><a href="about.html" class="nav_link">About Us</a></li>
               </ul>
-            </li>
           </ul>
 
           <div class="navbar_toggle" id="mobile_menu">
