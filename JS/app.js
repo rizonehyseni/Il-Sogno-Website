@@ -25,7 +25,15 @@ navbarToggle.addEventListener('click', () => {//kur e click i ndrron tani barsat
     bars[0].classList.toggle('rotate1');
     bars[1].classList.toggle('fade');
     bars[2].classList.toggle('rotate2');
+
+
+   
 });
+
+
+
+
+//remove nav ani kur tja bojsh scroll
 
 
   const navMenuD = document.querySelector(".nav_menu");
@@ -49,6 +57,42 @@ navbarToggle.addEventListener('click', () => {//kur e click i ndrron tani barsat
     }
     scrollFundit = window.scrollY;
   });
+
+
+
+
+  
+
+
+
+
+
+  //nav ani per secondary menyne
+
+  const secondMenu = document.getElementById('nav_menu_secondary');
+  const more = document.getElementById('more');
+
+  more.addEventListener('click', () =>{
+     if (window.innerWidth > 768) {
+        secondMenu.classList.toggle('grow');
+    }
+  }
+  )
+
+  //kur tklikojsh jashte navit me hjek
+
+  document.addEventListener('click', (e) => {
+    if (
+        secondMenu.classList.contains('grow') &&
+        !secondMenu.contains(e.target) &&
+        !more.contains(e.target)
+    ) {
+        secondMenu.classList.remove('grow');
+    }
+});
+
+
+
 
   const text = `"Music is the cup which holds the wine of silence."`;
   const text2 = '- Robert Fripp';
@@ -78,6 +122,9 @@ navbarToggle.addEventListener('click', () => {//kur e click i ndrron tani barsat
     }
   }
 
+
+
+  
   const aboutText = document.querySelector(".about_image_text");
   const aboutCard = document.querySelectorAll(".about_card");
   const menuImage = document.querySelector(".menu_img");
