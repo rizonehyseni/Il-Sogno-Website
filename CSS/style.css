@@ -134,18 +134,6 @@ body.loading {
     
 }
 
-.hero_text_container.expand{
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: last baseline;
-  justify-content: center;
-  position: absolute;
-  top:0;
-  left:0;
-  
-
-}
 
 .hero_text{
     text-align: left;
@@ -158,14 +146,7 @@ body.loading {
     
 }
 
-.hero_text.show{
-  text-align: center;
-  padding: 0;
-  margin-bottom:4rem;
-  padding: 2rem 4rem;
-  transition: 0.8s ease;
-  
-}
+
 
 #hero_title1{
     font-size: 3rem; 
@@ -648,6 +629,11 @@ body.loading {
     justify-content: center;
     padding: 0;
     margin-top:20rem;
+     background: linear-gradient(90deg,
+  #000000c2 0%,
+  #00000061 50%, 
+  #00000000 100%);
+  
 }
 
 .music_video_container{
@@ -676,10 +662,7 @@ body.loading {
   flex-direction: column;
   padding: 0;
   margin: 0;
-  background: linear-gradient(90deg,
-  #000000c2 0%,
-  #00000061 50%, 
-  #00000000 100%);
+
   
   
 }
@@ -1221,10 +1204,6 @@ body.loading {
 
 }
 
-.blog_news.show{
-   animation: fadeInMenu 1s ease forwards;
-}
-
 .blog_new{
     width: 100%;
     height: 35%;
@@ -1245,8 +1224,266 @@ body.loading {
 
 }
 
+ 
+
+
+
+}
+
+@media (max-width:768px){
+  
+/*hero style*/
 
 
 
 
+.hero_text_container{
+ 
+    width: 100%;
+    height:100vh;
+    position: absolute;
+    top: 9vh;
+    left: 50%;
+    transform: translateX(-50%);
+  
+    
+}
+
+
+
+.hero_text{
+    text-align: center;
+    padding: 40px;
+    transition: 0.8s ease;
+}
+
+
+
+
+
+#hero_title1{
+    font-size: 2.8rem; 
+
+}
+
+#hero_title2{
+    font-size: 1.8rem; 
+    margin-top: 20px;
+}
+
+
+
+/*abouti*/
+
+.about_image_text {
+  font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+.about_text{
+    font-size: 2.2rem;
+}
+
+
+.about_card_container{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.about_card{
+    width: 90%;
+    height: 220px;
+ 
+}
+
+
+.about_desc_title{
+     font-size: 1.8rem;
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  
+}
+
+.about_desc_text{
+     font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    margin: 0 20px;
+
+}
+
+
+/*menu*/
+.menu_title{
+  font-size: 2.1rem;
+  margin-bottom: 20px;
+}
+
+
+.menu_desc{
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+
+
+
+/*divider*/
+
+
+
+.divider_1{
+  clip-path: polygon(0% 0%, 0% 70%, 100% 0%);
+
+}
+
+
+
+
+.clip_image{
+    transform: translateY(0);
+}
+
+
+#divider_quote{
+      top: 50%;
+    left: 40%;
+    font-size: 1.3rem;
+     font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+    
+
+#divider_author{
+    font-size: 1.1rem;
+  top: 60%;
+
+}
+
+
+
+
+
+/*music section style*/
+
+.music_section{
+ 
+    margin-top: -150px;
+}
+
+
+
+
+.music_text_container{
+
+    left:50%;
+    transform:translate(-50%,-50%);
+
+}
+.music_text{
+    width: 80%;
+    height: 20%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#music_title{
+    text-align: center;
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.2rem;
+    color: #F7F1E1;
+    
+}
+#music_desc{
+    font-size:1.3rem;
+}
+
+.music_button_container{
+    width: 100%;
+}
+
+.music_button{
+    width: 80%;
+    font-size: 1.2rem;
+
+}
+
+
+
+/*blog section*/
+
+.blog{
+    
+    margin: 150px 0;
+}
+
+
+
+
+.blog_image{
+    padding-bottom: 100px;
+
+}
+
+
+
+
+
+
+.blog_news{
+    width: 80%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px  solid #F7F1E1;
+    padding:2rem;
+    margin-top: 2rem;
+    opacity: 0;
+
+}
+
+
+
+.blog_new{
+    width: 100%;
+    height: 35%;
+}
+.blog_new_desc{
+    width: 100%;
+    height: 60%;
+}
+
+.blog_news_title{
+    font-size: 1.8rem;
+}
+
+.blog_news_info{
+
+  margin-top: 10px;
+  margin-bottom: 5px;
+    font-size: 1.2rem;
+
+}
+
+ 
 }
