@@ -1310,19 +1310,12 @@ body.loading {
 
 .about_desc_title{
      font-size: 1.8rem;
-    font-family: "Instrument Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-  
+
 }
 
 .about_desc_text{
-     font-family: "Playfair Display", serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 1rem;
     margin: 0 20px;
-
 }
 
 
@@ -1486,4 +1479,297 @@ body.loading {
 }
 
  
+}
+
+
+
+
+
+
+@media (max-width:480px){
+
+
+  
+.hero_text_container{
+ 
+    width: 100%;
+    height:100vh;
+    position: absolute;
+    top: 9vh;
+    left: 50%;
+    transform: translateX(-50%);
+  
+    
+}
+
+
+
+.hero_text{
+    text-align: center;
+    padding: 40px;
+    transition: 0.8s ease;
+}
+
+
+
+
+
+#hero_title1{
+    font-size: 2rem; 
+
+}
+
+#hero_title2{
+    font-size: 1rem; 
+    margin-top: 20px;
+}
+
+
+
+
+/*abouti*/
+
+.about_image_text {
+  font-size: 2rem;
+  text-align: center;
+}
+
+
+.about_text{
+    font-size: 1.8rem;
+}
+
+
+.about_card_container{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.about_card{
+    width: 90%;
+    height: 220px;
+}
+
+
+.about_desc_title{
+     font-size: 1.2rem;
+     margin-top: 10px;
+  
+}
+
+.about_desc_text{
+    font-size: 1rem;
+    margin: 10px 20px;
+}
+
+
+/*menu*/
+.menu_title{
+  font-size: 1.9rem;
+  margin-bottom: 20px;
+}
+
+
+.menu_desc{
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+
+.menu_button{
+    font-size: 1rem;
+}
+
+
+
+/*divider*/
+
+
+
+.divider_1{
+  clip-path: polygon(0% 0%, 0% 50%, 100% 0%);
+
+}
+
+
+
+
+.clip_image{
+    transform: translateY(0);
+}
+
+
+#divider_quote{
+      top: 40%;
+    left: 25%;
+    font-size: 1.3rem;
+     font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+    
+
+#divider_author{
+    font-size: 1rem;
+  top: 50%;
+  left: 60%;
+
+}
+
+
+
+
+
+/*music section style*/
+
+.music_section{
+ 
+    margin-top: -150px;
+}
+
+
+
+
+.music_text_container{
+
+    left:50%;
+    transform:translate(-50%,-50%);
+
+}
+.music_text{
+    width: 80%;
+    height: 20%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#music_title{
+    text-align: center;
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.1rem;
+    color: #F7F1E1;
+    
+}
+#music_desc{
+    font-size:1.1rem;
+}
+
+.music_button_container{
+    width: 100%;
+}
+
+.music_button{
+    width: 80%;
+    font-size: 1rem;
+
+}
+
+
+
+
+/*blog section*/
+
+ .blog{
+    height:140vh;
+     margin: 150px 0;
+}
+
+
+
+
+.blog_image{
+    padding-bottom: 100px;
+
+}
+
+
+
+
+
+
+.blog_news{
+    width: 80%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px  solid #F7F1E1;
+    padding:2rem;
+    margin-top: 2rem;
+    opacity: 0;
+
+}
+
+
+
+.blog_new{
+    width: 100%;
+    height: 35%;
+}
+.blog_new_desc{
+    width: 100%;
+    height: 60%;
+}
+
+.blog_news_title{
+    font-size: 1.5rem;
+}
+
+.blog_news_info{
+
+  margin-top: 10px;
+  margin-bottom: 5px;
+    font-size: 1rem;
+
+}
+
+
+
+
+.blog_title{
+    color: #F7F1E1;
+    font-size: 1.8rem;
+    text-align: left;
+     font-family: "Instrument Serif", serif;
+    font-weight: 500;
+    font-style: normal;
+    
+}
+
+
+
+
+.blog_button_container{
+    width: 100%;
+    height: 10%;
+}
+
+.blog_button{
+    font-size: 1rem;
+    padding: 0.2rem 1.4rem;
+   margin-top: 10px;
+
+}
+
+.blog_desc{
+     color: #F7F1E1;
+    font-size: 1rem;
+    text-align: left;
+   margin-bottom: 50px;
+   
+    
+}
+
+
+
+
+
 }
