@@ -269,7 +269,7 @@
 
 
   .nav_link{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
 
@@ -297,9 +297,19 @@
 @media (max-width:480px){
      #nav_menu_secondary {
  
-    margin-top: -100px;
+    margin-top: -50px;
     text-align: center;
     padding-right: 0;
+    padding-top: 0;
   }
 
+
+  .nav_item{
+    margin:0 30px;
+    padding:15px;
+ 
+}
+.nav_link{
+  font-size: 1.1rem;
+}
 }
