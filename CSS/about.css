@@ -206,22 +206,17 @@ body {
 
 /* fotoje me nxan 60% */
 .picture {
-  flex: 0 0 60%;
-  max-width: 60%;
   overflow: hidden;
+
 }
 
 .picture img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
   display: block;
 }
 
 
 .text_container {
-  flex: 0 0 40%;
-  max-width: 40%;
   padding: 2rem;
   box-sizing: border-box;
   font-size: 1rem;
@@ -395,6 +390,7 @@ body {
   background-color: #010201;
   width: 100vw;
   flex-wrap: wrap;
+
 }
 
 
@@ -415,8 +411,6 @@ body {
 .features_container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  padding: 2rem;
   justify-content: center;
 }
 
@@ -467,10 +461,9 @@ body {
 
 
 
-
-@media (max-width: 768px) {
+@media(max-width: 992px) {
   .interior_picture {
-    height: 25rem;
+    height: 28rem;
   }
 
   .picture_features {
@@ -508,9 +501,11 @@ body {
     padding: 0;
     box-sizing: border-box;
 
+
   }
 
   .picture {
+
     max-width: none;
     overflow: hidden;
   }
@@ -520,7 +515,7 @@ body {
   .text_container {
     margin: 2rem 0;
     text-align: center;
-    width: 500px;
+    width: 600px;
     height: 350px;
     max-width: none;
     padding: 0;
@@ -577,6 +572,61 @@ body {
     height: 6rem;
     transform: rotate(90deg);
   }
+}
+
+@media (max-width: 768px) {
+  .interior_picture {
+    height: 25rem;
+  }
+
+  .text_container {
+
+    width: 500px;
+    height: 350px;
+    font-size: 0.2rem;
+  }
+
+
+  .text_container p {
+    font-size: 0.2em;
+    line-height: 1.4;
+    margin-bottom: 2.2rem;
+  }
+
+
+  .text_container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .text_container p {
+    text-align: left;
+    font-size: 1.2rem;
+  }
+
+  .main_logo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .branches_logo {
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+
+
+  .branch1 {
+    width: 60px;
+    height: 6rem;
+    transform: rotate(-90deg);
+  }
+
+  .branch2 {
+    width: 60px;
+    height: 6rem;
+    transform: rotate(90deg);
+  }
 
 }
 
@@ -588,47 +638,16 @@ body {
     height: 20rem;
   }
 
-
-
   .feature {
     gap: 0;
     padding: 0;
     height: 240px;
-
-  }
-
-  .ourstory_container1 {
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-
-  }
-
-  .one {
-    flex-direction: column;
-  }
-
-  .ourstory_container1 p {
-    width: 100%;
-
-  }
-
-  .text_container {
-    font-size: 1 rem;
-    flex: 1;
-    max-width: 100%;
-    padding: 0;
-    box-sizing: border-box;
-
   }
 
   .picture {
     max-width: none;
     overflow: hidden;
   }
-
-
 
   .text_container {
     text-align: center;
@@ -659,7 +678,6 @@ body {
 
   }
 
-
   .text_container h1 {
 
     font-size: 1.5rem;
@@ -667,6 +685,10 @@ body {
     margin-top: 2rem;
     color: #9c7814;
 
+  }
+
+  .picture_features {
+    overflow: hidden;
   }
 
   .text_container p {
@@ -679,27 +701,5 @@ body {
     height: 100px;
   }
 
-  .branches_logo {
-    gap: 1.5rem;
-    margin-top: 4rem;
-  }
-
-
-  .branch1 {
-    width: 60px;
-    height: 5rem;
-    transform: rotate(-90deg);
-  }
-
-  .branch2 {
-    width: 60px;
-    height: 5rem;
-    transform: rotate(90deg);
-  }
 
 }
-
-
-
-
-@media(max-width: 992px) {}
