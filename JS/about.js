@@ -29,7 +29,7 @@ function typeHero() {
     if (i < heroText.length) {
       heroElement.textContent += heroText.charAt(i);
       i++;
-      setTimeout(type, 50);
+      setTimeout(type, 60);
     }
   }
   type();
