@@ -195,6 +195,7 @@ body {
 .ourstory_container1 {
   display: flex;
   justify-content: center;
+  flex-direction: row;
   align-items: flex-start;
   /* ⬅️ This aligns the top edges */
   background-color: #101210;
@@ -464,9 +465,12 @@ body {
   transform: translateY(0);
 }
 
+
+
+
 @media (max-width: 480px) {
   .interior_picture {
-    height: 25rem;
+    height: 20rem;
   }
 
   .picture_features {
@@ -505,32 +509,82 @@ body {
     box-sizing: border-box;
 
   }
+
+  .picture {
+    max-width: none;
+    overflow: hidden;
+  }
+
+
+
+  .text_container {
+    text-align: center;
+    width: 300px;
+    height: 250px;
+    max-width: none;
+    padding: 0;
+    font-size: 0.1rem;
+  }
+
+  .text_container h1 {
+
+
+    font-size: 1em;
+    margin: 20px;
+    color: #F7F1E1;
+  }
+
+  .text_container p {
+    font-size: 0.2em;
+    line-height: 1.4;
+    margin-bottom: 2.2rem;
+  }
+
+  .achievement_title img {
+    width: 70px;
+    display: none;
+
+  }
+
+
+  .text_container h1 {
+
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+    color: #9c7814;
+
+  }
+
+  .text_container p {
+    text-align: left;
+    font-size: 1.1rem;
+  }
+
+  .main_logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .branches_logo {
+    gap: 1.5rem;
+    margin-top: 4rem;
+  }
+
+
+  .branch1 {
+    width: 60px;
+    height: 5rem;
+    transform: rotate(-90deg);
+  }
+
+  .branch2 {
+    width: 60px;
+    height: 5rem;
+    transform: rotate(90deg);
+  }
+
 }
-
-
-.main_logo {
-  width: 100px;
-  height: 100px;
-}
-
-.branches_logo {
-  gap: 1.5rem;
-}
-
-
-.branch1 {
-  width: 60px;
-  height: 5rem;
-  transform: rotate(-90deg);
-}
-
-.branch2 {
-  width: 60px;
-  height: 5rem;
-  transform: rotate(90deg);
-}
-
-
 
 
 
