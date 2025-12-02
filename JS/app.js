@@ -1,5 +1,4 @@
 
-
   document.body.classList.add('loading');
 
   window.addEventListener('load', () => {
@@ -10,43 +9,8 @@
     }, 3500);
   });
 
-  const navMenuD = document.querySelector(".nav_menu");
-  const logoAni = document.querySelector(".logo");
-  const heroText = document.querySelector(".hero_text");
-  const navCo = document.querySelector(".navbar_container");
-  const heroTextCo = document.querySelector(".hero_text_container");
-  const navToggle = document.querySelector(".navbar_toggle");
 
-  window.addEventListener('scroll', () => {
-    if (window.scrollY < 50) {
-      navMenuD.classList.add('hide');
-      logoAni.classList.add('ani');
-      heroText.classList.add('show');
-      navCo.classList.add('expand');
-      heroTextCo.classList.add('expand');
-      navToggle.classList.add('hidden');
-    
-    } else {
-      navMenuD.classList.remove('hide');
-      logoAni.classList.remove('ani');
-      heroText.classList.remove('show');
-      navCo.classList.remove('expand');
-      heroTextCo.classList.remove('expand');
-      navToggle.classList.remove('hidden');
-    }
-  });
 
-  let scrollFundit = window.scrollY;
-  const navbar = document.querySelector(".navbar");
-
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > scrollFundit && window.scrollY > 100) {
-      navbar.classList.add("hidden");
-    } else {
-      navbar.classList.remove("hidden");
-    }
-    scrollFundit = window.scrollY;
-  });
 
   const text = `"Music is the cup which holds the wine of silence."`;
   const text2 = '- Robert Fripp';
@@ -76,6 +40,9 @@
     }
   }
 
+
+
+  
   const aboutText = document.querySelector(".about_image_text");
   const aboutCard = document.querySelectorAll(".about_card");
   const menuImage = document.querySelector(".menu_img");
@@ -105,7 +72,7 @@
 
       if (element.classList.contains("menu_img") && entry.isIntersecting) {
         menuImage.classList.add("show");
-      
+
       }
       else if (element.classList.contains("menu_img") && !entry.isIntersecting) {
         menuImage.classList.remove("show");
@@ -121,7 +88,7 @@
         menuDesc.classList.remove("show");
       }
 
-      
+
       if (element.classList.contains("menu_button") && entry.isIntersecting) {
         menuBtn.classList.add("show");
         observer.unobserve(element);

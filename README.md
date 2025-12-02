@@ -42,8 +42,9 @@ restaurant-website/
 │
 ├── photos/                       
 │   ├── logo.png
-│    ...
-│ 
+│   ├── dishes/
+│   └── interior/
+│
 ├── privacy-policy.html            
 ├── terms-and-conditions.html      
 └── README.md                      
