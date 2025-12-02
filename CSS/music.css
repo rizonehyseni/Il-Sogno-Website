@@ -218,8 +218,45 @@
 
 @media screen and (max-width:589px){
 
+    #intro h2 {
+        padding-bottom: 0;
+        font-size: 14px;
+    }
+
+    #intro pre {
+        font-size: 10px;
+        line-height: 13px;
+    }
+
+    .first-event-card,
+    .event-card {
+        width: 80%;
+        padding: 20px 8px;
+        margin: 12px 0;
+    }
+
+    .inside_card {
+        flex-direction: row;
+        gap: 5px;
+        padding: 0 30px;
+        text-align: center;
+    }
+
+    .inside_card img {
+        width: 100px;
+    }
+
+    .tickets {
+        padding: 7px 35px;
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    .section-divider {
+        font-size: 80%
+    }
 }
 
-@media screen and (max-width:380px){
+@media screen and (max-width:418px){
 
 }
