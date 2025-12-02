@@ -23,7 +23,7 @@
 
  #main {
      color: white;
-     padding-top: 10vh;
+     /* padding-top: 10vh; */
      /*qe mos me u perzi navbar me main*/
  }
 
@@ -147,10 +147,39 @@
      border: 1px #170000;
  }
 
-@media screen and (max-width:1200px){}
+@media screen and (max-width:1200px){
+    /* veq tekstin te dateeeee */
+}
 
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
 
-@media screen and (max-width:768px){}
+    #intro {
+        font-size: medium;
+    }
 
-@media screen and (max-width:480px){}
+    .first-event-card,
+    .event-card {
+        width: 75%;      
+        margin: 15px 0;
+        padding: 30px 10px;
+    }
+
+    .inside_card {
+        flex-direction: row;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .tickets {
+        width: 40%;       
+        padding: 12px 20px;
+    }
+}
+
+@media screen and (max-width:768px){
+
+}
+
+@media screen and (max-width:480px){
+
+}
