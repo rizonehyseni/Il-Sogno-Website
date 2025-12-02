@@ -157,8 +157,10 @@
      border: 1px #170000;
  }
 
-@media screen and (max-width:1200px){
-    /* veq tekstin te dateeeee */
+@media screen and (max-width:1317px){
+    .event-card{
+        width: 75%;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -166,6 +168,7 @@
     #intro {
         font-size: medium;
         line-height: 28px;
+        padding-top: 8px;
     }
 
     .first-event-card,
