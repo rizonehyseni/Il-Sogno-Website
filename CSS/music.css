@@ -36,21 +36,24 @@
      background-size: cover;
      width: 100%;
      padding-top: 5%;
-     padding-bottom: 15%;
+     padding-bottom: 16%;
+     font-size:x-large;
+     line-height: 38px;
  }
 
  #intro h2{
-     margin: 0 auto;
      /* width: 300px; */
+     margin: 0 auto;
      width: 100%;
-     padding-top: 10vh;
+     padding-top: 25vh;
      padding-bottom: 4vh;
- }
+ }  
 
  .section-divider {
      display: flex;
      align-items: center;
      margin-bottom: 5vh;
+     font-size: x-large;
  }
 
  /* pseudoelement */
@@ -81,7 +84,9 @@
 
  .first-event-card {
      width: 65%;
-     padding-bottom: 30px;
+     padding-bottom: 8vh;
+     padding-top: 8vh;
+     margin: 13vh 0;
  }
 
  .event-card {
@@ -120,19 +125,24 @@
      justify-content: space-between;
      padding: 0 10%;
      margin-top: 20px;
+     font-size: larger;
+ }
+
+ .price{
+    font-size: larger;
  }
 
  .tickets {
      margin: 30px 0 8px;
      padding: 10px 65px;
      border-radius: 40px;
-     border: 1px solid;
+     border: 1px solid rgba(103, 62, 1, 0.656);
      background-color: #170000;
      color: #e0e0e0;
      transition: all 0.4s;
      cursor: pointer;
      font-family: "Instrument Serif", serif;
-     font-size: large;
+     font-size: larger;
  }
 
  .tickets:hover {
@@ -155,6 +165,7 @@
 
     #intro {
         font-size: medium;
+        line-height: 28px;
     }
 
     .first-event-card,
@@ -177,9 +188,38 @@
 }
 
 @media screen and (max-width:768px){
+    #intro h2 {
+        padding-top: 15vh;
+    }
+
+    #intro pre {
+        font-size: 14px;
+        line-height: 3vh;
+    }
+
+    .first-event-card,
+    .event-card {
+        width: 70%;
+        font-size: small;
+    }
+
+    .inside_card {
+        flex-direction: row;
+        text-align: center;
+        gap: 2px;
+        padding: 0 8vh;
+    }
+
+    .tickets {
+        padding: 8px 40px;
+        font-size: normal;
+    }
+}
+
+@media screen and (max-width:589px){
 
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:380px){
 
 }
