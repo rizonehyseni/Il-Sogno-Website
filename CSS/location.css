@@ -503,6 +503,26 @@ input {
     width: 250px;
 }
 
+.submitButton{
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-family: "Instrument Serif", serif;
+    letter-spacing: 1px;
+    height: 30px;
+    font-size: 15px;
+    margin: 5px;
+    transition: all 1s;
+}
+
+.submitButton:hover{
+    background-color: #1e0202;
+    transform: translateY(-5px);
+}
+
+
+
 
 
 
