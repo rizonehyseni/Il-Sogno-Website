@@ -108,11 +108,32 @@ navbarToggle.addEventListener('click', () => {//kur e click i ndrron tani barsat
   const more = document.getElementById('more');
 
   more.addEventListener('click', () =>{
-     if (window.innerWidth > 768) {
+      if (window.innerWidth > 768) {
         secondMenu.classList.toggle('grow');
     }
   }
   )
+
+
+
+  
+        // $(document).ready(
+        //     function(){
+        //         $("#nav_menu_secondary").hide();
+        //         $("#more").on("click",
+        //             function(){
+        //                 $("#nav_menu_secondary").slideRight(500);
+        //             }
+        //         );
+        //         $("#more").on("click",
+        //             function(){
+        //                 $("#nav_menu_secondary").slideleft(300);
+        //             }
+        //         )
+
+        //     }
+        // )
+
 
   //kur tklikojsh jashte navit me hjek
 
