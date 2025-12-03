@@ -140,25 +140,20 @@ html, body {
     font-style: normal;
 }
 
-.map-class{
+#map{
     width: 100%;
-    height: 400px;
+    height: 100%;
     border: 0;
-    display: block;
     margin: 0;
-    height: 500px;
-    z-index: 10;
-    position: relative;
 }
 
-.section2{ 
+.section2 { 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-   width: 100%;
-   height: 200%;
-   position: relative;
-   overflow: visible;
+    width: 100%;
+    align-content: space-between;
+    position: relative;
+    overflow: visible;
   
 }
 .section2::before{
@@ -166,14 +161,13 @@ html, body {
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 0;
+    z-index: -2;
     background-image: url(/photos/sogno-ph3.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    filter: blur(2px);
-   
+    background-position: center; 
+    opacity: 0.3;     
 }
 
 .section1{
