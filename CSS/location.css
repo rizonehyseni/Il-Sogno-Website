@@ -359,7 +359,7 @@ html, body {
     align-items: center;
 }
 
-#emb{
+.emb-img{
   width: 200px;
   height: auto;
 }
@@ -442,6 +442,7 @@ buttonM:hover{
     margin-bottom: 100px;
     
 }
+
 
 
 
