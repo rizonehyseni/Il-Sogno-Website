@@ -210,7 +210,7 @@
         flex-direction: row;
         text-align: center;
         gap: 2px;
-        padding: 0 8vh;
+        padding: 0 4vh;
     }
 
     .tickets {
