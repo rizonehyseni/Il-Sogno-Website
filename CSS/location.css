@@ -283,7 +283,7 @@ html, body {
 
 .FindUs a{
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
-    color:blanchedalmond
+    color:rgb(255, 255, 255)
 }
 
 .FindUs-container2:hover,
@@ -318,7 +318,7 @@ html, body {
 }
 
  #find-us-header{
-    color: #F7F1E1;
+    color: #ffffff;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
     font-family: "Instrument Serif", serif;
     letter-spacing: 10px;
