@@ -352,6 +352,17 @@ html, body {
     }
  }
 
+ 
+.emb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#emb{
+  width: 200px;
+  height: auto;
+}
 
 
 
