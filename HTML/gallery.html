@@ -10,7 +10,6 @@
     <script type="module" src="../Components/footer.js" defer></script>
     <script src="../JS/gallery.js" defer></script>
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -25,10 +24,8 @@
 </head>
 <body>
 
-<!-- Navbar -->
 <my-navbar></my-navbar>
 
-<!-- Gallery Header -->
 <section class="gallery_co">
     <video autoplay muted loop class="background_video">
         <source src="../photos/backVidGallery.mp4" type="video/mp4">
@@ -36,47 +33,73 @@
 
     <div class="gallery_header">
         <div class="gallery_text">
-            <p id="gallery_title"></p>
-            <p id="gallery_desc">
+            <p id="gallery_title">Galleria dei Sogni</p>
+            <p id="gallery_desc">Step into a visual journey through Il Sogno - where art, flavor, and atmosphere come together. Each image captures a moment of inspiration, from the warm lights of our bar to the elegance of Italian craftsmanship.
             </p>
         </div>
     </div>
 </section>
 
-<!-- Main Image Grid -->
 <section class="main_sec_images">
+    <div class="main_sec_img_container">
 
     <div class="images_container" id="img1">
-        <img src="../photos/719.jpg" class="images" loading="eager" fetchpriority="high" alt="Gallery image 1">
-    </div>
-    <div class="images_container" id="img2">
-        <img src="../photos/bar.jpg" class="images" loading="eager" fetchpriority="high" alt="Gallery image 2">
-    </div>
-    <div class="images_container" id="img3">
-        <img src="../photos/chandelier.jpg" class="images" loading="eager" fetchpriority="high" alt="Gallery image 3">
-    </div>
-    <div class="images_container" id="img4">
-        <img src="../photos/Canestra_di_frutta_(Caravaggio).jpg" class="images" loading="eager" fetchpriority="high" alt="Gallery image 4">
-    </div>
-    <div class="images_container" id="img5">
-        <img src="../photos/jazzMusician.jpg" class="images" loading="eager" fetchpriority="high" alt="Gallery image 5">
-    </div>
-    <div class="images_container" id="img6">
-        <img src="../photos/vespa.jpg" class="images" loading="eager" fetchpriority="high" alt="Gallery image 6">
-    </div>
-    <div class="images_container" id="img7">
-        <img src="../photos/dine.jpg" class="images" loading="eager" fetchpriority="high" alt="Gallery image 7">
-    </div>
-    <div class="images_container" id="img8">
-        <img src="../photos/harp.jpg" class="images" loading="eager" fetchpriority="high" alt="Gallery image 8">
-    </div>
-    <div class="images_container" id="img9">
-        <img src="../photos/people.jpg" class="images" loading="eager" fetchpriority="high" alt="Gallery image 9">
+        <img src="../photos/719.webp" 
+             width="430" height="1000"
+             class="images" loading="eager" fetchpriority="high" alt="Gallery image 1">
     </div>
 
+    <div class="images_container" id="img2">
+        <img src="../photos/bar.webp" 
+             width="860" height="400"
+             class="images" loading="lazy" fetchpriority="high" alt="Gallery image 2">
+    </div>
+
+    <div class="images_container" id="img3">
+        <img src="../photos/chandelier.webp" 
+             width="430" height="600"
+             class="images" loading="eager" fetchpriority="high" alt="Gallery image 3">
+    </div>
+
+    <div class="images_container" id="img4">
+        <img src="../photos/Canestra_di_frutta_(Caravaggio).webp" 
+             width="430" height="400"
+             class="images" loading="eager" fetchpriority="high" alt="Gallery image 4">
+    </div>
+
+    <div class="images_container" id="img5">
+        <img src="../photos/jazzMusician.webp" 
+             width="430" height="200"
+             class="images" loading="lazy" fetchpriority="high" alt="Gallery image 5">
+    </div>
+
+    <div class="images_container" id="img6">
+        <img src="../photos/vespa.webp" 
+             width="430" height="400"
+             class="images" loading="lazy" fetchpriority="high" alt="Gallery image 6">
+    </div>
+
+    <div class="images_container" id="img7">
+        <img src="../photos/dine.webp" 
+             width="430" height="400"
+             class="images" loading="lazy" fetchpriority="high" alt="Gallery image 7">
+    </div>
+
+    <div class="images_container" id="img8">
+        <img src="../photos/harp.webp" 
+             width="430" height="800"
+             class="images" loading="lazy" fetchpriority="high" alt="Gallery image 8">
+    </div>
+
+    <div class="images_container" id="img9">
+        <img src="../photos/people.webp" 
+             width="860" height="400"
+             class="images" loading="lazy" fetchpriority="high" alt="Gallery image 9">
+    </div>
+
+    </div>
 </section>
 
-<!-- Footer -->
 <my-footer></my-footer>
 
 </body>
