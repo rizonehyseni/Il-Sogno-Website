@@ -443,6 +443,68 @@ buttonM:hover{
     
 }
 
+input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.textarea{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#textarea{
+    background: transparent;
+    height: 200px;
+    resize: none;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    
+}
+
+.form2{
+    padding:40px 60px;
+    margin: 50px;
+    background-color:black ;
+    color: white;
+    border: solid 1px;
+    border-radius: 20px;
+    height: fit-content;
+    letter-spacing: 0.5px;
+}
+.form1{
+    padding-bottom: 10px;
+    padding-right: 50px;
+    padding-left: 30px;
+    margin: 50px;
+    background-color:black ;
+    color: white;
+    border: solid 1px;
+    border-radius: 20px;
+    height: fit-content;
+    letter-spacing: 0.5px;
+}
+.forms{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.First-form{
+    width: 250px;
+}
+
+
+
 
 
 
