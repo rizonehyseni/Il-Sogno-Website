@@ -400,6 +400,48 @@ buttonM:hover{
     left: 70%;
 }
 
+#contactus{
+    color: #F7F1E1;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+    font-family: "Instrument Serif", serif;
+    font-size: 40px; 
+    white-space: nowrap;
+}
+
+.contactus1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: "Instrument Serif", serif;
+    border: solid 2px black;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.contactus{
+    color: #F7F1E1;
+    font-family: "Instrument Serif", serif;
+    font-size: 40px;
+    width: 90%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color:black;
+    border: 1.5px solid rgb(255, 255, 255);
+    margin-top: 50px;
+    margin-bottom: 100px;
+    
+}
 
 
 
