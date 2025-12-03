@@ -254,9 +254,8 @@ html, body {
    
 }
 
-.FindUs img{
+.logos{
     height: 24px;
-    filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
 }
 
 .FindUs-container,
@@ -364,7 +363,7 @@ html, body {
   height: auto;
 }
 
-buttonM:hover{
+.buttonM:hover{
  transform: translateY(-5px);
  background-color: #200606;
 }
@@ -374,7 +373,7 @@ buttonM:hover{
  padding-left: 60px;
  padding-right: 60px;
  border-radius: 50px;
- border: 3px solid rgb(255, 255, 255);
+ border: 2px solid rgb(255, 255, 255);
  background-color: black;
  color: white;
  font-weight: 600;
@@ -406,6 +405,7 @@ buttonM:hover{
     font-family: "Instrument Serif", serif;
     font-size: 40px; 
     white-space: nowrap;
+    letter-spacing: 1px;
 }
 
 .contactus1{
@@ -421,7 +421,7 @@ buttonM:hover{
     margin-left: 50px;
     margin-right: 50px;
     font-family: "Instrument Serif", serif;
-    border: solid 2px black;
+    border: solid 2px rgb(255, 255, 255);
     border-radius: 20px;
     padding: 20px;
 }
@@ -437,10 +437,10 @@ buttonM:hover{
     align-items: center;
     padding: 50px;
     background-color:black;
-    border: 1.5px solid rgb(255, 255, 255);
-    margin-top: 50px;
+    border-bottom: 1.5px solid rgb(255, 255, 255);
+    padding-bottom: 20px;
+    margin-top: 10px;
     margin-bottom: 100px;
-    
 }
 
 input {
