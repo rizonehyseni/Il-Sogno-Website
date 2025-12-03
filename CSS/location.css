@@ -518,7 +518,7 @@ input {
 
 .submitButton:hover{
     background-color: #1e0202;
-    transform: translateY(-5px);
+    transform: translateY(-2px);
 }
 
 
