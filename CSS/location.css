@@ -338,6 +338,26 @@ html, body {
     
  }
 
+  @keyframes typingA{
+
+    from{ width: 0;
+    }
+    to{
+        width: 367px;
+    }
+ }
+
+ @keyframes blink{
+
+    from,to{
+        border-color: transparent;
+    }
+
+    50%{
+        border-color: rgb(255, 255, 255);
+    }
+ }
+
 
 
 
