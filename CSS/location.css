@@ -285,3 +285,60 @@ html, body {
     border: 1.5px solid rgba(255, 255, 255, 0.597);
     transition: all  1s ease;
 }
+
+.FindUs a{
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+    color:blanchedalmond
+}
+
+.FindUs-container2:hover,
+.FindUs-container11:hover{
+     backdrop-filter: blur(16px);
+     transform: translateY(-3px);
+     background-color:#1b0202;
+     
+}
+
+.FindUs-container3{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    background-color: black;
+    border: solid 1.5px rgb(255, 255, 255);
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.FindUs-container33{
+    color: #F7F1E1;
+    display: flex;
+    height: fit-content;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    width:800px;
+     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+}
+
+ #find-us-header{
+    color: #F7F1E1;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+    font-family: "Instrument Serif", serif;
+    letter-spacing: 10px;
+    font-size: 40px; 
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.1px solid ;
+    animation: typingA 2s steps(16,end) forwards,
+    blink 1s  step-end infinite;
+    
+ }
+
+
+
+
+
