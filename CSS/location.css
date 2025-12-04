@@ -221,7 +221,7 @@ html, body {
 .FindUs{
     display: flex;
     flex-wrap: wrap;
-    height: auto;
+    height: 600px;
     flex-direction: row;
     justify-content:space-around;
     margin: 50px;
@@ -276,8 +276,11 @@ html, body {
     border-radius: 10px;
     padding: 50px;
     gap: 10px;
+    font-size: 20px;
     background-color: black;
     transition: all  1s ease;
+    font-family: "Instrument Serif", serif;
+
 }
 
 .FindUs a{
@@ -312,8 +315,9 @@ html, body {
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid rgb(255, 255, 255);
-    width:800px;
+    width:900px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+    font-size: 20px;
 }
 
  #find-us-header{
@@ -359,8 +363,9 @@ html, body {
 }
 
 .emb-img{
-  width: 200px;
+  width: 300px;
   height: auto;
+
 }
 
 .buttonM:hover{
@@ -415,7 +420,7 @@ html, body {
     align-content: space-around;
     justify-content: center;
     align-items: center;
-    height: auto;
+    height: 700px;
     margin-top: 150px;
     margin-bottom: 150px;
     margin-left: 50px;
