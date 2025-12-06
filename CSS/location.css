@@ -409,7 +409,6 @@ html, body {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
     font-family: "Instrument Serif", serif;
     font-size: 40px; 
-    white-space: nowrap;
     letter-spacing: 1px;
 }
 
@@ -526,10 +525,43 @@ input {
     transform: translateY(-2px);
 }
 
+@media screen and (max-width: 1200px) {
+    .buttons {
+        width: 40%;
+        left: 60%;
+    }
 
+    .FindUs {
+        margin:100px 20px;
 
+    }
 
+    .FindUs-container2,
+    .FindUs-container11 {
+        font-size: 18px;
+        padding: 30px;
+    }
 
+    .contactus {
+      margin-bottom: 40px;
+        padding: 15px;
+    }
 
+    .contactus1 {
+        margin: 100px 30px;
+        padding: 15px;
+        height: fit-content;
+    }
 
+    .forms{margin-bottom: 45px;
+    }
+    
+    .form1, .form2{
+        margin: 0 
+    }
 
+    .emb{
+        width: 200px;
+    }
+
+}
