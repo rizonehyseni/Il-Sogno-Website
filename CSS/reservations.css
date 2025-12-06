@@ -44,19 +44,19 @@ body {
 /* reservation forma */
 
 .banner {
+      padding-top: 3rem;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       color: #fff;
-   
     }
 
     .banner h2 {
       font-size: 48px;
       font-weight: 300;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       letter-spacing: 2px;
     }
 
@@ -69,8 +69,9 @@ body {
 
     .form-row {
       display: flex;
-      gap: 30px;
-      margin-bottom: 30px;
+      gap: 60px;
+     
+      margin-bottom: 35px;
       flex-wrap: wrap;
     
     }
