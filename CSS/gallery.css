@@ -80,11 +80,13 @@ html, body {
     overflow: hidden; 
     opacity: 0;
     transition: opacity 0.8s ease;
+    transform: translateY(-10px);
     will-change: transform;
 }
 
 .images_container.show{
     opacity: 1;
+    transform: translateY(0);
 }
 
 #img1{ grid-area: 1 / 3 / 6 / 4; }
