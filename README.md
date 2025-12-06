@@ -1,5 +1,5 @@
 # Il Sogno – Italian Restaurant Website
- <img src="/photos/main_logo.png" alt="" class="main_logo ">
+ <img width="200px" src="/photos/main_logo.png" alt="" class="main_logo ">
 ## Tech Stack
 - **HTML5** – Page structure  
 - **CSS3** – Styling & responsive layout  
