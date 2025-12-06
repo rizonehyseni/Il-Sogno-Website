@@ -565,3 +565,47 @@ input {
     }
 
 }
+
+
+@media screen and (max-width: 992px) {
+    body{
+        width: 100%;
+    }
+
+    .forms{
+        flex-wrap: wrap;
+    }
+
+    .buttonM{
+        height: 50px;
+        width: 240px;
+        font-size: 15px;
+
+    }
+    .FindUs-container3{
+        margin: 0px;
+        background-color: transparent;
+    }
+   .FindUs-container{ order: 2; } 
+   .FindUs-container1 { order: 2; } 
+   .emb { order:3 ; }
+   .FindUs-container3 { order: 4; } 
+  
+    .FindUs-h1 {
+       padding-top: 10px;
+        margin-bottom: 40px;
+    }
+    .form1{order: 3;
+    }
+    .form2{order: 1;
+    }
+    .emb{order: 2;
+    }
+    .forms{
+        flex-direction: column;
+    }
+    #contactus{
+        font-size: 30px; 
+        
+    }
+}
