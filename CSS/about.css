@@ -198,7 +198,6 @@ body {
   justify-content: center;
   flex-direction: row;
   align-items: flex-start;
-  /* ⬅️ This aligns the top edges */
   background-color: #101210;
   color: #f7f1e1;
   box-sizing: border-box;
