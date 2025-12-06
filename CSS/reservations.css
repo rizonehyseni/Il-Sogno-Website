@@ -4,7 +4,6 @@ body {
   padding: 0;
   background-color: #070505;
   background-image: url(/photos/reservations-pic.jpg);
-  background: (rgba(172, 127, 127, 0.5), rgba(0, 0, 0, 0.5));
   background-position: center;
   object-fit: cover;
   background-repeat: no-repeat;
@@ -37,118 +36,110 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.25);  
+  background: rgba(0, 0, 0, 0.45);  
   z-index: -1;
+
 }
 
 /* reservation forma */
 
 .banner {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  padding-bottom: 0px;
-}
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+   
+    }
 
+    .banner h2 {
+      font-size: 48px;
+      font-weight: 300;
+      margin-bottom: 30px;
+      letter-spacing: 2px;
+    }
 
+    .form-container {
+      padding: 60px 80px;
+      width: 100%;
+      max-width: 800px;         
+      margin: 0 auto;
+    }
 
-.card-container {
-  display: grid;
-  grid-template-columns: 350px 500px;
-  height: 100%;
-  /* 100% e prindit  */
-}
+    .form-row {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    
+    }
 
-.card-img {
-  background: url(/photos/homemade-pasta.jpg) center/cover no-repeat;
-}
+    .form-row > * {
+      flex: 1;
+      min-width: 280px;
+    }
 
+    input, select {
+      width: 100%;
+      padding: 14px 10px;
+      font-size: 17px;
+      border: none;
+      border-bottom: 2px solid #ffffff;
+      background: transparent;
+      outline: none;
+      font-family: inherit;
+      color: #ffffff;
+    }
 
-.banner h2 {
-  padding-bottom: 40px;
-  margin-bottom: 20px;
-  font-family: "Instrument Serif", serif;
-  font-weight: 100;
-  font-size: 40px;
-}
+    input::placeholder, select {
+      color: #ffffff;
+    }
 
-.card-content {
-  background-color: #fff;
-  height: 330px;
-}
+    input[type="date"] {
+      color: #ffffff;
+    }
 
-.card-content h1 {
-  text-align: center;
-  color: #000;
-  padding: 25px 0 10px 0;
-  font-size: 26px;
-  font-weight: 500;
-  font-family: "Instrument Serif", serif;
-}
+    /* Butoni BOOK TABLE */
+    input[type="submit"] {
+      background: #ffffff;
+      color: rgb(0, 0, 0);
+      font-size: 18px;
+      font-weight: 500;
+      
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: opacity 0.3s;
+      margin-top: 20px;
+    }
 
-.form-row {
-  display: flex;
-  width: 90%;
-  margin: 0 auto;
-}
+    input[type="submit"] {
+      opacity: 0.7;
+    }
+        input[type="submit"]:hover {
+      opacity: 1;
+    }
 
-.card-content select,
-.card-content input {
-  display: block;
-  width: 100%;
-  margin: 15px 12px;
-  padding: 5px;
-  font-size: 15px;
-  outline: none;
-  border: none;
-  border-bottom: 1px solid #eee;
-  font-weight: 300;
-}
+    @media (max-width: 768px) {
+      .banner h2 { 
+        font-size: 36px;
+       }
+      .form-container {
+        padding: 50px 40px;
+        max-width: 80%;
+      }
+      .form-row { 
+        gap: 20px; 
+      }
+      
+    }
 
-form input[type=text],
-form input[type=number],
-input::placeholder,
-select {
-  color: #9a9a9a;
-}
-
-input[type="date"] {
-  color: #9a9a9a;
-  font-family: inherit;
-  background-color: transparent;
-  appearance: none;
-}
-
-form input[type=submit] {
-  columns: #fff;
-  background: #7b7978;
-  padding: 12px 0;
-  border-radius: 4px;
-  cursor: pointer;
-  color: white;
-}
-
-form input[type=submit]:hover {
-  opacity: 0.9;
-}
-
-
-/* responsive */
-
-@media(max-width: 992px) {
-  .card-container {
-    grid-template-columns: 100%;
-  }
-
-
-  .card-img {
-    height: 330px;
-  }
-
-  .banner h2 {
-    display: none;
-  }
-}
+    @media (max-width: 480px) {
+      .form-container {
+         padding: 40px 25px; 
+        }
+      .banner h2 {
+         font-size: 32px;
+         }
+    }
