@@ -652,3 +652,60 @@ input {
         
     }
 }
+@media screen and (max-width: 768px){
+      body{
+        width: 100%;
+    }
+    .FindUs-h1{
+        padding: 0;
+        padding-bottom: 10px;
+    
+    }
+    #find-us-header{
+        font-size: 30px;
+    }
+      @keyframes typingA{
+
+    from{ width: 0;
+    }
+    to{
+        width: 320px;
+    }
+    }
+     .buttonM{
+        height: 50px;
+        width: 190px;
+        font-size: 12px;
+        padding: 0;
+    }
+    .buttons{
+        top: 60%;
+        left: 50%;
+        height: fit-content;
+        gap: 10px;
+    }
+    .FindUs-container33 p,
+    .FindUs-container33
+    {
+        height: fit-content;
+        margin: 0;
+        font-size: 16px;
+    }
+    .FindUs-container3{
+        height: fit-content;
+    }
+        #contactus{
+        font-size: 19px;
+        padding: 0;
+    
+    }
+    .contactus{
+        padding: 0;
+        padding-bottom: 10px;
+    }
+    #divider-name{
+        font-size: 40px;
+    }
+}
+
+
