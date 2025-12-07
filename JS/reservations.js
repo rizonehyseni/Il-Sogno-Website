@@ -33,3 +33,31 @@ document.addEventListener("DOMContentLoaded", () => {
       .replace(/\b\w/g, c => c.toUpperCase()); // cdo fjale me shkronje te madhe
   });
 });
+
+
+
+/*pop up */ 
+
+// Kur klikohet "BOOK TABLE"
+
+document.querySelector("form").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+ 
+  if (!this.checkValidity()) {
+    this.reportValidity();  // fuhsat me i kontrollu
+    return;
+  }
+
+  // Shfaqe pop upin
+  document.getElementById("successPopup").style.display = "flex";
+  this.reset();
+});
+
+// Butoni close
+document.getElementById("closePopup").addEventListener("click", () => {
+  document.getElementById("successPopup").style.display = "none";
+});
+
+
+
