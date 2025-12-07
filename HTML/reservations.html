@@ -1,115 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Sogno</title>
+    <link rel="stylesheet" href="../assets/fonts/fonts.css" />
+    <link rel="stylesheet" href="/CSS/reservations.css" />
+    <script src="/JS/reservations.js" defer></script>
+    <script src="../Components/navbar.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  </head>
 
-  <title>Il Sogno</title>
-<link rel="stylesheet" href="../assets/fonts/fonts.css">
-  <link rel="stylesheet" href="/CSS/reservations.css">
-  <script src="/JS/reservations.js" defer></script>
-  <script src="../Components/navbar.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <body>
+    <video class="video-background" autoplay muted loop playsinline>
+      <source src="/photos/seaside-view.mp4" type="video/mp4" />
+    </video>
+    <div class="video-overlay"></div>
 
+    <section class="banner">
+      <h2>Book your table</h2>
 
-</head>
+      <div class="form-container">
+        <h1></h1>
 
-<body>
-<video class="video-background" autoplay muted loop playsinline>
-    <source src="/photos/seaside-view.mp4" type="video/mp4">
-    
-  </video>
-  <div class="video-overlay"></div>
+        <form action="">
+          <div class="form-row">
+            <input
+              id="date-picker"
+              type="text"
+              placeholder="Select Date "
+              required
+            />
 
-  
-  <section class="banner">
-    <h2>Book your table</h2>
+            <input
+              id="time-picker"
+              type="text"
+              placeholder="Select Time"
+              required
+            />
+          </div>
 
-    <div class="form-container">
-      <h1></h1>
+          <div class="form-row">
+            <input type="text" placeholder="Full Name" required />
+            <input
+              type="tel"
+              id="phone"
+              placeholder="Enter phone number "
+              required
+            />
+          </div>
 
-      <form action="">
-      
-        <div class="form-row">
-          <!-- <input type="date" name="reservation-date" min="2025-10-17" max="2025-12-31" required> -->
-           <input id="date-picker" type="text" placeholder="Select Date " required>
+          <div class="form-row">
+            <input type="email" id="email" placeholder="Your Email" required />
 
-      
-        <input id="time-picker" type="text" placeholder="Select Time" required>
-</div>
+            <input
+              type="number"
+              placeholder="How many people?"
+              min="1"
+              max="20"
+              required
+            />
+          </div>
 
-        <div class="form-row">
-          <input type="text" placeholder="Full Name" required>
-          <!-- <input type="tel" placeholder="Phone Number"  required> -->
-           <input type="tel" id="phone" placeholder="Enter phone number " required>
+          <div class="form-row">
+            <input id="comments" placeholder="Additional comments (optional)" />
+            <input type="submit" value="BOOK TABLE" />
+          </div>
+        </form>
+      </div>
+    </section>
 
-        </div>
+    <div id="successPopup">
+      <div class="Popup-window">
+        <h2>Reservation complete</h2>
+        <img src="../photos/IlSogno.png" style="width: 180px" alt="" />
+        <p>
+          Thank you for choosing Il Sogno.<br />
+          Bienvenuto!
+        </p>
 
-       <div class="form-row">
-  <input type="email" id="email" placeholder="Your Email" required>
-
-  <!-- <textarea id="comments" placeholder="Additional comments (optional)" rows="3"></textarea> -->
-    <input type="number" placeholder="How many people?" min="1" max="20" required>
-</div>
-
-        <div class="form-row">
-        <input
-    id="comments" 
-    placeholder="Additional comments (optional)"  >
-          <input type="submit" value="BOOK TABLE">
-        </div>
-      </form>
+        <button id="closePopup">CLOSE</button>
+      </div>
     </div>
-  </section>
-
-
-
-  <!-- Mesazhi i suksesit -->
-<!-- Popup elegant me ngjyra neutrale -->
-<div id="successPopup">
-  <div class="Popup-window">
-    
-    
-    <h2>
-      Reservation complete
-    </h2>
-    <img src="../photos/IlSogno.png" style="width: 180px;" alt="">
-    <p>
-      Thank you for choosing Il Sogno.<br>
-      Bienvenuto!
-    </p>
-    
-    <button id="closePopup">
-      CLOSE
-    </button>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
-
+  </body>
 </html>
