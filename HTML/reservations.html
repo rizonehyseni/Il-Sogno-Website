@@ -33,7 +33,9 @@
       <form action="">
       
         <div class="form-row">
-          <input type="date" name="reservation-date" min="2025-10-17" max="2025-12-31" required>
+          <!-- <input type="date" name="reservation-date" min="2025-10-17" max="2025-12-31" required> -->
+           <input id="date-picker" type="text" placeholder="Select Date " required>
+
 
           <!-- <select name="hours" required>
             <option value="" disabled selected>Select Time</option>
@@ -54,11 +56,22 @@
 
         <div class="form-row">
           <input type="text" placeholder="Full Name" required>
-          <input type="tel" placeholder="Phone Number" required>
+          <!-- <input type="tel" placeholder="Phone Number"  required> -->
+           <input type="tel" id="phone" placeholder="Enter phone number " required>
+
         </div>
 
+       <div class="form-row">
+  <input type="email" id="email" placeholder="Your Email" required>
+
+  <!-- <textarea id="comments" placeholder="Additional comments (optional)" rows="3"></textarea> -->
+    <input type="number" placeholder="How many people?" min="1" max="20" required>
+</div>
+
         <div class="form-row">
-          <input type="number" placeholder="How many people?" min="1" max="20" required>
+        <input
+    id="comments" 
+    placeholder="Additional comments (optional)"  >
           <input type="submit" value="BOOK TABLE">
         </div>
       </form>
