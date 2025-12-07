@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="/CSS/reservations.css">
   <script src="/JS/reservations.js" defer></script>
   <script src="../Components/navbar.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
 
 </head>
 
@@ -32,7 +35,7 @@
         <div class="form-row">
           <input type="date" name="reservation-date" min="2025-10-17" max="2025-12-31" required>
 
-          <select name="hours" required>
+          <!-- <select name="hours" required>
             <option value="" disabled selected>Select Time</option>
             <option value="17:00">5:00 PM</option>
             <option value="17:30">5:30 PM</option>
@@ -44,7 +47,10 @@
             <option value="20:30">8:30 PM</option>
             <option value="21:00">9:00 PM</option>
           </select>
-        </div>
+        </div> -->
+      
+        <input id="time-picker" type="text" placeholder="Select Time" required>
+</div>
 
         <div class="form-row">
           <input type="text" placeholder="Full Name" required>
