@@ -1,5 +1,5 @@
 # Il Sogno – Italian Restaurant Website
- <img width="100px" src="/photos/=IlSogno.png" alt="">
+ <img width="100px" src="/photos/IlSogno.png" alt="">
  
 ## Tech Stack
 - **HTML5** – Page structure  
