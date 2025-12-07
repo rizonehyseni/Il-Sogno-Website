@@ -32,7 +32,7 @@ body {
 
 }
 
-/* reservation forma */
+/* reservation formulari */
 
 .banner {
       padding-top: 3rem;
@@ -61,7 +61,6 @@ body {
     .form-row {
       display: flex;
       gap: 60px;
-     
       margin-bottom: 35px;
       flex-wrap: wrap;
     
@@ -77,7 +76,7 @@ body {
       padding: 14px 10px;
       font-size: 17px;
       border: none;
-      border-bottom: 2px solid #ffffff;
+      border-bottom: 2px solid #c8c8c8;
       background: transparent;
       outline: none;
       font-family: inherit;
@@ -89,15 +88,30 @@ body {
     }
 
     input[type="date"] {
-      color: #ffffff;
+      color: #ededed;
     }
+    input[type="date"] {
+  color: white;
+}
+/* per me ja ndryshu ngjyren calendar icones */
+input[type="date"]::-webkit-datetime-edit,
+input[type="date"]::-webkit-datetime-edit-year-field,
+input[type="date"]::-webkit-datetime-edit-month-field,
+input[type="date"]::-webkit-datetime-edit-day-field {
+  color: white;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
 
     /* Butoni BOOK TABLE */
     input[type="submit"] {
       background: #ffffff;
       color: rgb(0, 0, 0);
       font-size: 18px;
-      font-weight: 500;
+      font-weight: 00;
       
       border: none;
       border-radius: 6px;
