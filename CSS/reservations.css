@@ -127,6 +127,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       opacity: 1;
     }
 
+
     @media (max-width: 768px) {
       .banner h2 { 
         font-size: 36px;
