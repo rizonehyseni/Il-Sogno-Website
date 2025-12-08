@@ -301,4 +301,25 @@ transition: all 0.5s;
     transform: translateY(-2px); 
 }
 
+.img-pasta{
+    background-image: url(/photos/pastaImg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+input{
+    margin-top: 40px;
+    color: black;
+    font-family: "Instrument Serif", serif;
+    background:transparent;
+    border: 0.5px solid white;
+    font-size: 20px;
+    width: 97.5%;
+    height: 50px;
+    text-align: center;
+}
 
