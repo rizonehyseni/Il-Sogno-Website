@@ -267,5 +267,20 @@ transition: all 0.5s;
     flex-direction: column;
 }
 
+.container2 h1 {  
+    letter-spacing: 3px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.container2 p{   
+    letter-spacing: 0.5px;
+    margin: 10px;
+    height: fit-content;
+    font-size: 18px;
+    text-align: center;
+    margin: 12px;
+}
+
 
 
