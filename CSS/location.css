@@ -154,6 +154,8 @@ html, body {
     align-content: space-between;
     position: relative;
     overflow: visible;
+    justify-content: center;
+    align-items: center;
   
 }
 .section2::before{
@@ -376,8 +378,11 @@ html, body {
 
 .map{
     position: relative;
-    width: 100%;
+    width: 97%;
     height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid #ffffff;
 }
 
 .buttons{
