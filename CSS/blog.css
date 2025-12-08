@@ -192,4 +192,22 @@ html, body {
     flex-direction: column;
 }
 
+.container1 h1{
+    color: white;
+    font-family: "Instrument Serif", serif;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.paragraph{
+    color: #F7F1E1;
+    font-family: "Instrument Serif", serif;
+    width: 75%;
+    margin:20px ;
+    padding-bottom: 40px;
+    border-bottom: 1px solid white;
+}
+
+
+
 
