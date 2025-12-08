@@ -226,5 +226,22 @@ html, body {
     margin: 0;
 }
 
+#button1{
+background: transparent;
+color: #F7F1E1;
+font-family: "Instrument Serif", serif;
+width: 150px;
+height: 30px;
+border: 1px solid white;
+border-radius: 20px;
+transition: all 0.5s;
+}
+
+#button1:hover{
+    background-color: white;
+    color: black;
+    transform: translateY(-2px);
+}
+
 
 
