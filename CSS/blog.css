@@ -243,5 +243,16 @@ transition: all 0.5s;
     transform: translateY(-2px);
 }
 
+.container2{
+   width: 30%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   height: 100%;
+   gap: 50px;
+   border-left: 1px solid white;
+}
+
 
 
