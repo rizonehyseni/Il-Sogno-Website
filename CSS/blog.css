@@ -208,6 +208,23 @@ html, body {
     border-bottom: 1px solid white;
 }
 
+.bottom{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    font-family: "Instrument Serif", serif;
+    letter-spacing: 0.5px;
+    width: 70%;
+    padding: 40px;
+    #button1{order: 1;}
+}
+
+.bottom p{
+    margin: 0;
+}
 
 
 
