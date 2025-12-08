@@ -164,3 +164,14 @@ html, body {
     align-items: center;
     margin-bottom: 60px;
 }
+
+
+@keyframes fadeAnimation{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
