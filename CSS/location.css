@@ -326,22 +326,10 @@ html, body {
     font-family: "Instrument Serif", serif;
     letter-spacing: 10px;
     font-size: 40px; 
-    width: 0;
     white-space: nowrap;
     overflow: hidden;
     border-right: 0.1px solid ;
-    animation: typingA 2s steps(16,end) forwards,
-    blink 1s  step-end infinite;
-    
- }
-
-  @keyframes typingA{
-
-    from{ width: 0;
-    }
-    to{
-        width: 367px;
-    }
+    animation: blink 1s  step-end infinite;
  }
 
  @keyframes blink{
