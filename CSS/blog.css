@@ -139,3 +139,19 @@ html, body {
     background-image:url(/photos/sogno5.png);
     margin-bottom: 80px;
 }
+
+#divider-name{
+    font-size: 30px; 
+    font-family: "Instrument Serif", serif;
+    font-style: normal;
+    color: #F7F1E1;
+    margin: 0;
+}
+
+.divider{
+    width: 70%;
+    bottom: 15%;
+    left: 10%;
+    height: 40px;
+    position: absolute;
+}
