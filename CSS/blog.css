@@ -254,5 +254,18 @@ transition: all 0.5s;
    border-left: 1px solid white;
 }
 
+#header1{
+    width: 70%;
+    text-align: right;
+}
+
+.div{
+    color: #F7F1E1;
+    font-family: "Instrument Serif", serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 
 
