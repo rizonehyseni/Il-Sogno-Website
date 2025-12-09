@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Il Sogno-Blog</title>
+
+    <link rel="stylesheet" href="/CSS/blog.css"> 
+    <script src="/JS/app.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Island+Moments&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--navbar-i-->
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="index.html" class="logo_link">
+                <img src="/photos/IlSogno.png" alt="Logo" class="logo">
+            </a>
+            <ul class="nav_menu">
+                <li class="nav_item"><a href="menu.html" class="nav_link">Menu</a></li>
+                <li class="nav_item"><a href="music.html" class="nav_link">Music</a></li>
+                <li class="nav_item"><a href="reservations.html" class="nav_link">Reservations</a></li>
+                <li class="nav_item"><a href="about.html" class="nav_link">About Us</a></li>
+            </ul>
+            <div class="navbar_toggle hidden" id="mobile_menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+     <section class="section1">
+        <div class="divider">   
+            <h3 id="divider-name"></h3>
+        </div> 
+    </section>
+
+    <section class="section2">
+        <div class="container1">
+            <h1 id="header1">IlSogno Blog</h1>
+            <img src="/photos/sogno5.png" id="sogno5">
+            <div class="paragraph">
+                <p>
+                    At Il Sogno, every dish begins with a passion for true Italian flavors and a love for bringing people together. From the moment you step through our doors, you are welcomed into an atmosphere that blends the rustic charm of Italy with modern elegance.
+                     Our chefs dedicate themselves to crafting meals that celebrate the authenticity of Italian cuisine,
+                    using time-honored recipes and only the freshest, highest-quality ingredients.
+                    Indulge in rich, hand-made pastas, perfectly baked wood-fired pizzas, and desserts crafted with care, each plate telling a story of tradition, creativity, and culinary excellence. Whether you are here for a quiet evening, a festive celebration, or your first taste of genuine Italian fare, every detail is designed to make your experience unforgettable.
+                    Beyond the food, Il Sogno is about connection. Share laughter over antipasti with friends, toast to special moments with loved ones, or enjoy a serene dinner surrounded by the warm ambiance of our thoughtfully designed space. Every visit is a chance to savor not just a meal, but the spirit of Italy itself.
+                    At Il Sogno, you don’t just enjoy food—you step into a world where flavors, aromas, and memories intertwine, allowing you to live the dream of Italy one plate at a time. From the first bite to the last sip of espresso, we aim to create an experience that lingers in your heart long after the meal is over.        
+                </p>
+            </div>
+            <div class="bottom">
+                <button id="button1" onclick="location.href='about.html'">Read More</button>
+                <p>By IlSogno, 2025</p>
+            </div>    
+        </div>
+        <div class="container2">
+            <div class="div">
+                <h1>Il Sogno</h1>
+                <p>Immers yourself in the dream</p>
+                <p>Via Salvatore Quasimodo, 384011 Amalfi</p>
+                <p>8:00-00:00</p>
+                <p>+00000000</p>
+                <button id="button2" onclick="location.href='reservations.html'">Book a Table</button>
+            </div>
+            <div class="div">
+                <h1>Featured Dish</h1>
+                <div  class="img-pasta"></div>
+                <p>Signature Truffle Pasta - our <br>bestseller since 2020</p>
+            </div>
+            <div class="div">
+                <h1>Popular blog posts</h1>
+                <p>"How we make our sourdough starter</p>
+                <p>"Behind the scenes  in our kitchen"</p>
+                <p>"Why fresh herbs  matter"</p>
+            </div>
+            <div  class="div">
+                <form>
+                    <h1>Subscribe</h1>
+                    <p>Join thousands of regular readers.</p>
+                    <input type="email" placeholder="Email address">
+                    <button id="button2" type="submit" onclick="location.href='reservations.html'">Submit</button>
+                </form>
+            </div>
+        </div>
+   </section>
+
+
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="footer_section">
+                <div class="footer_logo_container">
+                    <img src="/photos/IlSogno.png" alt="Logo" class="footer_logo">
+                </div>
+                <div class="footer_text_container">
+                    <h3 class="footer_text">Contact Us</h3>
+                    <p class="footer_text">000000000</p>
+                    <p class="footer_text">From Tuesday to Sunday </p>
+                    <p class="footer_text">From 18:00 to 00:00</p>
+                    <p class="footer_text">Via Salvatore Quasimodo, 384011 Amalfi</p>
+                    <a href="/" class="footer_text link">Privacy Policy </a>
+                    <br>
+                    <a href="/" class="footer_text link">Cookie Policy</a>
+                </div>
+                <div class="footer_text_container">
+                    <p class="footer_text">©2025 Il Sogno Restaurant. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+ <script src="/JS/blog.js" defer></script> 
+</body>
+</html>
