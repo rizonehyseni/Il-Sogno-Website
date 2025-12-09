@@ -10,7 +10,7 @@ Join us and savor moments made memorable.`;
     if (i < text.length) {
       typingText.textContent += text.charAt(i);
       i++;
-      setTimeout(typeWriter, 30);
+      setTimeout(typeWriter, 20);
     }
   }
 
