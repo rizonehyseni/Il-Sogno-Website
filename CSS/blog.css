@@ -29,9 +29,9 @@ body {
 
 #divider-name {
   font-size: 30px;
-      font-family: "Instrument Serif", serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
   font-style: normal;
   color: #f7f1e1;
   margin: 0;
@@ -67,7 +67,6 @@ body {
   width: 80%;
   margin: 20px;
   margin-left: 40px;
-
   border-radius: 20px;
   overflow: hidden;
 }
@@ -82,9 +81,9 @@ body {
 
 .container1 h1 {
   color: white;
-      font-family: "Instrument Serif", serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
   letter-spacing: 1px;
   margin: 0;
   font-weight: 200;
@@ -92,9 +91,9 @@ body {
 
 .paragraph {
   color: #f7f1e1;
-      font-family: "Instrument Serif", serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
   width: 75%;
   margin: 20px;
   padding-bottom: 40px;
@@ -108,9 +107,9 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-      font-family: "Instrument Serif", serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
   letter-spacing: 0.5px;
   width: 70%;
   padding: 40px;
@@ -126,9 +125,9 @@ body {
 #button1 {
   background: transparent;
   color: #f7f1e1;
-      font-family: "Instrument Serif", serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
   width: 150px;
   height: 30px;
   border: 1px solid white;
@@ -214,15 +213,15 @@ body {
 }
 
 input {
-  margin-top: 40px;
-  color: black;
-      font-family: "Instrument Serif", serif;
+    margin-top: 40px;
+    color: white;
+    font-family: "Instrument Serif", serif;
     font-weight: 400;
-    font-style: normal;
-  background: transparent;
-  border: 0.5px solid white;
-  font-size: 20px;
-  width: 97.5%;
-  height: 50px;
-  text-align: center;
+    font-style: normal; 
+    background: transparent;
+    border: 0.5px solid white;
+    font-size: 20px;
+    width: 97.5%;
+    height: 50px;
+    text-align: center;
 }
