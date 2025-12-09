@@ -13,7 +13,7 @@ body {
   padding: 0;
 }
 
-.section1 {
+.hero-section {
   position: relative;
   display: flex;
   align-items: flex-end;
@@ -27,17 +27,15 @@ body {
   margin-bottom: 80px;
 }
 
-#divider-name {
+#hero-title {
   font-size: 30px;
   font-family: "Instrument Serif", serif;
   font-weight: 400;
-  font-style: normal;
-  font-style: normal;
   color: #f7f1e1;
   margin: 0;
 }
 
-.divider {
+.hero-divider {
   width: 70%;
   bottom: 15%;
   left: 10%;
@@ -45,25 +43,40 @@ body {
   position: absolute;
 }
 
-.section2 {
+@keyframes fadeAnimation {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.content-wrapper {
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 60px;
 }
 
-@keyframes fadeAnimation {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+/* LEFT SECTION */
+.blog-section {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-#sogno5 {
+.blog-title {
+  color: white;
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  letter-spacing: 1px;
+  margin: 0;
+  width: 70%;
+  text-align: right;
+}
+
+.blog-image {
   width: 80%;
   margin: 20px;
   margin-left: 40px;
@@ -71,63 +84,34 @@ body {
   overflow: hidden;
 }
 
-.container1 {
-  width: 70%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.container1 h1 {
-  color: white;
-  font-family: "Instrument Serif", serif;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 1px;
-  margin: 0;
-  font-weight: 200;
-}
-
-.paragraph {
+.blog-paragraph {
   color: #f7f1e1;
   font-family: "Instrument Serif", serif;
-  font-weight: 400;
-  font-style: normal;
   width: 75%;
   margin: 20px;
   padding-bottom: 40px;
   border-bottom: 1px solid white;
 }
 
-.bottom {
+.blog-footer {
   color: white;
   display: flex;
-  justify-content: center;
-  align-items: center;
   justify-content: space-between;
-  flex-direction: row;
+  align-items: center;
   font-family: "Instrument Serif", serif;
-  font-weight: 400;
-  font-style: normal;
   letter-spacing: 0.5px;
   width: 70%;
   padding: 40px;
-  #button1 {
-    order: 1;
-  }
 }
 
-.bottom p {
+.blog-footer p {
   margin: 0;
 }
 
-#button1 {
+.btn-read-more {
   background: transparent;
   color: #f7f1e1;
   font-family: "Instrument Serif", serif;
-  font-weight: 400;
-  font-style: normal;
   width: 150px;
   height: 30px;
   border: 1px solid white;
@@ -135,56 +119,48 @@ body {
   transition: all 0.5s;
 }
 
-#button1:hover {
+.btn-read-more:hover {
   background-color: white;
   color: black;
   transform: translateY(-2px);
 }
 
-.container2 {
+/* RIGHT SIDEBAR SECTION */
+.sidebar-section {
   width: 30%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  height: 100%;
   gap: 50px;
   border-left: 1px solid white;
+  height: 100%;
 }
 
-#header1 {
-  width: 70%;
-  text-align: right;
-}
-
-.div {
+.sidebar-box {
   color: #f7f1e1;
   font-family: "Instrument Serif", serif;
-  font-weight: 400;
-  font-style: normal;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.container2 h1 {
+.sidebar-box h1 {
   letter-spacing: 3px;
   font-size: 40px;
-  text-align: center;
   font-weight: 200;
-}
-
-.container2 p {
-  letter-spacing: 0.5px;
-  margin: 10px;
-  height: fit-content;
-  font-size: 18px;
   text-align: center;
-  margin: 12px;
 }
 
-#button2 {
-  margin-top: 40px;
+.sidebar-box p {
+  letter-spacing: 0.5px;
+  margin: 12px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.btn-sidebar {
+  margin-top: 15px;
   color: black;
   font-family: "Instrument Serif", serif;
   background-color: #f7f1e1;
@@ -193,16 +169,15 @@ body {
   width: 100%;
   height: 50px;
   transition: all 1s;
-  margin-top: 15px;
 }
 
-#button2:hover {
+.btn-sidebar:hover {
   background-color: #1e0202;
   color: white;
   transform: translateY(-2px);
 }
 
-.img-pasta {
+.sidebar-image {
   background-image: url(/photos/pastaImg.jpg);
   background-size: cover;
   background-position: center;
@@ -213,15 +188,13 @@ body {
 }
 
 input {
-    margin-top: 40px;
-    color: white;
-    font-family: "Instrument Serif", serif;
-    font-weight: 400;
-    font-style: normal; 
-    background: transparent;
-    border: 0.5px solid white;
-    font-size: 20px;
-    width: 97.5%;
-    height: 50px;
-    text-align: center;
+  margin-top: 40px;
+  color: white;
+  font-family: "Instrument Serif", serif;
+  background: transparent;
+  border: 0.5px solid white;
+  font-size: 20px;
+  width: 97.5%;
+  height: 50px;
+  text-align: center;
 }

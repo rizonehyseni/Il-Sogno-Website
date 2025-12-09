@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Il Sogno-Blog</title>
+    <title>Il Sogno - Blog</title>
 
     <link rel="stylesheet" href="/CSS/blog.css" />
     <script src="/JS/app.js" defer></script>
@@ -12,67 +12,73 @@
     <link rel="stylesheet" href="../assets/fonts/fonts.css" />
   </head>
   <body>
-    <!--navbar-i-->
+
     <my-navbar></my-navbar>
 
-    <section class="section1">
-      <div class="divider">
-        <h3 id="divider-name"></h3>
+    <section class="hero-section">
+      <div class="hero-divider">
+        <h3 id="hero-title"></h3>
       </div>
     </section>
 
-    <section class="section2">
-      <div class="container1">
-        <h1 id="header1">Behind Our Autumn Menu</h1>
-        <img src="/photos/sogno5.png" id="sogno5" />
-        <div class="paragraph">
+    <div class="content-wrapper">
+      <section class="blog-section">
+        <h1 class="blog-title">Behind Our Autumn Menu</h1>
+
+        <img src="/photos/sogno5.png" class="blog-image" />
+
+        <div class="blog-paragraph">
           <p>
-            Chef Luca reveals the secrets of truffle season from selecting the finest local varieties to crafting dishes that capture their earthy aroma.
+            Chef Luca reveals the secrets of truffle season from selecting the finest local varieties 
+            to crafting dishes that capture their earthy aroma.
+          </p>
         </div>
-        <div class="bottom">
-          <button id="button1" onclick="location.href='about.html'">
+
+        <div class="blog-footer">
+          <button class="btn-read-more" onclick="location.href='about.html'">
             Read More
           </button>
           <p>By IlSogno, 2025</p>
         </div>
-      </div>
-      <div class="container2">
-        <div class="div">
+      </section>
+
+      <section class="sidebar-section">
+        <div class="sidebar-box">
           <h1>Il Sogno</h1>
-          <p>Immers yourself in the dream</p>
-          <p>Via Salvatore Quasimodo, 384011 Amalfi</p>
+          <p>Immerse yourself in the dream</p>
+          <p>Via Salvatore Quasimodo, 38<br>4011 Amalfi</p>
           <p>8:00-00:00</p>
           <p>+00000000</p>
-          <button id="button2" onclick="location.href='reservations.html'">
+          <button class="btn-sidebar" onclick="location.href='reservations.html'">
             Book a Table
           </button>
         </div>
-        <div class="div">
+
+        <div class="sidebar-box">
           <h1>Featured Dish</h1>
-          <div class="img-pasta"></div>
-          <p>Signature Truffle Pasta - our <br />bestseller since 2020</p>
+          <div class="sidebar-image"></div>
+          <p>Signature Truffle Pasta - our<br />bestseller since 2020</p>
         </div>
-        <div class="div">
-          <h1>Popular blog posts</h1>
-          <p>"How we make our sourdough starter</p>
+
+        <div class="sidebar-box">
+          <h1>Popular Blog Posts</h1>
+          <p>"How we make our sourdough starter"</p>
           <p>"Behind the scenes in our kitchen"</p>
           <p>"Why fresh herbs matter"</p>
         </div>
-        <div class="div">
+
+        <div class="sidebar-box">
           <form>
             <h1>Subscribe</h1>
             <p>Join thousands of regular readers.</p>
             <input type="email" placeholder="Email address" />
-            <button
-              id="button2"
-              type="submit"
-              onclick="location.href='reservations.html'">
+            <button class="btn-sidebar" type="submit">
               Submit
             </button>
           </form>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <my-footer></my-footer>
     <script src="/JS/blog.js" defer></script>
