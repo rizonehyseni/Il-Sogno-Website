@@ -102,6 +102,8 @@ body {
   letter-spacing: 0.5px;
   width: 70%;
   padding: 40px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .blog-footer p {
@@ -198,3 +200,143 @@ input {
   height: 50px;
   text-align: center;
 }
+
+@media screen and (max-width: 992px) {
+   body{
+    width: 100%;
+   }
+   #hero-title {
+  font-size: 25px;  
+}
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.sidebar-box p {
+  margin: 9px 12px;
+  font-size: 15px;
+  
+}
+
+.sidebar-box h1 {
+  margin-bottom: 15px;
+  font-size: 30px;
+
+
+}
+.sidebar-image {
+  width: 200px;
+  height: 180px;
+  margin: 15px;
+}
+.blog-footer{
+    padding-top: 10px;
+     padding-left: 0;
+    padding-right: 0;
+}
+
+input{
+    width: 90%;  
+    margin-top: 20px;
+    font-size: 15px; 
+}
+
+.btn-sidebar {
+    width: 90%;
+}
+
+}
+
+@media screen and (max-width: 768px){
+   body{
+    width: 100%;
+   }
+   #hero-title {
+  font-size: 20px;  
+}
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blog-footer{
+    display: flex;
+    padding: 0;
+}
+.sidebar-box p {
+  margin: 3px 12px;
+  font-size: 12px;
+  
+}
+
+.sidebar-box h1 {
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+.sidebar-image {
+  width: 120px;
+  height: 120px;
+  margin: 15px;
+}
+.blog-footer{
+    padding-top: 10px;
+    font-size: 15px;
+   
+}
+
+input{
+    width: 80%;  
+    margin-top: 20px;
+    font-size: 15px; 
+    height: 40px;
+}
+
+.btn-sidebar {
+    width: 80%;
+    height: 40px;
+    font-size: 17px;
+}
+.btn-read-more{
+    width: 90px;
+}
+}
+
+
+@media screen and (max-width: 480px){
+    .content-wrapper{
+        flex-direction: column;
+        display: flex;
+    }
+
+    .blog-section{
+        display: flex;
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    #hero-title {
+        font-size: 16px; 
+        padding-bottom: 40px;
+    }
+
+    .hero-divider{
+       top: 65%;
+    }
+
+    .sidebar-section{
+        width: 100%;
+        border: none;
+    }
+
+    input{
+    width: 80%;  
+    margin-top: 20px;
+    font-size: 10px; 
+    height: 40px;
+    }
+}
+
