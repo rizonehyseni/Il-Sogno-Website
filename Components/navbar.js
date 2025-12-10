@@ -115,26 +115,6 @@ navbarToggle.addEventListener('click', () => {//kur e click i ndrron tani barsat
   )
 
 
-
-  
-        // $(document).ready(
-        //     function(){
-        //         $("#nav_menu_secondary").hide();
-        //         $("#more").on("click",
-        //             function(){
-        //                 $("#nav_menu_secondary").slideRight(500);
-        //             }
-        //         );
-        //         $("#more").on("click",
-        //             function(){
-        //                 $("#nav_menu_secondary").slideleft(300);
-        //             }
-        //         )
-
-        //     }
-        // )
-
-
   //kur tklikojsh jashte navit me hjek
 
   document.addEventListener('click', (e) => {
