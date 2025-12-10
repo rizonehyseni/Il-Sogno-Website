@@ -38,7 +38,6 @@ const Navbar = ()=>{
       </div>
   )
 }
-<<<<<<< HEAD
 
 
 const HeroSection=()=>{
@@ -195,8 +194,6 @@ const Footer=()=>{
 }
 
 
-=======
->>>>>>> 17acf22662fadbe22a52b3d797090c278b962d04
 const App = () => {
 
 
@@ -204,13 +201,10 @@ const App = () => {
   return (
     <div>
     <Navbar/>
-<<<<<<< HEAD
     <HeroSection/>
     <BlogSection/>
     <Sidebar/>
     <Footer/>
-=======
->>>>>>> 17acf22662fadbe22a52b3d797090c278b962d04
     </div>
   )
 }
