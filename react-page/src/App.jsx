@@ -1,3 +1,7 @@
+//duhet me bo me generate items
+//duhet mi lidh stylesheetsat
+//me ndrru permbajtjen e main.jsx
+
 const Navbar = ()=>{
   return(
      <div className="navbar">
