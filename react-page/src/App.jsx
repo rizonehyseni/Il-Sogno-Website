@@ -1,3 +1,7 @@
+//duhet me bo me generate items
+//duhet mi lidh stylesheetsat
+//me ndrru permbajtjen e main.jsx
+
 const Navbar = ()=>{
   return(
      <div className="navbar">
@@ -34,6 +38,162 @@ const Navbar = ()=>{
       </div>
   )
 }
+
+
+const HeroSection=()=>{
+  return(
+    <div className="hero-section">
+      <div className="hero-divider">
+         <h3 id="hero-title"></h3>
+       </div>
+    </div>
+  )
+}
+
+const BlogSection=()=>{
+  return(
+    
+    <div className="content-wrapper">
+      <section className="blog-section">
+        <h1 className="blog-title">Behind Our Autumn Menu</h1>
+
+        <img src="/photos/sogno5.png" class="blog-image" ></img>
+
+        <div className="blog-paragraph">
+          <p>
+            Chef Luca reveals the secrets of truffle season from selecting the finest local varieties 
+            to crafting dishes that capture their earthy aroma.
+          </p>
+        </div>
+
+        <div className="blog-footer">
+          <button className="btn-read-more" onclick="location.href='about.html'">
+            Read More
+          </button>
+          <p>By IlSogno, 2025</p>
+        </div>
+      </section>
+      </div>
+  )
+}
+
+const SidebarBox1=()=>{
+  return(
+       <div className="sidebar-box">
+          <h1>Il Sogno</h1>
+          <p>Immerse yourself in the dream</p>
+           <p>Via Salvatore Quasimodo, 38<br></br>4011 Amalfi</p>
+           <p>8:00-00:00</p>
+           <p>+00000000</p>
+           <button className="btn-sidebar" onclick="location.href='reservations.html'">
+             Book a Table
+           </button>
+        </div>
+  )
+}
+
+
+const SidebarBox2 =()=>{
+  return(
+     <div className="sidebar-box">
+           <h1>Featured Dish</h1>
+           <div className="sidebar-image"></div>
+           <p>Signature Truffle Pasta - our<br></br>bestseller since 2020</p>
+    </div>
+  )
+}
+
+const SidebarBox3=()=>{
+  return(
+        <div className="sidebar-box">
+           <h1>Popular Blog Posts</h1>
+           <p>"How we make our sourdough starter"</p>
+           <p>"Behind the scenes in our kitchen"</p>
+           <p>"Why fresh herbs matter"</p>
+         </div>
+  )
+}
+
+const SidebarBox4=()=>{
+  return(
+     <div className="sidebar-box">
+           <form>
+             <h1>Subscribe</h1>
+             <p>Join thousands of regular readers.</p>
+             <input type="email" placeholder="Email address" />
+             <button className="btn-sidebar" type="submit">
+               Submit
+             </button>
+           </form>
+         </div>
+  )
+}
+  
+const Sidebar=()=>{
+  return(
+     <section className="sidebar-section">
+      <SidebarBox1/>
+      <SidebarBox2/>
+      <SidebarBox3/>
+      <SidebarBox4/>
+     </section>
+  )
+}
+
+
+const Footer=()=>{
+  return(
+    <footer className="footer">
+    <div className="links-container">
+      <div className="logo-section">
+        <a href="/HTML/index.html"><img src="/photos/IlSogno.png" width="210px" alt="Restaurant Logo"></img></a>
+        <p>Enjoy our delicious cuisine and warm ambiance.</p>
+
+      </div>
+      <div>
+        <h3>Details</h3>
+        <ul>
+          <li><a href="/HTML/menu.html">menu</a></li>
+          <li><a href="/HTML/menu.html" target="blank">reservations</a></li>
+          <li><a href="/HTML/music.html">music</a></li>
+          <li><a href="/HTML/location.html">location</a></li>
+          <li><a href="/HTML/gallery.html">gallery</a></li>
+
+        </ul>
+      </div>
+
+      <div>
+        <h3>Other</h3>
+        <ul>
+          <li><a href="/PRIVACY_POLICY.md">Privacy Policy</a></li>
+          <li><a href="/TERMS_AND_CONDITIONS.md">Terms and Conditions</a></li>
+
+        </ul>
+      </div>
+
+      <div>
+        <h3>Address</h3>
+        <ul>
+          <li><a href="address:123 Main Street,Amalfi Coast, Italy">123 Main Street,Amalfi Coast, Italy</a></li>
+        </ul>
+
+        <h3>Contact Us</h3>
+        <ul>
+          <li><a href="mailto:ilsogno@restaurant.com">ilsogno@restaurant.com</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div className="footer_bar">
+      <p>copyright &copy; 2025 Il Sogno Restaurant. All rights reserved.</p>
+    </div>
+
+    </footer>
+  )
+}
+
+
 const App = () => {
 
 
@@ -41,6 +201,10 @@ const App = () => {
   return (
     <div>
     <Navbar/>
+    <HeroSection/>
+    <BlogSection/>
+    <Sidebar/>
+    <Footer/>
     </div>
   )
 }
