@@ -5,42 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Il Sogno-Location</title>
 
+
+    <script type="module" src="../Components/navbar.js" defer>
+    </script>
+    <link rel="stylesheet" href="../assets/fonts/fonts.css">
+    <script type="module" src="../Components/footer.js" defer></script>
     <link rel="stylesheet" href="/CSS/location.css"> 
-    <script src="/JS/app.js" defer></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Island+Moments&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!--navbar-i-->
-    <nav class="navbar">
-        <div class="navbar_container">
-            <a href="index.html" class="logo_link">
-                <img src="/photos/IlSogno.png" alt="Logo" class="logo">
-            </a>
-            <ul class="nav_menu">
-                <li class="nav_item"><a href="menu.html" class="nav_link">Menu</a></li>
-                <li class="nav_item"><a href="music.html" class="nav_link">Music</a></li>
-                <li class="nav_item"><a href="reservations.html" class="nav_link">Reservations</a></li>
-                <li class="nav_item"><a href="about.html" class="nav_link">About Us</a></li>
-            </ul>
-            <div class="navbar_toggle hidden" id="mobile_menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+    <my-navbar></my-navbar>
 
      <section class="section1">
         <div class="l-divider">
@@ -123,28 +98,7 @@
 
    </section>
 
-     <footer class="footer">
-        <div class="footer_container">
-            <div class="footer_section">
-                <div class="footer_logo_container">
-                    <img src="/photos/IlSogno.png" alt="Logo" class="footer_logo">
-                </div>
-                <div class="footer_text_container">
-                    <h3 class="footer_text">Contact Us</h3>
-                    <p class="footer_text">000000000</p>
-                    <p class="footer_text">From Tuesday to Sunday </p>
-                    <p class="footer_text">From 18:00 to 00:00</p>
-                    <p class="footer_text">Via Salvatore Quasimodo, 384011 Amalfi</p>
-                    <a href="/" class="footer_text link">Privacy Policy </a>
-                    <br>
-                    <a href="/" class="footer_text link">Cookie Policy</a>
-                </div>
-                <div class="footer_text_container">
-                    <p class="footer_text">©2025 Il Sogno Restaurant. All rights reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+   <my-footer></my-footer>
  <script src="/JS/location.js" defer></script>   
 </body>
 </html>
