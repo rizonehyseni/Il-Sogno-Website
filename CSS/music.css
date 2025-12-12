@@ -148,7 +148,7 @@
  }
 
  .price{
-    font-size: 20hv;
+    font-size: 1.5rem;
  }
 
  .tickets {
@@ -167,13 +167,13 @@
  .tickets:hover {
      color: #170000;
      background-color: rgb(253, 249, 249);
-     border: 1px #170000;
+     border: 1px solid #170000;
  }
 
  .tickets:active {
      color: #170000;
      background-color: rgb(35, 1, 1);
-     border: 1px #170000;
+     border: 1px solid #170000;
  }
 
 /* RESPONSIVENESS */
