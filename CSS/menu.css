@@ -3,7 +3,11 @@ body {
   margin: 0;
   background-color: #000000;
 }
-
+.titulli{
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+}
 .menu-buttons {
   padding: 60px 0 20px;
   display: flex;
