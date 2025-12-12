@@ -3,11 +3,14 @@ body {
   margin: 0;
   background-color: #000000;
 }
-.titulli{
+
+.titulli {
   text-align: center;
   color: white;
   margin-top: 10px;
+  margin-bottom: 50px;
 }
+
 .menu-buttons {
   padding: 60px 0 20px;
   display: flex;
@@ -46,9 +49,9 @@ body {
 
 .card-grid {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; 
   gap: 25px;
+  margin-bottom: 25px; 
 }
 
 .card-box {
@@ -59,14 +62,15 @@ body {
   border: 3px solid white;
   border-radius: 0.5rem;
   overflow: hidden;
-   margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
 }
 
 .card-box:hover {
   background-color: white;
   color: black;
   border-color: #180101;
-  border: 3px solid white;
   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
 }
 
@@ -80,15 +84,15 @@ body {
 .card-body {
   margin-top: 20px;
   text-align: center;
+  flex: 1;
 }
 
 .card-title {
   font-size: larger;
 }
-.card-text{
-  margin-top: 10px;
-  margin-right: 5px;
-  margin-left: 5px;
+
+.card-text {
+  margin: 10px 5px 0 5px;
 }
 
 @media screen and (max-width:1200px){
