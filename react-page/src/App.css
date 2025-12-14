@@ -23,7 +23,7 @@ body {
 body {
   background-color: #070505;
   overflow-x: hidden;
-  font-family: "Inter Tight", sans-serif;
+
   color: #f7f1e1;
 }
 
@@ -115,7 +115,7 @@ body {
 
 .blog-paragraph {
   width: 75%;
-  font-family: "Inter Tight", sans-serif;
+   font-family: "Instrument Serif", serif;
   color: #f7f1e1;
   padding-bottom: 40px;
   border-bottom: 1px solid #ffffff;
@@ -127,7 +127,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "Inter Tight", sans-serif;
+   font-family: "Instrument Serif", serif;
   color: #ffffff;
 }
 
@@ -135,7 +135,7 @@ body {
    BUTTONS
 ========================= */
 .btn-read-more {
-  font-family: "Playfair Display", serif;
+   font-family: "Instrument Serif", serif;
   background: transparent;
   border: 1px solid #ffffff;
   border-radius: 20px;
@@ -178,7 +178,7 @@ body {
 }
 
 .sidebar-box p {
-  font-family: "Inter Tight", sans-serif;
+   font-family: "Instrument Serif", serif;
   font-size: 16px;
   margin: 10px 0;
   color: #f7f1e1;
@@ -200,7 +200,7 @@ body {
   height: 50px;
   background: #f7f1e1;
   border: none;
-  font-family: "Playfair Display", serif;
+   font-family: "Instrument Serif", serif;
   font-size: 18px;
   color: #000000;
   cursor: pointer;
@@ -224,7 +224,7 @@ input {
   border: 1px solid #ffffff;
   color: #ffffff;
   text-align: center;
-  font-family: "Inter Tight", sans-serif;
+   font-family: "Instrument Serif", serif;
 }
 
 input::placeholder {
