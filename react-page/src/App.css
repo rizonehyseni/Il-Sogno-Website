@@ -43,7 +43,7 @@ body {
 ========================= */
 .hero-section {
   min-height: 100vh;
-  background-image: url("/photos/sogno5.png");
+  background-image: url("./photos/sogno5.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -75,6 +75,7 @@ body {
    CONTENT WRAPPER
 ========================= */
 .content-wrapper {
+  margin-top: 100px;
   width: 70%;
   margin: 120px auto 80px auto;
   display: flex;
@@ -117,6 +118,7 @@ body {
   width: 75%;
    font-family: "Instrument Serif", serif;
   color: #f7f1e1;
+  text-align: right;
   padding-bottom: 40px;
   border-bottom: 1px solid #ffffff;
 }
@@ -141,9 +143,10 @@ body {
   border-radius: 20px;
   color: #f7f1e1;
   width: 150px;
-  height: 35px;
+  height: 40px;
   cursor: pointer;
   transition: all 0.4s ease;
+  font-size: 15px;
 }
 
 .btn-read-more:hover {
@@ -156,6 +159,7 @@ body {
    SIDEBAR
 ========================= */
 .sidebar-section {
+  margin-top: 150px;
   width: 30%;
   display: flex;
   flex-direction: column;

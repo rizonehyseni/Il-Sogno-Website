@@ -1,52 +1,41 @@
-import { useEffect, useState } from "react";
-import "./Navbar.css";
+import { useEffect, useRef, useState } from "react";
+import "./navbar.css";
 
 const Navbar = () => {
-  // =========================
-  // STATES
-  // =========================
   const [menuOpen, setMenuOpen] = useState(false);
   const [secondaryOpen, setSecondaryOpen] = useState(false);
-  const [hideNavbar, setHideNavbar] = useState(false);
+  const [hidden, setHidden] = useState(false);
 
-  // =========================
-  // TOGGLES
-  // =========================
-  const toggleMenu = () => {
-    setMenuOpen(prev => !prev);
-  };
+  const lastScroll = useRef(window.scrollY);
+
+  const toggleMenu = () => setMenuOpen(p => !p);
 
   const toggleSecondary = () => {
     if (window.innerWidth > 768) {
-      setSecondaryOpen(prev => !prev);
+      setSecondaryOpen(p => !p);
     }
   };
 
-  // =========================
-  // SCROLL HIDE NAVBAR
-  // =========================
   useEffect(() => {
-    let lastScroll = window.scrollY;
-
-    const handleScroll = () => {
-      if (window.scrollY > lastScroll && window.scrollY > 100) {
-        setHideNavbar(true);
+    const onScroll = () => {
+      if (window.scrollY > lastScroll.current && window.scrollY > 100) {
+        setHidden(true);
         setMenuOpen(false);
+        setSecondaryOpen(false);
       } else {
-        setHideNavbar(false);
+        setHidden(false);
       }
-      lastScroll = window.scrollY;
+      lastScroll.current = window.scrollY;
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // =========================
-  // CLOSE SECONDARY ON OUTSIDE CLICK
-  // =========================
   useEffect(() => {
-    const closeOutside = (e) => {
+    const handleOutside = (e) => {
+      if (window.innerWidth <= 768) return;
+
       if (
         !e.target.closest("#nav_menu_secondary") &&
         !e.target.closest("#more")
@@ -55,54 +44,49 @@ const Navbar = () => {
       }
     };
 
-    document.addEventListener("click", closeOutside);
-    return () => document.removeEventListener("click", closeOutside);
+    document.addEventListener("click", handleOutside);
+    return () => document.removeEventListener("click", handleOutside);
   }, []);
 
-  // =========================
-  // JSX
-  // =========================
   return (
-    <nav className={`navbar ${hideNavbar ? "hidden" : ""}`}>
-      <div className={`navbar_container ${menuOpen ? "expand" : ""}`}>
+    <nav className={`navbar ${hidden ? "hidden" : ""}`}>
+      <div className="navbar_container">
 
         {/* LOGO */}
-        <a href="/" className="logo_link">
-          <img
-            src="/photos/IlSogno.png"
-            alt="Logo"
-            className="logo"
-          />
-        </a>
+        <div className="navbar_left">
+          <a href="index.html" className="logo_link">
+            <img src="/photos/IlSogno.png" alt="Logo" className="logo" />
+          </a>
+        </div>
 
         {/* MAIN MENU */}
         <ul className={`nav_menu ${menuOpen ? "show" : ""}`}>
-          <li className="nav_item"><a className="nav_link">Home</a></li>
-          <li className="nav_item"><a className="nav_link">Menu</a></li>
-          <li className="nav_item"><a className="nav_link">Music</a></li>
-          <li className="nav_item"><a className="nav_link">Reservations</a></li>
-
+          <li className="nav_item"><a href="index.html" className="nav_link">Home</a></li>
+          <li className="nav_item"><a href="menu.html" className="nav_link">Menu</a></li>
+          <li className="nav_item"><a href="music.html" className="nav_link">Music</a></li>
           <li className="nav_item">
-            <button
-              id="more"
-              className="nav_link"
-              onClick={toggleSecondary}
-            >
+            <a href="reservations.html" target="_blank" className="nav_link">
+              Reservations
+            </a>
+          </li>
+
+          <li className="nav_item more_nav">
+            <button id="more" className="nav_link" onClick={toggleSecondary}>
               More ▾
             </button>
           </li>
-        </ul>
 
-        {/* SECONDARY MENU */}
-        <ul
-          id="nav_menu_secondary"
-          className={`nav_menu_secondary ${secondaryOpen ? "grow" : ""}`}
-        >
-          <li className="nav_item"><a className="nav_link">Location</a></li>
-          <li className="nav_item"><a className="nav_link">Tickets</a></li>
-          <li className="nav_item"><a className="nav_link">Gallery</a></li>
-          <li className="nav_item"><a className="nav_link">Blog</a></li>
-          <li className="nav_item"><a className="nav_link">About Us</a></li>
+          {/* SECONDARY MENU */}
+          <ul
+            id="nav_menu_secondary"
+            className={`nav_menu_secondary ${secondaryOpen ? "grow" : ""}`}
+          >
+            <li className="nav_item"><a href="location.html" className="nav_link">Location</a></li>
+            <li className="nav_item"><a href="tickets.html" className="nav_link">Tickets</a></li>
+            <li className="nav_item"><a href="gallery.html" className="nav_link">Gallery</a></li>
+            <li className="nav_item"><a href="blog.html" className="nav_link">Blog</a></li>
+            <li className="nav_item"><a href="about.html" className="nav_link">About Us</a></li>
+          </ul>
         </ul>
 
         {/* HAMBURGER */}
