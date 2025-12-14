@@ -91,3 +91,33 @@ generateCards("grill", menuItems.grill);
 generateCards("fastfood", menuItems.fastfood);
 generateCards("desserts", menuItems.desserts);
 generateCards("drinks", menuItems.drinks);
+
+
+
+
+
+
+//JQUERY PER ANIMACIONE
+
+$(document).ready(function () {
+  const $menuCards = $(".card-box");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          $(entry.target).addClass("show");
+          observer.unobserve(entry.target); 
+        }
+      });
+    },
+    {
+      threshold: 0.2
+    }
+  );
+
+  $menuCards.each(function () {
+    observer.observe(this);
+  });
+});
+
