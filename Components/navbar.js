@@ -23,7 +23,7 @@ class NavbarComponent extends HTMLElement {
                 <li class="nav_item"><a href="tickets.html" class="nav_link">Tickets</a></li>
                 <li class="nav_item"><a href="gallery.html" class="nav_link">Gallery</a></li>
                 <li class="nav_item"><a href="blog.html" class="nav_link">Blog</a></li>
-                <li class="nav_item"><a href="about.html" class="nav_link" target="_blank">About Us</a></li>
+                <li class="nav_item"><a href="about.html" class="nav_link">About Us</a></li>
               </ul>
           </ul>
 
@@ -113,26 +113,6 @@ navbarToggle.addEventListener('click', () => {//kur e click i ndrron tani barsat
     }
   }
   )
-
-
-
-  
-        // $(document).ready(
-        //     function(){
-        //         $("#nav_menu_secondary").hide();
-        //         $("#more").on("click",
-        //             function(){
-        //                 $("#nav_menu_secondary").slideRight(500);
-        //             }
-        //         );
-        //         $("#more").on("click",
-        //             function(){
-        //                 $("#nav_menu_secondary").slideleft(300);
-        //             }
-        //         )
-
-        //     }
-        // )
 
 
   //kur tklikojsh jashte navit me hjek
