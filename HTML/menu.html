@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/CSS/menu.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="/JS/menu.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="/photos/main_logo.png" sizes="32x32">
 </head>
 
 <body>
@@ -18,23 +19,21 @@
  <my-navbar></my-navbar>
 <section class="menu-buttons">
   <div class="button-wrapper">
-    <button class="menu-btn">Starters</button>
-    <button class="menu-btn">Main Dishes</button>
-    <button class="menu-btn">Grill</button>
-    <button class="menu-btn">Fast Food</button>
-    <button class="menu-btn">Desserts</button>
-    <button class="menu-btn">Drinks</button>
+    <button class="menu-btn" data-target="starters">Starters</button>
+    <button class="menu-btn" data-target="main">Main Dishes</button>
+    <button class="menu-btn" data-target="grill">Grill</button>
+    <button class="menu-btn" data-target="fastfood">Fast Food</button>
+    <button class="menu-btn" data-target="desserts">Desserts</button>
+    <button class="menu-btn" data-target="drinks">Drinks</button>
   </div>
 </section>
+<section class="section-cards" id="starters"></section>
+<section class="section-cards" id="main"></section>
+<section class="section-cards" id="grill"></section>
+<section class="section-cards" id="fastfood"></section>
+<section class="section-cards" id="desserts"></section>
+<section class="section-cards" id="drinks"></section>
 
-
-
- <section class="section-cards" id="starters"></section>
-    <section class="section-cards" id="main"></section>
-    <section class="section-cards" id="grill"></section>
-    <section class="section-cards" id="fastfood"></section>
-    <section class="section-cards" id="desserts"></section>
-    <section class="section-cards" id="drinks"></section>
 <my-footer></my-footer>
 </body>
 </html>
