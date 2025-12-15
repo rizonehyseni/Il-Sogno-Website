@@ -6,6 +6,11 @@
    <title>Il Sogno-Location</title>
 
 
+   <!--font awesome icons-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <script type="module" src="../Components/navbar.js" defer>
     </script>
     <link rel="stylesheet" href="../assets/fonts/fonts.css">
@@ -18,30 +23,43 @@
     <my-navbar></my-navbar>
 
      <section class="section1">
+
+          <div class="video-bg">
+            <video autoplay muted loop playsinline>
+                <source src="/photos/12866-242215707_small.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
         <div class="l-divider">
             <div class="line"></div>
-                <h3 id="divider-name">LOCATION</h3>
+            <div class="divider_title_container">
+                 <h3 id="divider-name">LOCATION</h3>
+            </div>
              <div class="line"></div>
         </div>
     </section>
 
    <section class="section2">
+  
         <div class="FindUs">
             <div class="FindUs-h1">
                 <h1  id="find-us-header"></h1>
             </div>
             <div class="FindUs-container">
                 <div class="FindUs-container11">
-                    <img class="logos" src="/photos/Gmail_Logo_24px.png">
-                    <a href="mailto:ilsognorestaurant@gmail.com">ilsognorestaurant@gmail.com</a>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:ilsognorestaurant@gmail.com">
+                        ilsognorestaurant@gmail.com
+                    </a>
                 </div>
+
             </div>
             <div class="emb">
                 <img class="emb-img" src="/photos/IlSogno.png">
             </div>
         <div class="FindUs-container1">
             <div class="FindUs-container2">
-                <img class="logos" src="/photos/phone-icon.png">
+                <i class="fa fa-phone" aria-hidden="true"></i>
                 <a href="tel:+390890000000">Call Us: +383 000 0000</a>
             </div>
         </div>
@@ -53,7 +71,15 @@
                 </div>
             </div>
         </div>
+
+         </section>
+
+        
     <div class="map"> 
+        <div class="map_link">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6055.961082351728!2d14.5944572!3d40.6303111!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b95b4aa987b13%3A0x61bdd172a3ef2598!2sVia%20Salvatore%20Quasimodo%2C%203%2C%2084011%20Amalfi%20SA%2C%20Italy!5e0!3m2!1sen!2s!4v1763832257943!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
         <div class="buttons">
             <a href="https://www.google.com/maps/dir//Hotel+IL+Nido+Via+Salvatore+Quasimodo,+30+84011+Amalfi+SA+Italy/@40.6301918,14.5937957,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x133b944b523592e9:0x449c76bd49e1a4fc!2m2!1d14.5937957!2d40.6301918?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
                         <button class="buttonM">GET DIRECTIONS</button>
@@ -62,41 +88,46 @@
                         <button class="buttonM">OPEN IN GOOGLE MAPS</button>
             </a>
         </div>
-           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6055.961082351728!2d14.5944572!3d40.6303111!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b95b4aa987b13%3A0x61bdd172a3ef2598!2sVia%20Salvatore%20Quasimodo%2C%203%2C%2084011%20Amalfi%20SA%2C%20Italy!5e0!3m2!1sen!2s!4v1763832257943!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
     </div>
-    <div class="contactus1">
-            <div class="contactus">
-                <h1  id="contactus"></h1>
-            </div>
-        <form class="forms">
-            <div class="form2"> 
-                        <label>Full Name : </label> <br>  
-                        <input type="text" class="First-form">
-                        <br>
-                         <label>Email :</label> <br>  
-                        <input type="email" class="First-form"> 
-                        <br>  
-                         <label>Phone :</label> <br>  
-                        <input type="tel" class="First-form">           
-            </div> 
-            <div class="emb">
-                <img class="emb-img" src="/photos/IlSogno.png">
-            </div>
-            <div class="form1"> 
-                    <div class="textarea">
-                    <p>Message :</p>
-                    <textarea placeholder="Leave a message" id="textarea"></textarea>
-                    <label> <input type="checkbox" required>I have read the privacy policy and give consent to the use of my data.</label>
-                    <button type="submit" class="submitButton">
-                     Send Message
-                    </button>
 
-                    </div>
-            </div>
-        </form> 
-    </div>    
 
-   </section>
+        <div class="contactus1">
+
+        <div class="contactus">
+            <h1 id="contactus"></h1>
+            
+        </div>
+    
+
+        <form class="contact-form">
+
+            <div class="form2">
+            <label>Full Name</label>
+            <input type="text">
+
+            <label>Email</label>
+            <input type="email">
+
+            <label>Phone</label>
+            <input type="tel">
+
+            <label for="textarea">Message</label>
+            <textarea id="textarea" placeholder="Leave a message"></textarea>
+
+            <label class="privacy">
+                <input type="checkbox" required>
+                I have read the privacy policy
+            </label>
+
+            <button type="submit" class="submitButton">
+                Send Message
+            </button>
+            </div>
+
+        </form>
+
+        </div>
+  
 
    <my-footer></my-footer>
  <script src="/JS/location.js" defer></script>   
