@@ -91,3 +91,52 @@ generateCards("grill", menuItems.grill);
 generateCards("fastfood", menuItems.fastfood);
 generateCards("desserts", menuItems.desserts);
 generateCards("drinks", menuItems.drinks);
+
+const buttons = document.querySelectorAll(".menu-btn");
+const sections = document.querySelectorAll(".section-cards");
+
+sections.forEach(section => section.style.display = "none");
+document.getElementById("starters").style.display = "block";
+buttons[0].classList.add("active");
+
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    const target = button.dataset.target;
+
+    buttons.forEach(btn => btn.classList.remove("active"));
+
+    button.classList.add("active");
+
+    sections.forEach(section => section.style.display = "none");
+    document.getElementById(target).style.display = "block";
+  });
+});
+
+
+
+
+
+//JQUERY PER ANIMACIONE
+
+$(document).ready(function () {
+  const $menuCards = $(".card-box");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          $(entry.target).addClass("show");
+          observer.unobserve(entry.target); 
+        }
+      });
+    },
+    {
+      threshold: 0.2
+    }
+  );
+
+  $menuCards.each(function () {
+    observer.observe(this);
+  });
+});
+
