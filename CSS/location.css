@@ -284,7 +284,6 @@ textarea {
 textarea {
     height: 200px;
     resize: none;
-    border-radius: 15px;
     padding: 12px;
 }
 
