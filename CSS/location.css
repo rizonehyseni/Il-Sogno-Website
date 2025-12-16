@@ -321,222 +321,70 @@ input[type="checkbox"] {
     color: black;
 }
 
-
-
-
-
-@media screen and (max-width: 1200px) {
-    .buttons {
-        width: 40%;
-        left: 60%;
-    }
-
-    .FindUs {
-        margin:100px 20px;
-
-    }
-
-    .FindUs-container2,
-    .FindUs-container11 {
-        font-size: 18px;
-        padding: 30px;
-    }
-
-    .contactus {
-      margin-bottom: 40px;
-        padding: 15px;
-    }
-
-    .contactus1 {
-        margin: 100px 30px;
-        padding: 15px;
-        height: fit-content;
-    }
-
-    .forms{margin-bottom: 45px;
-    }
-    
-    .form1, .form2{
-        margin: 0 
-    }
-
-    .emb{
-        width: 200px;
-    }
-
+.contact-form{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
 }
+
+
+
+
 
 
 @media screen and (max-width: 992px) {
-    body{
-        width: 100%;
-    }
 
-    .forms{
-        flex-wrap: wrap;
-    }
-
-    .buttonM{
-        height: 50px;
-        width: 240px;
-        font-size: 15px;
-
-    }
-    .FindUs-container3{
-        margin: 0px;
-        background-color: transparent;
-    }
-   .FindUs-container{ order: 2; } 
-   .FindUs-container1 { order: 2; } 
-   .emb { order:3 ; }
-   .FindUs-container3 { order: 4; } 
-  
-    .FindUs-h1 {
-       padding-top: 10px;
-        margin-bottom: 40px;
-    }
-    .form1{order: 3;
-    }
-    .form2{order: 1;
-    }
-    .emb{order: 2;
-    }
-    .forms{
-        flex-direction: column;
-    }
-    #contactus{
-        font-size: 30px; 
-        
-    }
-}
-
-
-@media screen and (max-width: 802px) {
-    body{
-        width: 100%;
-    }
-
-    .forms{
-        flex-wrap: wrap;
-    }
-
-    .buttonM{
-        height: 50px;
-        width: 240px;
-        font-size: 15px;
-
-    }
-    .FindUs-container3{
-        margin: 0px;
-        background-color: transparent;
-    }
-    .FindUs-container{ order: 2; } 
-    .FindUs-container1 { order: 1; } 
-    .emb { order:3 ; }
-    .FindUs-container3 { order: 4; } 
-  
-    .FindUs-h1 {
-        padding-top: 10px;
-        margin-bottom: 40px;
-    }
-    .form1{order: 3;
-    }
-    .form2{order: 1;
-    }
-    .emb{order: 2;
-    }
-    .forms{flex-direction: column;
-    }
-    #contactus{
-        font-size: 30px; 
-        
-    }
-}
-@media screen and (max-width: 768px){
-      body{
-        width: 100%;
-    }
-    .FindUs-h1{
-        padding: 0;
-        padding-bottom: 10px;
-    
-    }
-    #find-us-header{
-        font-size: 30px;
-    }
-      @keyframes typingA{
-
-    from{ width: 0;
-    }
-    to{
-        width: 320px;
-    }
-    }
-     .buttonM{
-        height: 50px;
-        width: 190px;
-        font-size: 12px;
-        padding: 0;
-    }
     .buttons{
-        top: 60%;
-        left: 50%;
-        height: fit-content;
-        gap: 10px;
+       left:50%;
     }
-    .FindUs-container33 p,
-    .FindUs-container33
-    {
-        height: fit-content;
-        margin: 0;
-        font-size: 16px;
+}
+
+
+
+@media screen and (max-width: 768px){
+        .buttons{
+       top:80%;
     }
-    .FindUs-container3{
-        height: fit-content;
+
+    .contactus1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 800px;
     }
-        #contactus{
-        font-size: 19px;
-        padding: 0;
-    
+
+    #contactus {
+
+    font-size: 30px;
+    text-align: center;
     }
     .contactus{
-        padding: 0;
-        padding-bottom: 10px;
+        width: 50%;
+        margin-bottom: 50px;
     }
-    #divider-name{
-        font-size: 40px;
-    }
+
+
+    
 }
 
 @media screen and (max-width: 480px){
-    .l-divider{
-        padding-left: 0;
-        padding-right: 0;
-    
-    }
-       #divider-name{
-        font-size: 35px;
-    }
-      .FindUs-h1{
-        padding: 0;
-        padding-bottom: 10px;
-    
-    }
-    .form1,
-    .form2{
-        padding-right: 20px;
-        padding-left: 20px;
-    }
-    .First-form{
-        width: 250px;
-    }
-    .forms{
-        margin: 0;
-    }
-    #find-us-header{
-        font-size: 25px;
-    }
    
+    .form2 {
+    width: 90%;
+    align-self: center;
+   }
+
+   .buttonM{
+    width: 150px;
+    }
+
+    .submitButton {
+    margin-left: 10px;
+    }
 }
 
 
