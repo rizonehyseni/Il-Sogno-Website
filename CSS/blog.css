@@ -66,33 +66,6 @@ body {
   flex-direction: column;
 }
 
-.blog-title {
-  color: white;
-  font-family: "Instrument Serif", serif;
-  font-weight: 200;
-  letter-spacing: 1px;
-  margin: 0;
-  width: 70%;
-  text-align: right;
-}
-
-.blog-image {
-  width: 80%;
-  margin: 20px;
-  margin-left: 40px;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.blog-paragraph {
-  color: #f7f1e1;
-  font-family: "Instrument Serif", serif;
-  width: 75%;
-  margin: 20px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid white;
-}
-
 .blog-footer {
   color: white;
   display: flex;
@@ -137,6 +110,10 @@ body {
   gap: 50px;
   border-left: 1px solid white;
   height: 100%;
+  height: fit-content;     
+  position: sticky;  
+  top: 20px;   
+  padding-top: 50px; 
 }
 
 .sidebar-box {
@@ -271,6 +248,8 @@ form{
 .blog-footer{
     display: flex;
     padding: 0;
+    padding-top: 10px;
+    font-size: 15px;
 }
 .sidebar-box p {
   margin: 3px 12px;
@@ -286,11 +265,6 @@ form{
   width: 120px;
   height: 120px;
   margin: 15px;
-}
-.blog-footer{
-    padding-top: 10px;
-    font-size: 15px;
-   
 }
 
 input{
@@ -343,5 +317,48 @@ input{
     font-size: 10px; 
     height: 40px;
     }
+}
+#blog-cards-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 80px; 
+    width: 75%;
+    margin: 0 auto;
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+    color: #f7f1e1;
+    font-family: "Instrument Serif", serif;
+}
+
+.blog-card img {
+    width: 100%;
+    margin-bottom: 30px;
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+    display: block;
+    max-height: 400px;
+    border-radius: 20px;
+}
+
+.blog-card h1 {
+    font-size: 35px;
+    margin: 0 0 20px 0;
+    font-weight: 400;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.blog-card p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+    padding-top: 20px;
+    border-top: 1px solid white;
 }
 
