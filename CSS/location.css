@@ -172,6 +172,7 @@ html, body {
       font-family: "Instrument Serif", serif;
     font-weight: 100;
     font-style: normal;
+    border:none;
 }
 
 
@@ -212,6 +213,7 @@ iframe{
     display: flex;
     gap: 12px;
     z-index: 10;
+    border:none;
 }
 
 
