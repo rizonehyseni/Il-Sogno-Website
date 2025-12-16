@@ -6,9 +6,9 @@
     <title>Il Sogno - Blog</title>
 
     <link rel="stylesheet" href="/CSS/blog.css" />
-    <script src="/JS/app.js" defer></script>
-    <script src="../Components/footer.js"></script>
-    <script src="../Components/navbar.js"></script>
+    <script type="module" src="../Components/navbar.js"></script>
+<script type="module" src="../Components/footer.js"></script>
+    <script src="../JS/blog.js" defer></script>
     <link rel="stylesheet" href="../assets/fonts/fonts.css" />
   </head>
   <body>
@@ -56,7 +56,11 @@
 
         <div class="sidebar-box">
           <h1>Featured Dish</h1>
-          <div class="sidebar-image"></div>
+          <div class="sidebar-image">
+            <a href="menu.html">
+              <img src="/photos/pastaImg.jpg" alt="truffle Pasta">
+            </a>
+          </div>
           <p>Signature Truffle Pasta - our<br />bestseller since 2020</p>
         </div>
 
@@ -81,6 +85,6 @@
     </div>
 
     <my-footer></my-footer>
-    <script src="/JS/blog.js" defer></script>
+  
   </body>
 </html>
