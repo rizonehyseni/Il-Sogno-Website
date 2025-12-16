@@ -235,7 +235,7 @@ iframe{
 
 
 .contactus {
-    width: 30%;
+    width: 50%;
 }
 
 #contactus {
@@ -243,6 +243,7 @@ iframe{
     font-family: "Instrument Serif", serif;
     font-size: 30px;
     text-align: left;
+    margin-left: 70px;
 }
 
 
@@ -361,10 +362,11 @@ input[type="checkbox"] {
 
     font-size: 30px;
     text-align: center;
+    margin-left: 0;
     }
     .contactus{
-        width: 50%;
-        margin-bottom: 50px;
+    width: 50%;
+    margin-bottom: 50px; 
     }
 
 
