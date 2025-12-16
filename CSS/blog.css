@@ -180,13 +180,18 @@ body {
 }
 
 .sidebar-image {
-  background-image: url(/photos/pastaImg.jpg);
   background-size: cover;
   background-position: center;
   width: 250px;
   height: 200px;
   margin: 20px;
   border-radius: 10px;
+  overflow: hidden;
+}
+.sidebar-image img{
+  object-fit: cover;
+  width: 250px;
+  height: 200px;
 }
 
 input {
