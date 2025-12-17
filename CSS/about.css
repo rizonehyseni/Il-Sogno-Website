@@ -14,7 +14,7 @@ body {
   padding: 0;
 }
 
-/*navbar style*/
+
 
 /*hero style*/
 
@@ -104,12 +104,6 @@ body {
 
 /* Seksioni 1 */
 .first_section {
-  background: linear-gradient(
-    0deg,
-    rgb(0, 0, 0) 0%,
-    rgb(30, 2, 2) 51%,
-    rgb(0, 0, 0) 100%
-  );
   padding-top: 50px;
   padding-bottom: 40px;
   overflow: hidden;
@@ -133,12 +127,6 @@ body {
 }
 
 .first_section {
-  background: linear-gradient(
-    0deg,
-    rgb(0, 0, 0) 0%,
-    rgb(30, 2, 2) 51%,
-    rgb(0, 0, 0) 100%
-  );
   padding-top: 50px;
   padding-bottom: 40px;
 }
@@ -195,7 +183,7 @@ body {
   justify-content: center;
   flex-direction: row;
   align-items: flex-start;
-  background-color: #101210;
+  /* background-color: #101210; */
   color: #f7f1e1;
   box-sizing: border-box;
 }
