@@ -18,7 +18,7 @@ Join us and savor moments made memorable.`;
 
   const blogPosts = [
     {
-        img: "/photos/sogno-truffle.png",
+        img: "/photos/truffle.jpg",
         title: "Behind Our Autumn Menu",
         text: "Chef Luca reveals the secrets of truffle season from selecting the finest local varieties to crafting dishes that capture their earthy aroma."
     },
