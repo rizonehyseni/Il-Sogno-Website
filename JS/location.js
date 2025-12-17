@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     line.style.width = "100%";
   });
 
-  const text = `HOW TO FIND US`;
+  const text = `SEE OUR LOCATION`;
   const typingText = document.getElementById("find-us-header");
 
   let i = 0;
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (i < text.length) {
       typingText.textContent += text.charAt(i);
       i++;
-      setTimeout(typeWriter, 40);
+      setTimeout(typeWriter, 90);
     }
   }
 

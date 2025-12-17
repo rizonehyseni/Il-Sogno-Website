@@ -93,6 +93,38 @@ generateCards("desserts", menuItems.desserts);
 generateCards("drinks", menuItems.drinks);
 
 
+const butonat = document.querySelectorAll(".menu-btn");
+const cards = document.querySelectorAll(".section-cards");
+
+cards.forEach(section => {
+  section.style.display = "none";
+});
+
+cards[0].style.display = "block";
+butonat[0].classList.add("active");
+
+butonat.forEach(button => {
+  button.addEventListener("click", () => {
+    butonat.forEach(btn => {
+      btn.classList.remove("active");
+    });
+    
+    button.classList.add("active");
+    
+    cards.forEach(section => {
+      section.style.display = "none";
+    });
+    
+    const KardaAktive = [...cards].filter(section => {
+      return section.id === button.dataset.target;
+    });
+    
+    
+      KardaAktive[0].style.display = "block";
+    
+  });
+});
+
 
 
 
