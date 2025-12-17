@@ -336,22 +336,7 @@ body.loading {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    opacity: 0;
     
-}
-.about_card.show{
-  animation: cardZoom 1.5s ease forwards; 
-}
-
-@keyframes cardZoom{
-  from{
-    opacity:0;
-  transform: scale(0.8);
-  }
-  to{
-  opacity: 1;
-  transform: scale(1.0);
-  }
 }
 
 .about_card:hover {
@@ -428,19 +413,7 @@ body.loading {
 .menu_img{
     object-fit: cover;
     width: 100%;
-    opacity: 0;
 
-    
-}
-.menu_img.show{ 
-  animation: fadeInMenu 1s ease forwards;
-}
-
-@keyframes fadeInMenu{
-  from{opacity: 0;
-   transform: translateY(30px);}
-  to{opacity: 1;
-   transform: translateY(0);}
 }
 
 
@@ -471,12 +444,8 @@ body.loading {
      font-family: "Instrument Serif", serif;
     font-weight: 400;
     font-style: normal;
-    opacity: 0;
 }
 
-.menu_title.show{
-  animation: fadeInMenu 0.5s ease forwards;
-}
 .menu_desc{
      color: var(--text);
     font-size: 1.2rem;
@@ -485,11 +454,8 @@ body.loading {
     font-style: normal;
     line-height: 1.6;
     text-align: center;
-    opacity: 0;
 }
-.menu_desc.show{
-  animation: fadeInMenu 0.5s ease forwards;
-}
+
 
 .menu_button{
      margin-top: 1rem;
@@ -502,10 +468,6 @@ body.loading {
     color:var(--text);
     border: 1px solid var(--text);
     background-color: #070505;
-    opacity: 0;
-}
-.menu_button.show{
-  animation: fadeInMenu 0.5s ease forwards;
 }
 
 .menu_button:hover{
@@ -790,10 +752,6 @@ body.loading {
     height: 40%;
    
 }
-.blog_info.show{
-  animation: fadeInMenu 1s ease forwards;
-
-}
 
 #blog_info{
   width: 64%;
@@ -824,13 +782,9 @@ body.loading {
     width: 100%;
     object-fit: cover;
     padding-bottom: 15rem;
-    opacity: 0;
 
 }
 
-.blog_image.show{ 
-  animation: fadeInMenu 1s ease forwards;
-}
 
 
 
@@ -845,13 +799,9 @@ body.loading {
     border: 1px  solid var(--text);
     padding:2rem;
     margin-top: 2rem;
-    opacity: 0;
 
 }
 
-.blog_news.show{
-   animation: fadeInMenu 1s ease forwards;
-}
 
 .blog_new{
     width: 100%;
