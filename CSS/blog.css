@@ -65,23 +65,32 @@ body {
   justify-content: center;
   flex-direction: column;
 }
-
-.blog-footer {
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: "Instrument Serif", serif;
-  letter-spacing: 0.5px;
-  width: 70%;
-  padding: 40px;
-  padding-left: 0;
-  padding-right: 0;
+.blog-card p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+    padding-top: 20px;
+    border-top: 1px solid white;
 }
 
-.blog-footer p {
-  margin: 0;
+.blog-footer { 
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Instrument Serif", serif;
+    letter-spacing: 0.5px; 
+    width: 100%;
+    padding: 16px;
+    padding-left: 0;
+    padding-right: 0;
 }
+
+ .blog-footer p{ 
+    padding: 0px;
+    border: none;
+   }
+
 
 .btn-read-more {
   background: transparent;
@@ -215,7 +224,7 @@ form{
 }
 .blog-footer{
     padding-top: 10px;
-     padding-left: 0;
+    padding-left: 0;
     padding-right: 0;
 }
 
@@ -354,11 +363,4 @@ input{
     padding-right: 30px;
 }
 
-.blog-card p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin: 0;
-    padding-top: 20px;
-    border-top: 1px solid white;
-}
 
