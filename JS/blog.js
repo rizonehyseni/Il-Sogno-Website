@@ -53,7 +53,7 @@ Join us and savor moments made memorable.`;
 
 const container = document.getElementById("blog-cards-container");
 
-blogPosts.forEach(post => {
+const blogCards = blogPosts.map(post => {
     const card = document.createElement("div");
     card.classList.add("blog-card");
 
@@ -69,7 +69,8 @@ blogPosts.forEach(post => {
           </div>`
         ;
 
-    container.appendChild(card);
+    return card;
 });
+ container.append(...blogCards);
 
 });
