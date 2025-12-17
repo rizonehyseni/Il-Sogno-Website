@@ -92,23 +92,36 @@ generateCards("fastfood", menuItems.fastfood);
 generateCards("desserts", menuItems.desserts);
 generateCards("drinks", menuItems.drinks);
 
-const buttons = document.querySelectorAll(".menu-btn");
-const sections = document.querySelectorAll(".section-cards");
 
-sections.forEach(section => section.style.display = "none");
-document.getElementById("starters").style.display = "block";
-buttons[0].classList.add("active");
+const butonat = document.querySelectorAll(".menu-btn");
+const cards = document.querySelectorAll(".section-cards");
 
-buttons.forEach(button => {
+cards.forEach(section => {
+  section.style.display = "none";
+});
+
+cards[0].style.display = "block";
+butonat[0].classList.add("active");
+
+butonat.forEach(button => {
   button.addEventListener("click", () => {
-    const target = button.dataset.target;
-
-    buttons.forEach(btn => btn.classList.remove("active"));
-
+    butonat.forEach(btn => {
+      btn.classList.remove("active");
+    });
+    
     button.classList.add("active");
-
-    sections.forEach(section => section.style.display = "none");
-    document.getElementById(target).style.display = "block";
+    
+    cards.forEach(section => {
+      section.style.display = "none";
+    });
+    
+    const KardaAktive = [...cards].filter(section => {
+      return section.id === button.dataset.target;
+    });
+    
+    
+      KardaAktive[0].style.display = "block";
+    
   });
 });
 
