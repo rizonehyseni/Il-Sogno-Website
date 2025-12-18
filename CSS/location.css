@@ -13,161 +13,54 @@ html, body {
     padding: 0;
 }
 
-.navbar{
- margin: 0;
- position: fixed;
- z-index: 1000;
- width: 100%;
- height: 10vh;
-  transition: transform 0.4s ease;
-}
-.navbar.hidden {
-  transform: translateY(-100%);
-}
-
-
-.navbar_container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width:100%;
-    height:9vh;
-      background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0.877) 10%,
-     rgba(0, 0, 0, 0.877) 50%,   
- 
-    rgba(0, 0, 0, 0.877) 100%  
-  );
-     margin:0;
-     padding: 0 0rem;
-}
-
-.navbar_toggle.hidden{
-    display: none;
-}
-
-.logo{
-    height: 100px;
-    margin-top: 0.6rem;
-    width: auto;
-}
-.logo:hover{
-    cursor: pointer;
-}
-
-.nav_menu{
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    list-style: none;
-    
-}
-
-.nav_item{
-    margin:0 3rem;
-    padding:1rem;
-  font-family: "Instrument Serif", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.nav_link{
-    text-decoration: none;
-    color: white;
-    font-size: 1.3rem;
-}
-
-.nav_link:hover{
-    border-bottom: #F7F1E1 2px solid;
-    padding-bottom: 0.2rem;
-    transition:ease 0.3s;
-    cursor:pointer;
-}
-
-/*footer*/
-
-
-.footer_container{
-    width: 100%;
-    height: 60vh;
-
-}
-
-.footer_section{
-    width: 100%;
-    height: 100%;
-    display: grid;
-   grid-template-columns: 1fr 1fr 1fr; 
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem 0;
-  gap: 2rem;
-  background-color: #1e0202;
-}
-
-.footer_logo_container{
-    grid-template-columns: 1;
-
-}
-.footer_logo{
-  
-    height: 10em;
-}
-
-.footer_text_container{
-    grid-template-columns: 2;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer_text{
-    font-size: 1rem;
-    color: #F7F1E1;
-     font-family: "Playfair Display", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-#map{
-    width: 100%;
-    height: 100%;
-    border: 0;
-    margin: 0;
-}
-
-.section2 { 
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-content: space-between;
-    position: relative;
-    overflow: visible;
-    justify-content: center;
-    align-items: center;
-  
-}
-.section2::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -2;
-    background-color: black;   
-}
 
 .section1{
     position: relative;
     display: flex;
     align-items: flex-end;
-    height: 100%;
     justify-content: center;
+    height: 100vh;
+    width: 100%;
     animation: fadeAnimation 2.5s ease-in forwards;
-    background-size: cover;
+    margin-bottom: 200px;
+}
+
+.video-bg{
+    width: 100%;
+    height: 100vh;
+     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image:url(/photos/sogno-ph2.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
+
+.l-divider{
+    position: absolute;
+    top:75vh;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    color: aliceblue;
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 100px;
+    z-index: 1000;
+    gap: 20px;
+}
+
+.divider_title_container{
+    height: 100px;
+    width: 250px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
 
 #divider-name{
     font-size: 3rem; 
@@ -177,26 +70,16 @@ html, body {
     animation: fadeAnimation 2.5s ease-in forwards;
 }
 
-.l-divider{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: aliceblue;
-    margin: 0 auto;
-    width: 100%;
-    padding: 10px;
-    padding-bottom: 80px;
-    z-index: 1;
-    gap: 20px;
-}
+
 
 .line{
+
     transition: width 4.5s ease;
     width: 0;
     background-color: aliceblue;
     height: 1px;
+    display: flex;
+    align-self:center;
 }
 
 @keyframes fadeAnimation{
@@ -209,119 +92,55 @@ html, body {
 }
 
 
-.FindUs{
-    display: flex;
-    flex-wrap: wrap;
-    height: 600px;
-    flex-direction: row;
-    justify-content:space-around;
-    margin: 50px;
-    margin-bottom: 150px;
-    margin-top: 150px;
-    padding: 20px;
-    border: 2px solid  rgb(255, 255, 255);
-    border-radius: 20px;
+/*how to find us*/
 
-}
+
+
 
 .FindUs-h1{
     color: #F7F1E1;
-    text-shadow: 2px 2px 8px rgb(0, 0, 0, 0.9);
-    font-family: "Instrument Serif", serif;
-    letter-spacing: 10px;
+     font-family: "Instrument Serif", serif;
+    font-weight: 100;
+    font-style: normal;
     font-size: 40px;
-    width: 90%;
-    height: 40px;
+    width: 100%;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
-    gap: 10px;
-    background-color:black;
-    border-bottom: 1px solid white;
-    padding-bottom: 20px;
-    margin-top: 10px;
-    margin-bottom: 100px;
-   
+    margin-bottom:50px;
 }
 
-.logos{
-    height: 24px;
-}
 
-.FindUs-container,
-.FindUs-container1{
-    height: 100px;
-    width: fit-content;
-    display: flex;
-    width: fit-content;
-    justify-content: center;
-}
-
-.FindUs-container2,
-.FindUs-container11{
-    width: 200px;
-    display: flex;
-    justify-content: center;
-    height: fit-content;
-    border-radius: 10px;
-    padding: 50px;
-    gap: 10px;
-    font-size: 20px;
-    background-color: black;
-    transition: all  1s ease;
-    font-family: "Instrument Serif", serif;
-
-}
-
-.FindUs a{
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
-    color:rgb(255, 255, 255)
-}
-
-.FindUs-container2:hover,
-.FindUs-container11:hover{
-     backdrop-filter: blur(16px);
-     transform: translateY(-3px);
-     background-color:#1b0202;
-     
-}
-
-.FindUs-container3{
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    background-color: black;
-    margin-top: 100px;
-    margin-bottom: 50px;
-}
-
-.FindUs-container33{
-    color: #F7F1E1;
-    display: flex;
-    height: fit-content;
-    margin: 50px;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid rgb(255, 255, 255);
-    width:900px;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
-    font-size: 20px;
-}
 
  #find-us-header{
     color: #ffffff;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
-    font-family: "Instrument Serif", serif;
-    letter-spacing: 10px;
+         font-family: "Instrument Serif", serif;
+    font-weight: 100;
+    font-style: normal;
     font-size: 40px; 
     white-space: nowrap;
     overflow: hidden;
     border-right: 0.1px solid ;
     animation: blink 1s  step-end infinite;
  }
+
+
+
+
+ /**/
+
+#map{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    margin: 0;
+}
+
+
+
+
 
  @keyframes blink{
 
@@ -335,390 +154,239 @@ html, body {
  }
 
  
-.emb{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.emb-img{
-  width: 300px;
-  height: auto;
-
-}
-
 .buttonM:hover{
- transform: translateY(-5px);
- background-color: #200606;
+ background-color: black;
 }
 
 .buttonM{
- height: 70px;
- padding-left: 60px;
- padding-right: 60px;
- border-radius: 50px;
- border: 1px solid white;
- background-color: black;
+
+ height: 40px;
+ width: 200px;
+ border-radius: 5px;
+ background-color: rgba(0, 0, 0, 0.675);
  color: white;
+ padding:0;
  font-weight: 600;
  transition: all 1s ease;
  font-size: large;
+      font-family: "Instrument Serif", serif;
+    font-weight: 100;
+    font-style: normal;
+    border:none;
 }
+
+
 
 .map{
     position: relative;
-    width: 97%;
+      width: 100%;
     height: 500px;
-    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.map_link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+iframe{
+
+    position: relative;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
-    border: 2px solid #ffffff;
+    z-index: 1;
+    border: none;
+
+
 }
 
-.buttons{
+
+.buttons {
     position: absolute;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    bottom: 3%;
+    left: 80%;
+    transform: translateX(-50%);
     display: flex;
-    gap: 30px;
+    gap: 12px;
+    z-index: 10;
+    border:none;
+}
+
+
+/*forms*/
+
+
+.contactus1 {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     height: 500px;
-    width: 30%;
-    left: 70%;
-}
-
-#contactus{
-    color: #F7F1E1;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
-    font-family: "Instrument Serif", serif;
-    font-size: 40px; 
-    letter-spacing: 1px;
-}
-
-.contactus1{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: space-around;
-    justify-content: center;
-    align-items: center;
-    height: 700px;
-    margin-top: 150px;
-    margin-bottom: 150px;
-    margin-left: 50px;
-    margin-right: 50px;
-    font-family: "Instrument Serif", serif;
-    border: solid 2px rgb(255, 255, 255);
-    border-radius: 20px;
-    padding: 20px;
-}
-
-.contactus{
-    color: #F7F1E1;
-    font-family: "Instrument Serif", serif;
-    font-size: 40px;
-    width: 90%;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    background-color:black;
-    border-bottom: 1.5px solid rgb(255, 255, 255);
-    padding-bottom: 20px;
-    margin-top: 10px;
+    gap: 10px;
+    box-sizing: border-box;
     margin-bottom: 100px;
 }
 
-input {
+
+
+.contactus {
+    width: 50%;
+}
+
+#contactus {
+    color: #F7F1E1;
+    font-family: "Instrument Serif", serif;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 70px;
+}
+
+
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+
+
+
+.form2 {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+input,
+textarea {
     background: transparent;
     border: none;
     border-bottom: 1px solid white;
-    outline: none;
     margin-bottom: 10px;
+    outline: none;
     color: white;
+    font-size: 14px;
+    padding: 6px 4px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.textarea{
-    display: flex;
-    flex-direction: column;
-    
-}
-
-#textarea{
-    background: transparent;
+textarea {
     height: 200px;
     resize: none;
-    margin-bottom: 20px;
-    border-radius: 20px;
-    padding: 10px;
-    color: white;
-    
+    padding: 12px;
 }
 
-.form2{
-    padding:40px 60px;
-    margin: 50px;
-    background-color:black ;
-    color: white;
-    border: solid 1px;
-    border-radius: 20px;
-    height: fit-content;
-    letter-spacing: 0.5px;
-}
-.form1{
-    padding-bottom: 10px;
-    padding-right: 50px;
-    padding-left: 30px;
-    margin: 50px;
-    background-color:black ;
-    color: white;
-    border: solid 1px;
-    border-radius: 20px;
-    height: fit-content;
-    letter-spacing: 0.5px;
-}
-.forms{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
 }
 
-.First-form{
-    width: 250px;
+
+#messageForm {
+    text-align: left;
 }
 
-.submitButton{
+.submitButton {
     background: transparent;
     color: white;
     border: 1px solid white;
     border-radius: 20px;
+    padding:  5px 10px;
     font-family: "Instrument Serif", serif;
     letter-spacing: 1px;
-    height: 30px;
+    height: 36px;
     font-size: 15px;
-    margin: 5px;
-    transition: all 1s;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    margin-left: 20%;
 }
 
-.submitButton:hover{
-    background-color: #1e0202;
-    transform: translateY(-2px);
+.submitButton:hover {
+    background-color: #ffffff;
+    color: black;
 }
 
-@media screen and (max-width: 1200px) {
-    .buttons {
-        width: 40%;
-        left: 60%;
-    }
-
-    .FindUs {
-        margin:100px 20px;
-
-    }
-
-    .FindUs-container2,
-    .FindUs-container11 {
-        font-size: 18px;
-        padding: 30px;
-    }
-
-    .contactus {
-      margin-bottom: 40px;
-        padding: 15px;
-    }
-
-    .contactus1 {
-        margin: 100px 30px;
-        padding: 15px;
-        height: fit-content;
-    }
-
-    .forms{margin-bottom: 45px;
-    }
-    
-    .form1, .form2{
-        margin: 0 
-    }
-
-    .emb{
-        width: 200px;
-    }
-
+.contact-form{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
 }
+
+
+
+
 
 
 @media screen and (max-width: 992px) {
-    body{
-        width: 100%;
-    }
 
-    .forms{
-        flex-wrap: wrap;
-    }
-
-    .buttonM{
-        height: 50px;
-        width: 240px;
-        font-size: 15px;
-
-    }
-    .FindUs-container3{
-        margin: 0px;
-        background-color: transparent;
-    }
-   .FindUs-container{ order: 2; } 
-   .FindUs-container1 { order: 2; } 
-   .emb { order:3 ; }
-   .FindUs-container3 { order: 4; } 
-  
-    .FindUs-h1 {
-       padding-top: 10px;
-        margin-bottom: 40px;
-    }
-    .form1{order: 3;
-    }
-    .form2{order: 1;
-    }
-    .emb{order: 2;
-    }
-    .forms{
-        flex-direction: column;
-    }
-    #contactus{
-        font-size: 30px; 
-        
-    }
-}
-
-
-@media screen and (max-width: 802px) {
-    body{
-        width: 100%;
-    }
-
-    .forms{
-        flex-wrap: wrap;
-    }
-
-    .buttonM{
-        height: 50px;
-        width: 240px;
-        font-size: 15px;
-
-    }
-    .FindUs-container3{
-        margin: 0px;
-        background-color: transparent;
-    }
-    .FindUs-container{ order: 2; } 
-    .FindUs-container1 { order: 1; } 
-    .emb { order:3 ; }
-    .FindUs-container3 { order: 4; } 
-  
-    .FindUs-h1 {
-        padding-top: 10px;
-        margin-bottom: 40px;
-    }
-    .form1{order: 3;
-    }
-    .form2{order: 1;
-    }
-    .emb{order: 2;
-    }
-    .forms{flex-direction: column;
-    }
-    #contactus{
-        font-size: 30px; 
-        
-    }
-}
-@media screen and (max-width: 768px){
-      body{
-        width: 100%;
-    }
-    .FindUs-h1{
-        padding: 0;
-        padding-bottom: 10px;
-    
-    }
-    #find-us-header{
-        font-size: 30px;
-    }
-      @keyframes typingA{
-
-    from{ width: 0;
-    }
-    to{
-        width: 320px;
-    }
-    }
-     .buttonM{
-        height: 50px;
-        width: 190px;
-        font-size: 12px;
-        padding: 0;
-    }
     .buttons{
-        top: 60%;
-        left: 50%;
-        height: fit-content;
-        gap: 10px;
+       left:50%;
     }
-    .FindUs-container33 p,
-    .FindUs-container33
-    {
-        height: fit-content;
-        margin: 0;
-        font-size: 16px;
+}
+
+
+
+@media screen and (max-width: 768px){
+        .buttons{
+       top:80%;
     }
-    .FindUs-container3{
-        height: fit-content;
+
+    .contactus1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 800px;
     }
-        #contactus{
-        font-size: 19px;
-        padding: 0;
-    
+
+    #contactus {
+
+    font-size: 30px;
+    text-align: center;
+    margin-left: 0;
     }
     .contactus{
-        padding: 0;
-        padding-bottom: 10px;
+    width: 50%;
+    margin-bottom: 50px; 
     }
-    #divider-name{
-        font-size: 40px;
-    }
+
+
+    
 }
 
 @media screen and (max-width: 480px){
-    .l-divider{
-        padding-left: 0;
-        padding-right: 0;
-    
-    }
-       #divider-name{
-        font-size: 35px;
-    }
-      .FindUs-h1{
-        padding: 0;
-        padding-bottom: 10px;
-    
-    }
-    .form1,
-    .form2{
-        padding-right: 20px;
-        padding-left: 20px;
-    }
-    .First-form{
-        width: 250px;
-    }
-    .forms{
-        margin: 0;
-    }
-    #find-us-header{
-        font-size: 25px;
-    }
    
+    .form2 {
+    width: 90%;
+    align-self: center;
+   }
+
+   .buttonM{
+    width: 150px;
+    }
+
+    .submitButton {
+    margin-left: 10px;
+    }
 }
 
 
