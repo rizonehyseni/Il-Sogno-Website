@@ -8,6 +8,19 @@
      padding: 0;
  }
 
+ /* text kudo qe ki leja  
+
+   font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    edhe mos le text bold se qiky font ska bold kshtu vet veq ja bon me force
+*/
+
+/* tjerat po doken nrregull veq sigurohu qe krejt containersat kane width height edhe display*/
+/*qat videocontainerin boje full height 100vh qe edhe per responsiv le tdel i madh*/
+
+
  body {
      box-sizing: border-box;
      margin: 0;
