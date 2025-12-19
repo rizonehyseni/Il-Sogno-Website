@@ -91,8 +91,11 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   sr.reveal(".about_card", {
-    origin: "bottom",
-    interval: 150
+     origin: "bottom",
+  interval: 150,
+  beforeReveal: el => {
+    el.style.transform = "none";
+  }
   });
 
   sr.reveal(".menu_img", { origin: "bottom" });
