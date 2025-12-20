@@ -58,7 +58,7 @@ const blogCards = blogPosts.map(post => {
     card.classList.add("blog-card");
 
     card.innerHTML = `
-        <h1>${post.title}</h1>
+        <h2>${post.title}</h2>
         <img src="${post.img}" alt="${post.title}">
         <p>${post.text}</p>
           <div class="blog-footer">
@@ -72,5 +72,24 @@ const blogCards = blogPosts.map(post => {
     return card;
 });
  container.append(...blogCards);
+const form = document.getElementById("subscribe-form");
+const emailInput = document.getElementById("email");
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const email = emailInput.value.trim();
+    if (email === "") {
+        alert("Please enter your email.");
+        return;
+    }
+
+    if (!email.includes("@")){ 
+        alert("Please enter a valid email.");
+        return;
+    }
+    alert("Thank you for subscribing!");
+    form.reset();
+});
 
 });
