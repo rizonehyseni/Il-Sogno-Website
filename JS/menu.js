@@ -1,4 +1,4 @@
-const menuItems = {
+const menu = {
     starters: [
         {img:"../photos/Menu/ChickenWings.png", title:"Chicken Wings", text:"Juicy chicken wings tossed in a savory sauce. Perfectly crispy and full of flavor. Served with a side of dipping sauce."},
         {img:"../photos/Menu/CapreseSalad.png", title:"Caprese Salad", text:"Tomatoes and mozzarella layered with basil, drizzled with extra virgin olive oil. A very refreshing salad."},
@@ -57,40 +57,39 @@ const menuItems = {
 
 function generateCards(sectionId, items) {
     const section = document.getElementById(sectionId);
+    const titleText = sectionId; 
 
-    const titleText = sectionId.charAt(0).toUpperCase() + sectionId.slice(1);
-    section.innerHTML = `<h1 class="titulli">${titleText}</h1>`;
+    section.innerHTML = `
+        <h1 class="titulli">${titleText.toUpperCase()}</h1>
+        <div class="container"></div>
+    `;
 
-    let html = `<div class="container">`;
+    let html = `<div class="card-grid">`;
 
-    for (let i = 0; i < items.length; i += 3) {
-        html += `<div class="card-grid">`;
-        const rowItems = items.slice(i, i + 3);
-        rowItems.forEach(item => {
-            html += `
-                <div class="card-box">
-                    <img src="${item.img}" class="card-img" />
-                    <div class="card-body">
-                        <h5 class="card-title">${item.title}</h5>
-                        <p class="card-text">${item.text}</p>
-                    </div>
+    items.forEach((item, i) => {
+        if (i && i % 3 === 0) html += `</div><div class="card-grid">`;
+
+        html += `
+            <div class="card-box">
+                <img src="${item.img}" class="card-img">
+                <div class="card-body">
+                    <h5 class="card-title">${item.title}</h5>
+                    <p class="card-text">${item.text}</p>
                 </div>
-            `;
-        });
-        html += `</div>`; 
-    }
+            </div>
+        `;
+    });
 
-    html += `</div>`; 
-
-    section.innerHTML += html;
+    section.querySelector(".container").innerHTML = html + `</div>`;
 }
 
-generateCards("starters", menuItems.starters);
-generateCards("main", menuItems.main);
-generateCards("grill", menuItems.grill);
-generateCards("fastfood", menuItems.fastfood);
-generateCards("desserts", menuItems.desserts);
-generateCards("drinks", menuItems.drinks);
+
+generateCards("starters", menu.starters);
+generateCards("main", menu.main);
+generateCards("grill", menu.grill);
+generateCards("fastfood", menu.fastfood);
+generateCards("desserts", menu.desserts);
+generateCards("drinks", menu.drinks);
 
 
 const butonat = document.querySelectorAll(".menu-btn");
