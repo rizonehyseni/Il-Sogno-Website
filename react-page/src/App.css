@@ -283,8 +283,20 @@ input::placeholder {
     flex-direction: column;
   }
 
-  .blog-section,
-  .sidebar-section {
+
+  .hero-divider {
+  position: absolute;
+  bottom: 15%;
+  left: 0%;
+  width: 100%;
+  padding:0 50px;
+}
+
+  #hero-title{
+    text-align: center;
+  }
+
+  .blog-section {
     width: 100%;
     border: none;
   }
@@ -296,13 +308,17 @@ input::placeholder {
     text-align: center;
   }
 
-  .blog-image {
+  .blog-image-container {
     width: 90%;
+    height: 250px;
   }
 
   .blog-footer {
     flex-direction: column;
     gap: 15px;
+  }
+  .sidebar-section{
+    display: none;
   }
 }
 
