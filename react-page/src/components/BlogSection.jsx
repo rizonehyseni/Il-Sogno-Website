@@ -67,7 +67,7 @@ autumn, and comforting in winter. Seasonal cooking is not a trend for us; it is 
 
 
 const BlogItem = ({ title, image, preview, fullText, author, year }) => {
-  const [isOpen, setIsOpen] = useState(false);{/*state*/}
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <article className="blog-item">
@@ -81,7 +81,7 @@ const BlogItem = ({ title, image, preview, fullText, author, year }) => {
         <p>{preview}</p>
       </div>
 
-      <div className={`blog-paragraph full-text ${isOpen ? "open" : ""}`}>{/*nese isOpen o true ja qet klasen isOpen*/}
+      <div className={`blog-paragraph full-text ${isOpen ? "open" : ""}`}>
   <p>{fullText}</p>
 </div>
 
@@ -90,9 +90,9 @@ const BlogItem = ({ title, image, preview, fullText, author, year }) => {
       <div className="blog-footer">
         <button
           className="btn-read-more"
-          onClick={() => setIsOpen(!isOpen)}>{/*kur te klikon e toggle isOpen*/}
-      
-          {isOpen ? "Read Less" : "Read More"}{/*nese o qel nbuton shkruhet read less e kunderta read more*/}
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? "Read Less" : "Read More"}
         </button>
 
         <p>
