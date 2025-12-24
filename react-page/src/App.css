@@ -108,10 +108,19 @@ body {
   margin-bottom: 20px;
 }
 
-.blog-image {
-  width: 80%;
+.blog-image-container{
+  width: 75%;
+  height: 450px;
   border-radius: 20px;
   margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.blog-image {
+  width: 100%;
+  height: 100%;
+  
+  background-position: center;
 }
 
 .blog-paragraph {
@@ -120,12 +129,13 @@ body {
   color: #f7f1e1;
   text-align: left;
   font-size: 1.2rem;
-  padding-bottom: 40px;
-  border-bottom: 1px solid #ffffff;
+ 
+  border-top: 1px solid #ffffff;
+  padding-top: 30px;
 }
 
 .blog-footer {
-  width: 70%;
+  width: 75%;
   padding-top: 30px;
   display: flex;
   justify-content: space-between;
@@ -141,7 +151,7 @@ body {
    font-family: "Instrument Serif", serif;
   background: transparent;
   border: 1px solid #ffffff;
-  border-radius: 10px;
+  border-radius: 15px;
   color: #f7f1e1;
   width: 150px;
   height: 30px;
@@ -182,14 +192,14 @@ body {
 
 .sidebar-box h1 {
   font-family: "Instrument Serif", serif;
-  font-size: 36px;
+  font-size: 2.2rem;
   font-weight: 300;
   color: #ffffff;
 }
 
 .sidebar-box p {
    font-family: "Instrument Serif", serif;
-  font-size: 16px;
+  font-size: 1.2rem;
   margin: 10px 0;
   color: #f7f1e1;
 }
@@ -206,20 +216,18 @@ body {
 
 .btn-sidebar {
   margin-top: 15px;
-  width: 100%;
+  width: 70%;
   height: 50px;
   background: #f7f1e1;
   border: none;
    font-family: "Instrument Serif", serif;
-  font-size: 18px;
+  font-size: 1.2rem;
   color: #000000;
   cursor: pointer;
   transition: all 0.4s ease;
 }
 
 .btn-sidebar:hover {
-  background: #1e0202;
-  color: #ffffff;
   transform: translateY(-2px);
 }
 
@@ -228,7 +236,7 @@ body {
 ========================= */
 input {
   margin-top: 30px;
-  width: 100%;
+  width: 70%;
   height: 45px;
   background: transparent;
   border: 1px solid #ffffff;

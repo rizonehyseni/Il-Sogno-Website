@@ -43,7 +43,9 @@ const BlogItem = ({ title, image, text, author, year }) => {
     <article className="blog-item">
       <h1 className="blog-title">{title}</h1>
 
+      <div className="blog-image-container">
       <img src={image} className="blog-image" alt={title} />
+      </div>
 
       <div className="blog-paragraph">
         <p>{text}</p>
