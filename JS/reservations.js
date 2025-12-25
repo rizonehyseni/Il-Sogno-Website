@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-//Validimi i "optional comments"- jo me shume se 100 fjale 
+//Validimi i "additional comments"- jo me shume se 100 fjale 
 document.addEventListener("DOMContentLoaded", () => {
   const commentsInput = document.getElementById("comments");
 
@@ -41,6 +41,17 @@ document.addEventListener("DOMContentLoaded", () => {
     if (words.length > 100) {
       commentsInput.value = words.slice(0, 100).join(" ");
     }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const phoneInput = document.getElementById("phone");
+
+  phoneInput.addEventListener("input", () => {
+    
+    phoneInput.value = phoneInput.value
+      .replace(/[^0-9]/g, "")  //vec numra me mujt me shkru
+      .slice(0, 15);        //mi mbajte veq deri 15 shifra  
   });
 });
 
