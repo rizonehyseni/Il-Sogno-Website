@@ -59,5 +59,43 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   observer1.observe(typingText1);
+  const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const message = document.getElementById("message").value.trim();
+    const privacyChecked = document.getElementById("privacy").checked;
+    
+    if(name.split(" ").length < 2) {
+        alert("Please enter your full name (first and last).");
+        return;
+    }
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if(!emailPattern.test(email)) {
+        alert("Please enter a valid email address.");
+        return;
+    }
+    const phonePattern = /^\+?\d{7,15}$/;
+    if(!phonePattern.test(phone)) {
+        alert("Please enter a valid phone number (7-15 digits, optional +).");
+        return;
+    }
+    if(message.length < 10) {
+        alert("Message must be at least 10 characters long.");
+        return;
+    }
+    if(!privacyChecked) {
+        alert("You must agree to the privacy policy.");
+        return;
+    }
+
+    alert("Your message has been sent successfully!");
+    form.reset();
+});
+
 });
 

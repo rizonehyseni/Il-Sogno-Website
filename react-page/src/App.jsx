@@ -14,7 +14,7 @@ const App = () => {
       <Navbar />
       <HeroSection />
 
-      {/* MAIN LAYOUT */}
+      {/* qiky divi main layout qe mi nda sections dmth qit main section prej pjeseve jahste*/}
       <main className="main-layout">
         <BlogSection />
         <Sidebar />

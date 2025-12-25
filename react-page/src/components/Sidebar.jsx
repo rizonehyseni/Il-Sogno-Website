@@ -1,3 +1,5 @@
+import {useState} from "react";
+
 const SidebarBox1 = () => {
   return (
     <div className="sidebar-box">
@@ -43,13 +45,62 @@ const SidebarBox3 = () => {
   );
 };
 
+
+
 const SidebarBox4 = () => {
+  const [email, setEmail] = useState("");
+  const [error, setEmailError] = useState("");
+
+  // dojna me validu emailen 
+  const isValidEmail = (email) => {
+    if (email.includes(" ")) return false; // sbon me pas hapsira nr email
+
+    const parts = email.split("@");
+    if (parts.length !== 2) return false; // veq 1 @ lejohet, e kqyr mas spliti a i ka array-i 2 pjese
+
+    const [local, domain] = parts;
+    if (!local || !domain) return false; // duhet tekst para edhe mas @
+
+    if (!domain.includes(".")) return false;//nese domeni ska pike s'bon
+
+    const domainParts = domain.split(".");
+    const topLevelDomain = domainParts[domainParts.length - 1];//e merr pjesen e fundit ose qajo mas pikes
+    if (topLevelDomain.length < 2) return false; //qikjo e kqyr a o top level, domaini nrregull se duhet mi pas ma shume se 2 karaktere
+
+    return true;
+  };
+
+  //dojna me validu emailen qata e kena qit ni state per email edhe nja per error 
+  const emailSubmit = (e) => {
+    e.preventDefault(); //se len browserin me bo submit pa u validu nihere 
+
+    if (!isValidEmail(email)) {
+      setEmailError("Enter a valid email address"); // nese s'osht valid 
+      return;
+    }
+
+    setEmailError(""); //nese osht nrregull e reset errorin
+    setEmail("");
+  };
+
   return (
     <div className="sidebar-box">
-      <form>
+      <form onSubmit={emailSubmit}>
         <h1>Subscribe</h1>
         <p>Join thousands of regular readers.</p>
-        <input type="email" placeholder="Email address" />
+
+        <input
+          type="email"
+          placeholder="Email address"
+          value={email}
+          onChange={(e) => {
+            setEmail(e.target.value); //e kqyr vleren qe e shkrun nforme
+            setEmailError(""); // e hek errorin sa her fillon me shkru
+          }}
+        />
+
+        {error && <p style={{ color: "red" }}>{error}</p>}
+
         <button className="btn-sidebar" type="submit">
           Submit
         </button>
@@ -57,6 +108,10 @@ const SidebarBox4 = () => {
     </div>
   );
 };
+
+
+
+
 
 const Sidebar = () => {
   return (
