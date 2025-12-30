@@ -184,7 +184,7 @@ input[type="submit"]:hover {
   }
 }
 
-.floatingButton {
+/* .floatingButton {
   font-family: "Instrument Serif", serif;
   position: relative;
   top: 20px;
@@ -199,7 +199,7 @@ input[type="submit"]:hover {
   text-decoration: none;
   z-index: 10;
   transition: all 0.3s ease;
-}
+} */
 
 /* .floatingButton:hover {
   padding-bottom: 5px;
