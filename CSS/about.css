@@ -14,12 +14,6 @@ body {
   padding: 0;
 }
 
-
-
-/*navbar style*/
-
-
-
 /*hero style*/
 
 .hero_container {
@@ -31,8 +25,6 @@ body {
   padding: 0;
 }
 
-
-
 .hero_text_container {
   display: flex;
   justify-content: center;
@@ -42,11 +34,7 @@ body {
   position: absolute;
   top: 9vh;
   left: 0;
-  background: linear-gradient(90deg,
-      rgba(0, 0, 0, 0.115) 10%,
-      rgba(0, 0, 0, 0.108) 50%,
 
-      rgba(29, 11, 4, 0) 100%);
   z-index: 10;
   border-radius: 5px;
 }
@@ -57,9 +45,7 @@ body {
 }
 
 .hero_title {
-  color: #F7F1E1;
-
-
+  color: #f7f1e1;
 }
 
 #hero_title1 {
@@ -78,7 +64,6 @@ body {
 }
 
 .branches_logo {
-  
   display: flex;
   justify-content: center;
   gap: 3.5rem;
@@ -86,7 +71,7 @@ body {
 }
 
 .main_logo {
-  width: 180px;
+  width: 380px;
 }
 
 .branch1 {
@@ -111,18 +96,15 @@ body {
 
 /* Seksioni 1 */
 .first_section {
-  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(30, 2, 2) 51%, rgb(0, 0, 0) 100%);
   padding-top: 50px;
   padding-bottom: 40px;
   overflow: hidden;
-
 }
 
 .first_section_container {
   text-align: center;
   width: 100%;
 }
-
 
 .main_about_pic {
   width: 100%;
@@ -134,15 +116,11 @@ body {
   object-position: 50% 70%;
   /*horizontalisht rrin nmes kur tbohet zoom
   e per vertikalisht osht 70% dmth e zoom pjesen pak ma poshte*/
-
 }
 
-
 .first_section {
-  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(30, 2, 2) 51%, rgb(0, 0, 0) 100%);
   padding-top: 50px;
   padding-bottom: 40px;
-
 }
 
 .first_section_container {
@@ -167,7 +145,6 @@ body {
   justify-content: center;
   gap: 3.5rem;
   margin-top: 10px;
-
 }
 
 .first_section_container p {
@@ -198,23 +175,20 @@ body {
   justify-content: center;
   flex-direction: row;
   align-items: flex-start;
-  background-color: #101210;
+  background-color: none;
   color: #f7f1e1;
   box-sizing: border-box;
 }
 
-
 /* fotoje me nxan 60% */
 .picture {
   overflow: hidden;
-
 }
 
 .picture img {
   object-fit: cover;
   display: block;
 }
-
 
 .text_container {
   padding: 2rem;
@@ -229,7 +203,7 @@ body {
   font-style: normal;
   font-size: 2em;
   margin-bottom: 1rem;
-  color: #F7F1E1;
+  color: #f7f1e1;
 }
 
 .text_container p {
@@ -237,7 +211,6 @@ body {
   font-size: 1.2em;
   line-height: 1.6;
 }
-
 
 .achievement_title {
   display: flex;
@@ -258,7 +231,7 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 2rem;
-  color: #F7F1E1;
+  color: #f7f1e1;
 }
 
 .picture {
@@ -298,20 +271,17 @@ body {
   font-weight: 400;
   font-style: normal;
   border-radius: 15px;
-  color: #F7F1E1;
-  border: 1px solid #F7F1E1;
+  color: #f7f1e1;
+  border: 1px solid #f7f1e1;
   background-color: #1e0202;
 }
 
-
 .menu_button:hover {
-  background-color: #F7F1E1;
+  background-color: #f7f1e1;
   color: #070505;
   cursor: pointer;
   transition: ease 0.3s;
-
 }
-
 
 /* interior yellow pic book */
 
@@ -320,17 +290,14 @@ body {
   height: 24rem;
   object-fit: cover;
   object-position: center;
-
 }
-
-
 
 .interior_picture {
   position: relative;
   width: 100%;
   height: 35rem;
   overflow: hidden;
- margin-top: 10rem;
+  margin-top: 10rem;
 }
 
 .interior_picture img {
@@ -339,9 +306,7 @@ body {
   object-fit: cover;
   object-position: center;
   display: block;
-
 }
-
 
 /* overlay effect */
 .overlay {
@@ -350,9 +315,11 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(rgba(0, 0, 0, 0.3) 0%,
-      rgba(0, 0, 0, 0.5) 50%,
-      rgba(0, 0, 0, 0.9) 100%);
+  background: radial-gradient(
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -370,30 +337,25 @@ body {
   font-size: 1.2rem;
   font-weight: 400;
   border-radius: 15px;
-  color: #F7F1E1;
-  border: 1px solid #F7F1E1;
+  color: #f7f1e1;
+  border: 1px solid #f7f1e1;
   background-color: transparent;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .book_button:hover {
-  background-color: #F7F1E1;
+  background-color: #f7f1e1;
   color: #070505;
 }
-
-
 
 /* Features Section */
 .features_section {
   display: flex;
   background-color: #010201;
 
-justify-content: space-between;
-
-
+  justify-content: space-between;
 }
-
 
 .picture_features {
   width: 22%;
@@ -408,16 +370,14 @@ justify-content: space-between;
   display: block;
 }
 
-
 .features_container {
   flex: 1;
   display: grid;
-  grid-template-columns: 1fr 1fr;  
-  gap: 1rem;                      
-  justify-content: center;  
-  align-items: center;
-  padding: 0 2rem;
+  grid-template-columns: 1fr 1fr;
 
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
 }
 
 .feature {
@@ -433,13 +393,13 @@ justify-content: space-between;
 
 .feature h2 {
   font-size: 1.5rem;
-  color: #F7F1E1;
+  color: #f7f1e1;
   margin-bottom: 0.5rem;
 }
 
 .feature p {
   font-size: 1rem;
-  color: #F7F1E1;
+  color: #f7f1e1;
   line-height: 1.4;
 }
 
@@ -452,8 +412,6 @@ justify-content: space-between;
   font-style: normal;
   text-align: center;
 }
-
-
 
 .fade-up {
   opacity: 0;
@@ -579,7 +537,6 @@ justify-content: space-between;
   }
 } */
 
-
 @media (max-width: 992px) {
   .interior_picture {
     height: 28rem;
@@ -587,16 +544,16 @@ justify-content: space-between;
 
   .picture_features {
     width: 100%;
-    height: 400px;           
+    height: 400px;
   }
 
   .features_section {
-    flex-direction: column;  
+    flex-direction: column;
   }
 
   .features_container {
-    width: 100% ;
-    grid-template-columns: 1fr 1fr;  
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
     justify-content: center;
     padding: 2rem 1rem;
@@ -604,11 +561,11 @@ justify-content: space-between;
 
   .feature {
     width: 100%;
-    height: auto ;
+    height: auto;
     padding: 2rem 1rem;
-    width: 540px;     
-    width: 100% ;
-    height: auto ;
+    width: 540px;
+    width: 100%;
+    height: auto;
     padding: 2rem 1rem;
   }
 }
@@ -616,25 +573,21 @@ justify-content: space-between;
   .interior_picture {
     height: 25rem;
   }
-  .features_container{
-    grid-template-columns: 1fr;  
-   
+  .features_container {
+    grid-template-columns: 1fr;
   }
 
   .text_container {
-
     width: 500px;
     height: 350px;
     font-size: 0.2rem;
   }
-
 
   .text_container p {
     font-size: 0.2em;
     line-height: 1.4;
     margin-bottom: 2.2rem;
   }
-
 
   .text_container h1 {
     font-size: 1.5rem;
@@ -657,7 +610,6 @@ justify-content: space-between;
     margin-top: 1rem;
   }
 
-
   .branch1 {
     width: 60px;
     height: 6rem;
@@ -669,15 +621,11 @@ justify-content: space-between;
     height: 6rem;
     transform: rotate(90deg);
   }
-
 }
 
-
-
-
 @media (max-width: 480px) {
-  .features_container{
-    grid-template-columns: 1fr ;  
+  .features_container {
+    grid-template-columns: 1fr;
   }
   .interior_picture {
     height: 20rem;
@@ -704,11 +652,9 @@ justify-content: space-between;
   }
 
   .text_container h1 {
-
-
     font-size: 1em;
     margin: 20px;
-    color: #F7F1E1;
+    color: #f7f1e1;
   }
 
   .text_container p {
@@ -720,16 +666,13 @@ justify-content: space-between;
   .achievement_title img {
     width: 70px;
     display: none;
-
   }
 
   .text_container h1 {
-
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
     margin-top: 2rem;
     color: #9c7814;
-
   }
 
   .picture_features {
@@ -745,6 +688,4 @@ justify-content: space-between;
     width: 100px;
     height: 100px;
   }
-
-
 }

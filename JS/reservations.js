@@ -15,11 +15,6 @@ flatpickr("#date-picker", {
 });
 
 
-//validimi i numri te telefonit
-
-
-
-
 
 
 //Validimi per full name
@@ -28,36 +23,35 @@ document.addEventListener("DOMContentLoaded", () => {
 
   name.addEventListener("input", () => {
     name.value = name.value
-      .replace(/[0-9]/g, "")           // hiq numrat
-      .slice(0, 30)                    // maksimum 20 karaktere gjithsej
+      .replace(/[^a-zA-ZÀ-ÿ '-]/g, "")         // hiqi krejt qka sjane shkronja
+      .slice(0, 30)                    // maksimum 30 karaktere gjithsej
       .replace(/\b\w/g, c => c.toUpperCase()); // cdo fjale me shkronje te madhe
   });
 });
 
 
+//Validimi i "additional comments"- jo me shume se 100 fjale 
+document.addEventListener("DOMContentLoaded", () => {
+  const commentsInput = document.getElementById("comments");
 
-/*pop up */ 
+  commentsInput.addEventListener("input", () => {
+   
+    let words = commentsInput.value.split(" ");
 
-// Kur klikohet "BOOK TABLE"
-
-document.querySelector("form").addEventListener("submit", function (e) {
-  e.preventDefault();
-
- 
-  if (!this.checkValidity()) {
-    this.reportValidity();  // fuhsat me i kontrollu
-    return;
-  }
-
-  // Shfaqe pop upin
-  document.getElementById("successPopup").style.display = "flex";
-  this.reset();
+    if (words.length > 100) {
+      commentsInput.value = words.slice(0, 100).join(" ");
+    }
+  });
 });
 
-// Butoni close
-document.getElementById("closePopup").addEventListener("click", () => {
-  document.getElementById("successPopup").style.display = "none";
+document.addEventListener("DOMContentLoaded", () => {
+  const phoneInput = document.getElementById("phone");
+
+  phoneInput.addEventListener("input", () => {
+    
+    phoneInput.value = phoneInput.value
+      .replace(/[^0-9]/g, "")  //vec numra me mujt me shkru
+      .slice(0, 15);        //mi mbajte veq deri 15 shifra  
+  });
 });
-
-
 

@@ -5,27 +5,29 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [secondaryOpen, setSecondaryOpen] = useState(false);
   const [hidden, setHidden] = useState(false);
+  {/*statesa*/}
 
-  const lastScroll = useRef(window.scrollY);
+  const lastScroll = useRef(window.scrollY);{/*useref e gjen vleren sa ke scroll vertikalisht*/}
 
-  const toggleMenu = () => setMenuOpen(p => !p);
+
+  const toggleMenu = () => setMenuOpen(p => !p);{/*dmth kur te klikon menune e ndrron gjendjen*/}
 
   const toggleSecondary = () => {
     if (window.innerWidth > 768) {
       setSecondaryOpen(p => !p);
     }
-  };
+  };{/*dmth nese sosht mobile veq ja ndrron gjenjen menyse sekondare*/}
 
   useEffect(() => {
     const onScroll = () => {
-      if (window.scrollY > lastScroll.current && window.scrollY > 100) {
+      if (window.scrollY > lastScroll.current && window.scrollY > 100) {{/*dmth nese ke scroll ma shume se 100px e mshef menyne, e mshel sekondaren nese o qel*/}
         setHidden(true);
         setMenuOpen(false);
         setSecondaryOpen(false);
       } else {
         setHidden(false);
       }
-      lastScroll.current = window.scrollY;
+      lastScroll.current = window.scrollY;{/*e llogarit apet a ke leviz*/}
     };
 
     window.addEventListener("scroll", onScroll);
@@ -33,7 +35,7 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
-    const handleOutside = (e) => {
+    const handleOutside = (e) => {{/*kur klikon jashte menyse ajo e mshel, po nese o mobile sbon sen se osht full size*/}
       if (window.innerWidth <= 768) return;
 
       if (
@@ -49,17 +51,17 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`navbar ${hidden ? "hidden" : ""}`}>
+    <nav className={`navbar ${hidden ? "hidden" : ""}`}>{/*nese u aktivizu hidden ja shton klasen hidden*/}
       <div className="navbar_container">
 
-        {/* LOGO */}
+        {/*Logoja*/}
         <div className="navbar_left">
           <a href="index.html" className="logo_link">
             <img src="/photos/IlSogno.png" alt="Logo" className="logo" />
           </a>
         </div>
 
-        {/* MAIN MENU */}
+        {/* menyja kryesore */}
         <ul className={`nav_menu ${menuOpen ? "show" : ""}`}>
           <li className="nav_item"><a href="index.html" className="nav_link">Home</a></li>
           <li className="nav_item"><a href="menu.html" className="nav_link">Menu</a></li>
@@ -76,7 +78,7 @@ const Navbar = () => {
             </button>
           </li>
 
-          {/* SECONDARY MENU */}
+          {/* dytesore */}
           <ul
             id="nav_menu_secondary"
             className={`nav_menu_secondary ${secondaryOpen ? "grow" : ""}`}
@@ -89,7 +91,7 @@ const Navbar = () => {
           </ul>
         </ul>
 
-        {/* HAMBURGER */}
+        {/* hamburger menyja*/}
         <div className="navbar_toggle" onClick={toggleMenu}>
           <span className={`bar ${menuOpen ? "rotate1" : ""}`} />
           <span className={`bar ${menuOpen ? "fade" : ""}`} />

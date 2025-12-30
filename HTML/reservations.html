@@ -35,13 +35,13 @@
     </video>
     <div class="video-overlay"></div>
 
+    <a href="../HTML/index.html" class="floatingButton">Kthehu mbrapa</a>
+
     <section class="banner">
       <h1>Book your table</h1>
 
       <div class="form-container">
-        <h2></h2>
-
-        <form action="">
+        <form action="" id="bookingForm">
           <div class="form-row">
             <input
               id="date-picker"
@@ -59,7 +59,7 @@
           </div>
 
           <div class="form-row">
-            <input type="text" placeholder="Full Name" required />
+            <input id="fullname" type="text" placeholder="Full Name" required />
             <input
               type="tel"
               id="phone"
@@ -70,6 +70,7 @@
 
           <div class="form-row">
             <input type="email" id="email" placeholder="Your Email" required />
+
             <input
               type="number"
               placeholder="How many people?"
@@ -87,6 +88,7 @@
       </div>
     </section>
 
+    <!-- pop-up -->
     <div id="successPopup">
       <div class="Popup-window">
         <h2>Reservation complete</h2>

@@ -1,132 +1,108 @@
 
-  document.body.classList.add('loading');
+document.body.classList.add("loading");
 
-  window.addEventListener('load', () => {
-    const intro = document.querySelector('.intro_container');
-    setTimeout(() => {
-      intro.style.display = 'none';
-      document.body.classList.remove('loading');
-    }, 3500);
-  });
-
-
+window.addEventListener("load", () => {
+  const intro = document.querySelector(".intro_container");
+  setTimeout(() => {
+    intro.style.display = "none";
+    document.body.classList.remove("loading");
+  }, 3500);
+});
 
 
-  const text = `"Music is the cup which holds the wine of silence."`;
-  const text2 = '- Robert Fripp';
-  const text3 = '  Chef Luca reveals the secrets of truffle season — from selecting the finest local varieties to crafting dishes that capture their earthy aroma.';
-  const typingText = document.getElementById("divider_quote");
-  const typingText2 = document.getElementById("divider_author");
-  const typingText3 = document.getElementById("blog_info");
 
-  let i = 0;
-  let j = 0;
-  let k = 0;
-  let hasTyped = false;
 
-  function typeWriter() {
-    if (i < text.length) {
-      typingText.textContent += text.charAt(i);
-      i++;
-      setTimeout(typeWriter, 40);
-    } else if (j < text2.length) {
-      typingText2.textContent += text2.charAt(j);
-      j++;
-      setTimeout(typeWriter, 40);
-    } else if (k < text3.length) {
-      typingText3.textContent += text3.charAt(k);
-      k++;
-      setTimeout(typeWriter, 30);
-    }
+const text = `"Music is the cup which holds the wine of silence."`;
+const text2 = "- Robert Fripp";
+const text3 =
+  "Chef Luca reveals the secrets of truffle season — from selecting the finest local varieties to crafting dishes that capture their earthy aroma.";
+
+const typingText = document.getElementById("divider_quote");
+const typingText2 = document.getElementById("divider_author");
+const typingText3 = document.getElementById("blog_info");
+
+let i = 0,
+  j = 0,
+  k = 0;
+let hasTyped = false;
+
+function typeWriter() {
+  if (i < text.length) {
+    typingText.textContent += text.charAt(i++);
+    setTimeout(typeWriter, 40);
+  } else if (j < text2.length) {
+    typingText2.textContent += text2.charAt(j++);
+    setTimeout(typeWriter, 40);
+  } else if (k < text3.length) {
+    typingText3.textContent += text3.charAt(k++);
+    setTimeout(typeWriter, 30);
   }
+}
 
 
 
-  
-  const aboutText = document.querySelector(".about_image_text");
-  const aboutCard = document.querySelectorAll(".about_card");
-  const menuImage = document.querySelector(".menu_img");
-  const menuTitle = document.querySelector(".menu_title");
-  const menuDesc = document.querySelector(".menu_desc");
-  const menuBtn = document.querySelector(".menu_button");
-  const blogImage = document.querySelector(".blog_image");
-  const blogNews = document.querySelector(".blog_news");
-  const blogInfo = document.querySelector(".blog_info");
+const aboutText = document.querySelector(".about_image_text");
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      const element = entry.target;
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
 
-      if (element.classList.contains("about_image_text") && entry.isIntersecting) {
-        aboutText.classList.add("show");
-        observer.unobserve(element);
+      // About image text
+      if (entry.target.classList.contains("about_image_text")) {
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target);
       }
 
-      if (element.classList.contains("about_card") && entry.isIntersecting) {
-        aboutCard.forEach((card, index) => {
-            card.classList.add("show");
-        });
-          observer.unobserve(element);
-      }
-
-
-      if (element.classList.contains("menu_img") && entry.isIntersecting) {
-        menuImage.classList.add("show");
-
-      }
-      else if (element.classList.contains("menu_img") && !entry.isIntersecting) {
-        menuImage.classList.remove("show");
-      }
-      if (element.classList.contains("menu_title") && entry.isIntersecting) {
-        menuTitle.classList.add("show");
-      }else if (element.classList.contains("menu_title") && !entry.isIntersecting) {
-        menuTitle.classList.remove("show");
-      }
-      if (element.classList.contains("menu_desc") && entry.isIntersecting) {
-        menuDesc.classList.add("show");
-      }else if (element.classList.contains("menu_desc") && !entry.isIntersecting) {
-        menuDesc.classList.remove("show");
-      }
-
-
-      if (element.classList.contains("menu_button") && entry.isIntersecting) {
-        menuBtn.classList.add("show");
-        observer.unobserve(element);
-      }
-
-      if (element.id === "divider_quote" && entry.isIntersecting && !hasTyped) {
+      // Typewriter trigger
+      if (
+        (entry.target.id === "divider_quote" ||
+          entry.target.id === "blog_info") &&
+        !hasTyped
+      ) {
         hasTyped = true;
         typeWriter();
-      }
-
-      if (element.id === "blog_info" && entry.isIntersecting && !hasTyped) {
-        hasTyped = true;
-        typeWriter();
-      }
-
-      if (element.classList.contains("blog_info") && entry.isIntersecting) {
-        element.classList.add("show");
-        observer.unobserve(element);
-      }
-      if (element.classList.contains("blog_image") && entry.isIntersecting) {
-        element.classList.add("show");
-        observer.unobserve(element);
-      }
-      if (element.classList.contains("blog_news") && entry.isIntersecting) {
-        element.classList.add("show");
-        observer.unobserve(element);
       }
     });
-  }, { threshold: 0.1 });
+  },
+  {
+    threshold: 0.3
+  }
+);
 
-  observer.observe(aboutText);
-  aboutCard.forEach(card => observer.observe(card));
-  observer.observe(menuImage);
-  observer.observe(menuTitle);
-  observer.observe(menuDesc);
-  observer.observe(menuBtn);
-  observer.observe(typingText);
-  observer.observe(typingText3);
-  observer.observe(blogInfo);
-  observer.observe(blogImage);
-  observer.observe(blogNews);
+
+observer.observe(aboutText);
+observer.observe(typingText);
+observer.observe(typingText3);
+
+
+
+
+
+//me scrollreveal
+document.addEventListener("DOMContentLoaded", () => {
+  const sr = ScrollReveal({
+    distance: "40px",
+    duration: 700,
+    easing: "ease-out",
+    opacity: 0,
+    reset: false,
+    mobile: false
+  });
+
+  sr.reveal(".about_card", {
+    origin: "bottom",
+    interval: 150
+  });
+
+  sr.reveal(".menu_img", { origin: "bottom" });
+  sr.reveal(".menu_title", { origin: "bottom", delay: 100 });
+  sr.reveal(".menu_desc", { origin: "bottom", delay: 150 });
+  sr.reveal(".menu_button", { origin: "bottom", delay: 200 });
+
+
+  sr.reveal(".blog_title", { origin: "bottom" });
+  sr.reveal(".blog_desc", { origin: "bottom", delay: 100 });
+  sr.reveal(".blog_image", { origin: "bottom", delay: 150 });
+  sr.reveal(".blog_news_title", { origin: "bottom", delay: 200 });
+});

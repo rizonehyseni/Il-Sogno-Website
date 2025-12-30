@@ -100,7 +100,7 @@ body {
 
 .blog-title {
   width: 70%;
-  text-align: right;
+  text-align: left;
   font-size: 2rem;
   font-family: "Instrument Serif", serif;
   font-weight: 300;
@@ -108,23 +108,50 @@ body {
   margin-bottom: 20px;
 }
 
-.blog-image {
-  width: 80%;
+.blog-image-container {
+  width: 75%;
+  height: 450px;
   border-radius: 20px;
   margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.blog-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   
+  display: block;      
 }
 
 .blog-paragraph {
   width: 75%;
    font-family: "Instrument Serif", serif;
   color: #f7f1e1;
-  text-align: right;
-  padding-bottom: 40px;
-  border-bottom: 1px solid #ffffff;
+  text-align: left;
+  font-size: 1.2rem;
+ 
+  border-top: 1px solid #ffffff;
+  padding-top: 30px;;
 }
 
+.full-text {
+  max-height: 0;
+  overflow: hidden;
+  padding-top: 0;
+  margin-top: 0;
+  border: none;
+
+}
+
+.full-text.open {
+  max-height: 1000px;
+  padding-top: 16px;
+  margin-top: 10px;
+}
+
+
 .blog-footer {
-  width: 70%;
+  width: 75%;
   padding-top: 30px;
   display: flex;
   justify-content: space-between;
@@ -140,13 +167,13 @@ body {
    font-family: "Instrument Serif", serif;
   background: transparent;
   border: 1px solid #ffffff;
-  border-radius: 20px;
+  border-radius: 15px;
   color: #f7f1e1;
   width: 150px;
-  height: 40px;
+  height: 30px;
   cursor: pointer;
   transition: all 0.4s ease;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .btn-read-more:hover {
@@ -160,12 +187,17 @@ body {
 ========================= */
 .sidebar-section {
   margin-top: 150px;
+  margin-bottom: 150px;
+  padding:100px 0;
   width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 50px;
   border-left: 1px solid #ffffff;
+  position: sticky;
+  top:0;
+  right:0;
 }
 
 .sidebar-box {
@@ -176,14 +208,14 @@ body {
 
 .sidebar-box h1 {
   font-family: "Instrument Serif", serif;
-  font-size: 36px;
+  font-size: 2.2rem;
   font-weight: 300;
   color: #ffffff;
 }
 
 .sidebar-box p {
    font-family: "Instrument Serif", serif;
-  font-size: 16px;
+  font-size: 1.2rem;
   margin: 10px 0;
   color: #f7f1e1;
 }
@@ -200,20 +232,18 @@ body {
 
 .btn-sidebar {
   margin-top: 15px;
-  width: 100%;
+  width: 70%;
   height: 50px;
   background: #f7f1e1;
   border: none;
    font-family: "Instrument Serif", serif;
-  font-size: 18px;
+  font-size: 1.2rem;
   color: #000000;
   cursor: pointer;
   transition: all 0.4s ease;
 }
 
 .btn-sidebar:hover {
-  background: #1e0202;
-  color: #ffffff;
   transform: translateY(-2px);
 }
 
@@ -222,7 +252,7 @@ body {
 ========================= */
 input {
   margin-top: 30px;
-  width: 100%;
+  width: 70%;
   height: 45px;
   background: transparent;
   border: 1px solid #ffffff;
@@ -253,8 +283,20 @@ input::placeholder {
     flex-direction: column;
   }
 
-  .blog-section,
-  .sidebar-section {
+
+  .hero-divider {
+  position: absolute;
+  bottom: 15%;
+  left: 0%;
+  width: 100%;
+  padding:0 50px;
+}
+
+  #hero-title{
+    text-align: center;
+  }
+
+  .blog-section {
     width: 100%;
     border: none;
   }
@@ -266,13 +308,17 @@ input::placeholder {
     text-align: center;
   }
 
-  .blog-image {
+  .blog-image-container {
     width: 90%;
+    height: 250px;
   }
 
   .blog-footer {
     flex-direction: column;
     gap: 15px;
+  }
+  .sidebar-section{
+    display: none;
   }
 }
 
@@ -281,3 +327,5 @@ input::placeholder {
     gap: 60px;
   }
 }
+
+
