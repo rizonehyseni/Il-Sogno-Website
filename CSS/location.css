@@ -4,6 +4,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #070505;
+    font-family: "Instrument Serif", serif;
+    font-weight: 100;
+    font-style: normal;
 }
 
 html, body {
@@ -235,13 +238,16 @@ iframe{
 
 
 .contactus {
-    width: 50%;
+    width: 60%;
+    margin-left: 10%;
+    padding: 0;
 }
 
 #contactus {
     color: #F7F1E1;
     font-family: "Instrument Serif", serif;
     font-size: 30px;
+    font-weight: 400;
     text-align: left;
     margin-left: 70px;
 }
@@ -314,7 +320,7 @@ input[type="checkbox"] {
     margin-top: 10px;
     cursor: pointer;
     transition: all 0.4s ease;
-    margin-left: 20%;
+    margin-left: 30%;
 }
 
 .submitButton:hover {
@@ -359,14 +365,16 @@ input[type="checkbox"] {
     }
 
     #contactus {
-
     font-size: 30px;
     text-align: center;
     margin-left: 0;
+
     }
     .contactus{
     width: 50%;
     margin-bottom: 50px; 
+    margin-left: 0;
+ 
     }
 
 
