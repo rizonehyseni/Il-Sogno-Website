@@ -13,7 +13,7 @@ class FooterComponent extends HTMLElement {
         <h3>Details</h3>
         <ul>
           <li><a href="/HTML/menu.html">menu</a></li>
-          <li><a href="/HTML/menu.html" target="blank">reservations</a></li>
+          <li><a href="/HTML/reservations.html" target="blank">reservations</a></li>
           <li><a href="/HTML/music.html">music</a></li>
           <li><a href="/HTML/location.html">location</a></li>
           <li><a href="/HTML/gallery.html">gallery</a></li>
