@@ -325,24 +325,27 @@ body.loading {
     align-items: center;
     justify-content: center;
 }
-.about_card{
-    width: 25%;
-    height: 450px;
-    background-color: var(--main-bg);
-    margin: 1rem;
-    border: 1px solid var(--text);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
+.about_card {
+  width: 25%;
+  height: 450px;
+  background-color: var(--main-bg);
+  color: var(--text);
+  margin: 1rem;
+  border: 1px solid var(--text);
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 0.4s ease, 
+              color 0.4s ease;
 }
 
 .about_card:hover {
   background-color: var(--text);
-  transform: translateY(-5px);
-  transition: 0.5s ease-in-out;
+  color: var(--main-bg);
   cursor: pointer;
 }
 

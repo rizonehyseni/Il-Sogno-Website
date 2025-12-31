@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 
-
 const blogPosts = [
   {
     id: 1,
@@ -64,7 +63,6 @@ autumn, and comforting in winter. Seasonal cooking is not a trend for us; it is 
     year: 2025,
   },
 ];
-
 
 const BlogItem = ({ title, image, preview, fullText, author, year }) => {
   const [isOpen, setIsOpen] = useState(false);
