@@ -1,0 +1,147 @@
+[33m830eb38[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mbranch_Siona[m[33m, [m[1;31morigin/branch_Siona[m[33m)[m react page update
+[33m3201673[m Merge branch 'main-2' of https://github.com/rizonehyseni/Il-Sogno-Website into branch_Siona
+[33m333aba5[m[33m ([m[1;31morigin/main-2[m[33m, [m[1;31morigin/HEAD[m[33m)[m Branch rizona (#113)
+[33mcbba2dc[m styled the button
+[33m3fb293b[m added button in reservation page
+[33m9702b38[m Branch rrezoni (#112)
+[33md85e1e7[m form validators through JS
+[33m3e98263[m styling bugs
+[33mfd653a6[m ndryshime ne mertime ne js edhe pak ndryshime ne css (#110)
+[33m7ee5cce[m Performnace fixes (#109)
+[33m2eca3bc[m react page images and minimal css fix (#108)
+[33m6cd73fa[m added the navbar link for the new info page
+[33m4012214[m Requested changes
+[33m44f1b5d[m Merge branch 'main-2' into menu-page
+[33m3ddf9b7[m ndryshime ne mertime ne js edhe pak ndryshime ne css
+[33m9d7086c[m removed some background colors to fit the design better
+[33mf11d6a5[m removed background color from hero section
+[33m226962c[m Merge branch 'main-2' of https://github.com/rizonehyseni/Il-Sogno-Website into branch_rizona
+[33m21a4ae3[m reduced index page images to imporve performance
+[33md15d123[m ScrollReveal library for fade-in animations
+[33m4b9b9f1[m improved jquery animation (#107)
+[33m7b891c3[m react page images and minimal css fix
+[33m7cdef9e[m[33m ([m[1;31morigin/add-jquery[m[33m, [m[1;32madd-jquery[m[33m)[m Merge branch 'main-2' of https://github.com/rizonehyseni/Il-Sogno-Website into add-jquery
+[33m9b5be99[m filtrimi i menus (#104)
+[33m0a99dec[m Location responsive (#105)
+[33me406f2c[m implemented map() for blog cards
+[33md8f9113[m blog card update
+[33m9f301ef[m improved jquery animation
+[33m61d770d[m finishing touches
+[33ma85d9c9[m responsive for location
+[33m2407ef8[m image for blog
+[33mdf622f5[m[33m ([m[1;31morigin/menu-page[m[33m)[m filtimi i menus permes filter()
+[33m3e2f03e[m[33m ([m[1;31morigin/branch_rizona[m[33m)[m Merge branch 'main-2' of https://github.com/rizonehyseni/Il-Sogno-Website into branch_rizona
+[33m247dc75[m Merge branch 'main-2' of https://github.com/rizonehyseni/Il-Sogno-Website into branch_Siona
+[33mcf79d39[m[33m ([m[1;31morigin/branch_rrezoni[m[33m)[m Branch rrezoni (#102)
+[33mc237732[m Merge branch 'main-2' of https://github.com/rizonehyseni/Il-Sogno-Website into branch_Siona
+[33mb113e43[m blog cards javascript and css
+[33m45a4ece[m border button
+[33m990bb98[m Merge branch 'main-2' of https://github.com/rizonehyseni/Il-Sogno-Website into branch_rizona
+[33mb8866ba[m ndryshime ne css (#101)
+[33mf68d109[m .
+[33m0db46d2[m Minor changes (#100)
+[33m154ee4b[m Merge branch 'main-2' of https://github.com/rizonehyseni/Il-Sogno-Website into branch_rizona
+[33mbbb4ae6[m small changes
+[33md79f5e8[m styling
+[33me226f2f[m head links reordering
+[33m812933b[m Merge branch 'main-2' of https://github.com/rizonehyseni/Il-Sogno-Website into menu-page
+[33m2cd3bc4[m ndryshime ne css
+[33me45e5d1[m dessert photo
+[33ma0d9d22[m ..
+[33mdd78891[m map size
+[33md9696e1[m structural changes
+[33m466dc4c[m Merge branch 'main-2' of https://github.com/rizonehyseni/Il-Sogno-Website into branch_Siona
+[33m23ee5be[m[33m ([m[1;32mmain-2[m[33m)[m Add interactivity to menu buttons and style for active state (#99)
+[33m55cbd16[m[33m ([m[1;32mmenu-page[m[33m)[m Merge branch 'main-2' of https://github.com/rizonehyseni/Il-Sogno-Website into menu-page
+[33m0a8ecef[m Jquery class toggles (#98)
+[33ma4133f4[m Add interactivity to menu buttons and style for active state
+[33m949c2ad[m .
+[33m12e27bc[m Merge branch 'main-2' of https://github.com/rizonehyseni/Il-Sogno-Website into branch_Siona
+[33m18c6e23[m[33m ([m[1;32mbranch_rizona[m[33m)[m Merge branch 'main-2' of https://github.com/rizonehyseni/Il-Sogno-Website into branch_rizona
+[33m1dc5ed4[m juery for menu
+[33m2596bf5[m .
+[33m59ab62f[m fixed logo in about page
+[33mbe2b29b[m React page fixes (#96)
+[33m0d4b382[m .
+[33m7fc4e83[m jquery animation for music page
+[33m89a1465[m fixed navbar for react
+[33m96b9e93[m fonts
+[33m45c8d88[m react blog page components, css and photos
+[33m7ff0edd[m reduced image quality for gallery so the page loads faster
+[33ma33c7c3[m navbar and footer components
+[33med6a7cf[m Merge branch 'main-2' of https://github.com/rizonehyseni/Il-Sogno-Website into branch_Siona
+[33m500ec4b[m creation of cards using js (#95)
+[33m2944151[m creation of cards using js
+[33m6417667[m Merge branch 'main-2' of https://github.com/rizonehyseni/Il-Sogno-Website into branch_Siona
+[33m97650a4[m responsive per max width 768 edhe ndryshimi i media qury prej 480 ne 650 (#94)
+[33me592edd[m special characters
+[33m67e3e34[m border twich fix
+[33m1caefb6[m Added  titles for all the menu categories in html and styled them
+[33m7a02609[m made the image a link
+[33m402cd25[m responsive per max width 768 edhe ndryshimi i media qury prej 480 ne 650px
+[33mf2a2e46[m Blog react pages and App.jsx structure (#93)
+[33m90538ea[m perditsova font size, distancat mes rows ne formen e rezervimit
+[33m0bdb610[m fixed scrolling issues in reservations page
+[33m7a6f765[m ...
+[33m50b3740[m app jsx changes
+[33m308683c[m Merge branch 'main-2' of https://github.com/rizonehyseni/Il-Sogno-Website into blog-react
+[33m17acf22[m React folders (#89)
+[33m0815d80[m comments
+[33m1de7080[m blog page react structure
+[33m5d65c0e[m react pages
+[33m503dfd2[m Merge branch 'main-2' of https://github.com/rizonehyseni/Il-Sogno-Website into branch_Siona
+[33m491034f[m[33m ([m[1;31morigin/page-coherence-and-styling[m[33m)[m Branch rrezoni (#88)
+[33me32bb7d[m navbari per react
+[33ma0d5cfa[m deleted unnecessary photos
+[33mf93f4b0[m responsiveness for blog page
+[33m5622bda[m updated class and id names for easier  formatting
+[33m389d2a7[m content and font changes
+[33m6d8522e[m Merge branch 'main-2' of https://github.com/rizonehyseni/Il-Sogno-Website into branch_Siona
+[33m36d71e5[m react-page folder and react files
+[33m4e12200[m font changes
+[33m9e7c714[m text loading speed js
+[33md38c053[m font weight change
+[33mabede98[m[33m ([m[1;31morigin/react-page[m[33m)[m Branch rizona (#84)
+[33m590806b[m shtova navarin dhe footerin ne blog.html dhe e fshiva kodin e panevojshem ne css per navbar dhe footer.
+[33mb97a27f[m Merge branch 'main-2' of https://github.com/rizonehyseni/Il-Sogno-Website into branch_rizona
+[33mb01b1c8[m Branch rrezoni (#83)
+[33m317b138[m deleted  picture
+[33m4ca03ae[m image and input css
+[33ma393bbd[m submit button css
+[33m9e8b9e6[m blog submit form
+[33me04998f[m container 2 css for paragraphs
+[33m5a24303[m added blogs
+[33mdc148f7[m header and div adjustments
+[33m38c85f8[m container 2 css
+[33m08304a5[m container 2 html
+[33m46aabf2[m button design
+[33m2cb2230[m bottom css
+[33m475fa6d[m paragraph and header adjustments
+[33m8ec65f7[m container 1 bottom
+[33mb702a94[m container 1 css  for photo
+[33m5a08c9e[m container 1  photo and text
+[33m73bc5db[m keyframes for section 1 background photo animation
+[33mfd90ccd[m section 2 css
+[33m9449d80[m section 2 container
+[33m15468a6[m section 1 JS  for paragraph animation
+[33m5ed22f8[m section 1 paragraph css
+[33m2fbc866[m section 1 background photo
+[33md979b09[m section 1 of blog
+[33m3b434a7[m footer  css
+[33mc91a535[m nav bar css
+[33m408a0b6[m blog footer
+[33m5d9c43e[m blog nav bar
+[33m557fe9d[m blog files
+[33m420e460[m background photo
+[33m85bf21e[m css update
+[33m743e8a6[m map borders
+[33m0736513[m new js animation for headers
+[33m8ee7cea[m removal of old animations
+[33mb58a109[m hiqa font links dhe shtova linkun fonts.css
+[33md492dc0[m Merge branch 'branch_rizona' of https://github.com/rizonehyseni/Il-Sogno-Website into branch_rizona
+[33mfca98e6[m fixed video attributes
+[33m7231d38[m Made variables for colors (#82)
+[33m64d084c[m Change image width in README
+[33m05b8a80[m Fix image source path in README
+[33m6a027d2[m Update logo image source in README
+[33m387a05d

@@ -5,7 +5,7 @@ $(document).ready(function () {
     const $images = $(".images_container");
 
 
-    //observeri nuk ndrrohet
+    //observeri nuk ndrrohet, rrin me js
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
 
