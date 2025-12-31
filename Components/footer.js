@@ -24,8 +24,8 @@ class FooterComponent extends HTMLElement {
       <div>
         <h3>Other</h3>
         <ul>
-          <li><a href="/PRIVACY_POLICY.md">Privacy Policy</a></li>
-          <li><a href="/TERMS_AND_CONDITIONS.md">Terms and Conditions</a></li>
+          <li><a href="/HTML/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="/HTML/terms-conditions.html">Terms and Conditions</a></li>
 
         </ul>
       </div>
