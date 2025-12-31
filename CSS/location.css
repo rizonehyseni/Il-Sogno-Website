@@ -1,392 +1,340 @@
-
 body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: #070505;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #070505;
 }
 
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-
-.section1{
-    position: relative;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    height: 100vh;
-    width: 100%;
-    animation: fadeAnimation 2.5s ease-in forwards;
-    margin-bottom: 200px;
+.section1 {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  animation: fadeAnimation 2.5s ease-in forwards;
+  margin-bottom: 200px;
 }
 
-.video-bg{
-    width: 100%;
-    height: 100vh;
-     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+.video-bg {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.l-divider{
-    position: absolute;
-    top:75vh;
-    left:0;
-    display: flex;
-    justify-content: center;
-    align-items:flex-end;
-    color: aliceblue;
-    margin: 0 auto;
-    width: 100%;
-    padding: 10px;
-    padding-bottom: 100px;
-    z-index: 1000;
-    gap: 20px;
+.l-divider {
+  position: absolute;
+  top: 75vh;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: aliceblue;
+  margin: 0 auto;
+  width: 100%;
+  padding: 10px;
+  padding-bottom: 100px;
+  z-index: 1000;
+  gap: 20px;
 }
 
-.divider_title_container{
-    height: 100px;
-    width: 250px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+.divider_title_container {
+  height: 100px;
+  width: 250px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
-
-#divider-name{
-    font-size: 3rem; 
-    font-family: "Instrument Serif", serif;
-    font-weight: 100;
-    font-style: normal;
-    animation: fadeAnimation 2.5s ease-in forwards;
+#divider-name {
+  font-size: 3rem;
+  font-family: "Instrument Serif", serif;
+  font-weight: 100;
+  font-style: normal;
+  animation: fadeAnimation 2.5s ease-in forwards;
 }
 
-
-
-.line{
-
-    transition: width 4.5s ease;
-    width: 0;
-    background-color: aliceblue;
-    height: 1px;
-    display: flex;
-    align-self:center;
+.line {
+  transition: width 4.5s ease;
+  width: 0;
+  background-color: aliceblue;
+  height: 1px;
+  display: flex;
+  align-self: center;
 }
 
-@keyframes fadeAnimation{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+@keyframes fadeAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
 
 /*how to find us*/
 
-
-
-
-.FindUs-h1{
-    color: #F7F1E1;
-     font-family: "Instrument Serif", serif;
-    font-weight: 100;
-    font-style: normal;
-    font-size: 40px;
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom:50px;
+.FindUs-h1 {
+  color: #f7f1e1;
+  font-family: "Instrument Serif", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 40px;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
-
-
- #find-us-header{
-    color: #ffffff;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
-         font-family: "Instrument Serif", serif;
-    font-weight: 100;
-    font-style: normal;
-    font-size: 40px; 
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 0.1px solid ;
-    animation: blink 1s  step-end infinite;
- }
-
-
-
-
- /**/
-
-#map{
-    width: 100%;
-    height: 100%;
-    border: 0;
-    margin: 0;
+#find-us-header {
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+  font-family: "Instrument Serif", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.1px solid;
+  animation: blink 1s step-end infinite;
 }
 
+/**/
 
-
-
-
- @keyframes blink{
-
-    from,to{
-        border-color: transparent;
-    }
-
-    50%{
-        border-color: rgb(255, 255, 255);
-    }
- }
-
- 
-.buttonM:hover{
- background-color: black;
+#map {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  margin: 0;
 }
 
-.buttonM{
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
 
- height: 40px;
- width: 200px;
- border-radius: 5px;
- background-color: rgba(0, 0, 0, 0.675);
- color: white;
- padding:0;
- font-weight: 600;
- transition: all 1s ease;
- font-size: large;
-      font-family: "Instrument Serif", serif;
-    font-weight: 100;
-    font-style: normal;
-    border:none;
+  50% {
+    border-color: rgb(255, 255, 255);
+  }
 }
 
+.buttonM:hover {
+  background-color: black;
+}
 
+.buttonM {
+  height: 40px;
+  width: 200px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.675);
+  color: white;
+  padding: 0;
+  font-weight: 600;
+  transition: all 1s ease;
+  font-size: large;
+  font-family: "Instrument Serif", serif;
+  font-weight: 100;
+  font-style: normal;
+  border: none;
+}
 
-.map{
-    position: relative;
-      width: 100%;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.map {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .map_link {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-iframe{
-
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: 1;
-    border: none;
-
-
+iframe {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+  border: none;
 }
-
 
 .buttons {
-    position: absolute;
-    bottom: 3%;
-    left: 80%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 12px;
-    z-index: 10;
-    border:none;
+  position: absolute;
+  bottom: 3%;
+  left: 80%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  z-index: 10;
+  border: none;
 }
-
 
 /*forms*/
 
-
 .contactus1 {
-    margin-top: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 500px;
-    gap: 10px;
-    box-sizing: border-box;
-    margin-bottom: 100px;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  gap: 10px;
+  box-sizing: border-box;
+  margin-bottom: 100px;
 }
 
-
-
 .contactus {
-    width: 50%;
+  width: 50%;
 }
 
 #contactus {
-    color: #F7F1E1;
-    font-family: "Instrument Serif", serif;
-    font-size: 30px;
-    text-align: left;
-    margin-left: 70px;
+  color: #f7f1e1;
+  font-family: "Instrument Serif", serif;
+  font-size: 30px;
+  text-align: left;
+  margin-left: 70px;
 }
-
-
 
 .forms {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
 }
-
-
 
 .form2 {
-    background-color: transparent;
-    color: white;
-    border: 1px solid white;
-    border-radius: 20px;
-    padding: 40px;
-    max-width: 500px;
-    width: 100%;
-    box-sizing: border-box;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+  font-family: "Instrument Serif", serif;
+  box-sizing: border-box;
 }
-
-
 
 input,
 textarea {
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid white;
-    margin-bottom: 10px;
-    outline: none;
-    color: white;
-    font-size: 14px;
-    padding: 6px 4px;
-    width: 100%;
-    box-sizing: border-box;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
+  outline: none;
+  color: white;
+  font-size: 14px;
+  padding: 6px 4px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 textarea {
-    height: 200px;
-    resize: none;
-    padding: 12px;
+  height: 200px;
+  resize: none;
+  padding: 12px;
 }
-
 
 input[type="checkbox"] {
-    width: auto;
-    margin-right: 8px;
+  width: auto;
+  margin-right: 8px;
 }
 
-
 #messageForm {
-    text-align: left;
+  text-align: left;
 }
 
 .submitButton {
-    background: transparent;
-    color: white;
-    border: 1px solid white;
-    border-radius: 20px;
-    padding:  5px 10px;
-    font-family: "Instrument Serif", serif;
-    letter-spacing: 1px;
-    height: 36px;
-    font-size: 15px;
-    margin-top: 10px;
-    cursor: pointer;
-    transition: all 0.4s ease;
-    margin-left: 20%;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-family: "Instrument Serif", serif;
+  letter-spacing: 1px;
+  height: 36px;
+  font-size: 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  margin-left: 20%;
 }
 
 .submitButton:hover {
-    background-color: #ffffff;
-    color: black;
+  background-color: #ffffff;
+  color: black;
 }
 
-.contact-form{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
+.contact-form {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
-
-
-
-
-
 
 @media screen and (max-width: 992px) {
-
-    .buttons{
-       left:50%;
-    }
+  .buttons {
+    left: 50%;
+  }
 }
 
+@media screen and (max-width: 768px) {
+  .buttons {
+    top: 80%;
+  }
 
+  .contactus1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 800px;
+  }
 
-@media screen and (max-width: 768px){
-        .buttons{
-       top:80%;
-    }
-
-    .contactus1{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 800px;
-    }
-
-    #contactus {
-
+  #contactus {
     font-size: 30px;
     text-align: center;
     margin-left: 0;
-    }
-    .contactus{
+  }
+  .contactus {
     width: 50%;
-    margin-bottom: 50px; 
-    }
-
-
-    
+    margin-bottom: 50px;
+  }
 }
 
-@media screen and (max-width: 480px){
-   
-    .form2 {
+@media screen and (max-width: 480px) {
+  .form2 {
     width: 90%;
     align-self: center;
-   }
+  }
 
-   .buttonM{
+  .buttonM {
     width: 150px;
-    }
+  }
 
-    .submitButton {
+  .submitButton {
     margin-left: 10px;
-    }
+  }
 }
-
-
