@@ -252,6 +252,20 @@ li p {
     border-radius: 999px;
   }
 }
+/*kur state osht aktiv */
+.timeline li.active p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline li.active .date {
+  opacity: 1;
+}
+
+.timeline li.active .timeline-point {
+  background: rgb(255, 255, 255);
+}
+
 /* Seksioni 1 */
 .first_section {
   padding-top: 50px;
