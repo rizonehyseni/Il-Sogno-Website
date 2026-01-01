@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Instrument Serif", serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+header img {
+  height: 100px;
+  cursor: pointer;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+h1 {
+  letter-spacing: 1px; /*distance mes shkronjave*/
+  margin-bottom: 40px;
+  font-size: 38px;
+  text-align: center;
+  font-weight: 500;
+}
+
+h2 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+p,
+li {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #aaa;
+  line-height: 26px;
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}
+
+@media (max-width: 600px) {
+  main {
+    margin: 0 10px;
+    margin-bottom: 80px;
+  }
+  header img {
+    height: 80px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+  p,
+  li {
+    font-size: 16px;
+  }
+}

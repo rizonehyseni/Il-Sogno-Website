@@ -4,19 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Il Sogno</title>
+    <title>Il Sogno Reservations | Book a Table for Italian Dining</title>
+
+    <meta name="description"
+          content="Reserve a table at Il Sogno Italian restaurant and enjoy seasonal cuisine, refined wine pairings, and an intimate dining experience inspired by the Amalfi Coast.">
+
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Il Sogno Reservations – Book a Table">
+    <meta property="og:description"
+          content="Book your table at Il Sogno and experience authentic Italian dining in a warm, elegant atmosphere.">
+    <meta property="og:image"
+          content="photos/main_logo.png">
+    <meta property="og:type" content="website">
+
     <link rel="stylesheet" href="../assets/fonts/fonts.css" />
     <link rel="stylesheet" href="/CSS/reservations.css" />
     <script src="/JS/reservations.js" defer></script>
-    <script src="../Components/navbar.js"></script>
+    <script type="module" src="../Components/navbar.js"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   </head>
-
   <body>
+    <my-navbar> </my-navbar>
     <video class="video-background" autoplay muted loop>
       <source src="/photos/seaside-view.mp4" type="video/mp4" />
     </video>
@@ -85,7 +98,7 @@
           Bienvenuto!
         </p>
 
-        <button id="closePopup">CLOSE</button>
+        <!-- <button id="closePopup">CLOSE</button> -->
       </div>
     </div>
   </body>

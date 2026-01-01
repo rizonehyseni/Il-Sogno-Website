@@ -13,7 +13,7 @@ class FooterComponent extends HTMLElement {
         <h3>Details</h3>
         <ul>
           <li><a href="/HTML/menu.html">menu</a></li>
-          <li><a href="/HTML/menu.html" target="blank">reservations</a></li>
+          <li><a href="/HTML/reservations.html" target="blank">reservations</a></li>
           <li><a href="/HTML/music.html">music</a></li>
           <li><a href="/HTML/location.html">location</a></li>
           <li><a href="/HTML/gallery.html">gallery</a></li>
@@ -24,8 +24,8 @@ class FooterComponent extends HTMLElement {
       <div>
         <h3>Other</h3>
         <ul>
-          <li><a href="/PRIVACY_POLICY.md">Privacy Policy</a></li>
-          <li><a href="/TERMS_AND_CONDITIONS.md">Terms and Conditions</a></li>
+          <li><a href="/HTML/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="/HTML/terms-conditions.html">Terms and Conditions</a></li>
 
         </ul>
       </div>
