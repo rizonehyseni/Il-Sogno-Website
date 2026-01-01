@@ -48,6 +48,15 @@ hr {
   color: white;
   width: 50%;
 }
+/* stili per containerin e kuq me foto */
+.aboutus-section-container {
+  background-color: rgb(74, 5, 5);
+  width: 100vw;
+  height: 150vh;
+  display: flex;
+  margin-top: 300px;
+  padding: 0 50px;
+}
 
 /* Seksioni 1 */
 .first_section {
