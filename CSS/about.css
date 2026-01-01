@@ -99,6 +99,21 @@ hr {
   margin-bottom: 200px;
 }
 
+.image-wrapper {
+  flex: 1;
+  display: flex;
+  gap: 30px;
+  position: relative;
+  overflow: visible;
+  margin-top: -60px;
+}
+.parallax-img {
+  width: 300px;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+  transform: translateY(0);
+}
 /* Seksioni 1 */
 .first_section {
   padding-top: 50px;
