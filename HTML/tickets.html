@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets</title>
+    <script type="module" src="../Components/navbar.js"></script>
+    <script type="module" src="../Components/footer.js"></script>
+
+    <link rel="stylesheet" href="/CSS/tickets.css">
+
+    <script src="/JS/tickets.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Island+Moments&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <my-navbar></my-navbar>
+
+    <div id="page">
+    <h1>Get Your Tickets</h1>
+    
+    <section id="container">
+        <div class="card">
+            <h2 id="eventName"></h2>
+            <h1 id="singerName"></h1>
+
+            <div id="insideCard">
+            <div class="insideCard2">
+                <p>Number of tickets</p>
+            <select id="qty">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            </select>
+            </div>
+            <img src="/photos/IlSogno.png" width="150">
+
+            <div class="insideCard2">
+            <p>Category</p>
+            <select id="category">
+            <option value="standard">Standard</option>
+            <option value="vip">VIP</option>
+            </select>
+            </div>
+            </div>
+
+            <p>Total: <span id="total"></span> &euro;</p>
+            <button id="button">Purchase</button>
+            
+    </div>
+    </section>
+
+    </div>
+    <my-footer></my-footer> 
+</body>
+</html>

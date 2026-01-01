@@ -30,7 +30,7 @@
 #videocontainer{
     position: relative;
     width: 100%;
-    height: 95vh; 
+    height: 100vh; 
     overflow: hidden;
     background: rgba(0,0,0,0.5);
 }
@@ -53,7 +53,7 @@
      text-align: center;
      color: white;
      padding-top: 5%;
-     padding-bottom: 16%;
+     padding-bottom: 20%;
      font-size:x-large;
      line-height: 38px;
      position: relative;
@@ -71,8 +71,7 @@
  .section-divider {
      display: flex;
      align-items: center;
-     margin-bottom: 5vh;
-     font-size: x-large;
+     font-size: 30px;
  }
 
  /* pseudoelement */
@@ -80,7 +79,7 @@
  .section-divider::after {
      content: '';
      flex: 1;
-     padding: 0.5px;
+     padding: 0.8px;
      background-color: rgb(255, 255, 255);
  }
 
@@ -116,7 +115,7 @@
  .event-card:hover {
      backdrop-filter: blur(2px);
      /*per me bo blur brenda card*/
-     background: rgba(255, 255, 255, 0.032);
+     background: rgba(255, 255, 255, 0.07);
  }
 
  #upcoming_performance {
