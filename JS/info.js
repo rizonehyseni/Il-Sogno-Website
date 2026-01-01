@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.item button').click(function(){
+  $('.header').click(function(){
     $(this).closest('.item').find('.answer').slideToggle();
   });
 });
