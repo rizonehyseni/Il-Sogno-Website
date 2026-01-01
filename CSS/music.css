@@ -8,6 +8,19 @@
      padding: 0;
  }
 
+ /* text kudo qe ki leja  
+
+   font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    edhe mos le text bold se qiky font ska bold kshtu vet veq ja bon me force
+*/
+
+/* tjerat po doken nrregull veq sigurohu qe krejt containersat kane width height edhe display*/
+/*qat videocontainerin boje full height 100vh qe edhe per responsiv le tdel i madh*/
+
+
  body {
      box-sizing: border-box;
      margin: 0;
@@ -111,6 +124,19 @@
      width: 35%;
  }
 
+ /*per jquery*/
+.event-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.event-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+/*per jquery*/
+
  .first-event-card:hover,
  .event-card:hover {
      backdrop-filter: blur(2px);
@@ -147,7 +173,7 @@
  }
 
  .price{
-    font-size: 20hv;
+    font-size: 1.5rem;
  }
 
  .tickets {
@@ -166,13 +192,13 @@
  .tickets:hover {
      color: #170000;
      background-color: rgb(253, 249, 249);
-     border: 1px #170000;
+     border: 1px solid #170000;
  }
 
  .tickets:active {
      color: #170000;
      background-color: rgb(35, 1, 1);
-     border: 1px #170000;
+     border: 1px solid #170000;
  }
 
 /* RESPONSIVENESS */

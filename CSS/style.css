@@ -1,8 +1,16 @@
+:root {
+  --main-bg: #070505;
+  --accent: #4f0909;
+  --text:#F7F1E1;
+}
+
+
+
 body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #070505;
+    background-color: var(--main-bg);
 }
 
 html, body {
@@ -12,6 +20,11 @@ html, body {
     padding: 0;
 }
 
+
+
+
+
+
 /*intro style*/
 
 
@@ -19,7 +32,7 @@ html, body {
     opacity: 1;
     width: 100vw;
     height: 100vh;
-    background-color: #070505;
+    background-color: var(--main-bg);
     position: fixed;
     top: 0;
     left: 0;
@@ -142,7 +155,7 @@ body.loading {
 }
 
 .hero_title{
-    color:#F7F1E1;
+    color:var(--text);
     
 }
 
@@ -224,7 +237,7 @@ body.loading {
     top: 50%;
     left: 50%;
      transform: translate(-50%, -50%);
-    color: white;
+    color: var(--text);
     font-size: 4rem;
     z-index: 2;
     font-family: "Island Moments", cursive;
@@ -293,7 +306,7 @@ body.loading {
     font-weight: 400;
     font-style: normal;
     margin-bottom: 1rem;
-    color:#F7F1E1;
+    color:var(--text);
 }
 .about_sub_section{
     display: flex;
@@ -312,39 +325,27 @@ body.loading {
     align-items: center;
     justify-content: center;
 }
-.about_card{
-    width: 25%;
-    height: 450px;
-    background-color: #070505;
-    margin: 1rem;
-    border: 1px solid #F7F1E1;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    
-}
-.about_card.show{
-  animation: cardZoom 1.5s ease forwards; 
-}
+.about_card {
+  width: 25%;
+  height: 450px;
+  background-color: var(--main-bg);
+  color: var(--text);
+  margin: 1rem;
+  border: 1px solid var(--text);
+  border-radius: 10px;
 
-@keyframes cardZoom{
-  from{
-    opacity:0;
-  transform: scale(0.8);
-  }
-  to{
-  opacity: 1;
-  transform: scale(1.0);
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 0.4s ease, 
+              color 0.4s ease;
 }
 
 .about_card:hover {
-  background-color: #F7F1E1;
-  transform: translateY(-5px);
-  transition: 0.5s ease-in-out;
+  background-color: var(--text);
+  color: var(--main-bg);
   cursor: pointer;
 }
 
@@ -367,14 +368,14 @@ body.loading {
 }
 .about_desc_title,
 .about_desc_text {
-  color: #F7F1E1;
+  color: var(--text);
   transition: color 0.4s ease;
   text-align: center;
 }
 
 .about_card:hover .about_desc_title,
 .about_card:hover .about_desc_text {   /*qiky dmth pi selekton desc title edhe text kur bohet cardi hover*/
-  color: #070505;
+  color:var(--main-bg);
 }
 
 
@@ -399,7 +400,7 @@ body.loading {
     align-items: center;
     justify-content: center;
     margin-top: 8rem;
-    background-color: #070505;
+    background-color:var(--main-bg);
 }
 
 .menu_back_image{
@@ -415,19 +416,7 @@ body.loading {
 .menu_img{
     object-fit: cover;
     width: 100%;
-    opacity: 0;
 
-    
-}
-.menu_img.show{ 
-  animation: fadeInMenu 1s ease forwards;
-}
-
-@keyframes fadeInMenu{
-  from{opacity: 0;
-   transform: translateY(30px);}
-  to{opacity: 1;
-   transform: translateY(0);}
 }
 
 
@@ -453,30 +442,23 @@ body.loading {
 }
 
 .menu_title{
-    color: #F7F1E1;
+    color: var(--text);
     font-size: 2.5rem;
      font-family: "Instrument Serif", serif;
     font-weight: 400;
     font-style: normal;
-    opacity: 0;
 }
 
-.menu_title.show{
-  animation: fadeInMenu 0.5s ease forwards;
-}
 .menu_desc{
-     color: #F7F1E1;
+     color: var(--text);
     font-size: 1.2rem;
     font-family: "Playfair Display", serif;
     font-weight: 400;
     font-style: normal;
     line-height: 1.6;
     text-align: center;
-    opacity: 0;
 }
-.menu_desc.show{
-  animation: fadeInMenu 0.5s ease forwards;
-}
+
 
 .menu_button{
      margin-top: 1rem;
@@ -486,18 +468,14 @@ body.loading {
     font-weight: 400;
     font-style: normal;
     border-radius: 15px;
-    color:#F7F1E1;
-    border: 1px solid #F7F1E1;
+    color:var(--text);
+    border: 1px solid var(--text);
     background-color: #070505;
-    opacity: 0;
-}
-.menu_button.show{
-  animation: fadeInMenu 0.5s ease forwards;
 }
 
 .menu_button:hover{
-  background-color: #F7F1E1;
-    color: #070505;
+  background-color: var(--text);
+    color: var(--main-bg);
     cursor: pointer;
     transition: ease 0.3s;
 }
@@ -543,7 +521,7 @@ body.loading {
     position: relative;
       width: 100%;
   height: 100%;
-  background: #4f0909;
+  background: var(--accent);
   margin: 0;
   padding: 0;
   clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
@@ -561,8 +539,8 @@ body.loading {
 }
 .divider_text{
     position: absolute;
-    color: #F7F1E1;
-    border-right: 1px solid #F7F1E1;/* qaj kursori qe blinks*/
+    color: var(--text);
+    border-right: 1px solid var(--text);/* qaj kursori qe blinks*/
     animation: cursorBlink 0.7s step-end infinite;
   
 }
@@ -587,7 +565,7 @@ body.loading {
 
 @keyframes cursorBlink { /*e bon kursorin me blink*/
   from, to { border-color: transparent; }
-  50% { border-color: #F7F1E1; }
+  50% { border-color: var(--text); }
 }
 
 
@@ -681,7 +659,7 @@ body.loading {
     font-weight: 400;
     font-style: normal;
     font-size: 3rem;
-    color: #F7F1E1;
+    color: var(--text);
     
 }
 #music_desc{
@@ -690,7 +668,7 @@ body.loading {
     font-weight: 400;
     font-style: normal;
     font-size:1.5rem;
-    color: #F7F1E1;
+    color: var(--text);
 }
 
 .music_button_container{
@@ -711,14 +689,14 @@ body.loading {
     font-weight: 400;
     font-style: normal;
     border-radius: 15px;
-    border: 1px solid #F7F1E1;
+    border: 1px solid var(--text);
     padding:0.5rem 1rem;
     background-color: #38050500;
-    color:#F7F1E1;
+    color:var(--text);
 }
 .music_button:hover{
-    background-color: #F7F1E1;
-    color:#070505;
+    background-color: var(--text);
+    color:var(--main-bg);
     transition: ease 0.3s;
     cursor: pointer;
 }
@@ -744,7 +722,7 @@ body.loading {
 .blog{
     width: 100%;
     height:120vh;
-    background-color: #070505;
+    background-color: var(--main-bg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -764,7 +742,7 @@ body.loading {
 
 
 .blog_title{
-    color: #F7F1E1;
+    color: var(--text);
     font-size: 2rem;
     text-align: left;
      font-family: "Instrument Serif", serif;
@@ -777,19 +755,15 @@ body.loading {
     height: 40%;
    
 }
-.blog_info.show{
-  animation: fadeInMenu 1s ease forwards;
-
-}
 
 #blog_info{
   width: 64%;
-   border-right:1px solid #F7F1E1 ;
+   border-right:1px solid var(--text) ;
     animation: cursorBlink 0.7s step-end infinite;
     padding-right: 0;
 }
 .blog_desc{
-     color: #F7F1E1;
+     color: var(--text);
     font-size: 1.4rem;
     text-align: left;
      font-family: "Playfair Display", serif;
@@ -811,13 +785,9 @@ body.loading {
     width: 100%;
     object-fit: cover;
     padding-bottom: 15rem;
-    opacity: 0;
 
 }
 
-.blog_image.show{ 
-  animation: fadeInMenu 1s ease forwards;
-}
 
 
 
@@ -829,21 +799,17 @@ body.loading {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 1px  solid #F7F1E1;
+    border: 1px  solid var(--text);
     padding:2rem;
     margin-top: 2rem;
-    opacity: 0;
 
 }
 
-.blog_news.show{
-   animation: fadeInMenu 1s ease forwards;
-}
 
 .blog_new{
     width: 100%;
     height: 40%;
-    border-bottom: 1px solid #F7F1E1;
+    border-bottom: 1px solid var(--text);
     margin-bottom: 10px;
 }
 .blog_new_desc{
@@ -852,7 +818,7 @@ body.loading {
 }
 
 .blog_news_title{
-      color: #F7F1E1;
+      color: var(--text);
     font-size: 2rem;
     text-align: left;
      font-family: "Instrument Serif", serif;
@@ -862,7 +828,7 @@ body.loading {
 }
 
 .blog_news_info{
-     color: #F7F1E1;
+     color: var(--text);
     font-size: 1.4rem;
     text-align: left;
      font-family: "Playfair Display", serif;
@@ -877,19 +843,19 @@ body.loading {
 
 .blog_button{
     font-size: 1.2rem;
-    background-color: #070505;
-    border: 1px solid #F7F1E1;
+    background-color: var(--main-bg);
+    border: 1px solid var(--text);
     border-radius: 15px;
     padding: 0.4rem 2rem;
-    color: #F7F1E1;
+    color: var(--text);
      font-family: "Playfair Display", serif;
     font-weight: 400;
     font-style: normal;
 
 }
 .blog_button:hover{
-    color:#070505;
-    background-color: #F7F1E1;
+    color:var(--main-bg);
+    background-color: var(--text);
     cursor: pointer;
     transition: 0.3s ease;
 }
@@ -988,7 +954,6 @@ body.loading {
 
 #music_title{
     font-size: 2.5rem;
-    color: #F7F1E1;
 }
 #music_desc{
     font-size:1.5rem;
@@ -1091,8 +1056,6 @@ body.loading {
 
 .divider_text{
     position: absolute;
-    color: #F7F1E1;
-    border-right: 1px solid #F7F1E1;/* qaj kursori qe blinks*/
     animation: cursorBlink 0.7s step-end infinite;
   
 }
@@ -1152,8 +1115,7 @@ body.loading {
     font-weight: 400;
     font-style: normal;
     font-size: 2.2rem;
-    color: #F7F1E1;
-    
+
 }
 #music_desc{
 
@@ -1218,7 +1180,6 @@ body.loading {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 1px  solid #F7F1E1;
     padding:2rem;
     margin-top: 2rem;
     opacity: 0;
@@ -1423,7 +1384,7 @@ body.loading {
     font-weight: 400;
     font-style: normal;
     font-size: 2.2rem;
-    color: #F7F1E1;
+
     
 }
 #music_desc{
@@ -1470,7 +1431,6 @@ body.loading {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 1px  solid #F7F1E1;
     padding:2rem;
     margin-top: 2rem;
     opacity: 0;
@@ -1685,9 +1645,7 @@ body.loading {
     font-family: "Instrument Serif", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 2.1rem;
-    color: #F7F1E1;
-    
+    font-size: 2.1rem;   
 }
 #music_desc{
     font-size:1.1rem;
@@ -1733,7 +1691,6 @@ body.loading {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 1px  solid #F7F1E1;
     padding:2rem;
     margin-top: 2rem;
     opacity: 0;
@@ -1767,7 +1724,6 @@ body.loading {
 
 
 .blog_title{
-    color: #F7F1E1;
     font-size: 1.8rem;
     text-align: left;
      font-family: "Instrument Serif", serif;
@@ -1792,7 +1748,6 @@ body.loading {
 }
 
 .blog_desc{
-     color: #F7F1E1;
     font-size: 1rem;
     text-align: left;
    margin-bottom: 50px;

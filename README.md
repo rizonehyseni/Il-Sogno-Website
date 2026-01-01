@@ -1,5 +1,6 @@
 # Il Sogno – Italian Restaurant Website
-
+ <img width="200px" src="/photos/IlSogno.png" alt="">
+ 
 ## Tech Stack
 - **HTML5** – Page structure  
 - **CSS3** – Styling & responsive layout  
@@ -51,8 +52,3 @@ restaurant-website/
 ```
 
 
-## Live Demo
-- Visit the live site:
-
-##  Privacy & Legal
-© 2025 Il Sogno | 📄 [Privacy Policy](PRIVACY_POLICY.md) | 📄 [Terms & Conditions](TERMS_AND_CONDITIONS.md)

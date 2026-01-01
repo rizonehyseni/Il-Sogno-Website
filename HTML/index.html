@@ -4,40 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Sogno | Authentic Italian Dining</title>
+    <meta name="description"
+        content="Il Sogno is an intimate Italian restaurant inspired by the Amalfi Coast, offering seasonal cuisine, live music nights, and refined dining experiences.">
 
-    <title>Il Sogno</title>
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Il Sogno - Authentic Italian Dining">
+    <meta property="og:description" content="Experience the essence of Italian dining inspired by the Amalfi Coast.">
+    <meta property="og:image" content="photos/main_logo.png">
+    <meta property="og:type" content="website">
+
+
+  
     <link rel="icon" type="image/x-icon" href="/photos/main_logo.png" sizes="32x32">
 
     <link rel="stylesheet" href="../CSS/style.css">
     <script type="module" src="../Components/navbar.js" defer>
     </script>
+    <link rel="stylesheet" href="../assets/fonts/fonts.css">
     <script type="module" src="../Components/footer.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="../JS/app.js" defer></script>
 
- 
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Island+Moments&display=swap"
-        rel="stylesheet">
 </head>
+
 
 <body>
 
-    <!--entry introduction-->
+    <!--entry intro-->
     <div class="intro_container">
         <img src="/photos/IlSogno.png" class="intro_image">
     </div>
@@ -49,8 +44,8 @@
     <!--hero-->
     <section class="hero">
         <div class="hero_container">
-            <video autoplay muted loop playsinline class="hero_video">
-                <source src="/photos/fireVid.mp4" type="video/mp4">
+            <video autoplay muted loop playsinline preload="meta" class="hero_video">
+                <source src="/photos/fireVid1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <div class="hero_text_container">
@@ -69,8 +64,8 @@
     <section class="about_section">
         <div class="about_container">
             <div class="about_image_container">
-                <img src="/photos/back1.jpg" alt="About Us" class="about_image">
-                <h1 class="about_image_text">Immerse yourself in the dream</h1>
+                <img src="/photos/back1.webp" alt="About Us" class="about_image">
+                <h2 class="about_image_text">Immerse yourself in the dream</h2>
             </div>
         </div>
     </section>
@@ -80,24 +75,24 @@
         </div>
         <div class="about_card_container">
             <div class="about_card" onclick="location.href='about.html'">
-                <h1 class="about_desc_title">Our Roots</h1>
+                <h3 class="about_desc_title">Our Roots</h3>
                 <p class="about_desc_text">
                     Whispered by the sea breeze of Amalfi, our story began in the hush between waves and moonlight. Each
-                    recipe carries the salt of the coast and the warmth of an Italian soul — ancient, enduring, alive.
+                    recipe carries the salt of the coast and the warmth of an Italian soul - ancient, enduring, alive.
                 </p>
             </div>
             <div class="about_card" onclick="location.href='about.html'">
-                <h1 class="about_desc_title">Our Philosophy</h1>
+                <h3 class="about_desc_title">Our Philosophy</h3>
                 <p class="about_desc_text">
                     We move to the rhythm of simplicity and soul. Every flavor a note, every dish a melody. Here, food
-                    and feeling entwine — a quiet symphony of passion, patience, and devotion.
+                    and feeling entwine - a quiet symphony of passion, patience, and devotion.
                 </p>
             </div>
             <div class="about_card" onclick="location.href='about.html'">
-                <h1 class="about_desc_title">Our Ambience</h1>
+                <h3 class="about_desc_title">Our Ambience</h3>
                 <p class="about_desc_text">
                     Shadows dance beneath a velvet glow. The murmur of jazz drifts through the air, mingling with the
-                    scent of citrus and wine. It is night in Amalfi — intimate, mysterious, eternal.
+                    scent of citrus and wine. It is night in Amalfi - intimate, mysterious, eternal.
                 </p>
             </div>
         </div>
@@ -107,16 +102,16 @@
     <!--menu-->
     <section class="menu_section">
         <div class="menu_back_image">
-            <img src="/photos/wineBottles.jpg" alt="Wine Bottles" class="menu_img">
+            <img src="/photos/wineBottles.webp" alt="Wine Bottles" class="menu_img">
         </div>
         <div class="menu_container">
             <div class="menu_text_container">
-                <h1 class="menu_title">Our Menu</h1>
+                <h2 class="menu_title">Our Menu</h2>
             </div>
             <div class="menu_text_container">
                 <p class="menu_desc">
                     A celebration of coastal Italian cuisine, our menu is inspired by the soul of Amalfi and the rhythm
-                    of late-night jazz. Crafted with seasonal ingredients, each dish blends tradition and creativity —
+                    of late-night jazz. Crafted with seasonal ingredients, each dish blends tradition and creativity -
                     inviting you to slow down, savor the moment, and experience la dolce vita.
                 </p>
             </div>
@@ -130,7 +125,7 @@
     <section class="divider">
         <div class="divider_container">
             <div class="divider_1">
-                <img src="/photos/harp_x.jpg" alt="harp" class="clip_image">
+                <img src="/photos/harp_x.webp" alt="harp" class="clip_image">
             </div>
             <div class="divider_2">
                 <div class="divider_text" id="divider_quote"><!--e lajna empty se pe shkrujna me js--></div>
@@ -172,13 +167,13 @@
     <section class="blog">
         <div class="blog_text_container">
             <div class="blog_info">
-                <h1 class="blog_title">Il Sogno Journal</h1>
+                <h2 class="blog_title">Il Sogno Journal</h2>
             </div>
             <div class="blog_info">
-                <h2 class="blog_desc">
-                    Discover the inspirations behind our seasonal dishes, chef’s stories, and wine pairings.
+                <p class="blog_desc">
+                    Discover the inspirations behind our seasonal dishes, chef&#39;s stories, and wine pairings.
 
-                </h2>
+                </p>
             </div>
         </div>
         <div class="blog_image_container">
@@ -186,22 +181,19 @@
         </div>
         <div class="blog_news">
             <div class="blog_new">
-                <h1 class="blog_news_title">Behind Our Autumn Menu</h1>
+                <h3 class="blog_news_title">Behind Our Autumn Menu</h3>
             </div>
             <div class="blog_new_desc">
-                <h2 class="blog_news_info"><span id="blog_info">
+                <p class="blog_news_info"><span id="blog_info">
                         <!--e lajna empty se ms js-->
                     </span>
-                </h2>
+                </p>
             </div>
             <div class="blog_button_container">
                 <button class="blog_button" onclick="location.href='blog.html'">Read More</button>
             </div>
         </div>
     </section>
-
-
-
 
     <my-footer></my-footer>
 

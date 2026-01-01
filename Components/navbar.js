@@ -24,6 +24,7 @@ class NavbarComponent extends HTMLElement {
                 <li class="nav_item"><a href="gallery.html" class="nav_link">Gallery</a></li>
                 <li class="nav_item"><a href="blog.html" class="nav_link">Blog</a></li>
                 <li class="nav_item"><a href="about.html" class="nav_link">About Us</a></li>
+                <li class="nav_item"><a href="info.html" class="nav_link">Info</a></li>
               </ul>
           </ul>
 
@@ -108,11 +109,12 @@ navbarToggle.addEventListener('click', () => {//kur e click i ndrron tani barsat
   const more = document.getElementById('more');
 
   more.addEventListener('click', () =>{
-     if (window.innerWidth > 768) {
+      if (window.innerWidth > 768) {
         secondMenu.classList.toggle('grow');
     }
   }
   )
+
 
   //kur tklikojsh jashte navit me hjek
 
