@@ -29,7 +29,7 @@ body {
 
 /* stili per tekstin nga chef luca */
 .about-text-heading {
-  margin: 150px 0;
+  margin: 120px 0;
   height: 400px;
   display: flex;
   justify-content: center;
@@ -40,9 +40,10 @@ body {
   flex-direction: column;
 }
 .about-text-heading h2 {
-  font-size: 36px;
+  font-size: 32px;
   margin-bottom: 30px;
   font-weight: 400;
+  line-height: 50px;
 }
 hr {
   color: white;
@@ -59,11 +60,14 @@ hr {
 }
 
 .about-left-infocontainer {
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 70%;
   padding: 0 5%;
 }
 .about-right-infocontainer {
-  width: 60%;
+  width: 70%;
   display: flex;
   align-items: center;
   padding: 0 5%;
@@ -76,27 +80,25 @@ hr {
   font-weight: 400;
   padding-top: 50px;
 }
-.about-right-infocontainer a,
-.about-left-infocontainer a {
+.about-right-infocontainer a {
   text-decoration: none;
   font-size: 20px;
   font-weight: 600;
-}
-.about-left-infocontainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
 }
 
 .text-container-right,
 .text-container-left {
   display: flex;
   flex-direction: column;
-  margin: 50px;
+  margin: 30px;
   gap: 10px;
 }
 .text-container-left {
   margin-bottom: 200px;
+}
+.text-container-left p,
+.text-container-right p {
+  font-size: 18px;
 }
 
 .image-wrapper {
@@ -129,7 +131,7 @@ section {
   justify-content: center;
 }
 
-ul {
+.timeline ul {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
@@ -138,12 +140,12 @@ ul {
   list-style: none;
   padding: 0;
 }
-li {
+.timeline ul li {
   margin-top: 30px;
   position: relative;
   padding: 25px;
 }
-li p {
+.timeline ul li p {
   padding: 0 20px;
   transition: 1.5s;
   text-align: center;
@@ -195,16 +197,16 @@ li p {
   .timeline {
     display: block;
   }
-  ul {
+  .timeline ul {
     flex-direction: row;
   }
-  li {
+  .timeline ul li {
     margin-top: 0px;
     position: relative;
     width: 100%;
     padding: 10px;
   }
-  li p {
+  .timeline ul li p {
     transform: translateY(-10px);
     opacity: 0;
     transition: 1.5s;
