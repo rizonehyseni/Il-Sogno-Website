@@ -27,6 +27,28 @@ body {
   background-position: center;
 }
 
+/* stili per tekstin nga chef luca */
+.about-text-heading {
+  margin: 150px 0;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20%;
+  display: flex;
+  flex-direction: column;
+}
+.about-text-heading h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+hr {
+  color: white;
+  width: 50%;
+}
+
 /* Seksioni 1 */
 .first_section {
   padding-top: 50px;
