@@ -44,3 +44,22 @@ button {
   border: none;
   color: white;
 }
+@media screen and (max-width: 992px) {
+  .faq {
+    width: 550px;
+  }
+  .titulli {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .faq {
+    width: 400px;   
+    font-size: 22px; 
+  }
+  .answer {
+    margin-left: 20px;
+  }
+}
