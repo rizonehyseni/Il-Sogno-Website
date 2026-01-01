@@ -46,6 +46,7 @@
      transition: all 0.3s;
      width: 65%;
      margin:10vh auto;
+     backdrop-filter: blur(2px);
  }
 
   .card:hover {
@@ -63,10 +64,6 @@
     padding: 0 10%;
     font-size: larger;
  }
-
-#eventName{
-    padding-bottom: 25px;
-}
 
 #singerName{
     padding: 0;
@@ -96,3 +93,78 @@
     background-color: rgb(35, 1, 1);
     border: 1px #170000;
  }
+
+select{
+    border: 2px solid rgba(103, 62, 1, 0.656);
+    background-color: #170000;
+    color: white;
+    border-radius: 7px;
+    padding:3px 15px;
+}
+
+/*RESPONSIVENESS*/
+
+@media screen and (max-width:950px){
+    .card{
+        font-size: small;
+        margin-top: 30px;
+    }
+
+    h1{
+        font-size: normal;
+        padding-top: 180px;
+    }
+}
+
+@media screen and (max-width:862px){
+    .card{
+        font-size: small;
+        width: 80%;
+        padding: 20px 8px;
+        margin: 12px auto;
+    }
+
+    #insideCard{
+        flex-direction: row;
+        gap: 3px;
+        padding: 0 30px;
+        text-align: center;
+    }
+
+    h1{
+        font-size: normal;
+        padding-top: 180px;
+    }
+
+    #button{
+        padding: 6px 55px;
+    }
+}
+
+@media screen and (max-width:544px){
+    .card{
+        font-size: small;
+        width: 80%;
+        padding: 20px 8px;
+        margin: 12px auto;
+    }
+
+    #insideCard{
+        flex-direction: column;
+        padding: 0 30px;
+        text-align: center;
+    }
+
+    h1{
+        font-size: normal;
+        padding-top: 180px;
+    }
+
+    .insideCard2{
+        padding: 12px 0;
+    }
+
+    #button{
+        padding: 6px 45px;
+    }
+}
