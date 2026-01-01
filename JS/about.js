@@ -35,3 +35,12 @@ const observer = new IntersectionObserver(
 );
 observer.observe(timeline);
 
+window.addEventListener('scroll', () => {
+  document.querySelectorAll('.fade-up').forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      el.classList.add('show');
+    }
+  });
+});
+
