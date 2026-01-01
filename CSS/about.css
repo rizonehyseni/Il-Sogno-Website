@@ -191,7 +191,67 @@ li p {
   left: 0%;
   transition: 1s linear;
 }
+@media screen and (min-width: 868px) {
+  .timeline {
+    display: block;
+  }
+  ul {
+    flex-direction: row;
+  }
+  li {
+    margin-top: 0px;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+  }
+  li p {
+    transform: translateY(-10px);
+    opacity: 0;
+    transition: 1.5s;
+    width: 350px;
+    font-size: 20px;
+    margin-top: 30px;
+  }
 
+  .date {
+    opacity: 0;
+    transition: 1.5s;
+    font-size: 22px;
+
+    position: absolute;
+    top: -90px;
+    left: 37%;
+  }
+
+  .timeline-point {
+    width: 15px;
+    height: 15px;
+
+    top: -35px;
+    left: 40%;
+    transition: 1.5s ease;
+  }
+
+  .timeline-line {
+    width: 100%;
+    height: 0.4x;
+    display: flex;
+    justify-content: center;
+  }
+
+  .timeline-innerline {
+    position: absolute;
+    background: rgb(140, 131, 131);
+    width: 0%;
+    height: 1px;
+
+    top: 0%;
+    left: 0%;
+
+    transition: 1s linear;
+    border-radius: 999px;
+  }
+}
 /* Seksioni 1 */
 .first_section {
   padding-top: 50px;
