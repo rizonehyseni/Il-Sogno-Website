@@ -33,3 +33,5 @@ const observer = new IntersectionObserver(
     threshold: 0.5, // bohet trigger kur osht visible 0.5%
   }
 );
+observer.observe(timeline);
+
