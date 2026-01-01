@@ -58,6 +58,47 @@ hr {
   padding: 0 50px;
 }
 
+.about-left-infocontainer {
+  width: 50%;
+  padding: 0 5%;
+}
+.about-right-infocontainer {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+  gap: 50px;
+  flex-direction: column;
+}
+.about-right-infocontainer h2,
+.about-left-infocontainer h2 {
+  font-size: 40px;
+  font-weight: 400;
+  padding-top: 50px;
+}
+.about-right-infocontainer a,
+.about-left-infocontainer a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+.about-left-infocontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.text-container-right,
+.text-container-left {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  gap: 10px;
+}
+.text-container-left {
+  margin-bottom: 200px;
+}
+
 /* Seksioni 1 */
 .first_section {
   padding-top: 50px;
