@@ -114,6 +114,84 @@ hr {
   display: block;
   transform: translateY(0);
 }
+h1 {
+  text-decoration: underline;
+  margin-bottom: 50px;
+}
+section {
+  margin: 20px 0;
+}
+.timeline {
+  margin-top: 35px;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 40% auto;
+  justify-content: center;
+}
+
+ul {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+li {
+  margin-top: 30px;
+  position: relative;
+  padding: 25px;
+}
+li p {
+  padding: 0 20px;
+  transition: 1.5s;
+  text-align: center;
+}
+
+.date {
+  position: absolute;
+
+  top: 20px;
+  left: -65px;
+  opacity: 0;
+  transition: 1.5s;
+  font-size: 22px;
+}
+.timeline {
+  margin: 200px 100px;
+}
+.timeline-line {
+  background: rgb(228, 228, 228);
+  width: 1px;
+  border-radius: 12px;
+  position: relative;
+  justify-self: end;
+}
+
+.timeline-point {
+  border: none;
+  position: absolute;
+
+  border-radius: 50%;
+  background: rgb(185, 182, 182);
+  width: 12px;
+  height: 12px;
+
+  top: 30px;
+  left: -7px;
+  transition: 1.5s ease;
+}
+.timeline-innerline {
+  position: absolute;
+  background: rgb(255, 255, 255);
+  width: 4px;
+  height: 0%;
+  top: 0%;
+  left: 0%;
+  transition: 1s linear;
+}
+
 /* Seksioni 1 */
 .first_section {
   padding-top: 50px;
