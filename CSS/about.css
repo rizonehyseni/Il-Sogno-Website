@@ -68,7 +68,7 @@ hr {
 .aboutus-section-container {
   background-color: rgb(74, 5, 5);
   width: 100vw;
-  height: 150vh;
+  height: 200vh;
   display: flex;
   gap: 10px;
   margin-top: 300px;
@@ -142,7 +142,7 @@ hr {
   height: 380px;
   width: 570px;
   object-fit: cover;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 /* h1 {
   text-decoration: underline;
@@ -440,12 +440,14 @@ hr {
 
 @media (max-width: 992px) {
   .main-hero-container h1 {
-    top: 52%;
+    top: 50%;
     font-size: 2rem;
+    text-align: center;
   }
   .main-hero-container h3 {
     top: 57%;
     font-size: 1rem;
+    text-align: center;
   }
   .text-container-left,
   .text-container-right {
@@ -497,11 +499,11 @@ hr {
 }
 @media (max-width: 768px) {
   .main-hero-container h1 {
-    top: 52%;
-    font-size: 1.8rem;
+    top: 45%;
+    font-size: 1.5rem;
   }
   .main-hero-container h3 {
-    top: 57%;
+    top: 50%;
     font-size: 1rem;
   }
   .text-container-left,
@@ -573,6 +575,13 @@ hr {
 }
 
 @media (max-width: 480px) {
+  .main-hero-container h1 {
+    font-size: 1.4rem;
+  }
+  .main-hero-container h3 {
+    top: 53%;
+    font-size: 1rem;
+  }
   .features_container {
     grid-template-columns: 1fr;
   }
