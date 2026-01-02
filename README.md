@@ -75,7 +75,19 @@ IL-SOGNO-WEBSITE/
 ├── mdFiles/                 # Markdown drafts / content
 ├── photos/                  # Images and media assets
 ├── react-page/              # React-based implementation
-│
+│   ├── src/
+│       ├── components/
+│       │   ├── BlogSection.jsx
+│       │   ├── Footer.css
+│       │   ├── Footer.jsx
+│       │   ├── HeroSection.jsx
+│       │   ├── Navbar.css
+│       │   ├── Navbar.jsx
+│       │   └── Sidebar.jsx
+│       ├── App.css
+│       ├── App.jsx
+│       ├── index.css
+│       └── main.jsx
 ├── package-lock.json
 └── README.md
 ```
