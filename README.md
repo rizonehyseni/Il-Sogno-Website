@@ -9,46 +9,68 @@
 ## Project Structure
 
 ```
-restaurant-website/
+IL-SOGNO-WEBSITE/
 │
 ├── .github/
-│   └── CODEOWNERS                 
+│   └── CODEOWNERS
 │
-├── css/                           
+├── .vscode/
+│   ├── launch.json
+│   └── settings.json
+│
+├── assets/
+│   └── fonts/
+│       └── fonts.css
+│
+├── Components/
+│   ├── footer.css
+│   ├── footer.js
+│   ├── navbar.css
+│   └── navbar.js
+│
+├── CSS/
 │   ├── about.css
+│   ├── blog.css
+│   ├── gallery.css
+│   ├── info.css
 │   ├── location.css
 │   ├── menu.css
 │   ├── music.css
+│   ├── privacy-policy.css
 │   ├── reservations.css
-│   ├── style.css                  
+│   ├── style.css
 │   └── tickets.css
 │
-├── html/                          
+├── HTML/
 │   ├── about.html
-│   ├── index.html                 
+│   ├── blog.html
+│   ├── gallery.html
+│   ├── index.html
+│   ├── info.html
 │   ├── location.html
 │   ├── menu.html
 │   ├── music.html
+│   ├── privacy-policy.html
 │   ├── reservations.html
+│   ├── terms-conditions.html
 │   └── tickets.html
 │
-├── js/                            
+├── JS/
 │   ├── about.js
-│   ├── index.js
+│   ├── app.js
+│   ├── blog.js
+│   ├── gallery.js
+│   ├── info.js
 │   ├── location.js
 │   ├── menu.js
 │   ├── music.js
 │   ├── reservations.js
 │   └── tickets.js
 │
-├── photos/                       
-│   ├── logo.png
-│   ├── dishes/
-│   └── interior/
+├── mdFiles/                 # Markdown drafts / content
+├── photos/                  # Images and media assets
+├── react-page/              # React-based implementation
 │
-├── privacy-policy.html            
-├── terms-and-conditions.html      
-└── README.md                      
-```
-
+├── package-lock.json
+└── README.md
 
