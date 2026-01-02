@@ -77,4 +77,13 @@ IL-SOGNO-WEBSITE/
 │
 ├── package-lock.json
 └── README.md
+```
+
+## Future Improvements
+
+- Online reservation system integration
+- Menu filtering and search
+- Backend integration
+- Full migration to React
+- Multi-language support
 
