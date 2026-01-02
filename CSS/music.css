@@ -8,18 +8,10 @@
      padding: 0;
  }
 
- /* text kudo qe ki leja  
-
-   font-family: "Instrument Serif", serif;
+ /* font-family: "Instrument Serif", serif;
     font-weight: 400;
     font-style: normal;
-
-    edhe mos le text bold se qiky font ska bold kshtu vet veq ja bon me force
 */
-
-/* tjerat po doken nrregull veq sigurohu qe krejt containersat kane width height edhe display*/
-/*qat videocontainerin boje full height 100vh qe edhe per responsiv le tdel i madh*/
-
 
  body {
      box-sizing: border-box;
@@ -32,12 +24,7 @@
      height: 100%;
      margin: 0;
      padding: 0;
- }
-
- #main {
      color: white;
-     /* padding-top: 10vh; */
-     /*qe mos me u perzi navbar me main*/
  }
 
 #videocontainer{
@@ -67,14 +54,14 @@
      color: white;
      padding-top: 5%;
      padding-bottom: 20%;
-     font-size:x-large;
-     line-height: 38px;
+     font-size: x-large;
+     line-height: 30px;
      position: relative;
      z-index: 2;
+     animation: fadeIn 2.5s;
  }
 
  #intro h2{
-     /* width: 300px; */
      margin: 0 auto;
      width: 100%;
      padding-top: 25vh;
@@ -122,18 +109,32 @@
 
  .event-card {
      width: 35%;
+     margin-top: 100px;
  }
 
  /*per jquery*/
-.event-card {
+.event-card, .first-event-card {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
-.event-card.show {
+.event-card.show, .first-event-card.show{
   opacity: 1;
   transform: translateY(0);
+}
+
+@keyframes slideX {
+  0%{
+    transform: translateX(-60px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+.slide-x {
+  animation: slideX 1.6s ease;
 }
 /*per jquery*/
 
@@ -365,4 +366,15 @@
     .section-divider {
         font-size: 13px;
     }
+}
+
+/* keyframes */
+
+@keyframes fadeIn{
+   from{
+    opacity: 0;
+   } 
+   to{
+    opacity: 1;
+   }
 }
