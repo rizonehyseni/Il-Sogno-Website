@@ -3,7 +3,7 @@
   padding: 0;
   font-family: "Instrument Serif", serif;
   box-sizing: border-box;
-  color: white;
+  color: rgb(239, 239, 239);
 }
 
 body {
@@ -44,7 +44,7 @@ body {
 }
 /* stili per tekstin nga chef luca */
 .about-text-heading {
-  margin: 100px 0;
+  margin: 90px 0;
   height: 400px;
   display: flex;
   justify-content: center;
@@ -70,6 +70,7 @@ hr {
   width: 100vw;
   height: 150vh;
   display: flex;
+  gap: 10px;
   margin-top: 300px;
   padding: 0 50px;
 }
@@ -78,11 +79,10 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: end;
-
   gap: 50px;
 }
 .about-right-infocontainer {
-  width: 80%;
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 50px;
@@ -100,35 +100,40 @@ hr {
   font-weight: 500;
   transition: 0.3s ease all;
 }
+.about-right-infocontainer a:hover {
+  color: rgb(182, 182, 182);
+}
 
 .text-container-right,
 .text-container-left {
   display: flex;
   flex-direction: column;
-  margin: 30px;
   gap: 20px;
   font-size: 16px;
 }
 .text-container-left {
-  margin-bottom: 100px;
-  margin-top: 10px;
+  margin-bottom: 140px;
 }
+.text-container-right {
+  margin-top: 20px;
+}
+
 .text-container-left p,
 .text-container-right p {
   font-size: 1.3em;
 }
 
 .image-wrapper {
-  flex: 1;
   display: flex;
+  flex: 1;
   gap: 40px;
   position: relative;
   overflow: visible;
   margin-top: -80px;
 }
 .parallax-img {
-  width: 350px;
-  height: 550px;
+  width: 360px;
+  height: 570px;
   object-fit: cover;
   display: block;
 }
