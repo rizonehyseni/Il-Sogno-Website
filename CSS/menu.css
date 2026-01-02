@@ -3,7 +3,7 @@ body {
   font-weight: 400;
   font-style: normal;
   margin: 0;
-  background-color: #000000;
+  background-color: black;
 }
 .titulli {
   text-align: center;
@@ -12,36 +12,45 @@ body {
   margin-bottom: 50px;
 }
 .menu-buttons {
-  padding: 60px 0 20px;
   display: flex;
   justify-content: center;
+  padding: 60px 0 20px;
 }
 
 .button-wrapper {
+  margin-top: 100px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  justify-content: space-between;
-  margin-top: 20px;
-  height: 60px;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: nowrap; 
 }
 
 .menu-btn {
-  background-color: #310101;
+  height: 65px;
+  width: 150px;
+  background-color: #4a0505;
   color: white;
-  border: 1px solid white;
-  padding: 12px 26px;
-  border-radius: 8px;
-  font-size: medium;
-  font-weight: bold;
+  border: 1px solid #6b0a0a;
+  padding: 12px 0;
+  font-family: "Instrument Serif", serif;
+  font-size: larger;
+  border-radius: 30px;
+  cursor: pointer;
 }
 
-.menu-btn:hover,
+.menu-btn:hover {
+  background-color: #6b0a0a;
+  transform: translateY(-2px);
+}
+
 .menu-btn.active {
   background-color: white;
-  border-color: #1e0202;
-  color: black;
+  color: #4a0505;
+  border-color: #4a0505;
 }
+
+
+
 .section-cards {
   padding: 40px 0;
 }
@@ -54,14 +63,18 @@ body {
 }
 .card-box {
   width: 300px;
-  height: 430px;
-  background-color: #310101;
+  height: 440px;
+  background-color: #4a0505;
   color: white;
-  border-radius: 14px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  border: 1px solid white;
+  border: 2px solid white;
 }
+.card-box:hover {
+  background-color: #6b0a0a;
+}
+
 
  /*per jquery*/
  .card-box {
@@ -74,11 +87,7 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
-/* .card-box:hover {
-  background-color: white;
-  color: black;
-  border-color: #180101;
-} */ 
+
 
 .card-img {
   width: 100%;
@@ -101,6 +110,8 @@ body {
   margin: 0 15px;
 }
 .card-text {
+  font-size: large;
+  padding: 5px 15px 8px 15px;
   margin: 10px 5px 0 5px;
 }
 
@@ -114,73 +125,76 @@ body {
   .card-grid {
     flex-wrap: wrap;
   }
+
+  .card-box {
+    flex: 0 0 calc(33.33% - 20px);
+  }
 }
 
 @media screen and (max-width: 992px) {
   .button-wrapper {
-    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap; 
     justify-content: center;
+    gap: 15px;
   }
 
   .menu-btn {
-    white-space: nowrap;
-    padding: 10px 18px;
-  }
-
-  .card-grid {
-    flex-wrap: wrap;
+    flex: 0 0 calc(33.33% - 15px);
+    width: auto;
+    padding: 10px 0;
   }
 
   .card-box {
-    flex: 0 0 calc(33.33% - 40px);
-  }
-
-  .card-img {
-    height: 220px;
+    flex: 0 0 calc(50% - 20px);
+    max-width: 100%;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .card-title {
-    font-size: 18px;
-  }
-
-  .card-text {
-    font-size: 14px;
-  }
-
-  .card-body {
-    padding: 10px 10px 20px;
-  }
-}
-
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 630px) {
   .button-wrapper {
-    margin-top: 70px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 60px;
   }
 
   .menu-btn {
-    width: 90px;
+    flex: 0 0 calc(33.33% - 14px);
+    width: auto;
+    height: 60px;
+    padding: 10px 0;
+  }
+
+  .card-box {
+    flex: 0 0 100%;
+    max-width: 320px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .button-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 50px;
+  }
+
+  .menu-btn {
+    flex: 0 0 calc(50% - 12px);
+    width: auto;
     height: 50px;
     font-size: 14px;
-  }
-
-  .section-cards {
-    margin-top: 50px;
-    padding: 20px 0;
-  }
-
-  .card-grid {
-    flex-direction: column;
-    align-items: center;
+    padding: 6px 0;
   }
 
   .card-box {
-    max-width: 320px;
+    flex: 0 0 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
   }
 
   .card-title {
@@ -189,5 +203,34 @@ body {
 
   .card-text {
     font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .button-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+  }
+
+  .menu-btn {
+    flex: 0 0 calc(50% - 10px);
+    width: auto;
+    height: 44px;
+    font-size: 12px;
+    padding: 6px 0;
+  }
+  .card-box {
+    flex: 0 0 100%;
+    max-width: 260px;
+    height: auto;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  .titulli {
+    text-align: center;
+    width: 100%;
   }
 }

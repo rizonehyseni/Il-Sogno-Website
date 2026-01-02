@@ -20,7 +20,6 @@ class NavbarComponent extends HTMLElement {
             </li>
              <ul class="nav_menu_secondary" id="nav_menu_secondary">
                 <li class="nav_item"><a href="location.html" class="nav_link">Location</a></li>
-                <li class="nav_item"><a href="tickets.html" class="nav_link">Tickets</a></li>
                 <li class="nav_item"><a href="gallery.html" class="nav_link">Gallery</a></li>
                 <li class="nav_item"><a href="blog.html" class="nav_link">Blog</a></li>
                 <li class="nav_item"><a href="about.html" class="nav_link">About Us</a></li>

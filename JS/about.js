@@ -1,4 +1,40 @@
-// Animacion super i thjeshtë – funksionon gjithmonë
+
+// js kodi per timeline
+const timeline = document.querySelector(".timeline");
+const line = document.querySelector(".timeline-innerline");
+const items = document.querySelectorAll(".timeline ul li");
+
+let started = false;
+
+function startTimeline() {
+  items.forEach((item, index) => {
+    setTimeout(() => {
+      item.classList.add("active");
+
+      const progress = ((index + 1) / items.length) * 100;
+
+      if (window.innerWidth >= 728) {
+        line.style.width = progress + "%";
+      } else {
+        line.style.height = progress + "%";
+      }
+    }, index * 1000);
+  });
+}
+
+const observer = new IntersectionObserver(
+  ([entry]) => {
+    if (entry.isIntersecting && !started) {
+      started = true;
+      startTimeline();
+    }
+  },
+  {
+    threshold: 0.5, // bohet trigger kur osht visible 0.5%
+  }
+);
+observer.observe(timeline);
+
 window.addEventListener('scroll', () => {
   document.querySelectorAll('.fade-up').forEach(el => {
     const rect = el.getBoundingClientRect();
@@ -7,12 +43,4 @@ window.addEventListener('scroll', () => {
     }
   });
 });
-
-// Typewriter (shumë i thjeshtë)
-const text = "Enjoy our delicious cuisine and warm ambiance.";
-const hero = document.getElementById('hero-typewriter');
-let i = 0;
-setInterval(() => {
-  if (i < text.length) hero.textContent += text[i++];
-}, 80);
 
