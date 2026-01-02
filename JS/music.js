@@ -41,7 +41,7 @@ const upcomingEvents = [
     {
         title: "Jazz Night",
         artist: "Arta Dervishi",
-        date: "2025 oct 10",
+        date: "2026 Jan 10",
         time: "20:00",
         price: 18
     }
@@ -51,21 +51,21 @@ const futureEvents = [
     {
         title: "Sax and Vocals",
         artist: "Nora Jashari",
-        date: "2025 oct 10",
+        date: "2026 Jan 17",
         time: "20:00",
         price: 15
     },
     {
         title: "Opera and Dinner Night",
         artist: "Elira Krasniqi",
-        date: "2025 oct 10",
+        date: "2026 Jan 29",
         time: "20:00",
         price: 25
     },
     {
         title: "Jazz Meets Pop",
         artist: "Arben Meta Trio",
-        date: "2025 oct 10",
+        date: "2026 Feb 05",
         time: "20:00",
         price: 16
     }
