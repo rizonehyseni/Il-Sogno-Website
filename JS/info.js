@@ -1,5 +1,8 @@
-$(document).ready(function(){
-  $('.item button').click(function(){
-    $(this).closest('.item').find('.answer').slideToggle();
+$(document).ready(function () {
+  $(".header").click(function () {
+    const item = $(this).closest(".item");
+
+    item.toggleClass("active");
+    item.find(".answer").slideToggle();
   });
 });
