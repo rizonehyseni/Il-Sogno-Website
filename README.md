@@ -8,6 +8,7 @@ The project highlights the restaurant’s identity through clean design, smooth 
 - **HTML5** – Page structure  
 - **CSS3** – Styling & responsive layout  
 - **JavaScript (ES6)** – Interactivity for menu, forms, and navigation
+- **React** - For developing one page of the website
   
 
 ## Project Structure
