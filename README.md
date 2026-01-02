@@ -91,3 +91,5 @@ IL-SOGNO-WEBSITE/
 
 This project is part of college assignment.
 
+## Contributors:
+Rizonë Hyseni, Siona Mustafa, Dua Bilalli, Sara Kyçyku and Rrezon Ibishi
