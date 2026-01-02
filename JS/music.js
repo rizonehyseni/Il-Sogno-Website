@@ -1,43 +1,42 @@
 $(document).ready(function () {
     const $eventCards = $(".event-card, .first-event-card");
 
-  const cardsObserver = new IntersectionObserver(
-    (entries, observer)=>{
-      entries.forEach(entry=>{
-        if (entry.isIntersecting) {
-          $(entry.target).addClass("show");
-          observer.unobserve(entry.target); 
-        }
-      });
-    },
-    {threshold: 0.2}
-  );
+    const cardsObserver = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    $(entry.target).addClass("show");
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        { threshold: 0.2 }
+    );
 
-  $eventCards.each(function(){
-    cardsObserver.observe(this);
-  });
+    $eventCards.each(function () {
+        cardsObserver.observe(this);
+    });
 
-  const $intro = $("#intro h2, #intro p, .section-divider");
+    const $intro = $("#intro h2, #intro p, .section-divider");
 
-  const introObserver=new IntersectionObserver(
-    (entries, observer)=>{
-      entries.forEach(entry=>{
-        if(entry.isIntersecting){
-          $(entry.target).addClass("slide-x");
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    {threshold: 0.2}
-  );
+    const introObserver = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    $(entry.target).addClass("slide-x");
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        { threshold: 0.2 }
+    );
 
-  $intro.each(function(){
-    introObserver.observe(this);
-  });
+    $intro.each(function () {
+        introObserver.observe(this);
+    });
 });
 
 // per mi gjeneru cards
-
 const upcomingEvents = [
     {
         title: "Jazz Night",
@@ -75,11 +74,11 @@ const futureEvents = [
 function createEventCards(events, containerId, cardClass = "event-card") {
     const container = document.getElementById(containerId);
 
-    events.forEach(event=>{
-        const title=event.title.replaceAll(" ", "%20");
-        const artist=event.artist.replaceAll(" ", "%20");
+    events.forEach(event => {
+        const title = event.title.replaceAll(" ", "%20");
+        const artist = event.artist.replaceAll(" ", "%20");
 
-        container.innerHTML+=`
+        container.innerHTML += `
             <div class="${cardClass}">
                 <h2>${event.title}</h2>
                 <h1>${event.artist}</h1>
