@@ -1,4 +1,3 @@
-
 document.body.classList.add("loading");
 
 window.addEventListener("load", () => {
@@ -18,7 +17,7 @@ const text2 = "- Robert Fripp";
 const text3 =
   "Chef Luca reveals the secrets of truffle season — from selecting the finest local varieties to crafting dishes that capture their earthy aroma.";
 
-  //var per qato eleemnte
+//var per qato eleemnte
 const typingText = document.getElementById("divider_quote");
 const typingText2 = document.getElementById("divider_author");
 const typingText3 = document.getElementById("blog_info");
@@ -84,7 +83,6 @@ observer.observe(typingText3);
 
 
 
-
 //me scrollreveal(librari)
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -94,24 +92,22 @@ document.addEventListener("DOMContentLoaded", () => {
     duration: 700,
     easing: "ease-out",
     opacity: 0,
-    reset: false,//animacioni ndodh veq 1 here
-    mobile: false//jo per mobile
+    reset: false//animacioni ndodh veq 1 here
   });
 
   //elementet qe i targeton
   sr.reveal(".about_card", {
-     origin: "bottom",//prej ku ja nis animacioni
-     interval: 150,//sa me prit per mu shfaq tjetri element
-  beforeReveal: el => {
-    el.style.transform = "none";//e hjek qat transformin qe j bon vete libraria (distance) para se mu shfaq el
-  }
+    origin: "bottom",//prej ku ja nis animacioni
+    interval: 150,//sa me prit per mu shfaq tjetri element
+    beforeReveal: el => {
+      el.style.transform = "none";//e hjek qat transformin qe j bon vete libraria (distance) para se mu shfaq el
+    }
   });
 
   sr.reveal(".menu_img", { origin: "bottom" });
   sr.reveal(".menu_title", { origin: "bottom", delay: 100 });//sa mu vonu per mw kalu te tjetra
   sr.reveal(".menu_desc", { origin: "bottom", delay: 150 });
   sr.reveal(".menu_button", { origin: "bottom", delay: 200 });
-
 
   sr.reveal(".blog_title", { origin: "bottom" });
   sr.reveal(".blog_desc", { origin: "bottom", delay: 100 });
