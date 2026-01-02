@@ -25,11 +25,26 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
+.main-hero-container h1 {
+  position: absolute;
+  top: 48%;
+  left: 50px;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.main-hero-container h3 {
+  position: absolute;
+  top: 57%;
+  left: 50px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
 /* stili per tekstin nga chef luca */
 .about-text-heading {
-  margin: 120px 0;
+  margin: 100px 0;
   height: 400px;
   display: flex;
   justify-content: center;
@@ -278,21 +293,17 @@ hr {
 
 /* interior yellow pic book */
 
-.interior_picture img {
-  width: 100%;
-  height: 24rem;
-  object-fit: cover;
-  object-position: center;
-}
-
 .interior_picture {
   position: relative;
   width: 100%;
-  height: 30rem;
+  height: 25rem;
   overflow: hidden;
-  margin-top: 10rem;
 }
-
+.interior_picture img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 .interior_picture img {
   width: 100%;
   height: 100%;
