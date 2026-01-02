@@ -1,0 +1,168 @@
+ body {
+     margin: 0;
+     padding: 0;
+     font-family: "Instrument Serif", serif;
+     font-size: larger;
+     color: white;
+     width: 100%;
+     height: 100%;
+     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+         url('/photos/harp.webp');
+     background-size: cover;
+     background-position: center;
+     width: 100%;
+ }
+
+ h1 {
+     text-align: center;
+     padding-top: 10%;
+     padding-bottom: 0;
+     margin-bottom: 0;
+ }
+
+ .card {
+     border: 1px solid;
+     border-radius: 10px;
+     text-align: center;
+     margin: 0 10px;
+     padding: 45px 10px 40px 10px;
+     transition: all 0.3s;
+     width: 65%;
+     margin: 10vh auto;
+     margin-bottom: 150px;
+     backdrop-filter: blur(2px);
+ }
+
+ .card:hover {
+     backdrop-filter: blur(4px);
+     /*per me bo blur brenda card*/
+     background: rgba(255, 255, 255, 0.07);
+ }
+
+ #insideCard {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 40px;
+     justify-content: center;
+     align-items: center;
+     padding: 0 10%;
+     font-size: larger;
+ }
+
+ #singerName {
+     padding: 0;
+ }
+
+ #button {
+     margin: 30px 0 8px;
+     padding: 10px 65px;
+     border-radius: 40px;
+     border: 1px solid rgba(103, 62, 1, 0.656);
+     background-color: #170000;
+     color: #e0e0e0;
+     transition: all 0.4s;
+     cursor: pointer;
+     font-family: "Instrument Serif", serif;
+     font-size: larger;
+ }
+
+ #button:hover {
+     color: #170000;
+     background-color: rgb(253, 249, 249);
+     border: 1px #170000;
+ }
+
+ #button:active {
+     color: #170000;
+     background-color: rgb(35, 1, 1);
+     border: 1px #170000;
+ }
+
+ select {
+     border: 2px solid rgba(103, 62, 1, 0.656);
+     background-color: #170000;
+     color: white;
+     border-radius: 7px;
+     padding: 3px 15px;
+ }
+
+ #alert {
+     display: none;
+     position: fixed;
+     top: 90%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     background: #111;
+     color: white;
+     padding: 20px 25px;
+     border-radius: 10px;
+ }
+
+ /*RESPONSIVENESS*/
+
+ @media screen and (max-width:950px) {
+     .card {
+         font-size: small;
+         margin-top: 30px;
+     }
+
+     h1 {
+         font-size: normal;
+         padding-top: 180px;
+     }
+ }
+
+ @media screen and (max-width:862px) {
+     .card {
+         font-size: small;
+         width: 80%;
+         padding: 20px 8px;
+         margin: 12px auto;
+         margin-bottom: 150px;
+     }
+
+     #insideCard {
+         flex-direction: row;
+         gap: 3px;
+         padding: 0 30px;
+         text-align: center;
+     }
+
+     h1 {
+         font-size: normal;
+         padding-top: 180px;
+     }
+
+     #button {
+         padding: 6px 55px;
+     }
+ }
+
+ @media screen and (max-width:544px) {
+     .card {
+         font-size: small;
+         width: 80%;
+         padding: 20px 8px;
+         margin: 12px auto;
+         margin-bottom: 100px;
+     }
+
+     #insideCard {
+         flex-direction: column;
+         padding: 0 30px;
+         text-align: center;
+     }
+
+     h1 {
+         font-size: normal;
+         padding-top: 100px;
+     }
+
+     .insideCard2 {
+         padding: 12px 0;
+     }
+
+     #button {
+         padding: 6px 45px;
+     }
+ }
