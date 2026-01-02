@@ -87,3 +87,7 @@ IL-SOGNO-WEBSITE/
 - Full migration to React
 - Multi-language support
 
+## License
+
+This project is part of college assignment.
+
