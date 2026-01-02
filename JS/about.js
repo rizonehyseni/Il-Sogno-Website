@@ -35,12 +35,40 @@ const observer = new IntersectionObserver(
 );
 observer.observe(timeline);
 
-window.addEventListener('scroll', () => {
-  document.querySelectorAll('.fade-up').forEach(el => {
-    const rect = el.getBoundingClientRect();
-    if (rect.top < window.innerHeight - 100) {
-      el.classList.add('show');
-    }
-  });
+// observeri per fade up
+const fadeObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+
+      entry.target.classList.add('show');
+      fadeObserver.unobserve(entry.target);
+    });
+  },
+  {
+    threshold: 0.2
+  }
+);
+
+document.querySelectorAll('.fade-up').forEach(el => {
+  fadeObserver.observe(el);
 });
 
+
+
+// teksti me observer quote
+
+const tekst = "“La cucina è amore - food is love. At Il Sogno, all dishes tells our story.”";
+const citimi = document.getElementById("text-quote");
+let pozita = 0, shkruar = false;
+
+const shtypi = () => pozita < tekst.length && (citimi.textContent += tekst[pozita++], setTimeout(shtypi, 60));
+
+new IntersectionObserver((hyrjet, vëzhguesi) => {
+  if (shkruar) return;
+  if (hyrjet.some(h => h.isIntersecting)) {
+    shkruar = true;
+    shtypi();
+    vëzhguesi.disconnect();
+  }
+}, { threshold: 0.5 }).observe(citimi);
