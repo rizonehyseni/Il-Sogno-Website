@@ -1,54 +1,107 @@
 # Il Sogno – Italian Restaurant Website
  <img width="200px" src="/photos/IlSogno.png" alt="">
+
+ Il Sogno Website is a multi-page restaurant website designed to provide visitors with an elegant and intuitive browsing experience.  
+The project highlights the restaurant’s identity through clean design, smooth interactions, and well-structured content.
  
 ## Tech Stack
 - **HTML5** – Page structure  
 - **CSS3** – Styling & responsive layout  
-- **JavaScript (ES6)** – Interactivity for menu, forms, and navigation  
+- **JavaScript (ES6)** – Interactivity for menu, forms, and navigation
+- **React** - For developing one page of the website
+  
 
 ## Project Structure
 
 ```
-restaurant-website/
+IL-SOGNO-WEBSITE/
 │
 ├── .github/
-│   └── CODEOWNERS                 
+│   └── CODEOWNERS
 │
-├── css/                           
+├── .vscode/
+│   ├── launch.json
+│   └── settings.json
+│
+├── assets/
+│   └── fonts/
+│       └── fonts.css
+│
+├── Components/
+│   ├── footer.css
+│   ├── footer.js
+│   ├── navbar.css
+│   └── navbar.js
+│
+├── CSS/
 │   ├── about.css
+│   ├── blog.css
+│   ├── gallery.css
+│   ├── info.css
 │   ├── location.css
 │   ├── menu.css
 │   ├── music.css
+│   ├── privacy-policy.css
 │   ├── reservations.css
-│   ├── style.css                  
+│   ├── style.css
 │   └── tickets.css
 │
-├── html/                          
+├── HTML/
 │   ├── about.html
-│   ├── index.html                 
+│   ├── blog.html
+│   ├── gallery.html
+│   ├── index.html
+│   ├── info.html
 │   ├── location.html
 │   ├── menu.html
 │   ├── music.html
+│   ├── privacy-policy.html
 │   ├── reservations.html
+│   ├── terms-conditions.html
 │   └── tickets.html
 │
-├── js/                            
+├── JS/
 │   ├── about.js
-│   ├── index.js
+│   ├── app.js
+│   ├── blog.js
+│   ├── gallery.js
+│   ├── info.js
 │   ├── location.js
 │   ├── menu.js
 │   ├── music.js
 │   ├── reservations.js
 │   └── tickets.js
 │
-├── photos/                       
-│   ├── logo.png
-│   ├── dishes/
-│   └── interior/
-│
-├── privacy-policy.html            
-├── terms-and-conditions.html      
-└── README.md                      
+├── mdFiles/                 # Markdown drafts / content
+├── photos/                  # Images and media assets
+├── react-page/              # React-based implementation
+│   ├── src/
+│       ├── components/
+│       │   ├── BlogSection.jsx
+│       │   ├── Footer.css
+│       │   ├── Footer.jsx
+│       │   ├── HeroSection.jsx
+│       │   ├── Navbar.css
+│       │   ├── Navbar.jsx
+│       │   └── Sidebar.jsx
+│       ├── App.css
+│       ├── App.jsx
+│       ├── index.css
+│       └── main.jsx
+├── package-lock.json
+└── README.md
 ```
 
+## Future Improvements
 
+- Online reservation system integration
+- Backend integration
+- Full migration to React
+- Multi-language support
+
+## License
+
+This project is part of college assignment.
+
+## Contributors:
+Rizonë Hyseni, Siona Mustafa, Dua Bilalli, Sara Kyçyku and Rrezon Ibishi
