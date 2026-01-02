@@ -30,7 +30,7 @@ const observer = new IntersectionObserver(
     }
   },
   {
-    threshold: 0.5, // bohet trigger kur osht visible 0.5%
+    threshold: 0.3, // bohet trigger kur osht visible 30%
   }
 );
 observer.observe(timeline);
