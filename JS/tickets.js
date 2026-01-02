@@ -36,3 +36,20 @@ $(document).ready(function () {
     });
 });
 
+// efekt per h1 ne fillim
+document.addEventListener("DOMContentLoaded", function(){
+  const title=document.getElementById("title");
+  const text=title.innerText;
+  title.textContent="";
+
+  let index = 0;
+  function typeWriter(){
+    if (index<text.length){
+      title.textContent+=text.charAt(index);
+      index++;
+      setTimeout(typeWriter, 70);
+    }
+  }
+
+  typeWriter();
+});
