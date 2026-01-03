@@ -1,11 +1,18 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 body {
   font-family: "Instrument Serif", serif;
   font-weight: 400;
   font-style: normal;
-  margin: 0;
   background-color: black;
 }
 .titulli {
+  position: relative; 
+  top: 0;
+  left: 0;
   text-align: center;
   color: white;
   font-size: 2.5rem;
@@ -37,7 +44,9 @@ body {
   font-family: "Instrument Serif", serif;
   font-size: larger;
   border-radius: 30px;
+  text-align: center;
   cursor: pointer;
+  transition: all 0.3s
 }
 
 .menu-btn:hover {
@@ -66,13 +75,16 @@ body {
 }
 .card-box {
   width: 300px;
-  height: 450px;
+  height: 455px;
   background-color: #4a0505;
   color: white;
-  border-radius: 10px;
+  border-radius: 11px;
   display: flex;
   flex-direction: column;
-  border: 1px solid white;
+  border: 2px solid white;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
 }
 .card-box:hover {
   background-color: #6b0a0a;
@@ -97,7 +109,7 @@ body {
   height: 280px;
   object-fit: cover;
   display: block;
-  border-radius: 16px;
+  border-radius: 14px;
 }
 
 .card-body {
@@ -202,11 +214,11 @@ body {
   }
 
   .card-title {
-    font-size: 15px;
+    font-size: larger;
   }
 
   .card-text {
-    font-size: 13px;
+    font-size: large;
   }
 }
 
@@ -218,7 +230,10 @@ body {
     gap: 10px;
     margin-top: 50px;
   }
-
+  .titulli {
+    text-align: center;
+    width: 100%;
+  }
   .menu-btn {
     flex: 0 0 calc(50% - 10px);
     width: auto;
@@ -227,12 +242,12 @@ body {
     padding: 6px 0;
   }
   .card-box {
+    box-sizing: border-box;
     flex: 0 0 100%;
     max-width: 260px;
-    height: auto;
     margin-bottom: 15px;
-    font-size: 14px;
   }
+
   .titulli {
     text-align: center;
     width: 100%;

@@ -4,13 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Il Sogno</title>
-    <link rel="stylesheet" href="/CSS/about.css" />
-    <script src="../Components/Navbar/navbar.js"></script>
-    <script src="/Components/footer.js"></script>
-    <link rel="stylesheet" href="../assets/fonts/fonts.css" />
-    <script src="/JS/about.js" defer></script>
-    <script type="module" src="../Components/navbar.js" defer></script>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -40,25 +33,39 @@
     <link rel="stylesheet" href="../assets/fonts/fonts.css" />
     <script src="/JS/about.js" defer></script>
     <script type="module" src="../Components/navbar.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Island+Moments&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <my-navbar> </my-navbar>
     <!-- faqja hyrese -->
-    <div class="main-hero-container"></div>
+    <div class="main-hero-container">
+      <h1 class="fade-up">
+        Our Story: A Journey of Flavor, Passion, and Tradition
+      </h1>
+      <h3 class="fade-up">
+        Serving comfort, connection, and authentic taste since 1978.
+      </h3>
+    </div>
     <!-- teksti me heading  -->
     <section class="about-text-heading">
+      <img src="/photos/IlSogno.png" style="width: 220px" alt="" />
       <h2 class="fade-up">
         "Established in the heart of Amalfi, Il Sogno honors generations of
         Italian culinary tradition. Our kitchen combines time-honored recipes
         with the finest local ingredients, reflecting the history and culture of
         the coast. Each dish carries a story, inviting guests to experience
-        Amalfi rich heritage and savor its authentic flavors."
-        <br />-Chef Luca.
+        Amalfi rich heritage and savor its authentic flavors." <br />-Chef Luca.
       </h2>
       <hr />
     </section>
 
     <!-- seksioni red -->
+
     <section class="aboutus-section-container">
       <div class="about-left-infocontainer">
         <div class="image-wrapper">
@@ -75,6 +82,9 @@
             data-speed="0.1"
           />
         </div>
+        <div class="quote-message">
+          <p id="text-quote"></p>
+        </div>
         <div class="text-container-left fade-up">
           <h2>
             Savor the Flavors of Amalfi: Culinary Traditions, Fresh Ingredients,
@@ -87,15 +97,15 @@
             coast. <br />
             Each recipe reflects generations of culinary knowledge, blending
             classic techniques with modern creativity. Guests experience warmth,
-            hospitality, and unforgettable flavors. From handpicked herbs to
-            artisanal cheeses and freshly caught seafood, every element is
-            chosen to celebrate authenticity. <br />
+            hospitality, and unforgettable flavors. <br />
+            From handpicked herbs to artisanal cheeses and freshly caught
+            seafood, every element is chosen to celebrate authenticity. <br />
             Our kitchen honors history while embracing innovation, creating
-            dishes that are both comforting and exciting. <br />
-            Every meal is more than food, it is a memory, a celebration, and a
-            connection to the rich culture of Amalfi. From handpicked herbs to
-            artisanal cheeses and freshly caught seafood, every element is
-            chosen to celebrate authenticity.
+            dishes that are both comforting and exciting. Every meal is more
+            than food, it is a memory, a celebration, and a connection to the
+            rich culture of Amalfi. From handpicked herbs to artisanal cheeses
+            and freshly caught seafood, every element is chosen to celebrate
+            authenticity.
           </p>
         </div>
       </div>
@@ -109,14 +119,28 @@
             Il Sogno was born from a shared passion for Italian cuisine and the
             stunning Amalfi coast. Founded by a group of visionary chefs and
             food lovers, the restaurant reflects their dream of creating a place
-            where tradition meets innovation. Every corner tells the story of
-            dedication, from the carefully designed interiors to the kitchen
-            where recipes are crafted with love. The founders’ commitment to
-            quality, local ingredients, and hospitality shapes every experience.
-            Guests are welcomed into an environment that celebrates heritage,
-            creativity, and community. sea.
+            where tradition meets innovation. <br />
+            Every corner tells the story of dedication, from the carefully
+            designed interiors to the kitchen where recipes are crafted with
+            love. <br />
+            Our kitchen honors history while embracing innovation, creating
+            dishes that are both comforting and exciting. The founders’
+            commitment to quality, local ingredients, and hospitality shapes
+            every experience.
           </p>
           <a href="menu.html">Check our menu &#8600;</a>
+        </div>
+        <div class="image-wrapper2">
+          <img
+            class="rightside-pic pic1"
+            src="/photos/homemade-pasta.jpg"
+            alt="Homemade pasta"
+          />
+          <img
+            class="rightside-pic pic2"
+            src="/photos/oldMenCooking.webp"
+            alt="Cheffs cooking pizza"
+          />
         </div>
       </div>
     </section>
@@ -171,7 +195,7 @@
 
     <section class="features_section">
       <div class="picture_features">
-        <img src="/photos/sea-view.jpg" alt="features" />
+        <img src="/photos/pastaImg.jpg" alt="features" />
       </div>
       <div class="features_container">
         <div class="feature fade-up">
@@ -206,14 +230,14 @@
           <h2>Authentic Recipes</h2>
           <p>
             Our menu is a testament to our commitment to authentic Italian
-            cuisine. We source the finest ingredients and prepare each dish with
-            care. From classic pasta dishes to innovative creations.
+            cuisine. We source ingredients and prepare each dish with care. From
+            classic pasta dishes to innovative creations.
           </p>
         </div>
       </div>
     </section>
 
-    <div class="interior_picture fade-up">
+    <div class="interior_picture">
       <img src="/photos/interior.jpg" alt="interior" />
       <div class="overlay">
         <a href="reservations.html"
