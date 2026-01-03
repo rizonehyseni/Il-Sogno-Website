@@ -2,15 +2,11 @@
 * {
   margin: 0;
   padding: 0;
-
   box-sizing: border-box;
   color: rgb(239, 239, 239);
 }
 
 body {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   background-color: #070505;
   font-family: "Instrument Serif", serif;
 }
@@ -27,42 +23,40 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .main-hero-container h1 {
   position: absolute;
   top: 48%;
   left: 50px;
-  font-size: 2.5rem;
-  font-weight: 400;
+  font-size: 2.5em;
 }
 .main-hero-container h3 {
   position: absolute;
   top: 57%;
   left: 50px;
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: 1.5em;
 }
 /* stili per tekstin nga chef luca */
 .about-text-heading {
   margin: 90px 0;
-  height: 400px;
+  height: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 20%;
+  padding: 0 300px;
   display: flex;
-  flex-direction: column;
 }
 .about-text-heading h2 {
   font-size: 32px;
   margin-bottom: 30px;
-  font-weight: 400;
   line-height: 50px;
 }
 hr {
-  color: white;
   width: 50%;
 }
 /* stili per containerin e kuq me foto */
@@ -89,7 +83,7 @@ hr {
   justify-content: space-around;
   align-items: center;
   padding: 0 30px;
-  gap: 30px;
+  gap: 20px;
   flex-direction: column;
 }
 .about-right-infocontainer h2,
@@ -100,7 +94,7 @@ hr {
 .about-right-infocontainer a {
   text-decoration: none;
   font-size: 1.4em;
-  font-weight: 500;
+  font-weight: 550;
   transition: 0.3s ease all;
 }
 .about-right-infocontainer a:hover {
@@ -111,11 +105,11 @@ hr {
 .text-container-left {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
   font-size: 16px;
 }
 .text-container-left {
-  margin-bottom: 140px;
+  margin-bottom: 100px;
   align-self: flex-end;
 }
 
@@ -127,11 +121,13 @@ hr {
 
 .image-wrapper {
   display: flex;
-  flex: 1;
   gap: 40px;
-  position: relative;
-  overflow: visible;
   margin-top: 60px;
+}
+.image-wrapper img {
+  width: 360px;
+  height: 550px;
+  object-fit: cover;
 }
 .image-wrapper2 {
   display: flex;
@@ -144,13 +140,6 @@ hr {
   object-fit: cover;
 }
 
-.image-wrapper img {
-  width: 360px;
-  height: 550px;
-  object-fit: cover;
-  display: block;
-}
-
 .quote-message {
   display: flex;
   align-items: center;
@@ -159,12 +148,7 @@ hr {
   font-family: "Island Moments", cursive;
   font-weight: 400;
   text-align: center;
-  font-style: normal;
 }
-/* h1 {
-  text-decoration: underline;
-  margin-bottom: 50px;
-} */
 
 .timeline-section-container {
   display: flex;
@@ -224,12 +208,10 @@ hr {
 .timeline-point {
   border: none;
   position: absolute;
-
   border-radius: 50%;
   background: rgb(185, 182, 182);
   width: 12px;
   height: 12px;
-
   top: 30px;
   left: -7px;
   transition: 1.5s ease;
@@ -242,121 +224,6 @@ hr {
   top: 0%;
   left: 0%;
   transition: 1s linear;
-}
-@media screen and (min-width: 1145px) {
-  .timeline {
-    display: block;
-    padding: 0 50px;
-    margin-bottom: 100px;
-  }
-
-  .timeline ul {
-    flex-direction: row;
-  }
-  .timeline ul li {
-    margin-top: 0px;
-    position: relative;
-    width: 100%;
-    padding: 10px;
-  }
-  .timeline ul li p {
-    transform: translateY(-10px);
-    opacity: 0;
-    transition: 1.5s;
-    width: 350px;
-    font-size: 18px;
-    margin-top: 30px;
-  }
-
-  .date {
-    opacity: 0;
-    transition: 1.5s;
-    font-size: 22px;
-    position: absolute;
-    top: -90px;
-    left: 37%;
-  }
-
-  .timeline-point {
-    width: 15px;
-    height: 15px;
-
-    top: -35px;
-    left: 40%;
-    transition: 1.5s ease;
-  }
-
-  .timeline-line {
-    width: 100%;
-    height: 0.4x;
-    display: flex;
-    justify-content: center;
-  }
-
-  .timeline-innerline {
-    position: absolute;
-    background: rgb(140, 131, 131);
-    width: 0%;
-    height: 1px;
-
-    top: 0%;
-    left: 0%;
-
-    transition: 1s linear;
-    border-radius: 999px;
-  }
-}
-/*kur state osht aktiv */
-.timeline li.active p {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.timeline li.active .date {
-  opacity: 1;
-}
-
-.timeline li.active .timeline-point {
-  background: rgb(255, 255, 255);
-}
-
-/* interior yellow pic book */
-
-.interior_picture {
-  position: relative;
-  width: 100%;
-  height: 25rem;
-  overflow: hidden;
-}
-.interior_picture img {
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-.interior_picture img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(
-    rgba(0, 0, 0, 0.3) 0%,
-    rgba(0, 0, 0, 0.5) 50%,
-    rgba(0, 0, 0, 0.9) 100%
-  );
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.4s ease;
 }
 
 .interior_picture:hover .overlay {
@@ -384,7 +251,6 @@ hr {
 .features_section {
   display: flex;
   background-color: #010201;
-
   justify-content: space-between;
 }
 
@@ -454,7 +320,69 @@ hr {
   opacity: 1;
   transform: translateY(0);
 }
+@media screen and (min-width: 1145px) {
+  .timeline {
+    display: block;
+    padding: 0 50px;
+    margin-bottom: 100px;
+  }
 
+  .timeline ul {
+    flex-direction: row;
+  }
+  .timeline ul li {
+    margin-top: 0px;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+  }
+  .timeline ul li p {
+    transform: translateY(-10px);
+    opacity: 0;
+    transition: 1.5s;
+    width: 350px;
+    font-size: 18px;
+    margin-top: 30px;
+  }
+
+  .date {
+    opacity: 0;
+    transition: 1.5s;
+    font-size: 22px;
+    position: absolute;
+    top: -90px;
+    left: 37%;
+  }
+
+  .timeline-point {
+    width: 15px;
+    height: 15px;
+
+    top: -35px;
+    left: 40%;
+    transition: 1.5s ease;
+  }
+
+  .timeline-line {
+    width: 100%;
+    height: 0.4x;
+    display: flex;
+    justify-content: center;
+  }
+
+  .timeline-innerline {
+    position: absolute;
+    background: rgb(140, 131, 131);
+    width: 0%;
+    height: 1px;
+
+    top: 0%;
+    left: 0%;
+
+    transition: 1s linear;
+    border-radius: 999px;
+  }
+}
 @media (max-width: 992px) {
   .main-hero-container h1 {
     top: 50%;
@@ -467,7 +395,6 @@ hr {
   }
   .aboutus-section-container {
     padding: 20px;
-    min-height: auto;
     margin-top: 60px;
   }
   .text-container-left,
@@ -566,7 +493,6 @@ hr {
   .text-container-right,
   .text-container-left {
     text-align: center;
-    display: flex;
     flex-direction: column;
     gap: 20px;
     font-size: 16px;
@@ -586,7 +512,6 @@ hr {
   }
 
   .image-wrapper {
-    flex: 1;
     gap: 40px;
     margin-top: 20px;
   }
@@ -638,12 +563,13 @@ hr {
     text-align: left;
     padding: 10px;
   }
+  .main-hero-container {
+    height: 50rem;
+    font-size: 12px;
+  }
 
   .about-text-heading img {
     width: 150px;
-  }
-  .about-text-heading h2 {
-    font-size: 14px;
   }
 
   .aboutus-section-container {
@@ -670,7 +596,6 @@ hr {
   .text-container-right,
   .text-container-left {
     text-align: center;
-    display: flex;
     flex-direction: column;
     gap: 20px;
     font-size: 16px;
@@ -678,7 +603,6 @@ hr {
   }
   .text-container-left {
     margin-bottom: 140px;
-    align-self: flex-end;
   }
   .text-container-right {
     margin-top: 50px;
@@ -708,16 +632,7 @@ hr {
     margin: 10px 0;
     padding: 0 10px;
   }
-  .main-hero-container {
-    height: 50rem;
-  }
-  .main-hero-container h1 {
-    font-size: 1.4rem;
-  }
-  .main-hero-container h3 {
-    top: 53%;
-    font-size: 1rem;
-  }
+
   .about-text-heading {
     margin: 100px 0;
     padding: 0 30px;
