@@ -12,13 +12,6 @@ The project highlights the restaurant’s identity through clean design, smooth 
 - **JavaScript (ES6)** – Interactivity for menu, forms, and navigation
 - **React** - For developing one page of the website
 
-  
-## Access to the website
-You can access the website by cloning the repository:
-- ` git clone  https://github.com/rizonehyseni/Il-Sogno-Website.git `
-- After cloning open `index.html` in a browser.
-- And you're done ;)
-
 ## Libraries & Frameworks
 - **jQuery** – DOM manipulation and effects  
 - **SlideReveal.js** – Scroll-based animations  
@@ -119,6 +112,12 @@ IL-SOGNO-WEBSITE/
 - Backend integration
 - Full migration to React
 - Multi-language support
+
+## Access to the website
+You can access the website by cloning the repository:
+- ` git clone  https://github.com/rizonehyseni/Il-Sogno-Website.git `
+- After cloning open `index.html` in a browser.
+- And you're done ;)
 
 ## License
 
