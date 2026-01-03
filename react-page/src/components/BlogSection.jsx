@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 
 const blogPosts = [
@@ -80,10 +81,19 @@ const BlogItem = ({ title, image, preview, fullText, author, year }) => {
       </div>
 
       <div className={`blog-paragraph full-text ${isOpen ? "open" : ""}`}>
-  <p>{fullText}</p>
-</div>
-
-      
+        <motion.p
+          animate={{
+            opacity: isOpen ? 1 : 0,
+            y: isOpen ? 0 : 6,
+          }}
+          transition={{ duration: 0.55, ease: "easeOut" }}
+          style={{
+            pointerEvents: isOpen ? "auto" : "none",
+          }}
+        >
+          {fullText}
+        </motion.p>
+      </div>
 
       <div className="blog-footer">
         <button
