@@ -262,19 +262,21 @@
 
  @media screen and (max-width:589px) {
 
+        #videocontainer {
+        width: 100%;
+        height: 100vh;
+    }
+
      #intro h2 {
-         padding-bottom: 0;
-         font-size: 14px;
+         font-size: 25px;
+         padding-top: 60%;
+         padding-bottom: 1.5vh;
      }
 
      #intro p {
-         font-size: 10px;
-         line-height: 13px;
-     }
-
-     #videocontainer {
-         width: 100%;
-         height: 35vh;
+         font-size: 18px;
+         padding: 0 10px;
+         line-height: 18px;
      }
 
      .first-event-card,
@@ -307,18 +309,6 @@
  }
 
  @media screen and (max-width:418px) {
-
-     #intro h2 {
-         font-size: 13px;
-         padding-top: 15vh;
-         padding-bottom: 1.5vh;
-     }
-
-     #intro p {
-         font-size: 10px;
-         padding-bottom: 8vh;
-         line-height: 13px;
-     }
 
      .first-event-card,
      .event-card {
