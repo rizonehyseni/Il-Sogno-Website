@@ -1,9 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Island+Moments&display=swap");
 * {
   margin: 0;
   padding: 0;
-  font-family: "Instrument Serif", serif;
+
   box-sizing: border-box;
-  color: white;
+  color: rgb(239, 239, 239);
 }
 
 body {
@@ -25,11 +26,26 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
+.main-hero-container h1 {
+  position: absolute;
+  top: 48%;
+  left: 50px;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.main-hero-container h3 {
+  position: absolute;
+  top: 57%;
+  left: 50px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
 /* stili per tekstin nga chef luca */
 .about-text-heading {
-  margin: 120px 0;
+  margin: 90px 0;
   height: 400px;
   display: flex;
   justify-content: center;
@@ -52,69 +68,97 @@ hr {
 /* stili per containerin e kuq me foto */
 .aboutus-section-container {
   background-color: rgb(74, 5, 5);
-  width: 100vw;
-  height: 150vh;
+  width: 100%;
+  min-height: 95rem;
   display: flex;
-  margin-top: 300px;
-  padding: 0 50px;
+  gap: 10px;
+  margin-top: 200px;
+  padding: 60px 50px;
+  overflow: hidden;
 }
 
 .about-left-infocontainer {
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  width: 70%;
-  padding: 0 5%;
+  justify-content: center;
+  gap: 120px;
 }
 .about-right-infocontainer {
-  width: 80%;
+  width: 100%;
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  gap: 50px;
+  padding: 0 30px;
+  gap: 30px;
   flex-direction: column;
 }
 .about-right-infocontainer h2,
 .about-left-infocontainer h2 {
-  font-size: 40px;
+  font-size: 2.5em;
   font-weight: 400;
-  padding-top: 50px;
 }
 .about-right-infocontainer a {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.4em;
   font-weight: 500;
   transition: 0.3s ease all;
+}
+.about-right-infocontainer a:hover {
+  color: rgb(182, 182, 182);
 }
 
 .text-container-right,
 .text-container-left {
   display: flex;
   flex-direction: column;
-  margin: 30px;
   gap: 20px;
+  font-size: 16px;
 }
 .text-container-left {
-  margin-bottom: 100px;
+  margin-bottom: 140px;
+  align-self: flex-end;
 }
+
 .text-container-left p,
 .text-container-right p {
-  font-size: 20px;
+  font-size: 1.3em;
+  line-height: 30px;
 }
 
 .image-wrapper {
-  flex: 1;
   display: flex;
-  gap: 30px;
+  flex: 1;
+  gap: 40px;
   position: relative;
   overflow: visible;
-  margin-top: -60px;
+  margin-top: 60px;
 }
+.image-wrapper2 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.image-wrapper2 img {
+  height: 360px;
+  width: 550px;
+}
+
 .parallax-img {
-  width: 300px;
-  height: 500px;
+  width: 360px;
+  height: 550px;
   object-fit: cover;
   display: block;
-  transform: translateY(0);
+}
+
+.quote-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+  font-family: "Island Moments", cursive;
+  font-weight: 400;
+  text-align: center;
+  font-style: normal;
 }
 /* h1 {
   text-decoration: underline;
@@ -124,9 +168,8 @@ hr {
 .timeline-section-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin: 80px 0;
-  gap: 40px;
+  margin: 60px 0;
+  gap: 100px;
 }
 .timeline-section-container h1 {
   padding: 70px 0 0 80px;
@@ -136,7 +179,7 @@ hr {
 .timeline {
   padding: 15px;
   display: grid;
-  grid-template-columns: 40% auto;
+  grid-template-columns: 30% auto;
   justify-content: center;
 }
 
@@ -168,9 +211,7 @@ hr {
   transition: 1.5s;
   font-size: 22px;
 }
-.timeline {
-  padding: 100px 100px;
-}
+
 .timeline-line {
   background: rgb(228, 228, 228);
   width: 1px;
@@ -201,10 +242,13 @@ hr {
   left: 0%;
   transition: 1s linear;
 }
-@media screen and (min-width: 868px) {
+@media screen and (min-width: 1145px) {
   .timeline {
     display: block;
+    padding: 0 50px;
+    margin-bottom: 100px;
   }
+
   .timeline ul {
     flex-direction: row;
   }
@@ -227,7 +271,6 @@ hr {
     opacity: 0;
     transition: 1.5s;
     font-size: 22px;
-
     position: absolute;
     top: -90px;
     left: 37%;
@@ -278,21 +321,17 @@ hr {
 
 /* interior yellow pic book */
 
-.interior_picture img {
-  width: 100%;
-  height: 24rem;
-  object-fit: cover;
-  object-position: center;
-}
-
 .interior_picture {
   position: relative;
   width: 100%;
-  height: 35rem;
+  height: 25rem;
   overflow: hidden;
-  margin-top: 10rem;
 }
-
+.interior_picture img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 .interior_picture img {
   width: 100%;
   height: 100%;
@@ -382,13 +421,14 @@ hr {
 }
 
 .feature h2 {
-  font-size: 1.5rem;
+  font-size: 22px;
+  font-weight: 550;
   color: #f7f1e1;
   margin-bottom: 0.5rem;
 }
 
 .feature p {
-  font-size: 1rem;
+  font-size: 20px;
   color: #f7f1e1;
   line-height: 1.4;
 }
@@ -415,8 +455,54 @@ hr {
 }
 
 @media (max-width: 992px) {
+  .main-hero-container h1 {
+    top: 50%;
+    font-size: 1.6rem;
+  }
+  .main-hero-container h3 {
+    top: 57%;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .aboutus-section-container {
+    padding: 20px;
+    min-height: auto;
+    margin-top: 60px;
+  }
+  .text-container-left,
+  .text-container-right {
+    font-size: 12px;
+  }
+  .image-wrapper {
+    gap: 20px;
+  }
+  .image-wrapper img {
+    width: 205px;
+    height: 330px;
+  }
+  .image-wrapper2 img {
+    height: 205px;
+    width: 330px;
+  }
+  .about-right-infocontainer img {
+    width: 350px;
+    height: 370px;
+    margin-top: 5px;
+  }
+  .about-text-heading h2 {
+    margin: 10px 0;
+    font-size: 24px;
+    gap: 10px;
+    padding: 0;
+  }
   .interior_picture {
     height: 28rem;
+  }
+  .timeline ul li p {
+    font-size: 12px;
+  }
+  .quote-message {
+    padding: 0 50px;
   }
 
   .picture_features {
@@ -447,6 +533,85 @@ hr {
   }
 }
 @media (max-width: 768px) {
+  .main-hero-container h1 {
+    top: 45%;
+  }
+  .about-text-heading h2 {
+    font-size: 18px;
+  }
+  .main-hero-container h1,
+  .main-hero-container h3 {
+    text-align: left;
+  }
+  .aboutus-section-container {
+    flex-direction: column;
+
+    gap: 10px;
+    margin-top: 150px;
+    padding: 0 60px;
+  }
+
+  .about-left-infocontainer {
+    gap: 30px;
+    align-items: center;
+    padding: 0 30px;
+  }
+  .about-right-infocontainer {
+    align-items: center;
+    gap: 30px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .text-container-right,
+  .text-container-left {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 16px;
+    margin-top: 35px;
+  }
+  .text-container-left {
+    margin-bottom: 140px;
+    align-self: flex-end;
+  }
+  .text-container-right {
+    margin-top: 50px;
+  }
+  .text-container-left p,
+  .text-container-right p {
+    font-size: 1em;
+    line-height: 30px;
+  }
+
+  .image-wrapper {
+    flex-direction: column;
+    flex: 1;
+    gap: 40px;
+    position: relative;
+    overflow: visible;
+    margin-top: 20px;
+  }
+  .about-right-infocontainer img {
+    align-self: center;
+    height: 350px;
+    width: 480px;
+    object-fit: cover;
+    margin-top: 10px;
+  }
+
+  .parallax-img {
+    height: 350px;
+    width: 480px;
+  }
+
+  .quote-message {
+    font-size: 42px;
+    margin: 35px 0;
+    padding: 0 80px;
+    font-style: normal;
+  }
   .interior_picture {
     height: 25rem;
   }
@@ -479,6 +644,81 @@ hr {
 }
 
 @media (max-width: 480px) {
+  .aboutus-section-container {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 150px;
+    padding: 20px 60px;
+  }
+
+  .about-left-infocontainer {
+    gap: 30px;
+    padding: 0;
+    align-items: center;
+  }
+  .about-right-infocontainer {
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .text-container-right,
+  .text-container-left {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 16px;
+    margin-top: 35px;
+  }
+  .text-container-left {
+    margin-bottom: 140px;
+    align-self: flex-end;
+  }
+  .text-container-right {
+    margin-top: 50px;
+  }
+  .text-container-left p,
+  .text-container-right p {
+    font-size: 1em;
+    line-height: 30px;
+  }
+
+  .image-wrapper {
+    flex-direction: column;
+    flex: 1;
+    gap: 20px;
+    position: relative;
+    overflow: visible;
+    margin-top: 60px;
+  }
+  .image-wrapper img {
+    height: 360px;
+    width: 550px;
+  }
+
+  .rightside-pic {
+    height: 360px;
+    width: 550px;
+  }
+  .quote-message {
+    font-size: 42px;
+    margin: 10px 0;
+    padding: 0 10px;
+  }
+  .main-hero-container {
+    height: 50rem;
+  }
+  .main-hero-container h1 {
+    font-size: 1.4rem;
+  }
+  .main-hero-container h3 {
+    top: 53%;
+    font-size: 1rem;
+  }
+
   .features_container {
     grid-template-columns: 1fr;
   }
