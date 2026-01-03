@@ -1,5 +1,6 @@
 # Il Sogno – Italian Restaurant Website
  <img width="200px" src="/photos/IlSogno.png" alt="">
+## 📄 Project Documentation
 
  Il Sogno Website is a multi-page restaurant website designed to provide visitors with an elegant and intuitive browsing experience.  
 The project highlights the restaurant’s identity through clean design, smooth interactions, and well-structured content.
@@ -17,7 +18,11 @@ You can access the website by cloning the repository:
 - After cloning open `index.html` in a browser.
 - And you're done ;)
 
-
+## Libraries & Frameworks
+- **jQuery** – DOM manipulation and effects  
+- **SlideReveal.js** – Scroll-based animations  
+- **React** – Component-based page  
+- **Framer Motion** – Animations and transitions  
   
 
 ## Project Structure
@@ -100,6 +105,12 @@ IL-SOGNO-WEBSITE/
 ├── package-lock.json
 └── README.md
 ```
+##  User Experience (UX)
+
+- Clean and modern design  
+- Easy navigation  
+- Smooth animations and transitions  
+- Fully responsive (desktop and mobile)  
 
 ## Future Improvements
 
