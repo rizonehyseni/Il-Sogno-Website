@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const HeroSection = () => {
-  const text = `Welcome to Il Sogno, where every dish is crafted with passion, bringing the true flavors of Italy straight to your table. Join us and savor moments made memorable.`;
+  const text = `Weelcome to Il Sogno, where every dish is crafted with passion, bringing the true flavors of Italy straight to your table. Join us and savor moments made memorable.`;
 
   const [displayedText, setDisplayedText] = useState("");{/*statei se ndryshon sa here del shkronja*/}
   let speed = 20;{/*sa shpejte iteron te shkronjat */}
