@@ -9,6 +9,9 @@ body {
   font-style: normal;
   background-color: black;
 }
+.bar{
+  overflow: hidden;
+}
 .titulli {
   position: relative; 
   top: 0;

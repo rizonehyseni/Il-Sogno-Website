@@ -1,4 +1,5 @@
- body {
+body {
+     box-sizing: border-box;
      margin: 0;
      padding: 0;
      font-family: "Instrument Serif", serif;
@@ -6,16 +7,25 @@
      color: white;
      width: 100%;
      height: 100%;
-     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+ }
+
+ .bar{
+    overflow: hidden;
+ }
+
+ #ticketsPage{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
          url('/photos/harp.webp');
      background-size: cover;
      background-position: center;
-     width: 100%;
  }
 
  h1 {
      text-align: center;
-     padding-top: 10%;
+     padding-top: 150px;
      padding-bottom: 0;
      margin-bottom: 0;
  }
@@ -28,7 +38,7 @@
      padding: 45px 10px 40px 10px;
      transition: all 0.3s;
      width: 65%;
-     margin: 10vh auto;
+     margin: 50px auto;
      margin-bottom: 150px;
      backdrop-filter: blur(2px);
  }
@@ -69,13 +79,13 @@
  #button:hover {
      color: #170000;
      background-color: rgb(253, 249, 249);
-     border: 1px #170000;
+     border: 1px solid #170000;
  }
 
  #button:active {
      color: #170000;
      background-color: rgb(35, 1, 1);
-     border: 1px #170000;
+     border: 1px solid #170000;
  }
 
  select {
@@ -104,11 +114,12 @@
      .card {
          font-size: small;
          margin-top: 30px;
+         margin-bottom: 330px;
      }
 
      h1 {
          font-size: normal;
-         padding-top: 180px;
+         padding-top: 350px;
      }
  }
 
@@ -117,8 +128,7 @@
          font-size: small;
          width: 80%;
          padding: 20px 8px;
-         margin: 12px auto;
-         margin-bottom: 150px;
+         margin-bottom: 330px;
      }
 
      #insideCard {
@@ -128,13 +138,17 @@
          text-align: center;
      }
 
-     h1 {
+     h1{
          font-size: normal;
-         padding-top: 180px;
+         padding-top: 330px;
      }
 
      #button {
          padding: 6px 55px;
+     }
+
+     .insideCard2 p{
+        padding-bottom: 10px;
      }
  }
 
@@ -143,8 +157,7 @@
          font-size: small;
          width: 80%;
          padding: 20px 8px;
-         margin: 12px auto;
-         margin-bottom: 100px;
+         margin-bottom: 150px;
      }
 
      #insideCard {
@@ -153,9 +166,13 @@
          text-align: center;
      }
 
+     .insideCard2 p{
+        padding-bottom: 10px;
+     }
+
      h1 {
          font-size: normal;
-         padding-top: 100px;
+         padding-top: 200px;
      }
 
      .insideCard2 {

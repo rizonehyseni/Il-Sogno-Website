@@ -28,9 +28,9 @@ class NavbarComponent extends HTMLElement {
           </ul>
 
           <div class="navbar_toggle" id="mobile_menu">
-            <span class="bar">-</span>
-            <span class="bar">-</span>
-            <span class="bar">-</span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
           </div>
         </div>
       </nav>

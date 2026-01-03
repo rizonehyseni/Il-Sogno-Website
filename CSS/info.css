@@ -5,6 +5,9 @@ body {
   background-color: black;
   color: white;
 }
+.bar{
+  overflow: hidden;
+}
 .titulli{
     text-align: center;
     margin-top: 50px;

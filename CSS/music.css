@@ -1,25 +1,21 @@
- /* font-family: "Instrument Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-*/
-
  body {
      margin: 0;
      padding: 0;
      background-color: #070505;
      font-family: "Instrument Serif", serif;
      font-size: larger;
-     width: 100%;
-     height: 100%;
-     margin: 0;
-     padding: 0;
+     font-weight: 400;
      color: white;
  }
 
+ .bar{
+    overflow: hidden;
+ }
+ 
  #videocontainer {
      position: relative;
      width: 100%;
-     height: 100vh;
+     height: 100%;
      overflow: hidden;
      background: rgba(0, 0, 0, 0.5);
  }
@@ -266,19 +262,21 @@
 
  @media screen and (max-width:589px) {
 
+        #videocontainer {
+        width: 100%;
+        height: 100vh;
+    }
+
      #intro h2 {
-         padding-bottom: 0;
-         font-size: 14px;
+         font-size: 25px;
+         padding-top: 60%;
+         padding-bottom: 1.5vh;
      }
 
      #intro p {
-         font-size: 10px;
-         line-height: 13px;
-     }
-
-     #videocontainer {
-         width: 100%;
-         height: 35vh;
+         font-size: 18px;
+         padding: 0 10px;
+         line-height: 18px;
      }
 
      .first-event-card,
@@ -311,18 +309,6 @@
  }
 
  @media screen and (max-width:418px) {
-
-     #intro h2 {
-         font-size: 13px;
-         padding-top: 15vh;
-         padding-bottom: 1.5vh;
-     }
-
-     #intro p {
-         font-size: 10px;
-         padding-bottom: 8vh;
-         line-height: 13px;
-     }
 
      .first-event-card,
      .event-card {
