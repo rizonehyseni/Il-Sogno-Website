@@ -81,7 +81,7 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 80px;
+  gap: 120px;
 }
 .about-right-infocontainer {
   width: 100%;
@@ -113,15 +113,12 @@ hr {
   flex-direction: column;
   gap: 20px;
   font-size: 16px;
-  margin-top: 35px;
 }
 .text-container-left {
   margin-bottom: 140px;
   align-self: flex-end;
 }
-.text-container-right {
-  margin-top: 50px;
-}
+
 .text-container-left p,
 .text-container-right p {
   font-size: 1.3em;
@@ -136,24 +133,28 @@ hr {
   overflow: visible;
   margin-top: 60px;
 }
+.image-wrapper2 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.image-wrapper2 img {
+  height: 360px;
+  width: 550px;
+}
+
 .parallax-img {
   width: 360px;
   height: 550px;
   object-fit: cover;
   display: block;
 }
-.about-right-infocontainer img {
-  align-self: flex-end;
-  height: 360px;
-  width: 570px;
-  object-fit: cover;
-  margin-top: 45px;
-}
 
 .quote-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 42px;
-  margin-bottom: 35px;
-  padding: 0 80px;
   font-family: "Island Moments", cursive;
   font-weight: 400;
   text-align: center;
