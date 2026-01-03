@@ -68,8 +68,8 @@ hr {
 /* stili per containerin e kuq me foto */
 .aboutus-section-container {
   background-color: rgb(74, 5, 5);
-  width: 100vw;
-  height: 95rem;
+  width: 100%;
+  min-height: 95rem;
   display: flex;
   gap: 10px;
   margin-top: 300px;
@@ -80,12 +80,13 @@ hr {
 .about-left-infocontainer {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   gap: 80px;
 }
 .about-right-infocontainer {
   width: 100%;
   display: flex;
+  justify-content: space-around;
   align-items: center;
   padding: 0 30px;
   gap: 30px;
@@ -455,8 +456,7 @@ hr {
 @media (max-width: 992px) {
   .main-hero-container h1 {
     top: 50%;
-    font-size: 2rem;
-    text-align: center;
+    font-size: 1.6rem;
   }
   .main-hero-container h3 {
     top: 57%;
@@ -465,17 +465,23 @@ hr {
   }
   .aboutus-section-container {
     padding: 20px;
-    height: 88rem;
+    min-height: auto;
     margin-top: 60px;
   }
   .text-container-left,
   .text-container-right {
     font-size: 12px;
   }
-
-  .parallax-img {
+  .image-wrapper {
+    gap: 20px;
+  }
+  .image-wrapper img {
     width: 205px;
     height: 330px;
+  }
+  .image-wrapper2 img {
+    height: 205px;
+    width: 330px;
   }
   .about-right-infocontainer img {
     width: 350px;
@@ -493,6 +499,9 @@ hr {
   }
   .timeline ul li p {
     font-size: 12px;
+  }
+  .quote-message {
+    padding: 0 50px;
   }
 
   .picture_features {
@@ -534,9 +543,8 @@ hr {
     text-align: left;
   }
   .aboutus-section-container {
-    width: 100%;
-    height: 194rem;
     flex-direction: column;
+
     gap: 10px;
     margin-top: 150px;
     padding: 0 60px;
@@ -636,22 +644,21 @@ hr {
 
 @media (max-width: 480px) {
   .aboutus-section-container {
-    width: 100%;
-    height: 195rem;
     flex-direction: column;
     gap: 10px;
     margin-top: 150px;
-    padding: 0 60px;
+    padding: 20px 60px;
   }
 
   .about-left-infocontainer {
     gap: 30px;
-    padding: 0 30px;
+    padding: 0;
     align-items: center;
   }
   .about-right-infocontainer {
     align-items: center;
     gap: 30px;
+    padding: 0;
     align-items: center;
     flex-direction: column;
   }
@@ -681,12 +688,12 @@ hr {
   .image-wrapper {
     flex-direction: column;
     flex: 1;
-    gap: 40px;
+    gap: 20px;
     position: relative;
     overflow: visible;
     margin-top: 60px;
   }
-  .parallax-img {
+  .image-wrapper img {
     height: 360px;
     width: 550px;
   }
