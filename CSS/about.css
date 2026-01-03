@@ -413,7 +413,9 @@ hr {
     height: 205px;
     width: 330px;
   }
-
+  .about-text-heading {
+    padding: 0 100px;
+  }
   .about-text-heading h2 {
     margin: 10px 0;
     font-size: 24px;
