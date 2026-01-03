@@ -144,7 +144,7 @@ hr {
   object-fit: cover;
 }
 
-.parallax-img {
+.image-wrapper img {
   width: 360px;
   height: 550px;
   object-fit: cover;
@@ -264,7 +264,7 @@ hr {
     opacity: 0;
     transition: 1.5s;
     width: 350px;
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 30px;
   }
 
@@ -429,7 +429,7 @@ hr {
 }
 
 .feature p {
-  font-size: 16px;
+  font-size: 18px;
   color: #f7f1e1;
   line-height: 1.4;
 }
@@ -559,7 +559,10 @@ hr {
     align-items: center;
     flex-direction: column;
   }
-
+  .about-left-infocontainer h2,
+  .about-right-infocontainer h2 {
+    font-size: 1.8em;
+  }
   .text-container-right,
   .text-container-left {
     text-align: center;
@@ -594,7 +597,7 @@ hr {
   .quote-message {
     font-size: 42px;
     margin: 35px 0;
-    padding: 0 80px;
+    padding: 0 10px;
     font-style: normal;
   }
   .interior_picture {
@@ -629,11 +632,26 @@ hr {
 }
 
 @media (max-width: 480px) {
+  .main-hero-container h1,
+  .main-hero-container h3 {
+    left: 10px;
+    text-align: left;
+    padding: 10px;
+  }
+
+  .about-text-heading img {
+    width: 150px;
+  }
+  .about-text-heading h2 {
+    font-size: 14px;
+  }
+
   .aboutus-section-container {
     flex-direction: column;
     gap: 10px;
     margin-top: 150px;
-    padding: 20px 60px;
+    padding: 20px 40px;
+    padding-bottom: 80px;
   }
 
   .about-left-infocontainer {
@@ -669,6 +687,10 @@ hr {
   .text-container-right p {
     font-size: 1em;
     line-height: 30px;
+  }
+  .about-left-infocontainer h2,
+  .about-right-infocontainer h2 {
+    font-size: 1.6em;
   }
 
   .image-wrapper {
