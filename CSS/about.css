@@ -141,6 +141,7 @@ hr {
 .image-wrapper2 img {
   height: 360px;
   width: 550px;
+  object-fit: cover;
 }
 
 .parallax-img {
@@ -475,6 +476,7 @@ hr {
   }
   .image-wrapper {
     gap: 20px;
+    flex-direction: row;
   }
   .image-wrapper img {
     width: 205px;
@@ -484,11 +486,7 @@ hr {
     height: 205px;
     width: 330px;
   }
-  .about-right-infocontainer img {
-    width: 350px;
-    height: 370px;
-    margin-top: 5px;
-  }
+
   .about-text-heading h2 {
     margin: 10px 0;
     font-size: 24px;
@@ -545,10 +543,9 @@ hr {
   }
   .aboutus-section-container {
     flex-direction: column;
-
     gap: 10px;
     margin-top: 150px;
-    padding: 0 60px;
+    padding: 20px 60px;
   }
 
   .about-left-infocontainer {
@@ -586,26 +583,14 @@ hr {
   }
 
   .image-wrapper {
-    flex-direction: column;
     flex: 1;
     gap: 40px;
-    position: relative;
-    overflow: visible;
     margin-top: 20px;
   }
-  .about-right-infocontainer img {
-    align-self: center;
-    height: 350px;
-    width: 480px;
-    object-fit: cover;
-    margin-top: 10px;
-  }
 
-  .parallax-img {
-    height: 350px;
-    width: 480px;
+  .image-wrapper2 {
+    gap: 20px;
   }
-
   .quote-message {
     font-size: 42px;
     margin: 35px 0;
@@ -688,21 +673,14 @@ hr {
 
   .image-wrapper {
     flex-direction: column;
-    flex: 1;
-    gap: 20px;
-    position: relative;
-    overflow: visible;
     margin-top: 60px;
+    gap: 20px;
   }
   .image-wrapper img {
-    height: 360px;
-    width: 550px;
+    height: 205px;
+    width: 330px;
   }
 
-  .rightside-pic {
-    height: 360px;
-    width: 550px;
-  }
   .quote-message {
     font-size: 42px;
     margin: 10px 0;
