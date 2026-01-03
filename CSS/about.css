@@ -429,7 +429,7 @@ hr {
 }
 
 .feature p {
-  font-size: 20px;
+  font-size: 16px;
   color: #f7f1e1;
   line-height: 1.4;
 }
@@ -497,7 +497,7 @@ hr {
     height: 28rem;
   }
   .timeline ul li p {
-    font-size: 12px;
+    font-size: 16px;
   }
   .quote-message {
     padding: 0 50px;
@@ -695,6 +695,10 @@ hr {
   .main-hero-container h3 {
     top: 53%;
     font-size: 1rem;
+  }
+  .about-text-heading {
+    margin: 100px 0;
+    padding: 0 30px;
   }
 
   .features_container {
