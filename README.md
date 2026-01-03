@@ -1,6 +1,7 @@
 # Il Sogno – Italian Restaurant Website
  <img width="200px" src="/photos/IlSogno.png" alt="">
-## 📄 Project Documentation
+ 
+## Project Documentation
 
  Il Sogno Website is a multi-page restaurant website designed to provide visitors with an elegant and intuitive browsing experience.  
 The project highlights the restaurant’s identity through clean design, smooth interactions, and well-structured content.
