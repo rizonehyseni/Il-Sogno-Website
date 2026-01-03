@@ -13,9 +13,9 @@ The project highlights the restaurant’s identity through clean design, smooth 
   
 ## Access to the website
 You can access the website by cloning the repository:
-` git clone  https://github.com/rizonehyseni/Il-Sogno-Website.git `
-After cloning open `index.html` in a browser.
-And you're done ;)
+- ` git clone  https://github.com/rizonehyseni/Il-Sogno-Website.git `
+- After cloning open `index.html` in a browser.
+- And you're done ;)
 
 
   
