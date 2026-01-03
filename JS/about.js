@@ -58,7 +58,7 @@ document.querySelectorAll('.fade-up').forEach(el => {
 
 // teksti me observer quote
 
-const tekst = "“La cucina è amore - food is love. At Il Sogno, all dishes tells our story.”";
+const tekst = "“La cucina è amore - food is love where all dishes tell our story.”";
 const citimi = document.getElementById("text-quote");
 let pozita = 0, shkruar = false;
 
