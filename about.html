@@ -27,12 +27,13 @@
     <meta property="og:image" content="photos/main_logo.png" />
     <meta property="og:type" content="website" />
 
-    <link rel="stylesheet" href="/CSS/about.css" />
-    <script src="../Components/Navbar/navbar.js"></script>
-    <script src="/Components/footer.js"></script>
-    <link rel="stylesheet" href="../assets/fonts/fonts.css" />
-    <script src="/JS/about.js" defer></script>
-    <script type="module" src="../Components/navbar.js" defer></script>
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="assets/fonts/fonts.css" />
+
+    <script type="module" src="components/navbar.js" defer></script>
+    <script type="module" src="components/footer.js" defer></script>
+    <script src="js/about.js" defer></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -40,8 +41,10 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <my-navbar> </my-navbar>
+
     <!-- faqja hyrese -->
     <div class="main-hero-container">
       <div class="main-text-items">
@@ -53,9 +56,10 @@
         </h3>
       </div>
     </div>
+
     <!-- teksti me heading  -->
     <section class="about-text-heading">
-      <img src="/photos/IlSogno.png" style="width: 220px" alt="" />
+      <img src="photos/IlSogno.png" style="width: 220px" alt="" />
       <h2 class="fade-up">
         "Established in the heart of Amalfi, Il Sogno honors generations of
         Italian culinary tradition. Our kitchen combines time-honored recipes
@@ -67,12 +71,11 @@
     </section>
 
     <!-- seksioni red -->
-
     <section class="aboutus-section-container">
       <div class="about-left-infocontainer">
         <div class="image-wrapper">
-          <img src="/photos/old-pic.jpg" alt="" data-speed="0.3" />
-          <img src="/photos/oldimg.avif" alt="" data-speed="0.1" />
+          <img src="photos/old-pic.jpg" alt="" data-speed="0.3" />
+          <img src="photos/oldimg.avif" alt="" data-speed="0.1" />
         </div>
         <div class="quote-message">
           <p id="text-quote"></p>
@@ -101,6 +104,7 @@
           </p>
         </div>
       </div>
+
       <div class="about-right-infocontainer">
         <div class="text-container-right fade-up">
           <h2>
@@ -125,12 +129,12 @@
         <div class="image-wrapper2">
           <img
             class="rightside-pic pic1"
-            src="/photos/homemade-pasta.jpg"
+            src="photos/homemade-pasta.jpg"
             alt="Homemade pasta"
           />
           <img
             class="rightside-pic pic2"
-            src="/photos/oldMenCooking.webp"
+            src="photos/oldMenCooking.webp"
             alt="Cheffs cooking pizza"
           />
         </div>
@@ -187,7 +191,7 @@
 
     <section class="features_section">
       <div class="picture_features">
-        <img src="/photos/pastaImg.jpg" alt="features" />
+        <img src="photos/pastaImg.jpg" alt="features" />
       </div>
       <div class="features_container">
         <div class="feature fade-up">
@@ -230,11 +234,11 @@
     </section>
 
     <div class="interior_picture">
-      <img src="/photos/interior.jpg" alt="interior" />
+      <img src="photos/interior.jpg" alt="interior" />
       <div class="overlay">
-        <a href="reservations.html"
-          ><button class="book_button">Book Now</button></a
-        >
+        <a href="reservations.html">
+          <button class="book_button">Book Now</button>
+        </a>
       </div>
     </div>
 

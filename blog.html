@@ -4,33 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-
-  
-
     <title>Il Sogno Journal | Italian Cuisine, Stories & Inspiration</title>
 
-    <meta name="description"
-          content="Read the Il Sogno Journal featuring stories behind our Italian cuisine, seasonal menus, wine pairings, and restaurant moments inspired by the Amalfi Coast.">
+    <meta
+      name="description"
+      content="Read the Il Sogno Journal featuring stories behind our Italian cuisine, seasonal menus, wine pairings, and restaurant moments inspired by the Amalfi Coast."
+    />
 
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow" />
 
-    <meta property="og:title" content="Il Sogno Journal - Italian Food & Restaurant Stories">
-    <meta property="og:description"
-          content="Discover stories, inspirations, and seasonal highlights from Il Sogno Italian restaurant.">
-    <meta property="og:image"
-          content="photos/main_logo.png">
-    <meta property="og:type" content="article">
+    <meta
+      property="og:title"
+      content="Il Sogno Journal - Italian Food & Restaurant Stories"
+    />
+    <meta
+      property="og:description"
+      content="Discover stories, inspirations, and seasonal highlights from Il Sogno Italian restaurant."
+    />
+    <meta property="og:image" content="photos/main_logo.png" />
+    <meta property="og:type" content="article" />
 
-    <link rel="icon" type="image/x-icon" href="/photos/main_logo.png" sizes="32x32">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="photos/main_logo.png"
+      sizes="32x32"
+    />
 
-    <link rel="stylesheet" href="/CSS/blog.css" />
-    <script type="module" src="../Components/navbar.js"></script>
-<script type="module" src="../Components/footer.js"></script>
-    <script src="../JS/blog.js" defer></script>
-    <link rel="stylesheet" href="../assets/fonts/fonts.css" />
+    <link rel="stylesheet" href="css/blog.css" />
+    <link rel="stylesheet" href="assets/fonts/fonts.css" />
+
+    <script type="module" src="components/navbar.js" defer></script>
+    <script type="module" src="components/footer.js" defer></script>
+    <script src="js/blog.js" defer></script>
   </head>
-  <body>
 
+  <body>
     <my-navbar></my-navbar>
 
     <section class="hero-section">
@@ -43,14 +52,18 @@
       <section class="blog-section">
         <div id="blog-cards-container"></div>
       </section>
+
       <section class="sidebar-section">
         <div class="sidebar-box">
           <h1>Il Sogno</h1>
           <p>Immerse yourself in the dream</p>
-          <p>Via Salvatore Quasimodo, 38<br>4011 Amalfi</p>
+          <p>Via Salvatore Quasimodo, 38<br />4011 Amalfi</p>
           <p>8:00-00:00</p>
           <p>+00000000</p>
-          <button class="btn-sidebar" onclick="location.href='reservations.html'">
+          <button
+            class="btn-sidebar"
+            onclick="location.href='reservations.html'"
+          >
             Book a Table
           </button>
         </div>
@@ -59,7 +72,7 @@
           <h1>Featured Dish</h1>
           <div class="sidebar-image">
             <a href="menu.html">
-              <img src="/photos/pastaImg.jpg" alt="truffle Pasta">
+              <img src="photos/pastaImg.jpg" alt="truffle Pasta" />
             </a>
           </div>
           <p>Signature Truffle Pasta - our<br />bestseller since 2020</p>
@@ -77,15 +90,12 @@
             <h1>Subscribe</h1>
             <p>Join thousands of regular readers.</p>
             <input type="email" id="email" placeholder="Email address" />
-            <button class="btn-sidebar" type="submit">
-              Submit
-            </button>
+            <button class="btn-sidebar" type="submit">Submit</button>
           </form>
         </div>
       </section>
     </div>
 
     <my-footer></my-footer>
-  
   </body>
 </html>

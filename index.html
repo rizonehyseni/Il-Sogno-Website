@@ -15,37 +15,33 @@
     <meta property="og:image" content="photos/main_logo.png">
     <meta property="og:type" content="website">
 
+    <link rel="icon" type="image/x-icon" href="photos/main_logo.png" sizes="32x32">
 
-  
-    <link rel="icon" type="image/x-icon" href="/photos/main_logo.png" sizes="32x32">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
 
-    <link rel="stylesheet" href="../CSS/style.css">
-    <script type="module" src="../Components/navbar.js" defer>
-    </script>
-    <link rel="stylesheet" href="../assets/fonts/fonts.css">
-    <script type="module" src="../Components/footer.js" defer></script>
+    <script type="module" src="components/navbar.js" defer></script>
+    <script type="module" src="components/footer.js" defer></script>
+
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="../JS/app.js" defer></script>
-
+    <script src="js/app.js" defer></script>
 </head>
-
 
 <body>
 
     <!--entry intro-->
     <div class="intro_container">
-        <img src="/photos/IlSogno.png" class="intro_image">
+        <img src="photos/IlSogno.png" class="intro_image">
     </div>
 
     <!--navbar-i-->
     <my-navbar></my-navbar>
 
-
     <!--hero-->
     <section class="hero">
         <div class="hero_container">
             <video autoplay muted loop playsinline preload="meta" class="hero_video">
-                <source src="/photos/fireVid1.mp4" type="video/mp4">
+                <source src="photos/fireVid1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <div class="hero_text_container">
@@ -64,11 +60,12 @@
     <section class="about_section">
         <div class="about_container">
             <div class="about_image_container">
-                <img src="/photos/back1.webp" alt="About Us" class="about_image">
+                <img src="photos/back1.webp" alt="About Us" class="about_image">
                 <h2 class="about_image_text">Immerse yourself in the dream</h2>
             </div>
         </div>
     </section>
+
     <section class="about_sub_section">
         <div class="about_text_container">
             <div class="about_text">About Us</div>
@@ -96,13 +93,12 @@
                 </p>
             </div>
         </div>
-
     </section>
 
     <!--menu-->
     <section class="menu_section">
         <div class="menu_back_image">
-            <img src="/photos/wineBottles.webp" alt="Wine Bottles" class="menu_img">
+            <img src="photos/wineBottles.webp" alt="Wine Bottles" class="menu_img">
         </div>
         <div class="menu_container">
             <div class="menu_text_container">
@@ -125,7 +121,7 @@
     <section class="divider">
         <div class="divider_container">
             <div class="divider_1">
-                <img src="/photos/harp_x.webp" alt="harp" class="clip_image">
+                <img src="photos/harp_x.webp" alt="harp" class="clip_image">
             </div>
             <div class="divider_2">
                 <div class="divider_text" id="divider_quote"><!--e lajna empty se pe shkrujna me js--></div>
@@ -140,7 +136,7 @@
         <div class="music_container">
             <div class="music_video_container">
                 <video autoplay muted loop playsinline class="music_video">
-                    <source src="/photos/vinyl.mp4" type="video/mp4">
+                    <source src="photos/vinyl.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <div class="music_text_container">
@@ -172,21 +168,19 @@
             <div class="blog_info">
                 <p class="blog_desc">
                     Discover the inspirations behind our seasonal dishes, chef&#39;s stories, and wine pairings.
-
                 </p>
             </div>
         </div>
         <div class="blog_image_container">
-            <img src="/photos/truffle.jpg" alt="truffle image" class="blog_image">
+            <img src="photos/truffle.jpg" alt="truffle image" class="blog_image">
         </div>
         <div class="blog_news">
             <div class="blog_new">
                 <h3 class="blog_news_title">Behind Our Autumn Menu</h3>
             </div>
             <div class="blog_new_desc">
-                <p class="blog_news_info"><span id="blog_info">
-                        <!--e lajna empty se ms js-->
-                    </span>
+                <p class="blog_news_info">
+                    <span id="blog_info"><!--e lajna empty se ms js--></span>
                 </p>
             </div>
             <div class="blog_button_container">
@@ -198,5 +192,4 @@
     <my-footer></my-footer>
 
 </body>
-
 </html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Il Sogno Menu | Seasonal Italian Cuisine & Wine</title>
+
+    <meta
+      name="description"
+      content="Explore the Il Sogno menu featuring seasonal Italian dishes, fresh ingredients, and carefully selected wine pairings inspired by the Amalfi Coast."
+    />
+    <meta name="robots" content="index, follow" />
+
+    <meta
+      property="og:title"
+      content="Il Sogno Menu – Seasonal Italian Cuisine"
+    />
+    <meta
+      property="og:description"
+      content="Discover our seasonal Italian menu crafted with fresh ingredients and inspired by the Amalfi Coast."
+    />
+    <meta property="og:image" content="photos/main_logo.png" />
+    <meta property="og:type" content="website" />
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="photos/main_logo.png"
+      sizes="32x32"
+    />
+
+    <link rel="stylesheet" href="assets/fonts/fonts.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+
+    <script type="module" src="components/navbar.js" defer></script>
+    <script type="module" src="components/footer.js" defer></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/menu.js" defer></script>
+  </head>
+
+  <body>
+    <my-navbar></my-navbar>
+
+    <section class="menu-buttons">
+      <div class="button-wrapper">
+        <button class="menu-btn" data-target="starters">Starters</button>
+        <button class="menu-btn" data-target="main">Main</button>
+        <button class="menu-btn" data-target="grill">Grill</button>
+        <button class="menu-btn" data-target="fastfood">Fast Food</button>
+        <button class="menu-btn" data-target="desserts">Desserts</button>
+        <button class="menu-btn" data-target="drinks">Drinks</button>
+      </div>
+    </section>
+
+    <section class="section-cards" id="starters"></section>
+    <section class="section-cards" id="main"></section>
+    <section class="section-cards" id="grill"></section>
+    <section class="section-cards" id="fastfood"></section>
+    <section class="section-cards" id="desserts"></section>
+    <section class="section-cards" id="drinks"></section>
+
+    <my-footer></my-footer>
+  </body>
+</html>

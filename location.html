@@ -27,22 +27,27 @@
     <link
       rel="icon"
       type="image/x-icon"
-      href="/photos/main_logo.png"
+      href="photos/main_logo.png"
       sizes="32x32"
     />
 
-    <script type="module" src="../Components/navbar.js" defer></script>
-    <link rel="stylesheet" href="../assets/fonts/fonts.css" />
-    <script type="module" src="../Components/footer.js" defer></script>
-    <link rel="stylesheet" href="/CSS/location.css" />
+    <link rel="stylesheet" href="assets/fonts/fonts.css" />
+    <link rel="stylesheet" href="css/location.css" />
+
+    <script type="module" src="components/navbar.js" defer></script>
+    <script type="module" src="components/footer.js" defer></script>
   </head>
+
   <body>
     <my-navbar></my-navbar>
 
     <section class="section1">
       <div class="video-bg">
         <video autoplay muted loop playsinline preload="meta">
-          <source src="/photos/12866-242215707_small.mp4" type="video/mp4" />
+          <source
+            src="photos/12866-242215707_small.mp4"
+            type="video/mp4"
+          />
           Your browser does not support the video tag.
         </video>
       </div>
@@ -71,7 +76,7 @@
 
       <div class="buttons">
         <a
-          href="https://www.google.com/maps/dir//Hotel+IL+Nido+Via+Salvatore+Quasimodo,+30+84011+Amalfi+SA+Italy/@40.6301918,14.5937957,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x133b944b523592e9:0x449c76bd49e1a4fc!2m2!1d14.5937957!2d40.6301918?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D"
+          href="https://www.google.com/maps/dir//Hotel+IL+Nido+Via+Salvatore+Quasimodo,+30+84011+Amalfi+SA+Italy/@40.6301918,14.5937957,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x133b944b523592e9:0x449c76bd49e1a4fc!2m2!1d14.5937957!2d40.6301918"
           target="_blank"
         >
           <button class="buttonM">Get directions</button>
@@ -104,7 +109,7 @@
           <label class="privacy">
             <input id="privacy" type="checkbox" required />
             I have read the
-            <a href="/HTML/privacy-policy.html">privacy policy</a>
+            <a href="privacy-policy.html">privacy policy</a>
           </label>
 
           <button type="submit" class="submitButton">Send Message</button>
@@ -113,6 +118,7 @@
     </div>
 
     <my-footer></my-footer>
-    <script src="/JS/location.js" defer></script>
+
+    <script src="js/location.js" defer></script>
   </body>
 </html>
